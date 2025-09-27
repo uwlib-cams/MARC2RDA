@@ -1,826 +1,460 @@
-<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test01">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test01</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test01</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test01"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test1"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test1"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test1"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test01</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test01"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test1"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test1text"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test1"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test01">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test01"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test01"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test01</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test01</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 01101cam 22002411a 4500
 F001 041-test01
 F245 ## $a Test 1
 F041 1# $a eng
-F979 ## $a swe
+F979 ## $a sem
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test1">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test01"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test1"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test01"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test1text"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 1</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 1</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test1">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test1text">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test01"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test1"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test1"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 1 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test01"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test1"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test1"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 1 (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 1</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test1">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test01"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test1"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test01"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test1text"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 1</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 1</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test02">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test02">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test02</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test02</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test02"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test2"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test2"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test2"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test02</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test02"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test2"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test2text"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test2"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test02">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test02">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test02"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test02"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test02</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test02</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 00845cam 2200277 a 4500
 F001 041-test02
 F245 ## $a Test 2
 F041 1# $a eng $h fre
 F546 ## $a Translated from the French.
-F979 ## $a swe
+F979 ## $a sem
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test2">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test2">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test02"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test2"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test02"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test2text"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 2</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 2</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test2">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test2text">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test02"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test2"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test2"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 2 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test02"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test2"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test2"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 2 (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 2</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test2">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test2">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test02"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test2"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test02"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test2text"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 2</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 2</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>Translated from the French.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test03">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test03">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test03</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test03</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test03"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test3"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test3"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test3"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test03</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test03"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test3"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test3text"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test3"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test03">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test03">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test03"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test03"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test03</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test03</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 00845cam 2200277 a 4500
 F001 041-test03
 F245 ## $a Test 3
 F041 1# $a fre $k spa
 F546 ## $a Translated from the French.
-F979 ## $a swe
+F979 ## $a sem
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test3">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test3">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test03"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test3"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test03"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test3text"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 3</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 3</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test3">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test3text">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test03"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test3"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test3"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 3 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test03"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test3"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test3"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 3 (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 3</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of intermediate translations: http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test3">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test3">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test03"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test3"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test03"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test3text"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 3</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 3</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>Translated from the French.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test04">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test04">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test04</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test04</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test04"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test4"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test4"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test4"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test04</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test04"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test4"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test4text"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test4"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test04">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test04">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test04"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test04"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test04</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test04</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 04108cas 2200613 a 4500
 F001 041-test04
 F245 ## $a Test 4
 F041 0# $a eng $a fre
 F546 ## $a In English and French.
-F979 ## $a swe
+F979 ## $a sem
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test4">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test4">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test04"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test4"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test04"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test4text"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 4</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 4</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test4">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test4text">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test04"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test4"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test4"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 4 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test04"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test4"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test4"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 4 (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 4</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test4">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test4">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test04"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test4"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test04"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test4text"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 4</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 4</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>In English and French.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test05">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test05</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test05</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test05"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test5"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test5"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test5"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test5aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test05">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test05"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test05</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 05097cjm a22011777i 4500
-F001 041-test05
-F245 ## $a Test 5
-F041 0# $d que $d cze $d spa
-F041 #7 $a ces $a que $a spa $2 iso639-3
-F546 ## $a Vocal works sung variously in Quechua, Czech, and Spanish.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test5aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test05"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test5"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 5    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 5</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/que"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/cze"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/que + http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/ces"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/que"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/iso639-3/ces and http://id.loc.gov/vocabulary/iso639-3/que and http://id.loc.gov/vocabulary/iso639-3/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test5">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test05"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test5"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 5</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 5</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test5">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test05"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test5"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test5"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 5 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 5</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/que"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/cze"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/que and http://id.loc.gov/vocabulary/languages/cze and http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/ces"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/que"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/spa"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/iso639-3/ces and http://id.loc.gov/vocabulary/iso639-3/que and http://id.loc.gov/vocabulary/iso639-3/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test5">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test05"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test5"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test5aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 5</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 5</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Vocal works sung variously in Quechua, Czech, and Spanish.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test06">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test06">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test06</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test06</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test06"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test6"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test6"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test6"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test06</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test06"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test6"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test6text"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test6"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test06">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test06">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test06"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test06"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test06</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test06</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 02426cam a2200433 i 4500
 F001 041-test06
 F245 ## $a Test 6
 F041 07 $a nob $2 iso639-3
-F979 ## $a swe
+F979 ## $a sem
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test6">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test06"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test6"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test06"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test6text"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 6</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 6</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test6">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test6text">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test06"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test6"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test6"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 6 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test06"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test6"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test6"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 6 (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 6</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/nob"/><!--rdaeo:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/iso639-3/nob</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test6">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test06"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test6"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test06"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test6text"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 6</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 6</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test07">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test07">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test07</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test07</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test07"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test7"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test7"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test7"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test07</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test07"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test7"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test7text"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test7"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test07">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test07">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test07"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test07"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test07</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test07</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 05117cam a2200745 i 4500
 F001 041-test07
 F245 ## $a Test 7
 F041 0# $a aus $a eng
 F041 #7 $a N230 $2 austlang
-F979 ## $a swe
+F979 ## $a sem
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test7">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test7">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test07"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test7"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test07"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test7text"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 7</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 7</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test7">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test7text">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test07"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test7"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test7"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 7 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test07"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test7"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test7"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 7 (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 7</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/aus"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/aus and http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaeo:P20006 rdf:resource="http://marc2rda.edu/fake/austlang/con#n230"/><!--rdaeo:P20006 = has language of expression-->
+      <rdaeo:P20006 rdf:resource="http://marc2rda.info/testing/austlang/con#n230"/><!--rdaeo:P20006 = has language of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test7">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test7">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test07"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test7"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test07"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test7text"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 7</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 7</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/austlang/con#n230">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/austlang/con#n230">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>N230</skos:prefLabel>
       <!--IRI could not be found for austlang-->
       <skos:inScheme>austlang</skos:inScheme>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test08">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test08</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test08</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test08"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test8"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test8"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test8"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test8aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test08">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test08"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test08</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 02461cam a2200553 i 4500
-F001 041-test08
-F245 ## $a Test 8
-F041 0# $a ber $a ara
-F041 07 $a shi $a ara $2 iso639-3
-F041 07 $a tach1250 $a stan1318 $2 glotto
-F041 07 $a tas $a ams $2 walso
-F546 ## $a In Tashelhit and Arabic.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test8aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test08"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test8"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 8    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 8</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ber"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ara"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/ber + http://id.loc.gov/vocabulary/languages/ara</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/shi"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/ara"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/iso639-3/shi and http://id.loc.gov/vocabulary/iso639-3/ara</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawo:P10353 rdf:resource="http://marc2rda.edu/fake/glotto/con#tach1250"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://marc2rda.edu/fake/glotto/con#stan1318"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://marc2rda.edu/fake/walso/con#tas"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://marc2rda.edu/fake/walso/con#ams"/><!--rdawo:P10353 = has language of representative expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test8">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test08"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test8"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 8</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 8</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test8">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test08"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test8"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test8"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 8 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 8</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ber"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ara"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/ber and http://id.loc.gov/vocabulary/languages/ara</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/shi"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/ara"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/iso639-3/shi and http://id.loc.gov/vocabulary/iso639-3/ara</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaeo:P20006 rdf:resource="http://marc2rda.edu/fake/glotto/con#tach1250"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://marc2rda.edu/fake/glotto/con#stan1318"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://marc2rda.edu/fake/walso/con#tas"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://marc2rda.edu/fake/walso/con#ams"/><!--rdaeo:P20006 = has language of expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test8">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test08"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test8"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test8aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 8</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 8</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>In Tashelhit and Arabic.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/glotto/con#tach1250">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>tach1250</skos:prefLabel>
-      <!--IRI could not be found for glotto-->
-      <skos:inScheme>glotto</skos:inScheme>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/glotto/con#stan1318">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>stan1318</skos:prefLabel>
-      <!--IRI could not be found for glotto-->
-      <skos:inScheme>glotto</skos:inScheme>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/walso/con#tas">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>tas</skos:prefLabel>
-      <!--IRI could not be found for walso-->
-      <skos:inScheme>walso</skos:inScheme>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/walso/con#ams">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>ams</skos:prefLabel>
-      <!--IRI could not be found for walso-->
-      <skos:inScheme>walso</skos:inScheme>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test09">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test09">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test09</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test09</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test09"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test9"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test9"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test9"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test09</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test09"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test9"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test9text"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test9"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test09">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test09">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test09"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test09"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test09</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test09</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 02522cam a2200541 a 4500
 F001 041-test09
 F245 ## $a Test 9
 F041 07 $a ukr $a eng
 F546 ## $a Text primarily in Ukrainian with one article in English.
-F979 ## $a swe
+F979 ## $a sem
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test9">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test09"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test9"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test09"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test9text"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 9</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 9</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test9">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test9text">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test09"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test9"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test9"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 9 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test09"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test9"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test9"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 9 (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 9</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaed:P20006>ukr</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test9">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test09"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test9"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test09"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test9text"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 9</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 9</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>Text primarily in Ukrainian with one article in English.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test10">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test10">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test10</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test10</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test10"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test10"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test10"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test10"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test10</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test10"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test10"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test10performedmusic"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test10"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test10">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test10">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test10"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test10"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test10</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test10</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 03522njm a2200589 i 4500
 F001 041-test10
 F245 ## $a Test 10
 F041 07 $d uzn $2 iso639-3
 F546 ## $a In Uzbek, Russian and Hindi.
-F979 ## $a swe
+F979 ## $a sem
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1011
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test10">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test10">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test10"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test10"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test10"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test10performedmusic"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 10</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 10</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test10">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test10performedmusic">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test10"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test10"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test10"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 10 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test10"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test10"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test10"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 10 (Performed music)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 10</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/uzn"/><!--rdaeo:P20006 = has language of expression-->
       <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/iso639-3/uzn</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1011"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test10">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test10">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test10"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test10"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test10"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test10performedmusic"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 10</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 10</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>In Uzbek, Russian and Hindi.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test11">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test11</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test11</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test11"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test11"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test11"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test11"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test11aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test11">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test11"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test11</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 06186cgm a2200985 i 4500
-F001 041-test11
-F245 ## $a Test 11
-F041 0# $a fre $a eng $d mis $j eng
-F546 ## $a Chiefly in French and English; film clips in French, English, Italian, German, Tunisian Arabic, Wolof, Hindi; with English subtitles in non-English portions.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test11aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test11"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test11"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 11    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 11</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/mis"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/mis</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of subtitles: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test11">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test11"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test11"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 11</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 11</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test11">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test11"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test11"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test11"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 11 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 11</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/mis"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/fre and http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/mis</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test11">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test11"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test11"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test11aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 11</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 11</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Chiefly in French and English; film clips in French, English, Italian, German, Tunisian Arabic, Wolof, Hindi; with English subtitles in non-English portions.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test12">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test12</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test12</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test12"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test12"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test12"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test12"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test12aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test12">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test12"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test12</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 02838cjm a22007097i 4500
-F001 041-test12
-F245 ## $a Test 12
-F041 0# $a lat $d lat $d eng $d fre $d ger
-F546 ## $a Sung in Latin.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test12aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test12"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test12"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 12    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 12</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/lat</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/lat + http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test12">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test12"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test12"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 12</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 12</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test12">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test12"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test12"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test12"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 12 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 12</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/lat</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/lat and http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/fre and http://id.loc.gov/vocabulary/languages/ger</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test12">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test12"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test12"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test12aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 12</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 12</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Sung in Latin.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test13">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test13</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test13</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test13"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test13"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test13"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test13"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test13aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test13">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test13"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test13</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 03116nam 2200481 i 4500
-F001 041-test13
-F245 ## $a Test 13
-F041 1# $a engspa $h spa
-F546 ## $a English and Spanish texts are bound back-to-back and inverted.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test13aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test13"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test13"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 13    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 13</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test13">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test13"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test13"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 13</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 13</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test13">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test13"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test13"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test13"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 13 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 13</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test13">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test13"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test13"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test13aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 13</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 13</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>English and Spanish texts are bound back-to-back and inverted.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test14">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test14">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test14</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test14</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test14"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test14"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test14"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test14"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test14</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test14"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test14"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test14text"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test14"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test14">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test14">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test14"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test14"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test14</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test14</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 00879cam 2200253 a 4500
 F001 041-test14
 F245 ## $a Test 14
 F041 1# $a eng $k urd $h ara
-F979 ## $a swe
+F979 ## $a sem
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test14">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test14">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test14"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test14"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test14"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test14text"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 14</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 14</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test14">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test14text">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test14"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test14"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test14"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 14 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test14"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test14"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test14"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 14 (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 14</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
@@ -829,50 +463,52 @@ F979 ## $a swe
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/ara</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of intermediate translations: http://id.loc.gov/vocabulary/languages/urd</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test14">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test14">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test14"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test14"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test14"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test14text"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 14</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 14</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test15">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test15</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test15</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test15"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test15"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test15"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test15"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test15</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test15"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test15"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test15text"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test15"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test15">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test15"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test15"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test15</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test15</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 02070cam 2200385 a 4500
 F001 041-test15
 F245 ## $a Test 15
 F041 1# $a eng $k fre $h fro
-F979 ## $a swe
+F979 ## $a sem
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test15">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test15"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test15"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test15"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test15text"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 15</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 15</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test15">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test15text">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test15"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test15"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test15"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 15 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test15"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test15"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test15"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 15 (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 15</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
@@ -881,51 +517,52 @@ F979 ## $a swe
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/fro</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of intermediate translations: http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test15">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test15"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test15"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test15"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test15text"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 15</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 15</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test16">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc041-test16">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test16</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
       <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test16</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test16"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test16"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test16"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test16"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10002>wor#marc041-test16</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc041-test16"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#test16"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#test16"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#test16"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test16">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc041-test16">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test16"/><!--rdamo:P30135 = has work manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc041-test16"/><!--rdamo:P30135 = has work manifested-->
       <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test16</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamd:P30004>man#marc041-test16</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 000417s2000 fr a 000 0 eng
 F001 041-test16
 F245 ## $a Test 16
 F041 1# $a eng $a ger $a fre $h fre
 F546 ## $a Text in English, German, and French.
-F979 ## $a swe
+F979 ## $a sem
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test16">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#test16">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test16"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test16"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc041-test16"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#test16"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10328>Test 16</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 16</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test16">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#test16">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test16"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test16"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test16"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 16 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc041-test16"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#test16"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#test16"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Test 16</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 16</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
@@ -935,639 +572,12 @@ F979 ## $a swe
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/ger and http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test16">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#test16">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test16"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test16"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc041-test16"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#test16"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276>Test 16</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30156>Test 16</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>Text in English, German, and French.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test17">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test17</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test17</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test17"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test17"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test17"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test17"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test17aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test17">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test17"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test17</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 01964cjm 22004691a 4500
-F001 041-test17
-F245 ## $a Test 17
-F041 1# $d lat $e latengfreger $h lat $g engfreger
-F500 ## $a Program notes in English, French and German, and texts with English, French and German translations in container.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test17aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test17"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test17"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 17    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 17</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/lat</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of librettos: http://id.loc.gov/vocabulary/languages/lat + http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of accompanying material other than librettos and transcripts: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test17">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test17"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test17"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 17</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 17</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test17">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test17"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test17"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test17"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 17 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 17</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/lat</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/lat</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test17">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test17"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test17"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test17aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 17</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 17</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Program notes in English, French and German, and texts with English, French and German translations in container.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test18">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test18</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test18</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test18"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test18"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test18"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test18"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test18aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test18">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test18"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test18</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 01945njm 2200493 a 4500
-F001 041-test18
-F245 ## $a Test 18
-F041 1# $d eng $e eng $h ger $g eng
-F500 ## $a Biographical and program notes, principally by Andrew Lamb, and English text ([31] p. : ports.) inserted in container.
-F546 ## $a Sung in English translation by Jerry Hadley.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test18aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test18"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test18"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 18    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 18</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of librettos: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of accompanying material other than librettos and transcripts: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test18">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test18"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test18"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 18</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 18</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test18">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test18"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test18"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test18"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 18 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 18</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/ger</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test18">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test18"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test18"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test18aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 18</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 18</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Biographical and program notes, principally by Andrew Lamb, and English text ([31] p. : ports.) inserted in container.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Sung in English translation by Jerry Hadley.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test19">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test19</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test19</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test19"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test19"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test19"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test19"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test19aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test19">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test19"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test19</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 01197nam 2200349 i 4500
-F001 041-test19
-F245 ## $a Test 19
-F041 0# $a eng $b pol $f pol
-F546 ## $a Table of contents and summary also in Polish.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test19aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test19"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test19"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 19    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 19</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of summary or abstract: http://id.loc.gov/vocabulary/languages/pol</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of table of contents: http://id.loc.gov/vocabulary/languages/pol</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test19">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test19"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test19"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 19</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 19</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test19">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test19"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test19"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test19"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 19 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 19</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test19">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test19"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test19"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test19aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 19</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 19</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Table of contents and summary also in Polish.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test20">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test20</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test20</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test20"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test20"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test20"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test20"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test20aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test20">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test20"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test20</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 01368ncm 2200349 i 4500
-F001 041-test20
-F245 ## $a Test 20
-F041 ## $a eng $f eng
-F500 ## $a For voice and piano, with guitar chords.
-F546 ## $a Words in English.
-F546 ## $b Staff notation;  $b Chord symbols.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test20aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test20"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test20"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 20    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 20</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of table of contents: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Form of notation: Staff notation; </rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Form of notation: Chord symbols.</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test20">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test20"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test20"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 20</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 20</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test20">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test20"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test20"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test20"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 20 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 20</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20062>Staff notation; </rdaed:P20062><!--rdaed:P20062 = has form of notation-->
-      <rdaed:P20062>Chord symbols.</rdaed:P20062><!--rdaed:P20062 = has form of notation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test20">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test20"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test20"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test20aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 20</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 20</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>For voice and piano, with guitar chords.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Words in English.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test21">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test21</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test21</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test21"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test21"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test21"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test21"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test21aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test21">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test21"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test21</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 01646cam 2200361 a 4500
-F001 041-test21
-F245 ## $a Test 21
-F041 0# $a eng $f re
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test21aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test21"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test21"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 21    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 21</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of table of contents: http://id.loc.gov/vocabulary/languages/re</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test21">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test21"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test21"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 21</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 21</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test21">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test21"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test21"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test21"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 21 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 21</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test21">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test21"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test21"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test21aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 21</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 21</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test22">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test22</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test22</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test22"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test22"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test22"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test22"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test22aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test22">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test22"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test22</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 03795cgm a2200805 i 4500
-F001 041-test22
-F245 ## $a Test 22
-F041 1# $a zxx $i ger $h rus
-F500 ## $a Silent film with German intertitles and piano accompaniment.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test22aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test22"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test22"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 22    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 22</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/zxx"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/zxx</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of intertitles: http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test22">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test22"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test22"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 22</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 22</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test22">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test22"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test22"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test22"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 22 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 22</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/zxx"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/zxx</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/rus</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test22">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test22"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test22"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test22aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 22</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 22</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Silent film with German intertitles and piano accompaniment.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test23">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test23</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test23</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test23"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test23"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test23"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test23"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test23aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test23">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test23"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test23</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 02677cam 2200409 i 4500
-F001 041-test23
-F245 ## $a Test 23
-F041 1# $a tut $a tur $h tutrus
-F546 ## $a Romanized Teleut and Turkish; translated from Teleut and Russian.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test23aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test23"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test23"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 23    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 23</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/tut"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/tur"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/tut + http://id.loc.gov/vocabulary/languages/tur</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test23">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test23"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test23"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 23</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 23</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test23">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test23"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test23"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test23"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 23 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 23</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/tut"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/tur"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/tut and http://id.loc.gov/vocabulary/languages/tur</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/tut and http://id.loc.gov/vocabulary/languages/rus</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test23">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test23"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test23"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test23aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 23</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 23</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Romanized Teleut and Turkish; translated from Teleut and Russian.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test24">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test24</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test24</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test24"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test24"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test24"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test24"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test24aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test24">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test24"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test24</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 00921cam 2200253 a 4500
-F001 041-test24
-F245 ## $a Test 24
-F041 1# $a engara $h gerara
-F546 ## $a English and Arabic.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test24aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test24"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test24"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 24    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 24</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ara"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/ara</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test24">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test24"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test24"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 24</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 24</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test24">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test24"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test24"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test24"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 24 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 24</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ara"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/ara</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/ger and http://id.loc.gov/vocabulary/languages/ara</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test24">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test24"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test24"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test24aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 24</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 24</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>English and Arabic.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test25">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>041-test25</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc041-test25</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc041-test25"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#test25"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#test25"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#test25"/><!--rdawo:P10617 = is metadata description of manifestation-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test25aggregating"/><!--rdawo:P10621 = is metadata description of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc041-test25">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test25"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc041-test25</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 09942cgm a2201765 i 4500
-F001 041-test25
-F245 ## $a Test 25
-F041 1# $3 DVD $a eng $a fre $a spa $j fre $j spa $p eng $h eng
-F041 1# $3 Blu-ray $a eng $a cze $a fre $a hin $a hun $a pol $a por $a spa $j cze $j fre $j hun $j pol $j por $j rum $j rus $j spa $p eng $q eng $h eng
-F546 ## $a DVD: English, dubbed French and dubbed Spanish soundtracks with optional French or Spanish subtitles.
-F546 ## $a Blu-ray: English soundtrack and dubbed soundtracks in Czech, French, Hindi, Hungarian, Polish, Portuguese and Spanish soundtracks; with optional Czech, French, Hungarian, Polish, Portuguese, Romanian, Russian or Spanish subtitles.
-F979 ## $a aam
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#test25aggregating">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test25"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test25"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawd:P10328>Test 25    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 25</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of subtitles: http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of captions: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/cze"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/hin"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/hun"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/por"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/hin + http://id.loc.gov/vocabulary/languages/hun + http://id.loc.gov/vocabulary/languages/pol + http://id.loc.gov/vocabulary/languages/por + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of subtitles: http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/hun + http://id.loc.gov/vocabulary/languages/pol + http://id.loc.gov/vocabulary/languages/por + http://id.loc.gov/vocabulary/languages/rum + http://id.loc.gov/vocabulary/languages/rus + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of captions: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of accessible audio: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test25">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test25"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#test25"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Test 25</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Test 25</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#test25">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test25"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#test25"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test25"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Test 25 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Test 25</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/fre and http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/cze"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/hin"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/hun"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/por"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/cze and http://id.loc.gov/vocabulary/languages/fre and http://id.loc.gov/vocabulary/languages/hin and http://id.loc.gov/vocabulary/languages/hun and http://id.loc.gov/vocabulary/languages/pol and http://id.loc.gov/vocabulary/languages/por and http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-      <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test25">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test25"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#test25"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#test25aggregating"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30276>Test 25</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Test 25</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>DVD has Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/spa</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>DVD has Language of subtitles: http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/spa</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>DVD has Language of captions: http://id.loc.gov/vocabulary/languages/eng</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Blu-ray has Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/hin + http://id.loc.gov/vocabulary/languages/hun + http://id.loc.gov/vocabulary/languages/pol + http://id.loc.gov/vocabulary/languages/por + http://id.loc.gov/vocabulary/languages/spa</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Blu-ray has Language of subtitles: http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/hun + http://id.loc.gov/vocabulary/languages/pol + http://id.loc.gov/vocabulary/languages/por + http://id.loc.gov/vocabulary/languages/rum + http://id.loc.gov/vocabulary/languages/rus + http://id.loc.gov/vocabulary/languages/spa</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Blu-ray has Language of captions: http://id.loc.gov/vocabulary/languages/eng</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Blu-ray has Language of accessible audio: http://id.loc.gov/vocabulary/languages/eng</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>DVD: English, dubbed French and dubbed Spanish soundtracks with optional French or Spanish subtitles.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Blu-ray: English soundtrack and dubbed soundtracks in Czech, French, Hindi, Hungarian, Polish, Portuguese and Spanish soundtracks; with optional Czech, French, Hungarian, Polish, Portuguese, Romanian, Russian or Spanish subtitles.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
 </rdf:RDF>

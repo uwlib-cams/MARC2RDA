@@ -1118,7 +1118,9 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- When value is not divisible by 3, treat entire value as single language code -->
-                        <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/{normalize-space(.)}"/>
+                        <xsl:if test="not(contains(normalize-space(.), ' '))">
+                            <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/{normalize-space(.)}"/>
+                        </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
@@ -1141,7 +1143,9 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- When value is not divisible by 3, treat entire value as single language code -->
-                        <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{normalize-space(.)}"/>
+                        <xsl:if test="not(contains(normalize-space(.), ' '))">
+                            <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{normalize-space(.)}"/>
+                        </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
@@ -1193,7 +1197,9 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- When value is not divisible by 3, treat entire value as single language code -->
-                        <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/{normalize-space(.)}"/>
+                        <xsl:if test="not(contains(normalize-space(.), ' '))">
+                            <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/{normalize-space(.)}"/>
+                        </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
@@ -1216,7 +1222,9 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- When value is not divisible by 3, treat entire value as single language code -->
-                        <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{normalize-space(.)}"/>
+                        <xsl:if test="not(contains(normalize-space(.), ' '))">
+                            <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{normalize-space(.)}"/>
+                        </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
@@ -1273,8 +1281,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                        <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                        <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -1307,7 +1317,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1339,8 +1351,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                        <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                        <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -1373,7 +1387,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1405,8 +1421,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                        <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                        <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -1439,7 +1457,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1495,7 +1515,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1527,8 +1549,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                        <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                        <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -1561,7 +1585,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1593,8 +1619,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                        <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                        <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -1627,7 +1655,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1659,8 +1689,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                     <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                     <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -1693,7 +1725,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1725,8 +1759,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                       <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                       <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -1759,7 +1795,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1791,8 +1829,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                        <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                        <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -1825,7 +1865,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1857,8 +1899,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                         <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                         <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -1891,7 +1935,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1923,8 +1969,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                         <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                         <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -1957,7 +2005,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -1989,8 +2039,10 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
-                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                        <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                        <xsl:text> </xsl:text>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
@@ -2023,7 +2075,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2072,7 +2126,9 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- When value is not divisible by 3, treat entire value as single language code -->
-                        <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/{normalize-space(.)}"/>
+                        <xsl:if test="not(contains(normalize-space(.), ' '))">
+                            <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/{normalize-space(.)}"/>
+                        </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
@@ -2095,7 +2151,9 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- When value is not divisible by 3, treat entire value as single language code -->
-                        <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{normalize-space(.)}"/>
+                        <xsl:if test="not(contains(normalize-space(.), ' '))">
+                            <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{normalize-space(.)}"/>
+                        </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
@@ -2147,7 +2205,9 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- When value is not divisible by 3, treat entire value as single language code -->
-                        <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/{normalize-space(.)}"/>
+                        <xsl:if test="not(contains(normalize-space(.), ' '))">
+                            <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/{normalize-space(.)}"/>
+                        </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
@@ -2170,7 +2230,9 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- When value is not divisible by 3, treat entire value as single language code -->
-                        <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{normalize-space(.)}"/>
+                        <xsl:if test="not(contains(normalize-space(.), ' '))">
+                            <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{normalize-space(.)}"/>
+                        </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
@@ -2228,7 +2290,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2262,7 +2326,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2295,7 +2361,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2329,7 +2397,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2362,7 +2432,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2396,7 +2468,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2429,7 +2503,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2463,7 +2539,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2496,7 +2574,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2530,7 +2610,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- When value is not divisible by 3, treat entire value as single language code -->
-                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', normalize-space(.))"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="not(position() = last())">
@@ -2591,7 +2673,9 @@
                                                 <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', .)"/>
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                                <xsl:if test="not(contains(normalize-space(.), ' '))">
+                                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                                </xsl:if>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                         <xsl:text> </xsl:text>

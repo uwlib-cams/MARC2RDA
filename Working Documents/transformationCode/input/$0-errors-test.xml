@@ -5,6 +5,22 @@
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">6xx-test1</marc:controlfield> 
+        
+        <marc:datafield tag="041" ind1="1" ind2=" ">
+            <marc:subfield code="a">a eng</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="041" ind1="1" ind2=" ">
+            <marc:subfield code="a">eng $h ger</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="041" ind1="1" ind2=" ">
+            <marc:subfield code="d">lat</marc:subfield>
+            <marc:subfield code="e">latengfreger</marc:subfield>
+            <marc:subfield code="h">lat</marc:subfield>
+            <marc:subfield code="g">engfreger</marc:subfield>
+        </marc:datafield>
+        
         <marc:datafield tag="651" ind1=" " ind2="4">
             <marc:subfield code="a">England</marc:subfield>
             <marc:subfield code="x">Social life and c.</marc:subfield>

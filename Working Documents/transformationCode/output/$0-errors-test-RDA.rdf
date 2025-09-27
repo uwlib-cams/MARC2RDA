@@ -17,6 +17,9 @@
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 6xx-test1
+F041 1# $a a eng
+F041 1# $a eng $h ger
+F041 1# $d lat $e latengfreger $h lat $g engfreger
 F651 #4 $a England $x Social life and c. $0 (OCoLC)fst01384171#x1E; 0
 F630 07 $a Christmas books, Christmas stories (Dickens, Charles) $2 fas $0 (OCoLC)fst00028294#x1E;07
 F630 07 $a Christmas books, Christmas stories (Dickens, Charles) $2 fast $0 (OCoLC)fst00028294#x1E;07
@@ -29,7 +32,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc6xx-test1"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.info/testing/pla#2025-09-27t144124993972-0400d31e5"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.info/testing/pla#2025-09-27t150317050209-0400d31e20"/><!--rdawo:P10321 = has subject place-->
       <rdaw:P10256 rdf:resource="http://marc2rda.info/testing//con#englandsociallifeandc"/><!--rdaw:P10256 = has subject-->
       <rdawo:P10257 rdf:resource="http://marc2rda.info/testing/fas/wor#christmasbookschristmasstoriesdickenscharles"/><!--rdawo:P10257 = has subject work-->
       <rdawo:P10257 rdf:resource="http://marc2rda.info/testing/fast/wor#christmasbookschristmasstoriesdickenscharles"/><!--rdawo:P10257 = has subject work-->
@@ -41,6 +44,15 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
       <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc6xx-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
       <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
       <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
+      <rdaed:P20071>Language of text/sound track or separate title: </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
+      <rdaed:P20071>Language of text/sound track or separate title: </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
+      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
+      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdaeo:P20006 = has language of expression-->
+      <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/lat</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/lat</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#">
@@ -49,13 +61,13 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
       <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.info/testing/worNom#2025-09-27t144124993972-0400d31e12">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/worNom#2025-09-27t150317050209-0400d31e27">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Christmas books, Christmas stories (Dickens, Charles)</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <!--IRI could not be found for fas-->
       <rdand:P80069>fas</rdand:P80069><!--rdand:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.info/testing/worNom#2025-09-27t144124993972-0400d31e19">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/worNom#2025-09-27t150317050209-0400d31e34">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Christmas books, Christmas stories (Dickens, Charles)</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
@@ -83,17 +95,17 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.info/testing/fas/wor#christmasbookschristmasstoriesdickenscharles">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10328 rdf:resource="http://marc2rda.info/testing/worNom#2025-09-27t144124993972-0400d31e12"/><!--rdawo:P10328 = has access point for work-->
+      <rdawo:P10328 rdf:resource="http://marc2rda.info/testing/worNom#2025-09-27t150317050209-0400d31e27"/><!--rdawo:P10328 = has access point for work-->
       <rdawd:P10002>(OCoLC)fst00028294#x1E;07</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawd:P10088>Christmas books, Christmas stories (Dickens, Charles)</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.info/testing/fast/wor#christmasbookschristmasstoriesdickenscharles">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10328 rdf:resource="http://marc2rda.info/testing/worNom#2025-09-27t144124993972-0400d31e19"/><!--rdawo:P10328 = has access point for work-->
+      <rdawo:P10328 rdf:resource="http://marc2rda.info/testing/worNom#2025-09-27t150317050209-0400d31e34"/><!--rdawo:P10328 = has access point for work-->
       <rdawd:P10002>(OCoLC)fst00028294#x1E;07</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawd:P10088>Christmas books, Christmas stories (Dickens, Charles)</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.info/testing/pla#2025-09-27t144124993972-0400d31e5">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/pla#2025-09-27t150317050209-0400d31e20">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapd:P70018>England</rdapd:P70018><!--rdapd:P70018 = has access point for place-->
    </rdf:Description>
