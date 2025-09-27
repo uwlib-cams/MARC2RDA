@@ -45,5 +45,21 @@
             <marc:subfield code="5">wauc</marc:subfield>
             <marc:subfield code="6">500-00</marc:subfield>
         </marc:datafield>
+        
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">General note (NR) </marc:subfield>
+            <marc:subfield code="a">General note (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="5">Institution to which field applies (NR) </marc:subfield>
+            <marc:subfield code="5">Institution to which field applies (NR) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">General note (NR) </marc:subfield>
+            <marc:subfield code="a">General note (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

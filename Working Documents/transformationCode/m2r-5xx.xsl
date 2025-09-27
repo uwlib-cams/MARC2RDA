@@ -29,7 +29,7 @@
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
     xmlns:fake="http://fakePropertiesForDemo" 
-    xmlns:m2r="http://universityOfWashington/functions"
+    xmlns:m2r="http://marc2rda.info/functions"
     exclude-result-prefixes="marc m2r" version="3.0">
     
     <xsl:include href="m2r-5xx-named.xsl"/>
@@ -63,27 +63,35 @@
                 <rdamo:P30103 rdf:resource="{m2r:itemIRI($baseID, .)}"/>
             </xsl:when>
             <xsl:otherwise>
-                <rdamd:P30137>
-                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                    <xsl:if test="marc:subfield[@code = '3']">
-                        <xsl:text> (Applies to: </xsl:text>
-                        <xsl:value-of select="marc:subfield[@code = '3']"/>
-                        <xsl:text>)</xsl:text>
-                    </xsl:if>
-                </rdamd:P30137>
+                <xsl:for-each select="marc:subfield[@code='a']">
+                    <rdamd:P30137>
+                        <xsl:value-of select="."/>
+                        <xsl:if test="../marc:subfield[@code = '3']">
+                            <xsl:for-each select="../marc:subfield[@code='3']">
+                                <xsl:text> (Applies to: </xsl:text>
+                                <xsl:value-of select="."/>
+                                <xsl:text>)</xsl:text>
+                            </xsl:for-each>
+                        </xsl:if>
+                    </rdamd:P30137>
+                </xsl:for-each>
                 
                 <xsl:if test="(@tag = '500') and (marc:subfield[@code = '6'])">
                     <xsl:variable name="occNum" select="concat('500-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                     <xsl:for-each
                         select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                        <rdamd:P30137>
-                            <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                            <xsl:if test="marc:subfield[@code = '3']">
-                                <xsl:text> (Applies to: </xsl:text>
-                                <xsl:value-of select="marc:subfield[@code = '3']"/>
-                                <xsl:text>)</xsl:text>
-                            </xsl:if>
-                        </rdamd:P30137>
+                        <xsl:for-each select="marc:subfield[@code='a']">
+                            <rdamd:P30137>
+                                <xsl:value-of select="."/>
+                                <xsl:if test="../marc:subfield[@code = '3']">
+                                    <xsl:for-each select="../marc:subfield[@code='3']">
+                                        <xsl:text> (Applies to: </xsl:text>
+                                        <xsl:value-of select="."/>
+                                        <xsl:text>)</xsl:text>
+                                    </xsl:for-each>
+                                </xsl:if>
+                            </rdamd:P30137>
+                        </xsl:for-each>
                     </xsl:for-each>
                 </xsl:if>
             </xsl:otherwise>
@@ -101,14 +109,18 @@
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
             <rdaio:P40049 rdf:resource="{$manIRI}"/>
-            <rdaid:P40028>
-                <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                <xsl:if test="marc:subfield[@code = '3']">
-                    <xsl:text> (Applies to: </xsl:text>
-                    <xsl:value-of select="marc:subfield[@code = '3']"/>
-                    <xsl:text>)</xsl:text>
-                </xsl:if>
-            </rdaid:P40028>
+            <xsl:for-each select="marc:subfield[@code='a']">
+                <rdaid:P40028>
+                    <xsl:value-of select="."/>
+                    <xsl:if test="../marc:subfield[@code = '3']">
+                        <xsl:for-each select="../marc:subfield[@code='3']">
+                            <xsl:text> (Applies to: </xsl:text>
+                            <xsl:value-of select="."/>
+                            <xsl:text>)</xsl:text>
+                        </xsl:for-each>
+                    </xsl:if>
+                </rdaid:P40028>
+            </xsl:for-each>
             <!-- only uses $5 from 500 fields not linked 880s -->
             <xsl:for-each select="marc:subfield[@code='5']">
                 <xsl:copy-of select="m2r:s5Lookup(.)"/>
@@ -117,14 +129,18 @@
                 <xsl:variable name="occNum" select="concat('500-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                 <xsl:for-each
                     select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                    <rdaid:P40028>
-                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                        <xsl:if test="marc:subfield[@code = '3']">
-                            <xsl:text> (Applies to: </xsl:text>
-                            <xsl:value-of select="marc:subfield[@code = '3']"/>
-                            <xsl:text>)</xsl:text>
-                        </xsl:if>
-                    </rdaid:P40028>
+                    <xsl:for-each select="marc:subfield[@code='a']">
+                        <rdaid:P40028>
+                            <xsl:value-of select="."/>
+                            <xsl:if test="../marc:subfield[@code = '3']">
+                                <xsl:for-each select="../marc:subfield[@code='3']">
+                                    <xsl:text> (Applies to: </xsl:text>
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>)</xsl:text>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </rdaid:P40028>
+                    </xsl:for-each>
                 </xsl:for-each>
             </xsl:if>
         </rdf:Description>

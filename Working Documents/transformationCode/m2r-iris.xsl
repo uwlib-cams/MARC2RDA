@@ -29,7 +29,7 @@
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
     xmlns:fake="http://fakePropertiesForDemo" 
-    xmlns:m2r="http://universityOfWashington/functions"
+    xmlns:m2r="http://marc2rda.info/functions"
     exclude-result-prefixes="marc m2r" version="3.0">
     
     <xsl:variable name="approvedSourcesDoc" select="document('lookup/approvedSources.xml')"/>
@@ -198,14 +198,14 @@
             </xsl:when>-->
             <!-- otherwise put IRI together -->
 <!--            <xsl:otherwise>-->
-                <xsl:value-of select="$BASE||'transform/wor#'||encode-for-uri(m2r:stripAllPunctuation(m2r:mainWorkAccessPoint($record)))"/>
+                <xsl:value-of select="$BASE||'wor#'||encode-for-uri(m2r:stripAllPunctuation(m2r:mainWorkAccessPoint($record)))"/>
             <!--</xsl:otherwise>-->
 <!--        </xsl:choose>-->
     </xsl:function>
     
     <xsl:function name="m2r:aggWorkIRI">
         <xsl:param name="record"/>
-        <xsl:value-of select="$BASE||'transform/aggWor#'||encode-for-uri(m2r:stripAllPunctuation(m2r:aggWorkAccessPoint($record)))"/>
+        <xsl:value-of select="$BASE||'aggWor#'||encode-for-uri(m2r:stripAllPunctuation(m2r:aggWorkAccessPoint($record)))"/>
     </xsl:function>
     
     <!-- same idea as work IRI -->
@@ -305,7 +305,7 @@
                 </xsl:choose>
             </xsl:when>-->
 <!--            <xsl:otherwise>-->
-                <xsl:value-of select="$BASE||'transform/exp#'||encode-for-uri(m2r:stripAllPunctuation(m2r:mainExpressionAccessPoint($record)))"/>
+                <xsl:value-of select="$BASE||'exp#'||encode-for-uri(m2r:stripAllPunctuation(m2r:mainExpressionAccessPoint($record)))"/>
             <!--</xsl:otherwise>-->
         <!--</xsl:choose>-->
     </xsl:function>
@@ -314,14 +314,14 @@
         <xsl:param name="record"/>
         <xsl:param name="isElectronic"/>
         <xsl:param name="isMicroform"/>
-        <xsl:value-of select="$BASE||'transform/man#'||encode-for-uri(m2r:stripAllPunctuation(m2r:mainManifestationAccessPoint($record, $isElectronic, $isMicroform)))"/>
+        <xsl:value-of select="$BASE||'man#'||encode-for-uri(m2r:stripAllPunctuation(m2r:mainManifestationAccessPoint($record, $isElectronic, $isMicroform)))"/>
     </xsl:function>
     
     <xsl:function name="m2r:origManifestationIRI">
         <xsl:param name="record"/>
         <xsl:param name="isElectronic"/>
         <xsl:param name="isMicroform"/>
-        <xsl:value-of select="$BASE||'transform/origMan#'||encode-for-uri(m2r:stripAllPunctuation(m2r:mainManifestationAccessPoint($record, $isElectronic, $isMicroform)))"/>
+        <xsl:value-of select="$BASE||'origMan#'||encode-for-uri(m2r:stripAllPunctuation(m2r:mainManifestationAccessPoint($record, $isElectronic, $isMicroform)))"/>
     </xsl:function>
     
     <!-- returns an IRI for an item -->
@@ -329,7 +329,7 @@
     <xsl:function name="m2r:itemIRI">
         <xsl:param name="baseID"/>
         <xsl:param name="node"/>
-        <xsl:value-of select="$BASE||'transform/ite#'||$baseID||generate-id($node)"/>
+        <xsl:value-of select="$BASE||'ite#'||$baseID||generate-id($node)"/>
     </xsl:function>
     
     <!-- returns an IRI for agent -->

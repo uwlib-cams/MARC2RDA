@@ -28,7 +28,7 @@
     xmlns:rdat="http://rdaregistry.info/Elements/t/"
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-    xmlns:fake="http://fakePropertiesForDemo" xmlns:m2r="http://universityOfWashington/functions"
+    xmlns:fake="http://fakePropertiesForDemo" xmlns:m2r="http://marc2rda.info/functions"
     exclude-result-prefixes="marc m2r" version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
@@ -60,7 +60,7 @@
     <xsl:import href="getmarc.xsl"/>
     
     <!-- base IRI for now - all minted entities begin with this -->
-    <xsl:param name="BASE" select="'http://marc2rda.edu/fake/'"/>
+    <xsl:param name="BASE" select="'http://marc2rda.info/testing/'"/>
     
     <!-- include all files containing main field templates
          each main field template will include its own -named file if it exists-->
@@ -192,7 +192,7 @@
                                     </xsl:variable>
                                     <!-- metadata work IRI for connection to MARC record -->
                                     <xsl:variable name="marcMetadataWorkIRI"
-                                        select="$BASE || 'transform/wor#marc' || encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', ''))) || encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"/>
+                                        select="$BASE || 'wor#marc' || encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', ''))) || encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"/>
                                     <!-- call metadata work template (template at bottom of this file) -->
                                     <xsl:call-template name="marcMetadataWork">
                                         <xsl:with-param name="inputRecord" select="."/>
@@ -553,7 +553,7 @@
         <xsl:param name="mainManifestationIRI"/>
         <xsl:param name="origManifestationIRI"/>
         <xsl:variable name="marcManIRI"
-            select="$BASE || 'transform/man#marc' || encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', ''))) || encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"/>
+            select="$BASE || 'man#marc' || encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', ''))) || encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"/>
         <xsl:variable name="source003">
             <xsl:choose>
                 <xsl:when test="marc:controlfield[@tag = '003']">
@@ -576,7 +576,7 @@
             <rdawd:P10004>Metadata work</rdawd:P10004>
             <rdawd:P10002>
                 <xsl:value-of
-                    select="'transform/wor#marc' || encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', ''))) || encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"
+                    select="'wor#marc' || encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', ''))) || encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"
                 />
             </rdawd:P10002>
             <rdawo:P10072 rdf:resource="{$marcManIRI}"/>
@@ -596,7 +596,7 @@
             <rdamd:P30335>Metadata manifestation</rdamd:P30335>
             <rdamd:P30004>
                 <xsl:value-of
-                    select="'transform/man#marc' || encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', ''))) || encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"
+                    select="'man#marc' || encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', ''))) || encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"
                 />
             </rdamd:P30004>
             <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1018'}"/>
