@@ -86,10 +86,14 @@
         <xsl:if test="contains($code0, 'http')">
             <xsl:choose>
                 <xsl:when test="starts-with($code0, 'http')">
-                    <xsl:value-of select="$code0"/>
+                    <xsl:if test="not(contains(normalize-space($code0), ' '))">
+                        <xsl:value-of select="normalize-space($code0)"/>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:when test="starts-with($code0, '(')">
-                    <xsl:value-of select="normalize-space(substring-after($code0, ')'))"/>
+                    <xsl:if test="not(contains(normalize-space($code0), ' '))">
+                        <xsl:value-of select="normalize-space(substring-after($code0, ')'))"/>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:otherwise/>
             </xsl:choose>
@@ -421,8 +425,8 @@
                 </xsl:variable>
                 <xsl:choose>
                     <!-- and FAST, translate to IRI and use -->
-                    <xsl:when test="starts-with($sub0, '(OCoLC)') and m2r:IRILookup(concat('https://id.worldcat.org/fast/', substring-after($sub0, 'fst')), $type) = 'True'">
-                        <xsl:value-of select="concat('https://id.worldcat.org/fast/', substring-after($sub0, 'fst'))"/>
+                    <xsl:when test="starts-with($sub0, '(OCoLC)') and not(contains(normalize-space($sub0), ' ')) and m2r:IRILookup(concat('https://id.worldcat.org/fast/', substring-after($sub0, 'fst')), $type) = 'True'">
+                        <xsl:value-of select="concat('https://id.worldcat.org/fast/', normalize-space(substring-after($sub0, 'fst')))"/>
                     </xsl:when>
                     <!-- otherwise we mint an IRI -->
                     <xsl:otherwise>
@@ -729,8 +733,8 @@
                 </xsl:variable>
                 <xsl:choose>
                     <!-- and FAST, translate to IRI and use -->
-                    <xsl:when test="starts-with($sub0, '(OCoLC)')">
-                        <xsl:value-of select="concat('https://id.worldcat.org/fast/', substring-after($sub0, 'fst'))"/>
+                    <xsl:when test="starts-with($sub0, '(OCoLC)') and not(contains(normalize-space($sub0), ' '))">
+                        <xsl:value-of select="concat('https://id.worldcat.org/fast/', normalize-space(substring-after($sub0, 'fst')))"/>
                     </xsl:when>
                     <!-- and IRI, use -->
                     <xsl:when test="contains($sub0, 'http')">
