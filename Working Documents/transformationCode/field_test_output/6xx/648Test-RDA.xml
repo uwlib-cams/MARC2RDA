@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>6xx-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F648 #4 $a 2000</fake:marcfield>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/6xx-test1tim#d22e6"/><!--rdawo:P10322 = has subject timespan-->
+      <fake:marcfield>F648 #7 $a Early Cretaceous $1 http://n2t.net/ark:/99152/p09qtgwjphz $2 periodo</fake:marcfield>
+      <rdawo:P10322 rdf:resource="http://n2t.net/ark:/99152/p09qtgwjphz"/><!--rdawo:P10322 = has subject timespan-->
+      <fake:marcfield>F648 #7 $a 2014 $2 fast $1 http://fakeiri.edu/5678</fake:marcfield>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/fast/tim#2014"/><!--rdawo:P10322 = has subject timespan-->
+      <fake:marcfield>F648 #7 $a 1861-1865 $2 fast</fake:marcfield>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/fast/tim#1861-1865"/><!--rdawo:P10322 = has subject timespan-->
+      <fake:marcfield>F648 #7 $a Since 1875 $2 fast $1 http://fakeiri.edu/1234</fake:marcfield>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/fast/tim#since1875"/><!--rdawo:P10322 = has subject timespan-->
+      <fake:marcfield>F648 #7 $a Geschichte. $2 gnd</fake:marcfield>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/gnd/tim#geschichte"/><!--rdawo:P10322 = has subject timespan-->
+      <fake:marcfield>F648 #7 $a 1500-1600. $0 (NL-LeOCL)241923875 $2 gtt</fake:marcfield>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/gtt/tim#1500-1600"/><!--rdawo:P10322 = has subject timespan-->
+      <fake:marcfield>F648 #7 $a 1997 $v v $x x $y y $z z $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#1997vxyz"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#v"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/fast/tim#1997"/><!--rdawo:P10322 = has subject timespan-->
+      <fake:marcfield>F648 #4 $a 1997 $v v $x x $y y $z z</fake:marcfield>
+      <rdawd:P10256>1997--v--x--y--z</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <rdawd:P10004>v</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/6xx-test1tim#d22e60"/><!--rdawo:P10322 = has subject timespan-->
+      <fake:marcfield>F880 01 $6 648-00 $a test 880 $x x value</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/cyac/con#test880xvalue"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/cyac/tim#test880"/><!--rdawo:P10322 = has subject timespan-->
+      <fake:marcfield>F648 07 $6 880-02 $a test 880 ind2 is 4 1 $x x value 1 $2 periodo</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/periodo/con#test880ind2is41xvalue1"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/periodo/tim#test880ind2is41"/><!--rdawo:P10322 = has subject timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/6xx-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>6xx-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/periodo/timNom#earlycretaceous">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Early Cretaceous</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/periodo"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1timNom#d22e16">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>2014</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1timNom#d22e23">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1861-1865</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1timNom#d22e28">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Since 1875</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1timNom#d22e35">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Geschichte</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1timNom#d22e40">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1500-1600</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gtt"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1timNom#d22e47">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1997</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1timNom#d22e72">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>test 880</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/periodo/timNom#test880ind2is41">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>test 880 ind2 is 4 1</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80113>test 880 ind2 is 4 2</rdand:P80113><!--rdand:P80113 = is equivalent to-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/periodo"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#1861-1865">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>1861-1865</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/gnd/con#geschichte">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geschichte</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/gtt/con#1500-1600">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>1500-1600</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gtt"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#1997vxyz">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>1997--v--x--y--z</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#v">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>v</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/cyac/con#test880xvalue">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test 880--x value</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/periodo/con#test880ind2is41xvalue1">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test 880 ind2 is 4 1--x value 1</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/periodo"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test 880 ind2 is 4 2--x value 2</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1tim#d22e6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdatd:P70015>2000</rdatd:P70015><!--rdatd:P70015 = has access point for timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://n2t.net/ark:/99152/p09qtgwjphz">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/periodo/timNom#earlycretaceous"/><!--rdato:P70047 = has authorized access point for timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/tim#2014">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e16"/><!--rdato:P70015 = has access point for timespan-->
+      <rdatd:P70018>http://fakeiri.edu/5678</rdatd:P70018><!--rdatd:P70018 = has identifier for timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/tim#1861-1865">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e23"/><!--rdato:P70015 = has access point for timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/tim#since1875">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e28"/><!--rdato:P70015 = has access point for timespan-->
+      <rdatd:P70018>http://fakeiri.edu/1234</rdatd:P70018><!--rdatd:P70018 = has identifier for timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/gnd/tim#geschichte">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e35"/><!--rdato:P70015 = has access point for timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/gtt/tim#1500-1600">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e40"/><!--rdato:P70015 = has access point for timespan-->
+      <rdatd:P70018>(NL-LeOCL)241923875</rdatd:P70018><!--rdatd:P70018 = has identifier for timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/tim#1997">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e47"/><!--rdato:P70015 = has access point for timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1tim#d22e60">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdatd:P70015>1997</rdatd:P70015><!--rdatd:P70015 = has access point for timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/cyac/tim#test880">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e72"/><!--rdato:P70015 = has access point for timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/periodo/tim#test880ind2is41">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/periodo/timNom#test880ind2is41"/><!--rdato:P70047 = has authorized access point for timespan-->
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test001wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test001wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a [James Anderson [junior] correspondence].</fake:marcfield>
+      <rdawd:titleOfWork.en>James Anderson [junior] correspondence</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test001exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test001wor"/>
+      <rdaed:identifierForExpression.en>245-test001exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test001man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test001exp"/>
+      <fake:marcfield>F245 10 $a [James Anderson [junior] correspondence].</fake:marcfield>
+      <rdamd:titleProper.en>James Anderson [junior] correspondence</rdamd:titleProper.en>
+      <rdamd:noteOnManifestation.en>Title proper "James Anderson [junior] correspondence" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test002wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test002wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
+      <rdawd:titleOfWork.en>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test002exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test002wor"/>
+      <rdaed:identifierForExpression.en>245-test002exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test002man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test002exp"/>
+      <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
+      <rdamd:titleProper.en>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdamd:titleProper.en>
+      <rdamd:noteOnManifestation.en>Title proper is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+      <rdamd:dateOfManifestation.en>1901 March 6</rdamd:dateOfManifestation.en>
+      <rdamd:noteOnManifestation.en>Letter.</rdamd:noteOnManifestation.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test003wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test003wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 14 $a The Shakespeare enigma : $b [unravelling the story of the two poets] / $c Peter Dawkins ; [foreword by Mark Rylance].</fake:marcfield>
+      <rdawd:titleOfWork.en>The Shakespeare enigma</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test003exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test003wor"/>
+      <rdaed:identifierForExpression.en>245-test003exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test003man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test003exp"/>
+      <fake:marcfield>F245 14 $a The Shakespeare enigma : $b [unravelling the story of the two poets] / $c Peter Dawkins ; [foreword by Mark Rylance].</fake:marcfield>
+      <rdamd:titleProper.en>The Shakespeare enigma</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>unravelling the story of the two poets</rdamd:otherTitleInformation.en>
+      <rdamd:noteOnManifestation.en>Other title information "unravelling the story of the two poets" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Peter Dawkins</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>foreword by Mark Rylance</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:noteOnManifestation.en>Statement of responsibility "foreword by Mark Rylance" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test004wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test004wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 00 $a Cavendish and Shakespeare : $b interconnections / $c edited by Katherine Romack [and] James Fitzmaurice.</fake:marcfield>
+      <rdawd:titleOfWork.en>Cavendish and Shakespeare</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test004exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test004wor"/>
+      <rdaed:identifierForExpression.en>245-test004exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test004man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test004exp"/>
+      <fake:marcfield>F245 00 $a Cavendish and Shakespeare : $b interconnections / $c edited by Katherine Romack [and] James Fitzmaurice.</fake:marcfield>
+      <rdamd:titleProper.en>Cavendish and Shakespeare</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>interconnections</rdamd:otherTitleInformation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>edited by Katherine Romack [and] James Fitzmaurice</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test005wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test005wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 14 $a Der Dey von Elba in Paris : $b Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres : Faksmilie [that is Faksimile] des Erstdrucks / $c herausgegeben und kommentiert von Wulf Segebrecht.</fake:marcfield>
+      <rdawd:titleOfWork.en>Der Dey von Elba in Paris</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test005exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test005wor"/>
+      <rdaed:identifierForExpression.en>245-test005exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test005man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test005exp"/>
+      <fake:marcfield>F245 14 $a Der Dey von Elba in Paris : $b Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres : Faksmilie [that is Faksimile] des Erstdrucks / $c herausgegeben und kommentiert von Wulf Segebrecht.</fake:marcfield>
+      <rdamd:titleProper.en>Der Dey von Elba in Paris</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>Faksmilie [that is Faksimile] des Erstdrucks</rdamd:otherTitleInformation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>herausgegeben und kommentiert von Wulf Segebrecht</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test006wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test006wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a Sonnett für Wien : $b [songs of Erich Korngold].</fake:marcfield>
+      <rdawd:titleOfWork.en>Sonnett für Wien</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test006exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test006wor"/>
+      <rdaed:identifierForExpression.en>245-test006exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test006man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test006exp"/>
+      <fake:marcfield>F245 10 $a Sonnett für Wien : $b [songs of Erich Korngold].</fake:marcfield>
+      <rdamd:titleProper.en>Sonnett für Wien</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>songs of Erich Korngold</rdamd:otherTitleInformation.en>
+      <rdamd:noteOnManifestation.en>Other title information "songs of Erich Korngold" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test007wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test007wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 00 $a Hamlet [2009] / $c the Royal Shakespeare Company ; producers, John Wyver, Sebastian Grant ; director, Gregory Doran ; Illuminations, RSC for BBC.</fake:marcfield>
+      <rdawd:titleOfWork.en>Hamlet [2009]</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test007exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test007wor"/>
+      <rdaed:identifierForExpression.en>245-test007exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test007man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test007exp"/>
+      <fake:marcfield>F245 00 $a Hamlet [2009] / $c the Royal Shakespeare Company ; producers, John Wyver, Sebastian Grant ; director, Gregory Doran ; Illuminations, RSC for BBC.</fake:marcfield>
+      <rdamd:titleProper.en>Hamlet [2009]</rdamd:titleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>the Royal Shakespeare Company</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>producers, John Wyver, Sebastian Grant</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>director, Gregory Doran</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Illuminations, RSC for BBC</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test008wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test008wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 14 $a The others raisd [sic] in me : $b 150 readings of Sonnet 150 : a plunderverse project / $c by Gregory Betts.</fake:marcfield>
+      <rdawd:titleOfWork.en>The others raisd [sic] in me</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test008exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test008wor"/>
+      <rdaed:identifierForExpression.en>245-test008exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test008man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test008exp"/>
+      <fake:marcfield>F245 14 $a The others raisd [sic] in me : $b 150 readings of Sonnet 150 : a plunderverse project / $c by Gregory Betts.</fake:marcfield>
+      <rdamd:titleProper.en>The others raisd in me</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>150 readings of Sonnet 150</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>a plunderverse project</rdamd:otherTitleInformation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>by Gregory Betts</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test009wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test009wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a Ferdinand's Comfort : $b for soprano, baritone and five instruments : [set of parts] / $c [music by] Kaijia Saariaho ; [lyrics from The Tempest by William Shakespeare].</fake:marcfield>
+      <rdawd:titleOfWork.en>Ferdinand's Comfort</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test009exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test009wor"/>
+      <rdaed:identifierForExpression.en>245-test009exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test009man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test009exp"/>
+      <fake:marcfield>F245 10 $a Ferdinand's Comfort : $b for soprano, baritone and five instruments : [set of parts] / $c [music by] Kaijia Saariaho ; [lyrics from The Tempest by William Shakespeare].</fake:marcfield>
+      <rdamd:titleProper.en>Ferdinand's Comfort</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>for soprano, baritone and five instruments</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>set of parts</rdamd:otherTitleInformation.en>
+      <rdamd:noteOnManifestation.en>Other title information "set of parts" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>[music by] Kaijia Saariaho</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>lyrics from The Tempest by William Shakespeare</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:noteOnManifestation.en>Statement of responsibility "lyrics from The Tempest by William Shakespeare" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test010wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test010wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a 'Message in a mobile' $h [electronic resource] = $b [Risālah fī jawāl] = Risaala fi jawaal : mixed-messages, tales of missing and mobile communities at the University of Khatroum / $c Siri Lamoureaux.</fake:marcfield>
+      <rdawd:titleOfWork.en>'Message in a mobile'</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test010exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test010wor"/>
+      <rdaed:identifierForExpression.en>245-test010exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test010man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test010exp"/>
+      <fake:marcfield>F245 10 $a 'Message in a mobile' $h [electronic resource] = $b [Risālah fī jawāl] = Risaala fi jawaal : mixed-messages, tales of missing and mobile communities at the University of Khatroum / $c Siri Lamoureaux.</fake:marcfield>
+      <rdamd:titleProper.en>'Message in a mobile'</rdamd:titleProper.en>
+      <rdamd:titleProper.en>Risālah fī jawāl</rdamd:titleProper.en>
+      <rdamd:noteOnManifestation.en>Title proper "Risālah fī jawāl" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+      <rdamd:titleProper.en>Risaala fi jawaal</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>mixed-messages, tales of missing and mobile communities at the University of Khatroum</rdamd:otherTitleInformation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Siri Lamoureaux</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:categoryOfManifestation.en>electronic resource</rdamd:categoryOfManifestation.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test011wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test011wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a Lambe Latin : $b tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice / [by Angela Lorenz].</fake:marcfield>
+      <rdawd:titleOfWork.en>Lambe Latin</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test011exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test011wor"/>
+      <rdaed:identifierForExpression.en>245-test011exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test011man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test011exp"/>
+      <fake:marcfield>F245 10 $a Lambe Latin : $b tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice / [by Angela Lorenz].</fake:marcfield>
+      <rdamd:titleProper.en>Lambe Latin</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice</rdamd:otherTitleInformation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>by Angela Lorenz</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:noteOnManifestation.en>Statement of responsibility "by Angela Lorenz" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test012wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test012wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 00 $a Shinkansen[star]rs Metal Macbeth / $c the original by William Shakespeare ; arrangement by Kankuro Kudo ; directed by Hidenori Inoue.</fake:marcfield>
+      <rdawd:titleOfWork.en>Shinkansen[star]rs Metal Macbeth</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test012exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test012wor"/>
+      <rdaed:identifierForExpression.en>245-test012exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test012man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test012exp"/>
+      <fake:marcfield>F245 00 $a Shinkansen[star]rs Metal Macbeth / $c the original by William Shakespeare ; arrangement by Kankuro Kudo ; directed by Hidenori Inoue.</fake:marcfield>
+      <rdamd:titleProper.en>Shinkansen[star]rs Metal Macbeth</rdamd:titleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>the original by William Shakespeare</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>arrangement by Kankuro Kudo</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>directed by Hidenori Inoue</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test013wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test013wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a Kill Shakespeare. $n [Volume 1], $p A sea of troubles / $c created and written by Conor McCreery and Anthony Del Col ; art by Andy Belanger ; colors by Ian Herring ; lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake.</fake:marcfield>
+      <rdawd:titleOfWork.en>Kill Shakespeare. Volume 1, A sea of troubles</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test013exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test013wor"/>
+      <rdaed:identifierForExpression.en>245-test013exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test013man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test013exp"/>
+      <fake:marcfield>F245 10 $a Kill Shakespeare. $n [Volume 1], $p A sea of troubles / $c created and written by Conor McCreery and Anthony Del Col ; art by Andy Belanger ; colors by Ian Herring ; lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake.</fake:marcfield>
+      <rdamd:titleProper.en>Kill Shakespeare. Volume 1, A sea of troubles</rdamd:titleProper.en>
+      <rdamd:noteOnManifestation.en>Title proper "Volume 1" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>created and written by Conor McCreery and Anthony Del Col</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>art by Andy Belanger</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>colors by Ian Herring</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test014wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test014wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a Narrenlieder : $b nach Shakespeare "Was ihr wollt" : für Violincello [sic] solo, [1996/1997] / $c Tilo Medek.</fake:marcfield>
+      <rdawd:titleOfWork.en>Narrenlieder</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test014exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test014wor"/>
+      <rdaed:identifierForExpression.en>245-test014exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test014man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test014exp"/>
+      <fake:marcfield>F245 10 $a Narrenlieder : $b nach Shakespeare "Was ihr wollt" : für Violincello [sic] solo, [1996/1997] / $c Tilo Medek.</fake:marcfield>
+      <rdamd:titleProper.en>Narrenlieder</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>nach Shakespeare "Was ihr wollt"</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>für Violincello solo, [1996/1997]</rdamd:otherTitleInformation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Tilo Medek</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test015wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test015wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a Stony brook sounding[s]. $n Vol. 1.</fake:marcfield>
+      <rdawd:titleOfWork.en>Stony brook sounding[s]. Vol. 1.</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test015exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test015wor"/>
+      <rdaed:identifierForExpression.en>245-test015exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test015man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test015exp"/>
+      <fake:marcfield>F245 10 $a Stony brook sounding[s]. $n Vol. 1.</fake:marcfield>
+      <rdamd:titleProper.en>Stony brook sounding[s]. Vol. 1.</rdamd:titleProper.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test016wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test016wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ... $h [electronic resource] $b Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
+      <rdawd:titleOfWork.en>Rhan o waith Mr. Rees Prichard ...</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test016exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test016wor"/>
+      <rdaed:identifierForExpression.en>245-test016exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test016man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test016exp"/>
+      <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ... $h [electronic resource] $b Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
+      <rdamd:titleProper.en>Rhan o waith Mr. Rees Prichard ...</rdamd:titleProper.en>
+      <rdamd:noteOnManifestation.en>Title proper [Rhan o waith Mr. Rees Prichard ..." is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+      <rdamd:otherTitleInformation.en>Some part of the works of Mr. Rees Prichard.</rdamd:otherTitleInformation.en>
+      <rdamd:noteOnManifestation.en>Other title information "Some part of the works of Mr. Rees Prichard." is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+      <rdamd:categoryOfManifestation.en>electronic resource</rdamd:categoryOfManifestation.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test017wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test017wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ...] =  $b [Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
+      <rdawd:titleOfWork.en>Rhan o waith Mr. Rees Prichard ...</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test017exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test017wor"/>
+      <rdaed:identifierForExpression.en>245-test017exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test017man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test017exp"/>
+      <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ...] =  $b [Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
+      <rdamd:titleProper.en>Rhan o waith Mr. Rees Prichard ...</rdamd:titleProper.en>
+      <rdamd:noteOnManifestation.en>Title proper "Rhan o waith Mr. Rees Prichard ..." is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+      <rdamd:otherTitleInformation.en>Some part of the works of Mr. Rees Prichard.</rdamd:otherTitleInformation.en>
+      <rdamd:noteOnManifestation.en>Other title information "Some part of the works of Mr. Rees Prichard." is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test018wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test018wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a [New paintings by Franz Kline :  $b opening ... December 4 to December 30, 1961 : at Sidney Janis 15 East 57 N Y].</fake:marcfield>
+      <rdawd:titleOfWork.en>New paintings by Franz Kline</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test018exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test018wor"/>
+      <rdaed:identifierForExpression.en>245-test018exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test018man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test018exp"/>
+      <fake:marcfield>F245 10 $a [New paintings by Franz Kline :  $b opening ... December 4 to December 30, 1961 : at Sidney Janis 15 East 57 N Y].</fake:marcfield>
+      <rdamd:titleProper.en>New paintings by Franz Kline</rdamd:titleProper.en>
+      <rdamd:noteOnManifestation.en>Title proper [New paintings by Franz Kline" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+      <rdamd:otherTitleInformation.en>opening ... December 4 to December 30, 1961</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>at Sidney Janis 15 East 57 N Y</rdamd:otherTitleInformation.en>
+      <rdamd:noteOnManifestation.en>Other title information "at Sidney Janis 15 East 57 N Y" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test019wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test019wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 00 $a Shakespeare lecture series. $p Hamlet : $b structure, speeches, and staging : [acts III-IV] / $c produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree.</fake:marcfield>
+      <rdawd:titleOfWork.en>Shakespeare lecture series. Hamlet</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test019exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test019wor"/>
+      <rdaed:identifierForExpression.en>245-test019exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test019man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test019exp"/>
+      <fake:marcfield>F245 00 $a Shakespeare lecture series. $p Hamlet : $b structure, speeches, and staging : [acts III-IV] / $c produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree.</fake:marcfield>
+      <rdamd:titleProper.en>Shakespeare lecture series. Hamlet</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>structure, speeches, and staging</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>acts III-IV</rdamd:otherTitleInformation.en>
+      <rdamd:noteOnManifestation.en>Other title information "acts III-IV" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>produced by Bill Wisneski</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>directed by Bill Wisneski and Chia Longtree</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test020wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
+      <rdawd:identifierForWork.en>245-test020wor</rdawd:identifierForWork.en>
+      <fake:marcfield>F245 10 $a Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</fake:marcfield>
+      <rdawd:titleOfWork.en>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdawd:titleOfWork.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test020exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
+      <rdaeo:workExpressed.en rdf:resource="http://marc2rda.edu/fake/245-test020wor"/>
+      <rdaed:identifierForExpression.en>245-test020exp</rdaed:identifierForExpression.en>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test020man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
+      <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test020exp"/>
+      <fake:marcfield>F245 10 $a Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</fake:marcfield>
+      <rdamd:titleProper.en>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdamd:titleProper.en>
+   </rdf:Description>
+</rdf:RDF>

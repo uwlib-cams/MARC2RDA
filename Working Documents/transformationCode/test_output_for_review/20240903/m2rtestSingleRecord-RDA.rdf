@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/1423078359wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>1423078359wor</rdawd:P10002>
+      <rdawo:P10436 rdf:resource="http://www.wikidata.org/entity/Q130014744"/>
+      <fake:marcfield>F245 10 $a Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia / $c Madison Marie Laughlin.</fake:marcfield>
+      <rdawd:P10088>Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia</rdawd:P10088>
+      <fake:marcfield>F502 ## $b M.S. $c University of Washington $d 2022</fake:marcfield>
+      <rdawd:P10077>M.S.</rdawd:P10077>
+      <rdawd:P10006>University of Washington</rdawd:P10006>
+      <rdawd:P10215>2022</rdawd:P10215>
+      <rdawd:P10209>M.S.; University of Washington; 2022</rdawd:P10209>
+      <fake:marcfield>F650 #0 $a Forest regeneration $z Cascades (Or. and Wash.)</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/forestregenerationcascadesorandwash"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/cascadesorandwash"/>
+      <fake:marcfield>F650 #0 $a Conifers $x Effect of fires on $z Cascades (Or. and Wash.)</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/coniferseffectoffiresoncascadesorandwash"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/effectoffiresoncascadesorandwash"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/cascadesorandwash"/>
+      <fake:marcfield>F650 #0 $a Conifers $x Regeneration $z Cascades (Or. and Wash.)</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/conifersregenerationcascadesorandwash"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/regenerationcascadesorandwash"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/cascadesorandwash"/>
+      <fake:marcfield>F653 0# $a Cascades</fake:marcfield>
+      <rdawd:P10256>Cascades</rdawd:P10256>
+      <fake:marcfield>F653 0# $a Conifer</fake:marcfield>
+      <rdawd:P10256>Conifer</rdawd:P10256>
+      <fake:marcfield>F653 0# $a Recovery</fake:marcfield>
+      <rdawd:P10256>Recovery</rdawd:P10256>
+      <fake:marcfield>F653 0# $a Regeneration</fake:marcfield>
+      <rdawd:P10256>Regeneration</rdawd:P10256>
+      <fake:marcfield>F653 0# $a Resilience</fake:marcfield>
+      <rdawd:P10256>Resilience</rdawd:P10256>
+      <fake:marcfield>F653 0# $a Wildfire</fake:marcfield>
+      <rdawd:P10256>Wildfire</rdawd:P10256>
+      <fake:marcfield>F653 0# $a Ecology</fake:marcfield>
+      <rdawd:P10256>Ecology</rdawd:P10256>
+      <fake:marcfield>F653 0# $a Forestry</fake:marcfield>
+      <rdawd:P10256>Forestry</rdawd:P10256>
+      <fake:marcfield>F655 #4 $a Theses $x Forestry.</fake:marcfield>
+      <rdawd:P10004>Theses -- Forestry.</rdawd:P10004>
+      <fake:marcfield>F655 #7 $a dissertations. $2 aat $0 (CStmoGRI)aatgf300028029</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/aat/dissertations"/>
+      <fake:marcfield>F655 #7 $a Academic theses. $2 lcgft</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/academictheses"/>
+      <fake:marcfield>F655 #7 $a Thèses et écrits académiques. $2 rvmgf $0 (CaQQLa)RVMGF-000001173</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/thèsesetécritsacadémiques"/>
+      <rdawo:P10041 rdf:resource="http://www.wikidata.org/entity/Q100701057"/>
+      <rdawo:P10041 rdf:resource="http://www.wikidata.org/entity/Q100701057"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/1423078359exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/1423078359wor"/>
+      <rdaed:P20002>1423078359exp</rdaed:P20002>
+      <fake:marcfield>F520 3# $a Tree regeneration is a critical mechanism of forest resilience to stand-replacing wildfire. Post-fire tree regeneration dynamics have been relatively well-studied in historically fire-frequent forests across western North America, though are understudied within forests characterized by infrequent and severe fire regimes like those of the western Cascades in Washington and Oregon, USA (western Cascadia). Recent wildfire activity (2015-2020) in western Cascadia has provided a unique opportunity to address this knowledge gap. Here, we asked: how is post-fire conifer regeneration across western Cascadia affected by pre-fire stand age, burn-patch size, and topo-climatic conditions? We established 39 1-hectare long-term monitoring plots across strata of pre-fire stand age and forest zone in four wildfires in western Cascadia. At each plot, we collected data on post-fire conifer species composition and abundance. We used generalized linear models to test how conifer establishment rates (seedlings ha-1yr-1 above 10 cm) and regeneration rates (seedlings ha-1yr-1 of all heights) responded to pre-fire stand age/seral stage, distance to the nearest live seed source, and post-fire topo-climatic conditions. Conifer regeneration rates and tree species richness increased with pre-fire stand age/seral stage, regeneration rates decreased with greater distances to the nearest live seed source but were present out to 450 m, and establishment rates were greater in areas characterized by cooler and wetter macrosite (e.g. greater post-fire precipitation) and microsite (e.g., greater bryophyte ground cover) conditions. In general, initial seedling densities suggest that post-fire regeneration is abundant following stand-replacing fire in most areas across the region. For example, regeneration and establishment rates were above forest practice minimum density thresholds (i.e., 470 seedlings per ha) in 82.1% and 64.1% of plots, respectively. Our study provides critical insight on the drivers of post-fire tree regeneration following stand-replacing wildfires in western Cascadia, and informs what factors are likely to support greater forest resilience to fire. Our findings can help inform land management strategies for post-fire responses which is of critical importance under the uncertainties of climate change and fire in infrequent, stand-replacing fire regimes.</fake:marcfield>
+      <rdaed:P20069>Abstract: Tree regeneration is a critical mechanism of forest resilience to stand-replacing wildfire. Post-fire tree regeneration dynamics have been relatively well-studied in historically fire-frequent forests across western North America, though are understudied within forests characterized by infrequent and severe fire regimes like those of the western Cascades in Washington and Oregon, USA (western Cascadia). Recent wildfire activity (2015-2020) in western Cascadia has provided a unique opportunity to address this knowledge gap. Here, we asked: how is post-fire conifer regeneration across western Cascadia affected by pre-fire stand age, burn-patch size, and topo-climatic conditions? We established 39 1-hectare long-term monitoring plots across strata of pre-fire stand age and forest zone in four wildfires in western Cascadia. At each plot, we collected data on post-fire conifer species composition and abundance. We used generalized linear models to test how conifer establishment rates (seedlings ha-1yr-1 above 10 cm) and regeneration rates (seedlings ha-1yr-1 of all heights) responded to pre-fire stand age/seral stage, distance to the nearest live seed source, and post-fire topo-climatic conditions. Conifer regeneration rates and tree species richness increased with pre-fire stand age/seral stage, regeneration rates decreased with greater distances to the nearest live seed source but were present out to 450 m, and establishment rates were greater in areas characterized by cooler and wetter macrosite (e.g. greater post-fire precipitation) and microsite (e.g., greater bryophyte ground cover) conditions. In general, initial seedling densities suggest that post-fire regeneration is abundant following stand-replacing fire in most areas across the region. For example, regeneration and establishment rates were above forest practice minimum density thresholds (i.e., 470 seedlings per ha) in 82.1% and 64.1% of plots, respectively. Our study provides critical insight on the drivers of post-fire tree regeneration following stand-replacing wildfires in western Cascadia, and informs what factors are likely to support greater forest resilience to fire. Our findings can help inform land management strategies for post-fire responses which is of critical importance under the uncertainties of climate change and fire in infrequent, stand-replacing fire regimes.</rdaed:P20069>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/1423078359man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/1423078359exp"/>
+      <fake:marcfield>F024 7# $a 1773/49682 $2 hdl</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e30"/>
+      <fake:marcfield>F245 10 $a Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia / $c Madison Marie Laughlin.</fake:marcfield>
+      <rdamd:P30156>Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia</rdamd:P30156>
+      <rdamd:P30105>Madison Marie Laughlin.</rdamd:P30105>
+      <fake:marcfield>F264 #1 $a [Seattle] : $b [University of Washington Libraries], $c [2022]</fake:marcfield>
+      <rdamd:P30111>[Seattle] : [University of Washington Libraries], [2022]</rdamd:P30111>
+      <rdamd:P30088>Seattle</rdamd:P30088>
+      <rdamd:P30176>University of Washington Libraries</rdamd:P30176>
+      <rdamd:P30011>2022</rdamd:P30011>
+      <fake:marcfield>F264 #4 $c ©2022</fake:marcfield>
+      <rdamd:P30137>Copyright notice date: ©2022.</rdamd:P30137>
+      <rdamd:P30007>2022</rdamd:P30007>
+      <fake:marcfield>F337 ## $a computer $b c $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/>
+      <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
+      <fake:marcfield>F340 ## $g monochrome $2 rdacc</fake:marcfield>
+      <rdam:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1002"/>
+      <fake:marcfield>F340 ## $g black and white</fake:marcfield>
+      <rdamd:P30456>black and white</rdamd:P30456>
+      <fake:marcfield>F340 ## $g polychrome $2 rdacc</fake:marcfield>
+      <rdam:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+      <fake:marcfield>F340 ## $g color</fake:marcfield>
+      <rdamd:P30456>color</rdamd:P30456>
+      <fake:marcfield>F340 ## $p illustration $2 rdaill</fake:marcfield>
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
+      <fake:marcfield>F340 ## $p map $2 rdaill</fake:marcfield>
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1008"/>
+      <fake:marcfield>F347 ## $a text file $2 rdaft</fake:marcfield>
+      <rdam:P30018 rdf:resource="http://rdaregistry.info/termList/fileType/1002"/>
+      <fake:marcfield>F347 ## $b PDF</fake:marcfield>
+      <rdamd:P30096>PDF</rdamd:P30096>
+      <fake:marcfield>F504 ## $a Includes bibliographical references (pages 37-43).</fake:marcfield>
+      <rdamd:P30455>Includes bibliographical references (pages 37-43).</rdamd:P30455>
+      <fake:marcfield>F588 0# $a Online resource; title from PDF title page (ResearchWorks Archive, viewed February 23, 2024).</fake:marcfield>
+      <rdamd:P30137>Source of description: Online resource; title from PDF title page (ResearchWorks Archive, viewed February 23, 2024).</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e30">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1773/49682</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/hdl"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Cascades (Or. and Wash.)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Cascades (Or. and Wash.)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Cascades (Or. and Wash.)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://www.wikidata.org/entity/Q130014744">
+      <fake:marcfield>F100 1# $a Laughlin, Madison Marie, $e author. $1 http://www.wikidata.org/entity/Q130014744</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Laughlin, Madison Marie</rdaad:P50377>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://www.wikidata.org/entity/Q100701057">
+      <fake:marcfield>F700 1# $a Harvey, Brian J., $d 1981- $e degree supervisor. $1 http://www.wikidata.org/entity/Q100701057</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Harvey, Brian J., 1981-</rdaad:P50377>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/forestregenerationcascadesorandwash">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Forest regeneration -- Cascades (Or. and Wash.)</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/coniferseffectoffiresoncascadesorandwash">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Conifers -- Effect of fires on -- Cascades (Or. and Wash.)</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/effectoffiresoncascadesorandwash">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Effect of fires on -- Cascades (Or. and Wash.)</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/conifersregenerationcascadesorandwash">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Conifers -- Regeneration -- Cascades (Or. and Wash.)</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/regenerationcascadesorandwash">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Regeneration -- Cascades (Or. and Wash.)</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/dissertations">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>dissertations.</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/academictheses">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Academic theses.</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvmgf/thèsesetécritsacadémiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Thèses et écrits académiques.</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/cascadesorandwash">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/cascadesorandwash">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/cascadesorandwash">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash"/>
+   </rdf:Description>
+</rdf:RDF>

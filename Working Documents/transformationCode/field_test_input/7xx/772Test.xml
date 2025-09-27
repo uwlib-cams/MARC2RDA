@@ -1,0 +1,20 @@
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <marc:record>
+    <marc:leader>11111nam a2200553ui 4500</marc:leader>
+    <marc:controlfield tag="001">772-test</marc:controlfield>
+
+    <!-- 772 without $5: should produce rdam:P30137 -->
+    <marc:datafield tag="772" ind1="0" ind2=" ">
+      <marc:subfield code="6">880-00</marc:subfield>
+      <marc:subfield code="t">World agricultural situation (Washington, D.C. : 1970)</marc:subfield>
+      <marc:subfield code="x">0084-1358</marc:subfield>
+      <marc:subfield code="w">(DLC)sf#81008035#</marc:subfield>
+      <marc:subfield code="g">1982-</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1="0" ind2=" ">
+      <marc:subfield code="6">772-00</marc:subfield>
+      <marc:subfield code="a">Test 880</marc:subfield>
+    </marc:datafield>
+    
+  </marc:record>
+</marc:collection>

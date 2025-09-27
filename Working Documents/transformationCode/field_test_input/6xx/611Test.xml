@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">611-test1</marc:controlfield> 
+        
+        <marc:datafield tag="611" ind1="2" ind2="0">
+            <marc:subfield code="a">Olympic Games</marc:subfield>
+            <marc:subfield code="n">(23rd :</marc:subfield>
+            <marc:subfield code="d">1984 :</marc:subfield>
+            <marc:subfield code="c">Los Angeles, Calif.)</marc:subfield>
+            <marc:subfield code="v">Periodicals.</marc:subfield>
+        </marc:datafield>
+       
+       <marc:datafield tag="611" ind1="2" ind2="0">
+           <marc:subfield code="a">Vatican Council</marc:subfield>
+           <marc:subfield code="n">(2nd :</marc:subfield>
+           <marc:subfield code="d">1962-1965).</marc:subfield>
+           <marc:subfield code="t">Decretum de presbyterorum ministerio et vita.</marc:subfield>
+       </marc:datafield>
+        
+        <!-- 880s -->
+        <marc:datafield tag="880" ind1="2" ind2="0">
+            <marc:subfield code="6">611-00</marc:subfield>
+            <marc:subfield code="a">Tour de France (Bicycle race)</marc:subfield>
+            <marc:subfield code="x">History</marc:subfield>
+        </marc:datafield>
+        
+    </marc:record>
+</marc:collection>

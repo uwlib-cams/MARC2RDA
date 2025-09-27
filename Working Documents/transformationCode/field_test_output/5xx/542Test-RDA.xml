@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/542-testwor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>542-testwor</rdawd:P10002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/542-testexp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/542-testwor"/>
+      <rdaed:P20002>542-testexp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/542-testman">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/542-testexp"/>
+      <fake:marcfield>F542 1# $a test a $b test b $c test c $d test d $e test e $f Copyright 1895 $g 1895 $h test h $i test i $j test j $k London, Macmillan $l Public domain $m test m $n test n $o 20061201175546 $p GB  $q Internet Archive, California $r US $s Evidence reported by scanner-scott-cairns for item lettersofmaththew01arnouoft; visible notice of copyright; stated date is 1895 $u test u</fake:marcfield>
+      <rdamd:P30137>Personal creator: test a; Personal creator death date: test b; Corporate creator: test c; Copyright holder: test d; Copyright holder contact information: test e; Copyright statement: Copyright 1895; Copyright date: 1895; Copyright renewal date: test h; Publication date: test i; Creation date: test j; Publisher: London, Macmillan; Copyright status: Public domain; Publication status: test m; Note: test n; Research date: 20061201175546; Country of publication or creation: GB ; Supplying agency: Internet Archive, California; Jurisdiction of copyright assessment: US; Source of information: Evidence reported by scanner-scott-cairns for item lettersofmaththew01arnouoft; visible notice of copyright; stated date is 1895; Uniform Resource Identifier: test u</rdamd:P30137>
+      <rdamd:P30141>Copyright holder contact information: test e</rdamd:P30141>
+      <rdamd:P30280>Copyright 1895</rdamd:P30280>
+      <rdamd:P30007>1895</rdamd:P30007>
+      <rdamd:P30011>test i</rdamd:P30011>
+      <rdamd:P30009>test j</rdamd:P30009>
+      <rdamd:P30279>GB </rdamd:P30279>
+      <fake:marcfield>F542 0# $c Decca $d Decca $g 2000 $k undetermined $l undetermined $o 20061213 $r US $3 Performance</fake:marcfield>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/metaWor/d20e48"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/metaWor/d20e48">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>MetaWor/d20e48</rdawd:P10002>
+      <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+      <rdf:subject rdf:resource="http://marc2rda.edu/fake/542-testman"/>
+      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/m/datatype/p30137"/>
+      <rdf:object>Corporate creator: Decca; Copyright holder: Decca; Copyright date: 2000; Publisher: undetermined; Copyright status: undetermined; Research date: 20061213; Jurisdiction of copyright assessment: US (Applies to: Performance)</rdf:object>
+      <rdawd:P10004>Private</rdawd:P10004>
+   </rdf:Description>
+</rdf:RDF>

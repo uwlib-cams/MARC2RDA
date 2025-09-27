@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">351-test</marc:controlfield>
+        
+        <marc:datafield tag="351" ind1=" " ind2=" ">
+            <marc:subfield code="c">test c</marc:subfield>
+            <marc:subfield code="a">test a</marc:subfield>
+            <marc:subfield code="c">test c</marc:subfield>
+            <marc:subfield code="a">test a</marc:subfield>
+            <marc:subfield code="b">test b</marc:subfield>
+            <marc:subfield code="3">test 3</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="351" ind1=" " ind2=" ">
+            <marc:subfield code="a">Fixed-length, nonhierarchical</marc:subfield>
+            <marc:subfield code="b">Month by carrier code and flight number</marc:subfield>
+            <marc:subfield code="3">Permits for fishery operations, 1914-24</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">351-01</marc:subfield>
+            <marc:subfield code="b">test 880</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="351" ind1=" " ind2=" ">
+            <marc:subfield code="9">ORGANIZATION AND ARRANGEMENT OF MATERIALS (R) </marc:subfield>
+            <marc:subfield code="a">Organization (R) </marc:subfield>
+            <marc:subfield code="a">Organization (R) </marc:subfield>
+            <marc:subfield code="b">Arrangement (R) </marc:subfield>
+            <marc:subfield code="b">Arrangement (R) </marc:subfield>
+            <marc:subfield code="c">Hierarchical level (NR) </marc:subfield>
+            <marc:subfield code="c">Hierarchical level (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

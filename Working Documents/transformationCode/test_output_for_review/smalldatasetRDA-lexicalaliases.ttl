@@ -1,0 +1,718 @@
+@prefix ex: <http://fakeIRI2.edu/> .
+@prefix fake: <http://fakePropertiesForDemo> .
+@prefix rdaad: <http://rdaregistry.info/Elements/a/datatype/> .
+@prefix rdaao: <http://rdaregistry.info/Elements/a/object/> .
+@prefix rdaed: <http://rdaregistry.info/Elements/e/datatype/> .
+@prefix rdaeo: <http://rdaregistry.info/Elements/e/object/> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
+@prefix rdaid: <http://rdaregistry.info/Elements/i/datatype/> .
+@prefix rdaio: <http://rdaregistry.info/Elements/i/object/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdamd: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdamo: <http://rdaregistry.info/Elements/m/object/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdand: <http://rdaregistry.info/Elements/n/datatype/> .
+@prefix rdano: <http://rdaregistry.info/Elements/n/object/> .
+@prefix rdawd: <http://rdaregistry.info/Elements/w/datatype/> .
+@prefix rdawo: <http://rdaregistry.info/Elements/w/object/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ex:1349350316ited17e1739 a <http://rdaregistry.info/Elements/c/Item.en> ;
+    fake:marcfield "F074 ## $a 0497-D-01 (online)" ;
+    rdaid:identifierForItem.en "ited17e1739" ;
+    rdaio:identifierForItem.en <http://marc2rda.edu/fake/nom/d17e1740> ;
+    rdaio:manifestationExemplified.en ex:1349350316man .
+
+ex:1400208651ited17e120 a <http://rdaregistry.info/Elements/c/Item.en> ;
+    fake:marcfield "F506 1# $a Restrict to UW for 2 years -- then make Open Access $g 20240912" ;
+    rdaid:identifierForItem.en "ited17e120" ;
+    rdaid:restrictionOnAccessToItem.en "Restrictions apply: Terms governing access: Restrict to UW for 2 years -- then make Open Access; Availability date: 20240912" ;
+    rdaio:manifestationExemplified.en ex:1400208651man .
+
+ex:989789790ited17e2217 a <http://rdaregistry.info/Elements/c/Item.en> ;
+    fake:marcfield "F506 ## $3 Use copy $f Restrictions unspecified $2 star $5 MiAaHDL" ;
+    rdaid:identifierForItem.en "ited17e2217" ;
+    rdaid:noteOnItem.en "Restriction on access http://marc2rda.edu/fake/concept/star/restrictionsunspecified applies to " ;
+    rdaid:restrictionOnAccessToItem.en " (Applies to: Use copy)" ;
+    rdaio:holdingOf.en <http://marc2rda.edu/fake/colMan/miaahdl> ;
+    rdaio:manifestationExemplified.en ex:989789790man ;
+    rdai:restrictionOnAccessToItem.en <http://marc2rda.edu/fake/concept/star/restrictionsunspecified> .
+
+ex:989789790ited17e2238 a <http://rdaregistry.info/Elements/c/Item.en> ;
+    fake:marcfield "F538 ## $a Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. $u http://purl.oclc.org/DLF/benchrepro0212 $5 MiAaHDL" ;
+    rdaid:identifierForItem.en "ited17e2238" ;
+    rdaid:noteOnItem.en "Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.; http://purl.oclc.org/DLF/benchrepro0212" ;
+    rdaio:holdingOf.en <http://marc2rda.edu/fake/colMan/miaahdl> ;
+    rdaio:manifestationExemplified.en ex:989789790man .
+
+ex:989789790ited17e2245 a <http://rdaregistry.info/Elements/c/Item.en> ;
+    fake:marcfield "F583 1# $a digitized $c 2024. $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL" ;
+    rdaid:identifierForItem.en "ited17e2245" ;
+    rdaid:noteOnItem.en "Action: digitized; Time/date of action: 2024.; Jurisdiction: HathiTrust Digital Library; Status: committed to preserve; Source of term: pda" ;
+    rdaio:holdingOf.en <http://marc2rda.edu/fake/colMan/miaahdl> ;
+    rdaio:manifestationExemplified.en ex:989789790man .
+
+<http://marc2rda.edu/agent/d17e1482> a <http://rdaregistry.info/Elements/c/Agent.en> ;
+    fake:marcfield "F100 1# $a Barnes, Elly, $d 1971- $e author." ;
+    rdaad:accessPointForPerson.en "Barnes, Elly, 1971-" ;
+    rdaao:authorPersonOf.en ex:1296117130wor .
+
+<http://marc2rda.edu/agent/d17e1660> a <http://rdaregistry.info/Elements/c/Agent.en> ;
+    fake:marcfield "F700 1# $a Stowell, Louie, $e author." ;
+    rdaad:accessPointForPerson.en "Stowell, Louie" ;
+    rdaao:authorPersonOf.en ex:1296117130wor .
+
+<http://marc2rda.edu/agent/d17e1665> a <http://rdaregistry.info/Elements/c/Agent.en> ;
+    fake:marcfield "F700 1# $a Phelps, Amy, $e illustrator." ;
+    rdaad:accessPointForPerson.en "Phelps, Amy" ;
+    rdaao:contributorPersonOfStillImageOf.en ex:1296117130man .
+
+<http://marc2rda.edu/agent/d17e1931> a "" ;
+    fake:marcfield "F710 1# $a United States. $b Substance Abuse and Mental Health Services Administration, $e issuing body." ;
+    rdaad:accessPointForCorporateBody.en "United States. Substance Abuse and Mental Health Services Administration" ;
+    rdaao:issuingCorporateBodyOf.en ex:1349350316wor .
+
+<http://marc2rda.edu/agent/nom/d17e1071> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Willey, Angela, 1978-" ;
+    rdano:authorizedAccessPointForPersonOf.en <http://www.wikidata.org/entity/Q57179709> .
+
+<http://marc2rda.edu/agent/nom/d17e1838> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "United States." ;
+    rdano:authorizedAccessPointForCorporateBodyOf.en <http://marc2rda.edu/agent/d17e1838> .
+
+<http://marc2rda.edu/agent/nom/d17e2147> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Short, Donn" ;
+    rdano:authorizedAccessPointForPersonOf.en <https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3> .
+
+<http://marc2rda.edu/agent/nom/d17e244> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Ginorio, Angela B." ;
+    rdano:authorizedAccessPointForPersonOf.en <http://www.wikidata.org/entity/Q107956183> .
+
+<http://marc2rda.edu/agent/nom/d17e2748> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Short, Donn" ;
+    rdano:authorizedAccessPointForPersonOf.en <https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3> .
+
+<http://marc2rda.edu/agent/nom/d17e48> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Ramirez Arreola, Maria Elizabeth" ;
+    rdano:authorizedAccessPointForPersonOf.en <https://orcid.org/0009-0002-6426-7532> .
+
+<http://marc2rda.edu/agent/nom/d17e509> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Willey, Angela, 1978-" ;
+    rdano:authorizedAccessPointForPersonOf.en <https://id.oclc.org/worldcat/entity/E39PBJfh8qkpKYQ6cBkFFQdRKd> .
+
+<http://marc2rda.edu/fake/concept/star/restrictionsunspecified> a "" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/accessrestrictionterm/star> ;
+    skos:prefLabel "Restrictions unspecified" .
+
+<http://marc2rda.edu/fake/nom/d17e1020> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780822361404" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdano:identifierForManifestationOf.en ex:915120389man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e1025> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "082236140X" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdano:identifierForManifestationOf.en ex:915120389man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e1030> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780822361596" ;
+    rdand:noteOnNomen.en "paperback" ;
+    rdano:identifierForManifestationOf.en ex:915120389man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e1036> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0822361590" ;
+    rdand:noteOnNomen.en "paperback" ;
+    rdano:identifierForManifestationOf.en ex:915120389man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e1041> rdand:nomenString.en "9780822374213" ;
+    rdand:noteOnNomen.en "e-book" ;
+    rdano:identifierForManifestationOf.en ex:915120389man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e1046> rdand:nomenString.en "0822374218" ;
+    rdand:noteOnNomen.en "e-book" ;
+    rdano:identifierForManifestationOf.en ex:915120389man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e1051> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "10.1515/9780822374213" ;
+    rdano:relatedManifestationOfNomen.en ex:915120389man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/doi> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e1443> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780744063172" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdano:identifierForManifestationOf.en ex:1296117130man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e1448> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0744063175" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdano:identifierForManifestationOf.en ex:1296117130man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e1454> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780241572542" ;
+    rdand:noteOnNomen.en "hardback" ;
+    rdano:identifierForManifestationOf.en ex:1296117130man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e1459> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0241572541" ;
+    rdand:noteOnNomen.en "hardback" ;
+    rdano:identifierForManifestationOf.en ex:1296117130man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e1464> rdand:nomenString.en "9780241596975(ebook)" ;
+    rdano:identifierForManifestationOf.en ex:1296117130man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e1740> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:categoryOfNomen.en "GPO item number" ;
+    rdand:nomenString.en "0497-D-01 (online)" ;
+    rdano:identifierForItemOf.en ex:1349350316ited17e1739 .
+
+<http://marc2rda.edu/fake/nom/d17e2050> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780774890229" ;
+    rdand:noteOnNomen.en "PDF" ;
+    rdano:identifierForManifestationOf.en ex:989789790man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e2056> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780774890236" ;
+    rdand:noteOnNomen.en "EPUB" ;
+    rdano:identifierForManifestationOf.en ex:989789790man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e2061> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780774890243" ;
+    rdand:noteOnNomen.en "Kindle" ;
+    rdano:identifierForManifestationOf.en ex:989789790man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e2066> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0774890223" ;
+    rdand:noteOnNomen.en "electronic bk." ;
+    rdano:identifierForManifestationOf.en ex:989789790man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e2071> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0774890231" ;
+    rdand:noteOnNomen.en "electronic bk." ;
+    rdano:identifierForManifestationOf.en ex:989789790man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e2076> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "077489024X" ;
+    rdand:noteOnNomen.en "electronic bk." ;
+    rdano:identifierForManifestationOf.en ex:989789790man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e2081> rdand:nomenString.en "9780774890205" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdano:identifierForManifestationOf.en ex:989789790man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e2086> rdand:nomenString.en "0774890207" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdano:identifierForManifestationOf.en ex:989789790man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e2091> rdand:nomenString.en "9780774890212" ;
+    rdand:noteOnNomen.en "softcover" ;
+    rdano:identifierForManifestationOf.en ex:989789790man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e2096> rdand:nomenString.en "0774890215" ;
+    rdand:noteOnNomen.en "softcover" ;
+    rdano:identifierForManifestationOf.en ex:989789790man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e2676> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780774890205" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdano:identifierForManifestationOf.en ex:989789649man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e2682> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0774890207" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdano:identifierForManifestationOf.en ex:989789649man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e2687> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780774890212" ;
+    rdand:noteOnNomen.en "softcover" ;
+    rdano:identifierForManifestationOf.en ex:989789649man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e2692> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0774890215" ;
+    rdand:noteOnNomen.en "softcover" ;
+    rdano:identifierForManifestationOf.en ex:989789649man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e2697> rdand:nomenString.en "9780774890229" ;
+    rdand:noteOnNomen.en "PDF" ;
+    rdano:identifierForManifestationOf.en ex:989789649man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e2702> rdand:nomenString.en "9780774890236" ;
+    rdand:noteOnNomen.en "EPUB" ;
+    rdano:identifierForManifestationOf.en ex:989789649man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e2707> rdand:nomenString.en "9780774890243" ;
+    rdand:noteOnNomen.en "Kindle" ;
+    rdano:identifierForManifestationOf.en ex:989789649man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e38> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "1773/49194" ;
+    rdano:relatedManifestationOfNomen.en ex:1400208651man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/hdl> .
+
+<http://marc2rda.edu/fake/nom/d17e408> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780822374213" ;
+    rdand:noteOnNomen.en "electronic book" ;
+    rdano:identifierForManifestationOf.en ex:945006014man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e413> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0822374218" ;
+    rdand:noteOnNomen.en "electronic book" ;
+    rdano:identifierForManifestationOf.en ex:945006014man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d17e418> rdand:nomenString.en "9780822361404" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdano:identifierForManifestationOf.en ex:945006014man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e424> rdand:nomenString.en "082236140X" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdano:identifierForManifestationOf.en ex:945006014man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e429> rdand:nomenString.en "9780822361596" ;
+    rdand:noteOnNomen.en "paperback" ;
+    rdano:identifierForManifestationOf.en ex:945006014man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e434> rdand:nomenString.en "0822361590" ;
+    rdand:noteOnNomen.en "paperback" ;
+    rdano:identifierForManifestationOf.en ex:945006014man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d17e439> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "10.1515/9780822374213" ;
+    rdano:relatedManifestationOfNomen.en ex:945006014man ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/doi> .
+
+ex:1296117130exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "1296117130exp" ;
+    rdaeo:manifestationOfExpression.en ex:1296117130man ;
+    rdaeo:workExpressed.en ex:1296117130wor .
+
+ex:1349350316exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "1349350316exp" ;
+    rdaeo:manifestationOfExpression.en ex:1349350316man ;
+    rdaeo:workExpressed.en ex:1349350316wor .
+
+ex:1349350316man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F245 00 $a Affordable Care Act enrollment assistance for LGBT communities : $b a resource for behavioral health providers.",
+        "F264 #1 $a [Rockville, Maryland] : $b Substance Abuse and Mental Health Services Administration, $c 2014.",
+        "F337 ## $a computer $b c $2 rdamedia",
+        "F338 ## $a online resource $b cr $2 rdacarrier",
+        "F340 ## $g black and white",
+        "F340 ## $g color",
+        "F340 ## $g monochrome $2 rdacc",
+        "F340 ## $g polychrome $2 rdacc",
+        "F340 ## $p illustration $2 rdaill",
+        "F500 ## $a \"First printed in 2014\"--Back cover.",
+        "F500 ## $a \"PEP14-LGBTACAENROLL\"--Back cover.",
+        "F504 ## $a Includes bibliographical references.",
+        "F588 ## $a Description based on online resource, PDF version; title from cover (SAMHSA, viewed October 26, 2022)." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr> ;
+    rdam:colourContent.en <http://rdaregistry.info/termList/RDAColourContent/1002>,
+        <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    rdamd:colourContent.en "black and white",
+        "color" ;
+    rdamd:dateOfPublication.en "2014" ;
+    rdamd:nameOfPublisher.en "Substance Abuse and Mental Health Services Administration" ;
+    rdamd:noteOnManifestation.en "\"First printed in 2014\"--Back cover.",
+        "\"PEP14-LGBTACAENROLL\"--Back cover.",
+        "Description based on online resource, PDF version; title from cover (SAMHSA, viewed October 26, 2022)." ;
+    rdamd:otherTitleInformation.en "a resource for behavioral health providers" ;
+    rdamd:placeOfPublication.en "[Rockville, Maryland]" ;
+    rdamd:publicationStatement.en "[Rockville, Maryland] : Substance Abuse and Mental Health Services Administration, 2014." ;
+    rdamd:supplementaryContent.en "Includes bibliographical references." ;
+    rdamd:titleOfManifestation.en "Affordable Care Act enrollment assistance for LGBT communities" ;
+    rdamd:titleProper.en "Affordable Care Act enrollment assistance for LGBT communities" ;
+    rdam:illustrativeContent.en <http://rdaregistry.info/termList/IllusContent/1014> ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdamo:expressionManifested.en ex:1349350316exp .
+
+ex:1400208651exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "1400208651exp" ;
+    rdaeo:manifestationOfExpression.en ex:1400208651man ;
+    rdaeo:workExpressed.en ex:1400208651wor .
+
+ex:915120389exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "915120389exp" ;
+    rdaeo:manifestationOfExpression.en ex:915120389man ;
+    rdaeo:workExpressed.en ex:915120389wor .
+
+ex:915120389wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F245 10 $a Undoing monogamy : $b the politics of science and the possibilities of biology / $c Angela Willey." ;
+    rdawd:identifierForWork.en "915120389wor" ;
+    rdawd:titleOfWork.en "Undoing monogamy" ;
+    rdawo:authorPerson.en <http://www.wikidata.org/entity/Q57179709> ;
+    rdawo:expressionOfWork.en ex:915120389exp .
+
+ex:945006014exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "945006014exp" ;
+    rdaeo:manifestationOfExpression.en ex:945006014man ;
+    rdaeo:workExpressed.en ex:945006014wor .
+
+ex:945006014wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F245 10 $a Undoing monogamy : $b the politics of science and the possibilities of biology / $c Angela Willey." ;
+    rdawd:identifierForWork.en "945006014wor" ;
+    rdawd:titleOfWork.en "Undoing monogamy" ;
+    rdawo:authorPerson.en <https://id.oclc.org/worldcat/entity/E39PBJfh8qkpKYQ6cBkFFQdRKd> ;
+    rdawo:expressionOfWork.en ex:945006014exp .
+
+ex:989789649exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "989789649exp" ;
+    rdaeo:manifestationOfExpression.en ex:989789649man ;
+    rdaeo:workExpressed.en ex:989789649wor .
+
+ex:989789649wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F043 ## $a n-cn---",
+        "F245 10 $a Am I safe here? : $b LGBTQ teens and bullying in schools / $c Donn Short." ;
+    rdawd:identifierForWork.en "989789649wor" ;
+    rdawd:subjectPlace.en "n-cn"^^<http://id.loc.gov/vocabulary/geographicAreas> ;
+    rdawd:titleOfWork.en "Am I safe here?" ;
+    rdawo:authorPerson.en <https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3> ;
+    rdawo:expressionOfWork.en ex:989789649exp .
+
+ex:989789790exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "989789790exp" ;
+    rdaeo:manifestationOfExpression.en ex:989789790man ;
+    rdaeo:workExpressed.en ex:989789790wor .
+
+ex:989789790wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F043 ## $a n-cn---",
+        "F245 10 $a Am I safe here? : $b LGBTQ teens and bullying in schools / $c Donn Short." ;
+    rdawd:identifierForWork.en "989789790wor" ;
+    rdawd:subjectPlace.en "n-cn"^^<http://id.loc.gov/vocabulary/geographicAreas> ;
+    rdawd:titleOfWork.en "Am I safe here?" ;
+    rdawo:authorPerson.en <https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3> ;
+    rdawo:expressionOfWork.en ex:989789790exp .
+
+<http://marc2rda.edu/agent/d17e1838> a "" ;
+    fake:marcfield "F610 10 $a United States. $t Patient Protection and Affordable Care Act." ;
+    rdaao:authorizedAccessPointForCorporateBody.en <http://marc2rda.edu/agent/nom/d17e1838> ;
+    rdaao:subjectCorporateBodyOf.en ex:1349350316wor .
+
+<http://www.wikidata.org/entity/Q107956183> a <http://rdaregistry.info/Elements/c/Agent.en> ;
+    fake:marcfield "F700 1# $a Ginorio, Angela B., $e degree supervisor. $1 http://www.wikidata.org/entity/Q107956183 $1 http://viaf.org/viaf/70643896" ;
+    rdaao:authorizedAccessPointForPerson.en <http://marc2rda.edu/agent/nom/d17e244> ;
+    rdaao:degreeSupervisorOf.en ex:1400208651wor .
+
+<http://www.wikidata.org/entity/Q57179709> a <http://rdaregistry.info/Elements/c/Agent.en> ;
+    fake:marcfield "F100 1# $a Willey, Angela, $d 1978- $e author. $1 http://www.wikidata.org/entity/Q57179709" ;
+    rdaao:authorPersonOf.en ex:915120389wor ;
+    rdaao:authorizedAccessPointForPerson.en <http://marc2rda.edu/agent/nom/d17e1071> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfh8qkpKYQ6cBkFFQdRKd> a <http://rdaregistry.info/Elements/c/Agent.en> ;
+    fake:marcfield "F100 1# $a Willey, Angela, $d 1978- $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJfh8qkpKYQ6cBkFFQdRKd" ;
+    rdaao:authorPersonOf.en ex:945006014wor ;
+    rdaao:authorizedAccessPointForPerson.en <http://marc2rda.edu/agent/nom/d17e509> .
+
+<https://orcid.org/0009-0002-6426-7532> a <http://rdaregistry.info/Elements/c/Agent.en> ;
+    fake:marcfield "F100 1# $a Ramirez Arreola, Maria Elizabeth, $e author. $1 https://orcid.org/0009-0002-6426-7532 $1 http://www.wikidata.org/entity/Q127550946" ;
+    rdaao:authorPersonOf.en ex:1400208651wor ;
+    rdaao:authorizedAccessPointForPerson.en <http://marc2rda.edu/agent/nom/d17e48> .
+
+ex:1296117130wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F245 10 $a ABC pride / $c written by Dr Elly Barnes MBE and Louie Stowell ; illustrations by Amy Phelps." ;
+    rdawd:identifierForWork.en "1296117130wor" ;
+    rdawd:titleOfWork.en "ABC pride" ;
+    rdawo:authorPerson.en <http://marc2rda.edu/agent/d17e1482>,
+        <http://marc2rda.edu/agent/d17e1660> ;
+    rdawo:expressionOfWork.en ex:1296117130exp .
+
+ex:1349350316wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F043 ## $a n-us---",
+        "F245 00 $a Affordable Care Act enrollment assistance for LGBT communities : $b a resource for behavioral health providers." ;
+    rdawd:identifierForWork.en "1349350316wor" ;
+    rdawd:subjectPlace.en "n-us"^^<http://id.loc.gov/vocabulary/geographicAreas> ;
+    rdawd:titleOfWork.en "Affordable Care Act enrollment assistance for LGBT communities" ;
+    rdawo:expressionOfWork.en ex:1349350316exp ;
+    rdawo:issuingCorporateBody.en <http://marc2rda.edu/agent/d17e1931> ;
+    rdawo:subjectCorporateBody.en <http://marc2rda.edu/agent/d17e1838> .
+
+ex:1400208651man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F024 7# $a 1773/49194 $2 hdl",
+        "F245 10 $a Quieren mi labor más no mi intelecto : $b they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system / $c Maria Elizabeth Ramirez Arreola.",
+        "F264 #1 $a [Seattle] : $b [University of Washington Libraries], $c [2022]",
+        "F264 #4 $c ©2022",
+        "F337 ## $a computer $b c $2 rdamedia",
+        "F338 ## $a online resource $b cr $2 rdacarrier",
+        "F504 ## $a Includes bibliographical references (pages 107-116).",
+        "F506 1# $a Restrict to UW for 2 years -- then make Open Access $g 20240912",
+        "F588 0# $a Online resource; title from PDF title page (ResearchWorks Archive, viewed September 28, 2023)." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr> ;
+    rdamd:dateOfPublication.en "[2022]" ;
+    rdamd:manifestationCopyrightStatement.en "©2022" ;
+    rdamd:nameOfPublisher.en "[University of Washington Libraries]" ;
+    rdamd:noteOnManifestation.en "Source of description: Online resource; title from PDF title page (ResearchWorks Archive, viewed September 28, 2023)." ;
+    rdamd:otherTitleInformation.en "they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system" ;
+    rdamd:placeOfPublication.en "[Seattle]" ;
+    rdamd:publicationStatement.en "[Seattle] : [University of Washington Libraries], [2022]" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Maria Elizabeth Ramirez Arreola" ;
+    rdamd:supplementaryContent.en "Includes bibliographical references (pages 107-116)." ;
+    rdamd:titleOfManifestation.en "Quieren mi labor más no mi intelecto" ;
+    rdamd:titleProper.en "Quieren mi labor más no mi intelecto" ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdamo:exemplarOfManifestation.en ex:1400208651ited17e120 ;
+    rdamo:expressionManifested.en ex:1400208651exp ;
+    rdamo:fingerprint.en <http://marc2rda.edu/fake/nom/d17e38> .
+
+ex:1400208651wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F245 10 $a Quieren mi labor más no mi intelecto : $b they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system / $c Maria Elizabeth Ramirez Arreola.",
+        "F502 ## $b Ph. D. $c University of Washington $d 2022" ;
+    rdawd:academicDegree.en "Ph. D." ;
+    rdawd:degreeGrantingInstitution.en "University of Washington" ;
+    rdawd:dissertationOrThesisInformation.en "Ph. D.; University of Washington; 2022" ;
+    rdawd:identifierForWork.en "1400208651wor" ;
+    rdawd:titleOfWork.en "Quieren mi labor más no mi intelecto" ;
+    rdawd:yearDegreeGranted.en "2022" ;
+    rdawo:authorPerson.en <https://orcid.org/0009-0002-6426-7532> ;
+    rdawo:degreeSupervisor.en <http://www.wikidata.org/entity/Q107956183> ;
+    rdawo:expressionOfWork.en ex:1400208651exp .
+
+<https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3> a <http://rdaregistry.info/Elements/c/Agent.en> ;
+    fake:marcfield "F100 1# $a Short, Donn, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3" ;
+    rdaao:authorPersonOf.en ex:989789649wor,
+        ex:989789790wor ;
+    rdaao:authorizedAccessPointForPerson.en <http://marc2rda.edu/agent/nom/d17e2147>,
+        <http://marc2rda.edu/agent/nom/d17e2748> .
+
+ex:1296117130man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F020 ## $a 0241572541 $q (hardback)",
+        "F020 ## $a 0744063175 $q (hardcover)",
+        "F020 ## $a 9780241572542 $q (hardback)",
+        "F020 ## $a 9780744063172 $q (hardcover)",
+        "F020 ## $z 9780241596975 (ebook)",
+        "F245 10 $a ABC pride / $c written by Dr Elly Barnes MBE and Louie Stowell ; illustrations by Amy Phelps.",
+        "F264 #1 $a New York, NY : $b DK Publishing, $c 2022.",
+        "F337 ## $a unmediated $b n $2 rdamedia",
+        "F338 ## $a volume $b nc $2 rdacarrier" ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/nc> ;
+    rdamd:dateOfPublication.en "2022" ;
+    rdamd:nameOfPublisher.en "DK Publishing" ;
+    rdamd:placeOfPublication.en "New York, NY" ;
+    rdamd:publicationStatement.en "New York, NY : DK Publishing, 2022." ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "written by Dr Elly Barnes MBE and Louie Stowell ; illustrations by Amy Phelps" ;
+    rdamd:titleOfManifestation.en "ABC pride" ;
+    rdamd:titleProper.en "ABC pride" ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    rdamo:contributorPersonOfStillImage.en <http://marc2rda.edu/agent/d17e1665> ;
+    rdamo:expressionManifested.en ex:1296117130exp ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d17e1443>,
+        <http://marc2rda.edu/fake/nom/d17e1448>,
+        <http://marc2rda.edu/fake/nom/d17e1454>,
+        <http://marc2rda.edu/fake/nom/d17e1459>,
+        <http://marc2rda.edu/fake/nom/d17e1464> .
+
+ex:915120389man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F020 ## $a 082236140X $q (hardcover)",
+        "F020 ## $a 0822361590 $q (paperback)",
+        "F020 ## $a 9780822361404 $q (hardcover)",
+        "F020 ## $a 9780822361596 $q (paperback)",
+        "F020 ## $z 0822374218 $q (e-book)",
+        "F020 ## $z 9780822374213 $q (e-book)",
+        "F024 7# $z 10.1515/9780822374213 $2 doi",
+        "F245 10 $a Undoing monogamy : $b the politics of science and the possibilities of biology / $c Angela Willey.",
+        "F264 #1 $a Durham : $b Duke University Press, $c 2016.",
+        "F264 #4 $c ©2016",
+        "F337 ## $a unmediated $b n $2 rdamedia",
+        "F338 ## $a volume $b nc $2 rdacarrier",
+        "F340 ## $g black and white",
+        "F340 ## $g monochrome $2 rdacc",
+        "F340 ## $p illustration $2 rdaill",
+        "F504 ## $a Includes bibliographical references (pages 147-190) and index." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/nc> ;
+    rdam:colourContent.en <http://rdaregistry.info/termList/RDAColourContent/1002> ;
+    rdamd:colourContent.en "black and white" ;
+    rdamd:dateOfPublication.en "2016" ;
+    rdamd:manifestationCopyrightStatement.en "©2016" ;
+    rdamd:nameOfPublisher.en "Duke University Press" ;
+    rdamd:otherTitleInformation.en "the politics of science and the possibilities of biology" ;
+    rdamd:placeOfPublication.en "Durham" ;
+    rdamd:publicationStatement.en "Durham : Duke University Press, 2016." ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Angela Willey" ;
+    rdamd:supplementaryContent.en "Includes bibliographical references (pages 147-190) and index." ;
+    rdamd:titleOfManifestation.en "Undoing monogamy" ;
+    rdamd:titleProper.en "Undoing monogamy" ;
+    rdam:illustrativeContent.en <http://rdaregistry.info/termList/IllusContent/1014> ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    rdamo:expressionManifested.en ex:915120389exp ;
+    rdamo:fingerprint.en <http://marc2rda.edu/fake/nom/d17e1051> ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d17e1020>,
+        <http://marc2rda.edu/fake/nom/d17e1025>,
+        <http://marc2rda.edu/fake/nom/d17e1030>,
+        <http://marc2rda.edu/fake/nom/d17e1036>,
+        <http://marc2rda.edu/fake/nom/d17e1041>,
+        <http://marc2rda.edu/fake/nom/d17e1046> .
+
+ex:945006014man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F020 ## $a 0822374218 $q (electronic book)",
+        "F020 ## $a 9780822374213 $q (electronic book)",
+        "F020 ## $z 082236140X $q (hardcover)",
+        "F020 ## $z 0822361590 $q (paperback)",
+        "F020 ## $z 9780822361404 $q (hardcover)",
+        "F020 ## $z 9780822361596 $q (paperback)",
+        "F024 7# $a 10.1515/9780822374213 $2 doi",
+        "F245 10 $a Undoing monogamy : $b the politics of science and the possibilities of biology / $c Angela Willey.",
+        "F264 #1 $a Durham : $b Duke University Press, $c [2016]",
+        "F264 #4 $c ©2016",
+        "F337 ## $a computer $b c $2 rdamedia",
+        "F338 ## $a online resource $b cr $2 rdacarrier",
+        "F340 ## $g black and white",
+        "F340 ## $g monochrome $2 rdacc",
+        "F340 ## $p illustration $2 rdaill",
+        "F504 ## $a Includes bibliographical references (pages 147-190) and index.",
+        "F588 0# $a Print version record." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr> ;
+    rdam:colourContent.en <http://rdaregistry.info/termList/RDAColourContent/1002> ;
+    rdamd:colourContent.en "black and white" ;
+    rdamd:dateOfPublication.en "[2016]" ;
+    rdamd:manifestationCopyrightStatement.en "©2016" ;
+    rdamd:nameOfPublisher.en "Duke University Press" ;
+    rdamd:noteOnManifestation.en "Source of description: Print version record." ;
+    rdamd:otherTitleInformation.en "the politics of science and the possibilities of biology" ;
+    rdamd:placeOfPublication.en "Durham" ;
+    rdamd:publicationStatement.en "Durham : Duke University Press, [2016]" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Angela Willey" ;
+    rdamd:supplementaryContent.en "Includes bibliographical references (pages 147-190) and index." ;
+    rdamd:titleOfManifestation.en "Undoing monogamy" ;
+    rdamd:titleProper.en "Undoing monogamy" ;
+    rdam:illustrativeContent.en <http://rdaregistry.info/termList/IllusContent/1014> ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdamo:expressionManifested.en ex:945006014exp ;
+    rdamo:fingerprint.en <http://marc2rda.edu/fake/nom/d17e439> ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d17e408>,
+        <http://marc2rda.edu/fake/nom/d17e413>,
+        <http://marc2rda.edu/fake/nom/d17e418>,
+        <http://marc2rda.edu/fake/nom/d17e424>,
+        <http://marc2rda.edu/fake/nom/d17e429>,
+        <http://marc2rda.edu/fake/nom/d17e434> .
+
+ex:989789649man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F020 ## $a 0774890207 $q (hardcover)",
+        "F020 ## $a 0774890215 $q (softcover)",
+        "F020 ## $a 9780774890205 $q (hardcover)",
+        "F020 ## $a 9780774890212 $q (softcover)",
+        "F020 ## $z 9780774890229 $q (PDF)",
+        "F020 ## $z 9780774890236 $q (EPUB)",
+        "F020 ## $z 9780774890243 $q (Kindle)",
+        "F245 10 $a Am I safe here? : $b LGBTQ teens and bullying in schools / $c Donn Short.",
+        "F264 #1 $a Vancouver ; $a Toronto : $b On Point Press, a UBC Press imprint, $c [2017]",
+        "F264 #4 $c ©2017",
+        "F337 ## $a unmediated $b n $2 rdamedia",
+        "F338 ## $a volume $b nc $2 rdacarrier",
+        "F504 ## $a Includes bibliographical references." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/nc> ;
+    rdamd:dateOfPublication.en "[2017]" ;
+    rdamd:manifestationCopyrightStatement.en "©2017" ;
+    rdamd:nameOfPublisher.en "On Point Press, a UBC Press imprint" ;
+    rdamd:otherTitleInformation.en "LGBTQ teens and bullying in schools" ;
+    rdamd:placeOfPublication.en "Toronto",
+        "Vancouver" ;
+    rdamd:publicationStatement.en "Vancouver ; Toronto : On Point Press, a UBC Press imprint, [2017]" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Donn Short" ;
+    rdamd:supplementaryContent.en "Includes bibliographical references." ;
+    rdamd:titleOfManifestation.en "Am I safe here?" ;
+    rdamd:titleProper.en "Am I safe here?" ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    rdamo:expressionManifested.en ex:989789649exp ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d17e2676>,
+        <http://marc2rda.edu/fake/nom/d17e2682>,
+        <http://marc2rda.edu/fake/nom/d17e2687>,
+        <http://marc2rda.edu/fake/nom/d17e2692>,
+        <http://marc2rda.edu/fake/nom/d17e2697>,
+        <http://marc2rda.edu/fake/nom/d17e2702>,
+        <http://marc2rda.edu/fake/nom/d17e2707> .
+
+ex:989789790man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F020 ## $a 0774890223 $q (electronic bk.)",
+        "F020 ## $a 0774890231 $q (electronic bk.)",
+        "F020 ## $a 077489024X $q (electronic bk.)",
+        "F020 ## $a 9780774890229 $q (PDF)",
+        "F020 ## $a 9780774890236 $q (EPUB)",
+        "F020 ## $a 9780774890243 $q (Kindle)",
+        "F020 ## $z 0774890207 $q (hardcover)",
+        "F020 ## $z 0774890215 $q (softcover)",
+        "F020 ## $z 9780774890205 $q (hardcover)",
+        "F020 ## $z 9780774890212 $q (softcover)",
+        "F245 10 $a Am I safe here? : $b LGBTQ teens and bullying in schools / $c Donn Short.",
+        "F264 #1 $a Vancouver ; $a Toronto : $b On Point Press, a UBC Press imprint, $c [2017]",
+        "F264 #4 $c ©2017",
+        "F337 ## $a computer $b c $2 rdamedia",
+        "F338 ## $a online resource $b cr $2 rdacarrier",
+        "F504 ## $a Includes bibliographical references.",
+        "F506 ## $3 Use copy $f Restrictions unspecified $2 star $5 MiAaHDL",
+        "F538 ## $a Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. $u http://purl.oclc.org/DLF/benchrepro0212 $5 MiAaHDL",
+        "F583 1# $a digitized $c 2024. $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL",
+        "F588 0# $a Print version record." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr> ;
+    rdamd:dateOfPublication.en "[2017]" ;
+    rdamd:manifestationCopyrightStatement.en "©2017" ;
+    rdamd:nameOfPublisher.en "On Point Press, a UBC Press imprint" ;
+    rdamd:noteOnManifestation.en "Source of description: Print version record." ;
+    rdamd:otherTitleInformation.en "LGBTQ teens and bullying in schools" ;
+    rdamd:placeOfPublication.en "Toronto",
+        "Vancouver" ;
+    rdamd:publicationStatement.en "Vancouver ; Toronto : On Point Press, a UBC Press imprint, [2017]" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Donn Short" ;
+    rdamd:supplementaryContent.en "Includes bibliographical references." ;
+    rdamd:titleOfManifestation.en "Am I safe here?" ;
+    rdamd:titleProper.en "Am I safe here?" ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdamo:exemplarOfManifestation.en ex:989789790ited17e2217,
+        ex:989789790ited17e2238,
+        ex:989789790ited17e2245 ;
+    rdamo:expressionManifested.en ex:989789790exp ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d17e2050>,
+        <http://marc2rda.edu/fake/nom/d17e2056>,
+        <http://marc2rda.edu/fake/nom/d17e2061>,
+        <http://marc2rda.edu/fake/nom/d17e2066>,
+        <http://marc2rda.edu/fake/nom/d17e2071>,
+        <http://marc2rda.edu/fake/nom/d17e2076>,
+        <http://marc2rda.edu/fake/nom/d17e2081>,
+        <http://marc2rda.edu/fake/nom/d17e2086>,
+        <http://marc2rda.edu/fake/nom/d17e2091>,
+        <http://marc2rda.edu/fake/nom/d17e2096> .
+

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+    http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>04977cgm a2200937 i 4500</marc:leader>
+        <marc:controlfield tag="001">99161881161101452</marc:controlfield>
+        <marc:controlfield tag="005">20240220213017.0</marc:controlfield>
+        <marc:controlfield tag="006">m     o  c        </marc:controlfield>
+        <marc:controlfield tag="007">vz czazuu</marc:controlfield>
+        <marc:controlfield tag="007">cr cna---auuuu</marc:controlfield>
+        <marc:controlfield tag="008">170327t20152014cau083        o   vleng d</marc:controlfield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">932258707</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)979423123</marc:subfield>
+            <marc:subfield code="z">(OCoLC)932258707</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocn979423123</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99323199941801451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99161881161101452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">ORZ</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="c">ORZ</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="041" ind1="0" ind2=" ">
+            <marc:subfield code="a">eng</marc:subfield>
+            <marc:subfield code="j">eng</marc:subfield>
+            <marc:subfield code="h">eng</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">n-us-nj</marc:subfield>
+            <marc:subfield code="a">n-us-ny</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">MAIN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">E184.R3</marc:subfield>
+            <marc:subfield code="b">A4 2015</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="1" ind2="4">
+            <marc:subfield code="a">974.728</marc:subfield>
+            <marc:subfield code="q">OCoLC</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">American native /</marc:subfield>
+            <marc:subfield code="c">Phydo Films ; directed by Steven Oritt ; produced by Corey Bobker, Matt Ogens.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="257" ind1=" " ind2=" ">
+            <marc:subfield code="a">United States</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Folsom, CA :</marc:subfield>
+            <marc:subfield code="b">Dark Hollow Films,</marc:subfield>
+            <marc:subfield code="c">[2015]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2015</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 streaming video file (83 min) :</marc:subfield>
+            <marc:subfield code="b">digital, sound, color</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="306" ind1=" " ind2=" ">
+            <marc:subfield code="a">012300</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">two-dimensional moving image</marc:subfield>
+            <marc:subfield code="b">tdi</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Motion pictures</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="533" ind1=" " ind2=" ">
+            <marc:subfield code="a">Electronic reproduction.</marc:subfield>
+            <marc:subfield code="b">[Portland, OR] :</marc:subfield>
+            <marc:subfield code="c">MediaSpace video portal by Kaltura,</marc:subfield>
+            <marc:subfield code="d">[2015].</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="538" ind1=" " ind2=" ">
+            <marc:subfield code="a">System requirements: Firefox 4 and up; Safari 5.0 and up; Chrome version 21 and up; Internet Explorer 8 and up.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="518" ind1=" " ind2=" ">
+            <marc:subfield code="a">Filmed on location in New York, New Jersey and Oklahoma.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a">Thirty miles from New York City, tucked away in the Ramapo Mountains of New Jersey, lives a group of indigenous people shrouded in mystery and discrimination, fighting for acceptance as Native Americans...The Ramapough Lenape Indians. American Native exposes this group's fight for respect as Native Americans, examining their efforts to gain recognition from the Bureau of Indian Affairs and the private interests that may have colluded behind the scenes to prevent them from doing so. Through expert interviews and unbridled access to the community, the film provides an in-depth look at the group's complex past, volatile present and endangered future.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Also available in DVD format.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Originally produced in 2014; copyright held by Keepers of the Pass LLC.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1=" " ind2=" ">
+            <marc:subfield code="a">Description based on print version record.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="546" ind1=" " ind2=" ">
+            <marc:subfield code="a">In English; Closed-captioned.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="506" ind1=" " ind2=" ">
+            <marc:subfield code="a">Access restricted to subscribing institutions.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="508" ind1=" " ind2=" ">
+            <marc:subfield code="a">Director of photography, Steven Oritt ; editors, Zeke Piestrup, Will Barton ; original music, Pete Yorn &amp; Marc 'Doc' Dauer</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Ramapo Mountain people.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Indians of North America</marc:subfield>
+            <marc:subfield code="z">Ramapo River Valley (N.Y. and N.J.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Delaware Indians.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Racially mixed people</marc:subfield>
+            <marc:subfield code="z">New Jersey.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Racially mixed people</marc:subfield>
+            <marc:subfield code="z">New York (State)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Jackson Whites.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Delaware.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Delaware Indians.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00889892</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Indians of North America.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00969633</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Racially mixed people.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01086595</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Ramapo Mountain people.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01089680</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">New Jersey.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01208379</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJx4kQMRb7rwyH74JVdbBP</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">New York (State)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01210280</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39QbtfRjXPrf4BDHgVmQ8kx9c</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">United States</marc:subfield>
+            <marc:subfield code="z">Ramapo River Valley.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01311344</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Documentary films.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01710390</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Feature films.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01710384</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Nonfiction films.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01710269</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Video recordings for the hearing impaired.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01710450</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Documentary films.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Nonfiction films.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Feature films.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Video recordings for the hearing impaired.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Feature films</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+            <marc:subfield code="2">local</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Documentaires.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Films autres que de fiction.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Vidéos pour personnes handicapées auditives.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Phydo Films,</marc:subfield>
+            <marc:subfield code="e">production company.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Keepers of the Pass (Firm),</marc:subfield>
+            <marc:subfield code="e">production company.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Dark Hollow Films,</marc:subfield>
+            <marc:subfield code="e">publisher.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">Print version:</marc:subfield>
+            <marc:subfield code="t">American native.</marc:subfield>
+            <marc:subfield code="d">Folsom, CA : Dark Hollow Films, [2015].</marc:subfield>
+            <marc:subfield code="w">(OCoLC)919470255</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">American native (Motion picture : 2014) (MovingImage)</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCGmXHcCwQJbvxmqbbyWwfq</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Oritt, Steven,</marc:subfield>
+            <marc:subfield code="e">film director.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Bobker, Corey,</marc:subfield>
+            <marc:subfield code="e">film producer.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Ogens, Matt,</marc:subfield>
+            <marc:subfield code="e">film producer.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Yorn, Pete,</marc:subfield>
+            <marc:subfield code="e">composer (expression)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Dauer, Marc,</marc:subfield>
+            <marc:subfield code="e">composer (expression)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="2">
+            <marc:subfield code="u">www.americannative-themovie.com</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">http://media.pdx.edu/</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="994" ind1=" " ind2=" ">
+            <marc:subfield code="a">92</marc:subfield>
+            <marc:subfield code="b">OCACL</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

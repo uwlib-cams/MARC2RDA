@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161853437301452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/99161853437301452exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>99161853437301452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F006 m     o  d f      </fake:marcfield>
+      <fake:marcfield>F008 150520s2015    mdua    obs  f000 0 eng c</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.633m-h220#s"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F043 ## $a n-us---</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/99161853437301452age#d22e157"/><!--rdawo:P10436 = has author person-->
+      <fake:marcfield>F245 10 $a Trends in long-acting reversible contraception use among U.S. women aged 15-44 / $c Amy M. Branum and Jo Jones.</fake:marcfield>
+      <rdawd:P10088>Trends in long-acting reversible contraception use among U.S. women aged 15-44</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <fake:marcfield>F650 #0 $a Contraceptives $z United States $v Statistics.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#contraceptivesunitedstatesstatistics"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#statistics"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F650 #0 $a Birth control $z United States $v Statistics.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#birthcontrolunitedstatesstatistics"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#statistics"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F650 #6 $a Contraceptifs $z États-Unis $v Statistiques.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#contraceptifse%CC%81tats-unisstatistiques"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#statistiques"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F650 #6 $a Régulation des naissances $z États-Unis $v Statistiques.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#re%CC%81gulationdesnaissancese%CC%81tats-unisstatistiques"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#statistiques"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F650 #7 $a Birth control. $2 fast $0 (OCoLC)fst00833148</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00833148"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Contraceptives. $2 fast $0 (OCoLC)fst00876856</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00876856"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F651 #7 $a United States. $2 fast $0 (OCoLC)fst01204155 $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq</fake:marcfield>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F655 #2 $a Statistics</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/mesh/con#statistics"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a Statistics. $2 fast $0 (OCoLC)fst01423727</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01423727"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a Statistics. $2 lcgft</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#statistics"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a Statistiques. $2 rvmgf</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#statistiques"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/99161853437301452age#d22e333"/><!--rdawo:P10550 = has issuing corporate body-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/99161853437301452age#d22e347"/><!--rdawo:P10436 = has author person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161853437301452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/99161853437301452man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/99161853437301452origMan"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99161853437301452wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>99161853437301452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <fake:marcfield>F006 m     o  d f      </fake:marcfield>
+      <fake:marcfield>F008 150520s2015    mdua    obs  f000 0 eng c</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161853437301452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161853437301452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/99161853437301452origMan"/><!--rdamo:P30136 = is electronic reproduction of manifestation of-->
+      <fake:marcfield>F006 m     o  d f      </fake:marcfield>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#m"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#o"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#d"/><!--rdam:P30018 = has file type-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
+      <fake:marcfield>F008 150520s2015    mdua    obs  f000 0 eng c</fake:marcfield>
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99161853437301452nom#d22e152"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F245 10 $a Trends in long-acting reversible contraception use among U.S. women aged 15-44 / $c Amy M. Branum and Jo Jones.</fake:marcfield>
+      <rdamd:P30156>Trends in long-acting reversible contraception use among U.S. women aged 15-44</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Amy M. Branum and Jo Jones</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <fake:marcfield>F264 #1 $a Hyattsville, MD : $b U.S. Department of Health and Human Services, Centers for Disease Control and Prevention, National Center for Health Statistics, $c 2015.</fake:marcfield>
+      <fake:marcfield>F337 ## $a computer $b c $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type-->
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F490 1# $a NCHS data brief ; $v no. 188</fake:marcfield>
+      <rdamd:P30106>NCHS data brief ; no. 188</rdamd:P30106><!--rdamd:P30106 = has series statement-->
+      <fake:marcfield>F490 1# $a DHHS publication ; $v no. 2015-1209</fake:marcfield>
+      <rdamd:P30106>DHHS publication ; no. 2015-1209</rdamd:P30106><!--rdamd:P30106 = has series statement-->
+      <fake:marcfield>F533 ## $a Electronic reproduction. $b [Place of publication not identified] : $c HathiTrust Digital Library, $d 2011. $5 MiAaHDL</fake:marcfield>
+      <rdamd:P30335>Electronic reproduction</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30279>Place of publication not identified</rdamd:P30279><!--rdamd:P30279 = has place of manifestation-->
+      <rdamd:P30297>HathiTrust Digital Library</rdamd:P30297><!--rdamd:P30297 = has name of agent of manifestation-->
+      <rdamd:P30278>2011</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <fake:marcfield>F538 ## $a Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. $u http://purl.oclc.org/DLF/benchrepro0212 $5 MiAaHDL</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99161853437301452ite#d22e227"/><!--rdamo:P30103 = has exemplar of manifestation-->
+      <fake:marcfield>F583 1# $a digitized $c 2011 $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99161853437301452ite#d22e229"/><!--rdamo:P30103 = has exemplar of manifestation-->
+      <fake:marcfield>F500 ## $a Title from title screen (viewed May 20, 2015).</fake:marcfield>
+      <rdamd:P30137>Title from title screen (viewed May 20, 2015).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F500 ## $a "February 2015."</fake:marcfield>
+      <rdamd:P30137>"February 2015."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F504 ## $a Includes bibliographical references (page 7).</fake:marcfield>
+      <rdamd:P30455>Includes bibliographical references (page 7).</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <fake:marcfield>F506 ## $3 Use copy $f Restrictions unspecified $2 star $5 MiAaHDL</fake:marcfield>
+      <rdam:P30145 rdf:resource="http://marc2rda.edu/fake/star/con#restrictionsunspecified"/><!--rdam:P30145 = has restriction on access to manifestation-->
+      <rdamd:P30137>Restriction on access http://marc2rda.edu/fake/star/con#restrictionsunspecified applies to Use copy</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161853437301452origMan">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161853437301452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F008 150520s2015    mdua    obs  f000 0 eng c</fake:marcfield>
+      <rdamd:P30011>2015</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/mdu"/><!--rdamo:P30279 = has place of manifestation-->
+      <fake:marcfield>F245 10 $a Trends in long-acting reversible contraception use among U.S. women aged 15-44 / $c Amy M. Branum and Jo Jones.</fake:marcfield>
+      <rdamd:P30156>Trends in long-acting reversible contraception use among U.S. women aged 15-44</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Amy M. Branum and Jo Jones</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <fake:marcfield>F264 #1 $a Hyattsville, MD : $b U.S. Department of Health and Human Services, Centers for Disease Control and Prevention, National Center for Health Statistics, $c 2015.</fake:marcfield>
+      <rdamd:P30111>Hyattsville, MD : U.S. Department of Health and Human Services, Centers for Disease Control and Prevention, National Center for Health Statistics, 2015.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Hyattsville, MD</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>U.S. Department of Health and Human Services, Centers for Disease Control and Prevention, National Center for Health Statistics</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2015</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161853437301452ite#d22e227">
+      <rdaid:P40001>99161853437301452ite#d22e227</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/99161853437301452man"/><!--rdaio:P40049 = has manifestation exemplified-->
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/><!--rdaio:P40161 = is holding of-->
+      <rdaid:P40028>Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.; http://purl.oclc.org/DLF/benchrepro0212</rdaid:P40028><!--rdaid:P40028 = has note on item-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161853437301452ite#d22e229">
+      <fake:marcfield>F583 1# $a digitized $c 2011 $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>99161853437301452ite#d22e229</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/99161853437301452man"/><!--rdaio:P40049 = has manifestation exemplified-->
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/><!--rdaio:P40161 = is holding of-->
+      <rdaid:P40028>Action: digitized; Time/date of action: 2011; Jurisdiction: HathiTrust Digital Library; Status: committed to preserve; Source of term: pda</rdaid:P40028><!--rdaid:P40028 = has note on item-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161853437301452nom#d22e152">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0500-E-17 (online)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80078>GPO item number</rdand:P80078><!--rdand:P80078 = has category of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/plaNom#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161853437301452age#d22e157">
+      <fake:marcfield>F100 1# $a Branum, Amy M., $e author.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Branum, Amy M.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161853437301452age#d22e333">
+      <fake:marcfield>F710 2# $a National Center for Health Statistics (U.S.), $e issuing body.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>National Center for Health Statistics (U.S.)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161853437301452age#d22e347">
+      <fake:marcfield>F700 1# $a Jones, Jo, $c Ph. D., $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjJ7Y4PDGhbDMH87tGBkWC</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Jones, Jo, Ph. D.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjJ7Y4PDGhbDMH87tGBkWC</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/star/con#restrictionsunspecified">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Restrictions unspecified</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/accessrestrictionterm/star"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#contraceptivesunitedstatesstatistics">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Contraceptives--United States--Statistics</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#statistics">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Statistics</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#birthcontrolunitedstatesstatistics">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Birth control--United States--Statistics</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#statistics">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Statistics</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#contraceptifse%CC%81tats-unisstatistiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Contraceptifs--États-Unis--Statistiques</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#statistiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Statistiques</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#re%CC%81gulationdesnaissancese%CC%81tats-unisstatistiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Régulation des naissances--États-Unis--Statistiques</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#statistiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Statistiques</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/mesh/con#statistics">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Statistics</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/mesh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#statistics">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Statistics</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#statistiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Statistiques</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/fast/plaNom#unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+</rdf:RDF>

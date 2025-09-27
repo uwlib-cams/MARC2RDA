@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>05016 am a22005293u 4500</marc:leader>
+        <marc:controlfield tag="001">99161994388001452</marc:controlfield>
+        <marc:controlfield tag="005">20230808201451.0</marc:controlfield>
+        <marc:controlfield tag="006">m    fo  d |      </marc:controlfield>
+        <marc:controlfield tag="007">cr#m|#---|||||</marc:controlfield>
+        <marc:controlfield tag="008">170220s2016uuuugw ac||fob    000-e|ger|d</marc:controlfield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(CKB)3710000001058919</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(oapen)https://directory.doabooks.org/handle/20.500.12854/35652</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLCZ)993710000001058919</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99161994388001452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="d">UkMaJRU</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="041" ind1="0" ind2=" ">
+            <marc:subfield code="a">ger</marc:subfield>
+            <marc:subfield code="a">eng</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">800</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Alam, Sarah</marc:subfield>
+            <marc:subfield code="4">edt</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Shakespeare im spiegelkabinett  :</marc:subfield>
+            <marc:subfield code="b">zur produktiven vielfalt seiner rezeption /</marc:subfield>
+            <marc:subfield code="c">Sarah Alam, Barbara Schaff (Hg.).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="b">Universitätsverlag Göttingen</marc:subfield>
+            <marc:subfield code="c">2016</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Göttingen, Germany :</marc:subfield>
+            <marc:subfield code="b">Universitätsverlag Göttingen,</marc:subfield>
+            <marc:subfield code="c">2016.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2016</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (174 pages) :</marc:subfield>
+            <marc:subfield code="b">illustrations; digital, PDF file(s).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="a">text file</marc:subfield>
+            <marc:subfield code="b">PDF</marc:subfield>
+            <marc:subfield code="2">rda</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="506" ind1=" " ind2=" ">
+            <marc:subfield code="a">Open Access</marc:subfield>
+            <marc:subfield code="f">Unrestricted online access</marc:subfield>
+            <marc:subfield code="2">star</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="3" ind2=" ">
+            <marc:subfield code="a">2014 and 2016, marked by the 450th anniversary of his birthday and the 400th anniversary of his demise respectively, have both been dedicated to the remembrance of William Shakespeare and the celebration of his work through readings, theater productions, movies, exhibitions, and many academic events. He is fondly called the “Bard” by many and has long been England's export hit. Shakespeare gained lasting fame and fortune during his lifetime not only by successfully moving his audience, but also because from the beginning his work inspired critical and artistic dialogue. The ingenuity and uniqueness of his work did not fail to inspire the creative imagination of successive generations of authors, artists, and musicians over the past four and a half centuries. In fact, each generation has reimagined and recreated Shakespeare in its own different way, bringing its own interpretation, themes, fashion, taste, and customs to the rereading, visualization, and intonation of his work. The brand “Shakespeare” is still as popular and productive as ever. A fact that is apparent not only in the huge numbers of visitors yearly to Stratford upon Avon and Verona, the city of Shakespeare's tragic-romance Romeo and Juliet, but also in the long line of movies produced based on his plays each year. One might even go as far as to assert that it is the generations of productive readers and their own unique creative interpretations that have kept the Bard alive over the past 450 years. This collection of essays celebrates Shakespeare’s two big anniversaries and takes the opportunity to look at him from a different perspective, as a source of inspiration and, for a change, to explore the eclectic results of centuries of productive reception of his work from the Elizabethan era up to the 21rst century.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="3" ind2=" ">
+            <marc:subfield code="a">Die Jahre 2014 und 2016 sind die beiden großen Shakespeare-Jahre des noch jungen 21. Jahrhunderts. Mit Lesungen, Inszenierungen, Ausstellungen, Filmen und akademischen Veranstaltungen zum 450. Geburtstag beziehungsweise dem 400. Todestag gedenkt die Welt in diesen Jahren ihres größten Dichters. Durch seine Werke bleibt William Shakespeare in der kulturellen Erinnerung der Welt nicht nur präsent, sondern lebendig. Die Ringvorlesung, mit der das Englische Seminar der Universität Göttingen einen Beitrag zu den weltweit stattﬁndenden Shakespeare-Feiern geleistet hat, hat die andauernde Faszination William Shakespeares als Herausforderung begriffen und sich die Frage nach der produktiven Vielfalt der Rezeptionsweisen seines Werks gestellt. Shakespeares Werk und Leben haben in den vergangenen Jahrhunderten immer wieder die literarische, künstlerische und musikalische Imagination inspiriert und sind weltweit zum Ausgangspunkt ästhetischer Neuschöpfungen geworden: in Form von Theateraufführungen und Filmadaptionen, von literarischen Bezugnahmen, von musikalischen oder bildlichen Umsetzungen Shakespeare’scher Szenen. So hat eine jede Zeit „ihren“ Shakespeare hervorgebracht und spiegelt die ihr eigenen Ideen, Identitäten, Konﬂikte und Probleme in der produktiven Aneignung seiner Dramen.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="546" ind1=" " ind2=" ">
+            <marc:subfield code="a">In German; 1 contribution in English.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1=" " ind2=" ">
+            <marc:subfield code="a">Description based on e-publication, viewed on April 05, 2019.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+            <marc:subfield code="d">1564-1616</marc:subfield>
+            <marc:subfield code="x">Criticism and interpretation.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+            <marc:subfield code="d">1564-1616</marc:subfield>
+            <marc:subfield code="x">Stage history.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+            <marc:subfield code="d">1564-1616</marc:subfield>
+            <marc:subfield code="x">Appreciation.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Art appreciation.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2=" ">
+            <marc:subfield code="a">Shakespeare reception</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2=" ">
+            <marc:subfield code="a">bardolatry</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2=" ">
+            <marc:subfield code="a">women theater</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2=" ">
+            <marc:subfield code="a">Ben Jonson</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2=" ">
+            <marc:subfield code="a">Hamlet</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2=" ">
+            <marc:subfield code="a">William Shakespeare</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Alam, Sarah,</marc:subfield>
+            <marc:subfield code="e">editor.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Schaff, Barbara,</marc:subfield>
+            <marc:subfield code="e">editor.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="z">3863952820</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="906" ind1=" " ind2=" ">
+            <marc:subfield code="a">BOOK</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

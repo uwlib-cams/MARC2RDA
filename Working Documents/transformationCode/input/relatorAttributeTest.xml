@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test0</marc:controlfield>
+        <marc:datafield tag="100" ind1="0" ind2=" ">
+            <marc:subfield code="a">H. D.</marc:subfield>
+            <marc:subfield code="q">(Hilda Doolittle),</marc:subfield>
+            <marc:subfield code="d">1886-1961</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Gresham, G. A.</marc:subfield>
+            <marc:subfield code="q">(Geoffrey Austin)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test2</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Churchill, Winston,</marc:subfield>
+            <marc:subfield code="c">Sir,</marc:subfield>
+            <marc:subfield code="d">1874-1965.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test3</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Ward, Humphrey,</marc:subfield>
+            <marc:subfield code="c">Mrs.,</marc:subfield>
+            <marc:subfield code="d">1851-1920.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test4</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Boulanger, John,</marc:subfield>
+            <marc:subfield code="d">1965-</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test5</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Luckombe, Philip</marc:subfield>
+            <marc:subfield code="d">d. 1803</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test6</marc:controlfield>
+        <marc:datafield tag="100" ind1="0" ind2=" ">
+            <marc:subfield code="a">Piri, Reis</marc:subfield>
+            <marc:subfield code="d">d. 1554?</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test7</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Smith, John</marc:subfield>
+            <marc:subfield code="d">1882 Aug. 5-</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test8</marc:controlfield>
+        <marc:datafield tag="111" ind1="2" ind2=" ">
+            <marc:subfield code="a">International Conference on Pipelines and Trenchless Technology</marc:subfield>
+            <marc:subfield code="d">(2014 :</marc:subfield>
+            <marc:subfield code="c">Xiamen, Xiamen Shi, China)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Israel Seminar on Geometrical Aspects of Functional Analysis</marc:subfield>
+            <marc:subfield code="d">(2011-2013)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test9</marc:controlfield>
+        <marc:datafield tag="111" ind1="2" ind2=" ">
+            <marc:subfield code="a">International Conference on Rewriting Techniques and Applications</marc:subfield>
+            <marc:subfield code="n">(17th :</marc:subfield>
+            <marc:subfield code="d">2006 :</marc:subfield>
+            <marc:subfield code="c">Seattle, Wash.)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test9</marc:controlfield>
+        <marc:datafield tag="610" ind1="1" ind2=" ">
+            <marc:subfield code="a">United States</marc:subfield>
+            <marc:subfield code="t">Food and Drugs Act</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Barber, Samuel,</marc:subfield>
+            <marc:subfield code="d">1910-1981.</marc:subfield>
+            <marc:subfield code="t">Sonatas,</marc:subfield>
+            <marc:subfield code="m">violin, piano.</marc:subfield>
+            <marc:subfield code="p">Allegro agitato</marc:subfield>
+            <marc:subfield code="n">(No. 3)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Barber, Samuel,</marc:subfield>
+            <marc:subfield code="d">1910-1981.</marc:subfield>
+            <marc:subfield code="t">Canzonetta,</marc:subfield>
+            <marc:subfield code="m">oboe, string orchestra,</marc:subfield>
+            <marc:subfield code="n">op. 48;</marc:subfield>
+            <marc:subfield code="o">arranged.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Schulz, Bruno,</marc:subfield>
+            <marc:subfield code="d">1892-1942.</marc:subfield>
+            <marc:subfield code="t">Sklepy cynamonowe.</marc:subfield>
+            <marc:subfield code="l">English.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test9</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Bao, Rong,</marc:subfield>
+            <marc:subfield code="d">jin shi 809</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Chen, Denlong,</marc:subfield>
+            <marc:subfield code="d">ju ren 1774</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="0" ind2=" ">
+            <marc:subfield code="a">Aaron,</marc:subfield>
+            <marc:subfield code="c">of zhitomir,</marc:subfield>
+            <marc:subfield code="d">-approximately 1817</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Aaron, W.F.,</marc:subfield>
+            <marc:subfield code="d">active approximately 1860</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Abate, Nicolò dell',</marc:subfield>
+            <marc:subfield code="d">approximately 1509-1571</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="0" ind2=" ">
+            <marc:subfield code="a">ʻAbbās ibn ʻAbd al-Muṭṭalib,</marc:subfield>
+            <marc:subfield code="d">approximately 566-approximately 653</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="0" ind2=" ">
+            <marc:subfield code="a">ʻAbd al-ʻAzīz Muḥammad,</marc:subfield>
+            <marc:subfield code="d">1866 or 1867-approximately 1948</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="700" ind1="0" ind2=" ">
+            <marc:subfield code="a">Achilles Painter,</marc:subfield>
+            <marc:subfield code="d">active approximately 450 B.C.-425 B.C.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="0" ind2=" ">
+            <marc:subfield code="a">Dmitriev, Nikolaĭ Ivanovich,</marc:subfield>
+            <marc:subfield code="d">1880-not before 1946</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 110 $a (no $b) -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc1</marc:controlfield>
+        <marc:datafield tag="110" ind1="2" ind2=" ">
+            <marc:subfield code="a">Open Knowledge Foundation.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 110 $a and $b -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc2</marc:controlfield>
+        <marc:datafield tag="110" ind1="2" ind2=" ">
+            <marc:subfield code="a">United Nations.</marc:subfield>
+            <marc:subfield code="b">Department of Economic and Social Affairs.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 110 $a and repeated $b -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc2a</marc:controlfield>
+        <marc:datafield tag="110" ind1="2" ind2=" ">
+            <marc:subfield code="a">United Nations.</marc:subfield>
+            <marc:subfield code="b">Department of Economic and Social Affairs.</marc:subfield>
+            <marc:subfield code="b">Division Alpha.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 111 $a (no $e) -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc3</marc:controlfield>
+        <marc:datafield tag="111" ind1="2" ind2=" ">
+            <marc:subfield code="a">International Congress on Medieval Studies.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 111 $a and $e -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc4</marc:controlfield>
+        <marc:datafield tag="111" ind1="2" ind2=" ">
+            <marc:subfield code="a">IEEE Symposium on Security and Privacy.</marc:subfield>
+            <marc:subfield code="e">Technical Committee on Security and Privacy.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 111 $a and repeated $e -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc4</marc:controlfield>
+        <marc:datafield tag="111" ind1="2" ind2=" ">
+            <marc:subfield code="a">IEEE Symposium on Security and Privacy.</marc:subfield>
+            <marc:subfield code="e">Technical Committee on Security and Privacy.</marc:subfield>
+            <marc:subfield code="e">Sub-Committee A.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 610 $a (no $b) -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc5</marc:controlfield>
+        <marc:datafield tag="610" ind1="2" ind2=" ">
+            <marc:subfield code="a">American Psychological Association.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 610 $a and $b -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc6</marc:controlfield>
+        <marc:datafield tag="610" ind1="2" ind2=" ">
+            <marc:subfield code="a">Smithsonian Institution.</marc:subfield>
+            <marc:subfield code="b">National Museum of Natural History.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 611 $a (no $e) -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc7</marc:controlfield>
+        <marc:datafield tag="611" ind1="2" ind2=" ">
+            <marc:subfield code="a">International Conference on Climate Change.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 611 $a and $e -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc8</marc:controlfield>
+        <marc:datafield tag="611" ind1="2" ind2=" ">
+            <marc:subfield code="a">United Nations Conference on Trade and Development.</marc:subfield>
+            <marc:subfield code="e">Secretariat.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 710 $a (no $b) -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc9</marc:controlfield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Library of Congress.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 710 $a and $b -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc10</marc:controlfield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Harvard University.</marc:subfield>
+            <marc:subfield code="b">School of Engineering and Applied Sciences.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 711 $a (no $e) -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc11</marc:controlfield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Annual Meeting of the Ecological Society of America.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 711 $a and $e -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc12</marc:controlfield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">World Urban Forum.</marc:subfield>
+            <marc:subfield code="e">United Nations Human Settlements Programme.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 810 $a (no $b) -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc13</marc:controlfield>
+        <marc:datafield tag="810" ind1="2" ind2=" ">
+            <marc:subfield code="a">Canadian Broadcasting Corporation.</marc:subfield>
+            <marc:subfield code="n">(11th :</marc:subfield>
+            <marc:subfield code="d">1978 :</marc:subfield>
+            <marc:subfield code="c">Rio de Janeiro, Brazil).</marc:subfield>
+            <marc:subfield code="t">Nutrition and food science ;</marc:subfield>
+            <marc:subfield code="v">v. 1.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 810 $a and $b -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc14</marc:controlfield>
+        <marc:datafield tag="810" ind1="2" ind2=" ">
+            <marc:subfield code="a">U.S. Department of Agriculture.</marc:subfield>
+            <marc:subfield code="b">Forest Service.</marc:subfield>
+            <marc:subfield code="n">(11th :</marc:subfield>
+            <marc:subfield code="d">1978 :</marc:subfield>
+            <marc:subfield code="c">Rio de Janeiro, Brazil).</marc:subfield>
+            <marc:subfield code="t">Nutrition and food science ;</marc:subfield>
+            <marc:subfield code="v">v. 1.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 811 $a (no $e) -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc15</marc:controlfield>
+        <marc:datafield tag="811" ind1="2" ind2=" ">
+            <marc:subfield code="a">Symposium on Artificial Intelligence in Education.</marc:subfield>
+            <marc:subfield code="n">(11th :</marc:subfield>
+            <marc:subfield code="d">1978 :</marc:subfield>
+            <marc:subfield code="c">Rio de Janeiro, Brazil).</marc:subfield>
+            <marc:subfield code="t">Nutrition and food science ;</marc:subfield>
+            <marc:subfield code="v">v. 1.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 811 $a and $e -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc16</marc:controlfield>
+        <marc:datafield tag="811" ind1="2" ind2=" ">
+            <marc:subfield code="a">UNESCO International Literacy Meeting.</marc:subfield>
+            <marc:subfield code="e">Education Sector.</marc:subfield>
+            <marc:subfield code="n">(11th :</marc:subfield>
+            <marc:subfield code="d">1978 :</marc:subfield>
+            <marc:subfield code="c">Rio de Janeiro, Brazil).</marc:subfield>
+            <marc:subfield code="t">Nutrition and food science ;</marc:subfield>
+            <marc:subfield code="v">v. 1.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+</marc:collection>

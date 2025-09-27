@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <!--FAKE RECORD-->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">881-test1</marc:controlfield>
+        
+        <marc:datafield tag="881" ind1="4" ind2="1">
+            <marc:subfield code="a">CROSSING THE CHASM Marketing and Selling Disruptive Products to Mainstream Customers THIRD EDITION Geoffrey A. Moore HARPER BUSINESS An Imprint of HarperCollinsPublishers Copyright © 1991, 1999, 2002, 2014 by Geoffrey A. Moore Printed in the United States of America Originally published in hardcover in 1991 by HarperBusiness, an imprint of HarperCollins Publishers. 2014 ISBN: 978-0-06-229298-8 USA $19.99 A BUSINESSWEEK BESTSELLER</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="881" ind1="4" ind2="3">
+            <marc:subfield code="a">CROSSING THE CHASM Marketing and Selling Disruptive Products to Mainstream Customers THIRD EDITION Geoffrey A. Moore HARPER BUSINESS An Imprint of HarperCollinsPublishers Copyright © 1991, 1999, 2002, 2014 by Geoffrey A. Moore Printed in the United States of America Originally published in hardcover in 1991 by HarperBusiness, an imprint of HarperCollins Publishers. 2014 ISBN: 978-0-06-229298-8 USA $19.99 A BUSINESSWEEK BESTSELLER</marc:subfield>
+            <marc:subfield code="c">THE Opening of Heauen gates, Or The ready way to euer-lasting life. Deliuered in a most Familier Dia-logue, betweene Reason and Religion, touching Prædestination, Gods word, and Mans Free-will, to the vnderstan-ding of the vveakest Capacitie, and the confirming of the more strong</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="881" ind1="4" ind2="4">
+            <marc:subfield code="d">The second edition.\\$cBy ARTHVR DENT, Preacher of the word of GOD, at South-shoobery in Essex.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="881" ind1="4" ind2="2">
+            <marc:subfield code="f">Imprinted at London for Iohn Wright,</marc:subfield>
+            <marc:subfield code="g">and are to bee sold at his shop at Christ-Church gate.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="881" ind1="4" ind2="3">
+            <marc:subfield code="c">By ARTHVR DENT, Preacher of the word of GOD, at South-shoobery in Essex.</marc:subfield>
+            <marc:subfield code="f">1611.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

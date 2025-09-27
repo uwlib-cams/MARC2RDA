@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">263-test1</marc:controlfield>
+        <marc:datafield tag="263" ind1=" " ind2=" ">
+            <marc:subfield code="a">200011</marc:subfield>
+        </marc:datafield>
+           </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">263-test2</marc:controlfield>
+        <marc:datafield tag="263" ind1=" " ind2=" ">
+            <marc:subfield code="a">1999--</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">263-test3</marc:controlfield>
+        <marc:datafield tag="263" ind1=" " ind2=" ">
+            <marc:subfield code="a">200102</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">263-test4</marc:controlfield>
+        <marc:datafield tag="263" ind1=" " ind2=" ">
+            <marc:subfield code="a">199412</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">263-test4</marc:controlfield>
+        <marc:datafield tag="263" ind1=" " ind2=" ">
+            <marc:subfield code="a">1998--</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

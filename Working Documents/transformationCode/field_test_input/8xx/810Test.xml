@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">8xx-test1</marc:controlfield> 
+        
+        <marc:datafield tag="810" ind1="2" ind2=" ">
+            <marc:subfield code="a">Open University.</marc:subfield>
+            <marc:subfield code="t">Nineteenth-century novel and its legacy ;</marc:subfield>
+            <marc:subfield code="v">Unit 2.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="810" ind1="2" ind2=" ">
+            <marc:subfield code="a">Open University.</marc:subfield>
+            <marc:subfield code="t">A302 ;</marc:subfield>
+            <marc:subfield code="v">Unit 2.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="810" ind1="1" ind2=" ">
+            <marc:subfield code="a">Stockholm.</marc:subfield>
+            <marc:subfield code="b">Skogshögskolan.</marc:subfield>
+            <marc:subfield code="b">Institutionen för skogsproduktion.</marc:subfield>
+            <marc:subfield code="t">Rapporter och uppsatser ;</marc:subfield>
+            <marc:subfield code="v">nr. 30.</marc:subfield>
+        </marc:datafield>
+
+        <marc:datafield tag="810" ind1="1" ind2=" ">
+            <marc:subfield code="a">United States.</marc:subfield>
+            <marc:subfield code="b">Army Map Service.</marc:subfield>
+            <marc:subfield code="t">A.M.S.,</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 810 with $t corporate body and work -->
+        <marc:datafield tag="810" ind1="2" ind2=" ">
+            <marc:subfield code="a">John Bartholomew and Son.</marc:subfield>
+            <marc:subfield code="t">Bartholomew world travel series ;</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 810 with $t corporate body and work, additional subfields -->
+        <marc:datafield tag="810" ind1="1" ind2=" ">
+            <marc:subfield code="a">European Court of Human Rights.</marc:subfield>
+            <marc:subfield code="d">subfield d</marc:subfield>
+            <marc:subfield code="t">Publications de la Cour européenne des droits de l'homme.</marc:subfield>
+            <marc:subfield code="n">Série A,</marc:subfield>
+            <marc:subfield code="p">Arrêts et décisions ;</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 880s -->
+        <marc:datafield tag="880" ind1="1" ind2="4">
+            <marc:subfield code="6">810-00</marc:subfield>
+            <marc:subfield code="a">Test unlinked 880 corporate body</marc:subfield>
+            <marc:subfield code="t">Test unlinked 880 work</marc:subfield>
+            <marc:subfield code="1">https://iriforthiswork.com/6789</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="810" ind1="1" ind2="0">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">Test linked 880 corporate body 1</marc:subfield>
+            <marc:subfield code="t">Test linked 880 work 1</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1="1" ind2="0">
+            <marc:subfield code="6">810-01</marc:subfield>
+            <marc:subfield code="a">Test linked 880 corporate body 2</marc:subfield>
+            <marc:subfield code="t">Test linked 880 work 2</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

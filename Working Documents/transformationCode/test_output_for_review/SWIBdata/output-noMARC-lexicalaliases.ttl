@@ -1,0 +1,199 @@
+@prefix rdaad: <http://rdaregistry.info/Elements/a/datatype/> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdaed: <http://rdaregistry.info/Elements/e/datatype/> .
+@prefix rdaeo: <http://rdaregistry.info/Elements/e/object/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdamd: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdamo: <http://rdaregistry.info/Elements/m/object/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdand: <http://rdaregistry.info/Elements/n/datatype/> .
+@prefix rdapo: <http://rdaregistry.info/Elements/p/object/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdawd: <http://rdaregistry.info/Elements/w/datatype/> .
+@prefix rdawo: <http://rdaregistry.info/Elements/w/object/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://marc2rda.edu/fake/99162251920901452man> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr>,
+        <http://rdaregistry.info/termList/RDACarrierType/1018>,
+        <https://doi.org/10.6069/uwlswd.3d5s-zx23#o> ;
+    rdam:categoryOfManifestation.en <https://doi.org/10.6069/uwlswd.25z4-e963#m> ;
+    rdam:colourContent.en <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    rdamd:categoryOfManifestation.en "Electronic reproduction" ;
+    rdamd:colourContent.en "color" ;
+    rdamd:dateOfManifestation.en "2018" ;
+    rdamd:nameOfAgentOfManifestation.en "Rutgers University Libraries Media Center" ;
+    rdamd:noteOnManifestation.en "Available via World Wide Web.",
+        "Credits: Editors, Sean Tambour Marshall, Peter Shwartz ; director of photography, Rick Butler ; music, Amikaeyla.",
+        "Dance company, Embodiment Project ; film participants: Suijatha Baliga, James Bell, Denise Breton, Eric Butler, Fania Davis, Joy Degruy, Harley Eagle, George Galvis, Shawn Ginwright, Ericka Huggins, Morris Jenkins, David Kelly, Nicole Lee.",
+        "Originally produced as a motion picture in 2017.",
+        "Reproduced from 4 3/4 in. videodisc (1092)." ;
+    rdamd:placeOfManifestation.en "New Brunswick, N.J." ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "World Trust Educational Services, Inc",
+        "World Trust presents",
+        "a film by Shakti Butler",
+        "directed by Shakti Butler and Rick Butler",
+        "producer, Shakti Butler" ;
+    rdamd:titleProper.en "Healing justice" ;
+    rdam:fileType.en <https://doi.org/10.6069/uwlswd.mkjn-bp10#c> ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdamo:electronicReproductionOfManifestationOf.en <http://marc2rda.edu/fake/99162251920901452origMan> ;
+    rdamo:expressionManifested.en <http://marc2rda.edu/fake/99162251920901452exp> ;
+    rdamo:publisherCorporateBody.en <http://marc2rda.edu/fake/99162251920901452age#d22e262> .
+
+<http://marc2rda.edu/fake/99162251920901452wor> a <http://rdaregistry.info/Elements/c/Work.en> ;
+    rdaw:categoryOfWork.en <http://marc2rda.edu/fake/aat/con#documentaryfilm>,
+        <http://marc2rda.edu/fake/fast/con#documentaryfilms>,
+        <http://marc2rda.edu/fake/fast/con#featurefilms>,
+        <http://marc2rda.edu/fake/fast/con#internetvideos>,
+        <http://marc2rda.edu/fake/fast/con#nonfictionfilms>,
+        <http://marc2rda.edu/fake/lcgft/con#documentaryfilms>,
+        <http://marc2rda.edu/fake/lcgft/con#featurefilms>,
+        <http://marc2rda.edu/fake/lcgft/con#internetvideos>,
+        <http://marc2rda.edu/fake/lcgft/con#nonfictionfilms>,
+        <http://marc2rda.edu/fake/rvmgf/con#documentaires>,
+        <http://marc2rda.edu/fake/rvmgf/con#filmsautresquedefiction>,
+        <http://marc2rda.edu/fake/rvmgf/con#vide%CC%81ossurinternet> ;
+    rdawd:identifierForWork.en "99162251920901452wor" ;
+    rdawd:titleOfWork.en "Healing justice" ;
+    rdaw:natureOfContent.en <https://doi.org/10.6069/uwlswd.eje7-jq11#l> ;
+    rdawo:directorPersonOfPhotography.en <http://marc2rda.edu/fake/99162251920901452age#d22e288> ;
+    rdawo:expressionOfWork.en <http://marc2rda.edu/fake/99162251920901452exp> ;
+    rdawo:filmDirectorPerson.en <http://marc2rda.edu/fake/99162251920901452age#d22e280>,
+        <http://marc2rda.edu/fake/99162251920901452age#d22e288> ;
+    rdawo:filmProducerPerson.en <http://marc2rda.edu/fake/99162251920901452age#d22e280> ;
+    rdawo:productionCompany.en <http://marc2rda.edu/fake/99162251920901452age#d22e262> ;
+    rdawo:relatedPlaceOfWork.en <http://marc2rda.edu/fake/naf/place#unitedstates> ;
+    rdawo:subjectPlace.en <http://id.loc.gov/vocabulary/geographicAreas/n-us>,
+        <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> ;
+    rdaw:subject.en <http://marc2rda.edu/fake/fast/con#criminaljusticeadministrationof>,
+        <http://marc2rda.edu/fake/fast/con#prisonsandracerelations>,
+        <http://marc2rda.edu/fake/lcsh/con#criminaljusticeadministrationofunitedstates>,
+        <http://marc2rda.edu/fake/lcsh/con#prisonsandracerelationsunitedstates>,
+        <http://marc2rda.edu/fake/rvm/con#justicepe%CC%81naleadministratione%CC%81tats-unis>,
+        <http://marc2rda.edu/fake/rvm/con#prisonsetrelationsracialese%CC%81tats-unis> .
+
+<http://marc2rda.edu/fake/aat/con#documentaryfilm> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/aat> ;
+    skos:prefLabel "documentary film" .
+
+<http://marc2rda.edu/fake/fast/con#criminaljusticeadministrationof> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+    skos:prefLabel "Criminal justice, Administration of" .
+
+<http://marc2rda.edu/fake/fast/con#documentaryfilms> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+    skos:prefLabel "Documentary films" .
+
+<http://marc2rda.edu/fake/fast/con#featurefilms> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+    skos:prefLabel "Feature films" .
+
+<http://marc2rda.edu/fake/fast/con#internetvideos> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+    skos:prefLabel "Internet videos" .
+
+<http://marc2rda.edu/fake/fast/con#nonfictionfilms> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+    skos:prefLabel "Nonfiction films" .
+
+<http://marc2rda.edu/fake/fast/con#prisonsandracerelations> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+    skos:prefLabel "Prisons and race relations" .
+
+<http://marc2rda.edu/fake/fast/plaNom#unitedstates> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "United States" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://marc2rda.edu/fake/lcgft/con#documentaryfilms> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    skos:prefLabel "Documentary films" .
+
+<http://marc2rda.edu/fake/lcgft/con#featurefilms> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    skos:prefLabel "Feature films" .
+
+<http://marc2rda.edu/fake/lcgft/con#internetvideos> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    skos:prefLabel "Internet videos" .
+
+<http://marc2rda.edu/fake/lcgft/con#nonfictionfilms> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    skos:prefLabel "Nonfiction films" .
+
+<http://marc2rda.edu/fake/lcsh/con#criminaljusticeadministrationofunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Criminal justice, Administration of--United States" .
+
+<http://marc2rda.edu/fake/lcsh/con#prisonsandracerelationsunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Prisons and race relations--United States" .
+
+<http://marc2rda.edu/fake/naf/plaNom#unitedstates> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "United States" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/naf> .
+
+<http://marc2rda.edu/fake/naf/place#unitedstates> a <http://rdaregistry.info/Elements/c/Place.en> ;
+    rdapo:appellationOfPlace.en <http://marc2rda.edu/fake/naf/plaNom#unitedstates> .
+
+<http://marc2rda.edu/fake/rvm/con#justicepe%CC%81naleadministratione%CC%81tats-unis> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Justice pénale--Administration--États-Unis" .
+
+<http://marc2rda.edu/fake/rvm/con#prisonsetrelationsracialese%CC%81tats-unis> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Prisons et relations raciales--États-Unis" .
+
+<http://marc2rda.edu/fake/rvmgf/con#documentaires> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ;
+    skos:prefLabel "Documentaires" .
+
+<http://marc2rda.edu/fake/rvmgf/con#filmsautresquedefiction> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ;
+    skos:prefLabel "Films autres que de fiction" .
+
+<http://marc2rda.edu/fake/rvmgf/con#vide%CC%81ossurinternet> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ;
+    skos:prefLabel "Vidéos sur Internet" .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a <http://rdaregistry.info/Elements/c/Place.en> ;
+    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/fast/plaNom#unitedstates> .
+
+<http://marc2rda.edu/fake/99162251920901452age#d22e280> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    rdaad:accessPointForPerson.en "Butler, Shakti" .
+
+<http://marc2rda.edu/fake/99162251920901452age#d22e288> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    rdaad:accessPointForPerson.en "Butler, Rick" .
+
+<http://marc2rda.edu/fake/99162251920901452origMan> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    rdam:carrierType.en <https://doi.org/10.6069/uwlswd.qgc0-9r48#v> ;
+    rdam:categoryOfManifestation.en <https://doi.org/10.6069/uwlswd.qgc0-9r48#v> ;
+    rdamd:copyrightDate.en "2017" ;
+    rdamd:dateOfManifestation.en "2017/.." ;
+    rdamd:dateOfPublication.en "2017" ;
+    rdamd:nameOfPublisher.en "World Trust Educational Services, Inc." ;
+    rdamd:noteOnManifestation.en "Copyright notice date: ©2017." ;
+    rdamd:placeOfPublication.en "Oakland, Calif." ;
+    rdamd:publicationStatement.en "[Oakland, Calif.] : World Trust Educational Services, Inc., [2017]" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "World Trust Educational Services, Inc",
+        "World Trust presents",
+        "a film by Shakti Butler",
+        "directed by Shakti Butler and Rick Butler",
+        "producer, Shakti Butler" ;
+    rdamd:titleProper.en "Healing justice" ;
+    rdamo:expressionManifested.en <http://marc2rda.edu/fake/99162251920901452exp> ;
+    rdamo:placeOfManifestation.en <http://id.loc.gov/vocabulary/countries/cau> .
+
+<http://marc2rda.edu/fake/99162251920901452age#d22e262> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
+    rdaad:accessPointForCorporateBody.en "World Trust (Organization)" .
+
+<http://marc2rda.edu/fake/99162251920901452exp> a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:duration.en "Duration: 067 minutes." ;
+    rdaed:identifierForExpression.en "99162251920901452exp" ;
+    rdaed:summarizationOfContent.en "Designed for dialogue, the film examines the school-to-prison pipeline, the need for comprehensive criminal justice reform, and highlights the importance of implementing restorative healing practices." ;
+    rdae:languageOfExpression.en <http://id.loc.gov/vocabulary/languages/eng> ;
+    rdaeo:manifestationOfExpression.en <http://marc2rda.edu/fake/99162251920901452man>,
+        <http://marc2rda.edu/fake/99162251920901452origMan> ;
+    rdaeo:presenterCorporateBody.en <http://marc2rda.edu/fake/99162251920901452age#d22e262> ;
+    rdaeo:workExpressed.en <http://marc2rda.edu/fake/99162251920901452wor> .
+

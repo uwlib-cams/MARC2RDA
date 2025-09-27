@@ -1,0 +1,1339 @@
+@prefix ex: <http://fakeIRI2.edu/> .
+@prefix fake: <http://fakePropertiesForDemo> .
+@prefix rdaad: <http://rdaregistry.info/Elements/a/datatype/> .
+@prefix rdaao: <http://rdaregistry.info/Elements/a/object/> .
+@prefix rdaed: <http://rdaregistry.info/Elements/e/datatype/> .
+@prefix rdaeo: <http://rdaregistry.info/Elements/e/object/> .
+@prefix rdaid: <http://rdaregistry.info/Elements/i/datatype/> .
+@prefix rdaio: <http://rdaregistry.info/Elements/i/object/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdamd: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdamo: <http://rdaregistry.info/Elements/m/object/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdand: <http://rdaregistry.info/Elements/n/datatype/> .
+@prefix rdapo: <http://rdaregistry.info/Elements/p/object/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdawd: <http://rdaregistry.info/Elements/w/datatype/> .
+@prefix rdawo: <http://rdaregistry.info/Elements/w/object/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ex:1296117130man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F020 ## $a 0241572541 $q (hardback)",
+        "F020 ## $a 0744063175 $q (hardcover)",
+        "F020 ## $a 9780241572542 $q (hardback)",
+        "F020 ## $a 9780744063172 $q (hardcover)",
+        "F020 ## $z 9780241596975 (ebook)",
+        "F245 10 $a ABC pride / $c written by Dr Elly Barnes MBE and Louie Stowell ; illustrations by Amy Phelps.",
+        "F264 #1 $a New York, NY : $b DK Publishing, $c 2022.",
+        "F337 ## $a unmediated $b n $2 rdamedia",
+        "F338 ## $a volume $b nc $2 rdacarrier" ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/nc> ;
+    rdamd:dateOfPublication.en "2022" ;
+    rdamd:nameOfPublisher.en "DK Publishing" ;
+    rdamd:placeOfPublication.en "New York, NY" ;
+    rdamd:publicationStatement.en "New York, NY : DK Publishing, 2022." ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "written by Dr Elly Barnes MBE and Louie Stowell ; illustrations by Amy Phelps" ;
+    rdamd:titleProper.en "ABC pride" ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    rdamo:contributorPersonOfStillImage.en <http://marc2rda.edu/fake/age/d19e1665> ;
+    rdamo:expressionManifested.en ex:1296117130exp ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d19e1443>,
+        <http://marc2rda.edu/fake/nom/d19e1448>,
+        <http://marc2rda.edu/fake/nom/d19e1454>,
+        <http://marc2rda.edu/fake/nom/d19e1459>,
+        <http://marc2rda.edu/fake/nom/d19e1464> .
+
+ex:1349350316ited19e1739 a <http://rdaregistry.info/Elements/c/Item.en> ;
+    fake:marcfield "F074 ## $a 0497-D-01 (online)" ;
+    rdaid:identifierForItem.en "ited19e1739" ;
+    rdaio:identifierForItem.en <http://marc2rda.edu/fake/nom/d19e1740> .
+
+ex:1349350316man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F245 00 $a Affordable Care Act enrollment assistance for LGBT communities : $b a resource for behavioral health providers.",
+        "F264 #1 $a [Rockville, Maryland] : $b Substance Abuse and Mental Health Services Administration, $c 2014.",
+        "F337 ## $a computer $b c $2 rdamedia",
+        "F338 ## $a online resource $b cr $2 rdacarrier",
+        "F340 ## $g black and white",
+        "F340 ## $g color",
+        "F340 ## $g monochrome $2 rdacc",
+        "F340 ## $g polychrome $2 rdacc",
+        "F340 ## $p illustration $2 rdaill",
+        "F500 ## $a \"First printed in 2014\"--Back cover.",
+        "F500 ## $a \"PEP14-LGBTACAENROLL\"--Back cover.",
+        "F504 ## $a Includes bibliographical references.",
+        "F588 ## $a Description based on online resource, PDF version; title from cover (SAMHSA, viewed October 26, 2022)." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr> ;
+    rdam:colourContent.en <http://rdaregistry.info/termList/RDAColourContent/1002>,
+        <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    rdamd:colourContent.en "black and white",
+        "color" ;
+    rdamd:dateOfPublication.en "2014" ;
+    rdamd:nameOfPublisher.en "Substance Abuse and Mental Health Services Administration" ;
+    rdamd:noteOnManifestation.en "\"First printed in 2014\"--Back cover.",
+        "\"PEP14-LGBTACAENROLL\"--Back cover.",
+        "Description based on online resource, PDF version; title from cover (SAMHSA, viewed October 26, 2022)." ;
+    rdamd:otherTitleInformation.en "a resource for behavioral health providers" ;
+    rdamd:placeOfPublication.en "Rockville, Maryland" ;
+    rdamd:publicationStatement.en "[Rockville, Maryland] : Substance Abuse and Mental Health Services Administration, 2014." ;
+    rdamd:supplementaryContent.en "Includes bibliographical references." ;
+    rdamd:titleProper.en "Affordable Care Act enrollment assistance for LGBT communities" ;
+    rdam:illustrativeContent.en <http://rdaregistry.info/termList/IllusContent/1014> ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdamo:expressionManifested.en ex:1349350316exp .
+
+ex:1400208651man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F024 7# $a 1773/49194 $2 hdl",
+        "F245 10 $a Quieren mi labor más no mi intelecto : $b they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system / $c Maria Elizabeth Ramirez Arreola.",
+        "F264 #1 $a [Seattle] : $b [University of Washington Libraries], $c [2022]",
+        "F264 #4 $c ©2022",
+        "F337 ## $a computer $b c $2 rdamedia",
+        "F338 ## $a online resource $b cr $2 rdacarrier",
+        "F347 ## $a text file $2 rdaft",
+        "F347 ## $b PDF",
+        "F504 ## $a Includes bibliographical references (pages 107-116).",
+        "F506 1# $a Restrict to UW for 2 years -- then make Open Access $g 20240912",
+        "F588 0# $a Online resource; title from PDF title page (ResearchWorks Archive, viewed September 28, 2023)." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr> ;
+    rdamd:copyrightDate.en "2022" ;
+    rdamd:dateOfPublication.en "2022" ;
+    rdamd:encodingFormat.en "PDF" ;
+    rdamd:nameOfPublisher.en "University of Washington Libraries" ;
+    rdamd:noteOnManifestation.en "Copyright notice date: ©2022",
+        "Source of description: Online resource; title from PDF title page (ResearchWorks Archive, viewed September 28, 2023)." ;
+    rdamd:otherTitleInformation.en "they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system" ;
+    rdamd:placeOfPublication.en "Seattle" ;
+    rdamd:publicationStatement.en "[Seattle] : [University of Washington Libraries], [2022]" ;
+    rdamd:restrictionOnAccessToManifestation.en "Restrictions apply: Terms governing access: Restrict to UW for 2 years -- then make Open Access; Availability date: 20240912" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Maria Elizabeth Ramirez Arreola" ;
+    rdamd:supplementaryContent.en "Includes bibliographical references (pages 107-116)." ;
+    rdamd:titleProper.en "Quieren mi labor más no mi intelecto" ;
+    rdam:fileType.en <http://rdaregistry.info/termList/fileType/1002> ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdamo:expressionManifested.en ex:1400208651exp ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d19e38> .
+
+ex:915120389man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F020 ## $a 082236140X $q (hardcover)",
+        "F020 ## $a 0822361590 $q (paperback)",
+        "F020 ## $a 9780822361404 $q (hardcover)",
+        "F020 ## $a 9780822361596 $q (paperback)",
+        "F020 ## $z 0822374218 $q (e-book)",
+        "F020 ## $z 9780822374213 $q (e-book)",
+        "F024 7# $z 10.1515/9780822374213 $2 doi",
+        "F245 10 $a Undoing monogamy : $b the politics of science and the possibilities of biology / $c Angela Willey.",
+        "F264 #1 $a Durham : $b Duke University Press, $c 2016.",
+        "F264 #4 $c ©2016",
+        "F337 ## $a unmediated $b n $2 rdamedia",
+        "F338 ## $a volume $b nc $2 rdacarrier",
+        "F340 ## $g black and white",
+        "F340 ## $g monochrome $2 rdacc",
+        "F340 ## $p illustration $2 rdaill",
+        "F504 ## $a Includes bibliographical references (pages 147-190) and index." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/nc> ;
+    rdam:colourContent.en <http://rdaregistry.info/termList/RDAColourContent/1002> ;
+    rdamd:colourContent.en "black and white" ;
+    rdamd:copyrightDate.en "2016" ;
+    rdamd:dateOfPublication.en "2016" ;
+    rdamd:nameOfPublisher.en "Duke University Press" ;
+    rdamd:noteOnManifestation.en "Copyright notice date: ©2016" ;
+    rdamd:otherTitleInformation.en "the politics of science and the possibilities of biology" ;
+    rdamd:placeOfPublication.en "Durham" ;
+    rdamd:publicationStatement.en "Durham : Duke University Press, 2016." ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Angela Willey" ;
+    rdamd:supplementaryContent.en "Includes bibliographical references (pages 147-190) and index." ;
+    rdamd:titleProper.en "Undoing monogamy" ;
+    rdam:illustrativeContent.en <http://rdaregistry.info/termList/IllusContent/1014> ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    rdamo:expressionManifested.en ex:915120389exp ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d19e1020>,
+        <http://marc2rda.edu/fake/nom/d19e1025>,
+        <http://marc2rda.edu/fake/nom/d19e1030>,
+        <http://marc2rda.edu/fake/nom/d19e1036>,
+        <http://marc2rda.edu/fake/nom/d19e1041>,
+        <http://marc2rda.edu/fake/nom/d19e1046>,
+        <http://marc2rda.edu/fake/nom/d19e1051> .
+
+ex:945006014man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F020 ## $a 0822374218 $q (electronic book)",
+        "F020 ## $a 9780822374213 $q (electronic book)",
+        "F020 ## $z 082236140X $q (hardcover)",
+        "F020 ## $z 0822361590 $q (paperback)",
+        "F020 ## $z 9780822361404 $q (hardcover)",
+        "F020 ## $z 9780822361596 $q (paperback)",
+        "F024 7# $a 10.1515/9780822374213 $2 doi",
+        "F245 10 $a Undoing monogamy : $b the politics of science and the possibilities of biology / $c Angela Willey.",
+        "F264 #1 $a Durham : $b Duke University Press, $c [2016]",
+        "F264 #4 $c ©2016",
+        "F337 ## $a computer $b c $2 rdamedia",
+        "F338 ## $a online resource $b cr $2 rdacarrier",
+        "F340 ## $g black and white",
+        "F340 ## $g monochrome $2 rdacc",
+        "F340 ## $p illustration $2 rdaill",
+        "F504 ## $a Includes bibliographical references (pages 147-190) and index.",
+        "F588 0# $a Print version record." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr> ;
+    rdam:colourContent.en <http://rdaregistry.info/termList/RDAColourContent/1002> ;
+    rdamd:colourContent.en "black and white" ;
+    rdamd:copyrightDate.en "2016" ;
+    rdamd:dateOfPublication.en "2016" ;
+    rdamd:nameOfPublisher.en "Duke University Press" ;
+    rdamd:noteOnManifestation.en "Copyright notice date: ©2016",
+        "Source of description: Print version record." ;
+    rdamd:otherTitleInformation.en "the politics of science and the possibilities of biology" ;
+    rdamd:placeOfPublication.en "Durham" ;
+    rdamd:publicationStatement.en "Durham : Duke University Press, [2016]" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Angela Willey" ;
+    rdamd:supplementaryContent.en "Includes bibliographical references (pages 147-190) and index." ;
+    rdamd:titleProper.en "Undoing monogamy" ;
+    rdam:illustrativeContent.en <http://rdaregistry.info/termList/IllusContent/1014> ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdamo:expressionManifested.en ex:945006014exp ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d19e408>,
+        <http://marc2rda.edu/fake/nom/d19e413>,
+        <http://marc2rda.edu/fake/nom/d19e418>,
+        <http://marc2rda.edu/fake/nom/d19e424>,
+        <http://marc2rda.edu/fake/nom/d19e429>,
+        <http://marc2rda.edu/fake/nom/d19e434>,
+        <http://marc2rda.edu/fake/nom/d19e439> .
+
+ex:989789649man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F020 ## $a 0774890207 $q (hardcover)",
+        "F020 ## $a 0774890215 $q (softcover)",
+        "F020 ## $a 9780774890205 $q (hardcover)",
+        "F020 ## $a 9780774890212 $q (softcover)",
+        "F020 ## $z 9780774890229 $q (PDF)",
+        "F020 ## $z 9780774890236 $q (EPUB)",
+        "F020 ## $z 9780774890243 $q (Kindle)",
+        "F245 10 $a Am I safe here? : $b LGBTQ teens and bullying in schools / $c Donn Short.",
+        "F264 #1 $a Vancouver ; $a Toronto : $b On Point Press, a UBC Press imprint, $c [2017]",
+        "F264 #4 $c ©2017",
+        "F337 ## $a unmediated $b n $2 rdamedia",
+        "F338 ## $a volume $b nc $2 rdacarrier",
+        "F504 ## $a Includes bibliographical references." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/nc> ;
+    rdamd:copyrightDate.en "2017" ;
+    rdamd:dateOfPublication.en "2017" ;
+    rdamd:nameOfPublisher.en "On Point Press, a UBC Press imprint" ;
+    rdamd:noteOnManifestation.en "Copyright notice date: ©2017" ;
+    rdamd:otherTitleInformation.en "LGBTQ teens and bullying in schools" ;
+    rdamd:placeOfPublication.en "Toronto",
+        "Vancouver" ;
+    rdamd:publicationStatement.en "Vancouver ; Toronto : On Point Press, a UBC Press imprint, [2017]" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Donn Short" ;
+    rdamd:supplementaryContent.en "Includes bibliographical references." ;
+    rdamd:titleProper.en "Am I safe here?" ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    rdamo:expressionManifested.en ex:989789649exp ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d19e2676>,
+        <http://marc2rda.edu/fake/nom/d19e2682>,
+        <http://marc2rda.edu/fake/nom/d19e2687>,
+        <http://marc2rda.edu/fake/nom/d19e2692>,
+        <http://marc2rda.edu/fake/nom/d19e2697>,
+        <http://marc2rda.edu/fake/nom/d19e2702>,
+        <http://marc2rda.edu/fake/nom/d19e2707> .
+
+ex:989789790man a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F020 ## $a 0774890223 $q (electronic bk.)",
+        "F020 ## $a 0774890231 $q (electronic bk.)",
+        "F020 ## $a 077489024X $q (electronic bk.)",
+        "F020 ## $a 9780774890229 $q (PDF)",
+        "F020 ## $a 9780774890236 $q (EPUB)",
+        "F020 ## $a 9780774890243 $q (Kindle)",
+        "F020 ## $z 0774890207 $q (hardcover)",
+        "F020 ## $z 0774890215 $q (softcover)",
+        "F020 ## $z 9780774890205 $q (hardcover)",
+        "F020 ## $z 9780774890212 $q (softcover)",
+        "F245 10 $a Am I safe here? : $b LGBTQ teens and bullying in schools / $c Donn Short.",
+        "F264 #1 $a Vancouver ; $a Toronto : $b On Point Press, a UBC Press imprint, $c [2017]",
+        "F264 #4 $c ©2017",
+        "F337 ## $a computer $b c $2 rdamedia",
+        "F338 ## $a online resource $b cr $2 rdacarrier",
+        "F504 ## $a Includes bibliographical references.",
+        "F506 ## $3 Use copy $f Restrictions unspecified $2 star $5 MiAaHDL",
+        "F538 ## $a Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. $u http://purl.oclc.org/DLF/benchrepro0212 $5 MiAaHDL",
+        "F583 1# $a digitized $c 2024. $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL",
+        "F588 0# $a Print version record." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr> ;
+    rdamd:copyrightDate.en "2017" ;
+    rdamd:dateOfPublication.en "2017" ;
+    rdamd:nameOfPublisher.en "On Point Press, a UBC Press imprint" ;
+    rdamd:noteOnManifestation.en "Copyright notice date: ©2017",
+        "Restriction on access http://marc2rda.edu/fake/concept/star/restrictionsunspecified applies to ",
+        "Source of description: Print version record." ;
+    rdamd:otherTitleInformation.en "LGBTQ teens and bullying in schools" ;
+    rdamd:placeOfPublication.en "Toronto",
+        "Vancouver" ;
+    rdamd:publicationStatement.en "Vancouver ; Toronto : On Point Press, a UBC Press imprint, [2017]" ;
+    rdamd:restrictionOnAccessToManifestation.en " (Applies to: Use copy) (at institution: HathiTrust Digital Library)" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Donn Short" ;
+    rdamd:supplementaryContent.en "Includes bibliographical references." ;
+    rdamd:titleProper.en "Am I safe here?" ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdamo:exemplarOfManifestation.en ex:989789790ited19e2243,
+        ex:989789790ited19e2245 ;
+    rdamo:expressionManifested.en ex:989789790exp ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d19e2050>,
+        <http://marc2rda.edu/fake/nom/d19e2056>,
+        <http://marc2rda.edu/fake/nom/d19e2061>,
+        <http://marc2rda.edu/fake/nom/d19e2066>,
+        <http://marc2rda.edu/fake/nom/d19e2071>,
+        <http://marc2rda.edu/fake/nom/d19e2076>,
+        <http://marc2rda.edu/fake/nom/d19e2081>,
+        <http://marc2rda.edu/fake/nom/d19e2086>,
+        <http://marc2rda.edu/fake/nom/d19e2091>,
+        <http://marc2rda.edu/fake/nom/d19e2096> ;
+    rdam:restrictionOnAccessToManifestation.en <http://marc2rda.edu/fake/concept/star/restrictionsunspecified> .
+
+ex:1296117130exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "1296117130exp" ;
+    rdaeo:workExpressed.en ex:1296117130wor .
+
+ex:1296117130wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F245 10 $a ABC pride / $c written by Dr Elly Barnes MBE and Louie Stowell ; illustrations by Amy Phelps.",
+        "F650 #0 $a Alphabet books $v Juvenile literature.",
+        "F650 #0 $a Gay pride celebrations $v Juvenile literature.",
+        "F650 #0 $a Sexual minorities $v Juvenile literature.",
+        "F650 #0 $a Sexual minority community $v Juvenile literature.",
+        "F650 #1 $a Alphabet.",
+        "F650 #1 $a Gay pride celebrations.",
+        "F650 #1 $a LGBTQ+ people.",
+        "F650 #6 $a Abécédaires. $0 (CaQQLa)201-0090939",
+        "F650 #6 $a Célébrations de la fierté gaie $0 (CaQQLa)000301477 $v Ouvrages pour la jeunesse. $0 (CaQQLa)201-0377026",
+        "F650 #6 $a Communautés de minorités sexuelles $0 (CaQQLa)000347580 $v Ouvrages pour la jeunesse. $0 (CaQQLa)201-0377026",
+        "F650 #7 $a Gay pride. $2 homoit $0 https://homosaurus.org/v3/homoit0000522",
+        "F650 #7 $a Inclusivity. $2 homoit $0 https://homosaurus.org/v3/homoit0002291",
+        "F650 #7 $a JUVENILE FICTION / Concepts / Alphabet. $2 bisacsh",
+        "F650 #7 $a JUVENILE FICTION / LGBT. $2 bisacsh",
+        "F650 #7 $a LGBTQ+ communities. $2 homoit $0 https://homosaurus.org/v3/homoit0000297",
+        "F655 #0 $a Picture books for children.",
+        "F655 #7 $a Abécédaires. $2 rvmgf $0 (CaQQLa)RVMGF-000313209",
+        "F655 #7 $a Alphabet books. $2 lcgft",
+        "F655 #7 $a Picture books. $2 lcgft",
+        "F655 #7 $a alphabet books. $2 aat $0 (CStmoGRI)aatgf300202510" ;
+    rdaw:categoryOfWork.en <http://marc2rda.edu/fake/concept/aat/alphabetbooks>,
+        <http://marc2rda.edu/fake/concept/lcgft/alphabetbooks>,
+        <http://marc2rda.edu/fake/concept/lcgft/picturebooks>,
+        <http://marc2rda.edu/fake/concept/lcsh/juvenileliterature>,
+        <http://marc2rda.edu/fake/concept/lcsh/picturebooksforchildren>,
+        <http://marc2rda.edu/fake/concept/rvm/ouvragespourlajeunesse>,
+        <http://marc2rda.edu/fake/concept/rvmgf/abe%CC%81ce%CC%81daires> ;
+    rdawd:identifierForWork.en "1296117130wor" ;
+    rdawd:titleOfWork.en "ABC pride" ;
+    rdawo:authorPerson.en <http://marc2rda.edu/fake/age/d19e1482>,
+        <http://marc2rda.edu/fake/age/d19e1660> ;
+    rdaw:subject.en <http://marc2rda.edu/fake/concept/bisacsh/juvenilefictionconceptsalphabet>,
+        <http://marc2rda.edu/fake/concept/bisacsh/juvenilefictionlgbt>,
+        <http://marc2rda.edu/fake/concept/cyac/alphabet>,
+        <http://marc2rda.edu/fake/concept/cyac/gaypridecelebrations>,
+        <http://marc2rda.edu/fake/concept/cyac/lgbtq%2Bpeople>,
+        <http://marc2rda.edu/fake/concept/lcsh/alphabetbooksjuvenileliterature>,
+        <http://marc2rda.edu/fake/concept/lcsh/gaypridecelebrationsjuvenileliterature>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualminoritiesjuvenileliterature>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualminoritycommunityjuvenileliterature>,
+        <http://marc2rda.edu/fake/concept/rvm/abe%CC%81ce%CC%81daires>,
+        <http://marc2rda.edu/fake/concept/rvm/ce%CC%81le%CC%81brationsdelafierte%CC%81gaieouvragespourlajeunesse>,
+        <http://marc2rda.edu/fake/concept/rvm/communaute%CC%81sdeminorite%CC%81ssexuellesouvragespourlajeunesse>,
+        <https://homosaurus.org/v3/homoit0000297>,
+        <https://homosaurus.org/v3/homoit0000522>,
+        <https://homosaurus.org/v3/homoit0002291> .
+
+ex:1349350316exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "1349350316exp" ;
+    rdaeo:workExpressed.en ex:1349350316wor .
+
+ex:1349350316wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F043 ## $a n-us---",
+        "F245 00 $a Affordable Care Act enrollment assistance for LGBT communities : $b a resource for behavioral health providers.",
+        "F610 10 $a United States. $t Patient Protection and Affordable Care Act.",
+        "F630 07 $a Patient Protection and Affordable Care Act (United States) $2 fast $0 (OCoLC)fst01916081",
+        "F650 #0 $a Health insurance $x Law and legislation $z United States.",
+        "F650 #0 $a Mental health services $z United States.",
+        "F650 #0 $a Sexual minorities $x Mental health services $z United States.",
+        "F650 #6 $a Minorités sexuelles $z États-Unis. $0 (CaQQLa)000336571",
+        "F650 #7 $a Health care for LGBTQ+ people. $2 homoit $0 https://homosaurus.org/v3/homoit0000614",
+        "F650 #7 $a Health insurance $x Law and legislation $2 fast $0 (OCoLC)fst01715845",
+        "F650 #7 $a LGBTQ+ people. $2 homoit $0 https://homosaurus.org/v3/homoit0000915",
+        "F650 #7 $a Mental health care for LGBTQ+ people. $2 homoit $0 https://homosaurus.org/v3/homoit0001012",
+        "F650 #7 $a Mental health personnel $2 fast $0 (OCoLC)fst01016457",
+        "F650 #7 $a Sexual minorities $2 fast $0 (OCoLC)fst01202158",
+        "F651 #7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq $0 (OCoLC)fst01204155" ;
+    rdawd:identifierForWork.en "1349350316wor" ;
+    rdawd:subjectPlace.en "n-us"^^<http://id.loc.gov/vocabulary/geographicAreas> ;
+    rdawd:titleOfWork.en "Affordable Care Act enrollment assistance for LGBT communities" ;
+    rdawo:issuingCorporateBody.en <http://marc2rda.edu/fake/age/d19e1931> ;
+    rdawo:subjectCorporateBody.en <http://marc2rda.edu/fake/age/lcsh/unitedstates> ;
+    rdawo:subjectPlace.en <http://marc2rda.edu/fake/place/lcsh/unitedstates>,
+        <http://marc2rda.edu/fake/place/rvm/e%CC%81tatsunis>,
+        <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> ;
+    rdawo:subjectWork.en <http://marc2rda.edu/fake/wor/fast/patientprotectionandaffordablecareactunitedstates>,
+        <http://marc2rda.edu/fake/wor/lcsh/unitedstatespatientprotectionandaffordablecareact> ;
+    rdaw:subject.en <http://marc2rda.edu/fake/concept/lcsh/healthinsurancelawandlegislationunitedstates>,
+        <http://marc2rda.edu/fake/concept/lcsh/lawandlegislationunitedstates>,
+        <http://marc2rda.edu/fake/concept/lcsh/mentalhealthservicesunitedstates>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualminoritiesmentalhealthservicesunitedstates>,
+        <http://marc2rda.edu/fake/concept/lcsh/unitedstates>,
+        <http://marc2rda.edu/fake/concept/rvm/e%CC%81tatsunis>,
+        <http://marc2rda.edu/fake/concept/rvm/minorite%CC%81ssexuellese%CC%81tatsunis>,
+        <https://homosaurus.org/v3/homoit0000614>,
+        <https://homosaurus.org/v3/homoit0000915>,
+        <https://homosaurus.org/v3/homoit0001012>,
+        <https://id.worldcat.org/fast/01016457>,
+        <https://id.worldcat.org/fast/01202158>,
+        <https://id.worldcat.org/fast/01715845> .
+
+ex:1400208651exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "1400208651exp" ;
+    rdaeo:workExpressed.en ex:1400208651wor .
+
+ex:1400208651wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F245 10 $a Quieren mi labor más no mi intelecto : $b they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system / $c Maria Elizabeth Ramirez Arreola.",
+        "F502 ## $b Ph. D. $c University of Washington $d 2022",
+        "F650 #0 $a Critical race theory.",
+        "F650 #0 $a English language $x Study and teaching (Continuing education) $x Spanish speakers.",
+        "F650 #0 $a Feminism and higher education $z United States.",
+        "F650 #0 $a Hispanic American women $x Education (Higher) $z United States.",
+        "F650 #0 $a Hispanic American women college students $z United States $x Social conditions.",
+        "F650 #0 $a Immigrant students $z United States $x Social conditions.",
+        "F650 #0 $a Racism in higher education $z United States.",
+        "F650 #0 $a Sexism in higher education $z United States.",
+        "F650 #0 $a Women immigrants $x Education (Higher) $z United States.",
+        "F655 #4 $a Theses $x Gender, women, and sexuality.",
+        "F655 #7 $a Academic theses $2 fast $0 (OCoLC)fst01726453",
+        "F655 #7 $a Academic theses. $2 lcgft",
+        "F655 #7 $a Thèses et écrits académiques. $2 rvmgf $0 (CaQQLa)RVMGF-000001173",
+        "F655 #7 $a dissertations. $2 aat $0 (CStmoGRI)aatgf300028029" ;
+    rdaw:categoryOfWork.en <http://marc2rda.edu/fake/concept/aat/dissertations>,
+        <http://marc2rda.edu/fake/concept/lcgft/academictheses>,
+        <http://marc2rda.edu/fake/concept/rvmgf/the%CC%80sesete%CC%81critsacade%CC%81miques>,
+        <https://id.worldcat.org/fast/01726453> ;
+    rdawd:academicDegree.en "Ph. D." ;
+    rdawd:categoryOfWork.en "Theses -- Gender, women, and sexuality." ;
+    rdawd:degreeGrantingInstitution.en "University of Washington" ;
+    rdawd:dissertationOrThesisInformation.en "Ph. D.; University of Washington; 2022" ;
+    rdawd:identifierForWork.en "1400208651wor" ;
+    rdawd:titleOfWork.en "Quieren mi labor más no mi intelecto" ;
+    rdawd:yearDegreeGranted.en "2022" ;
+    rdawo:authorPerson.en <https://orcid.org/0009-0002-6426-7532> ;
+    rdawo:degreeSupervisor.en <http://www.wikidata.org/entity/Q107956183> ;
+    rdawo:subjectPlace.en <http://marc2rda.edu/fake/place/lcsh/unitedstates> ;
+    rdaw:subject.en <http://marc2rda.edu/fake/concept/lcsh/criticalracetheory>,
+        <http://marc2rda.edu/fake/concept/lcsh/educationhigherunitedstates>,
+        <http://marc2rda.edu/fake/concept/lcsh/englishlanguagestudyandteachingcontinuingeducationspanishspeakers>,
+        <http://marc2rda.edu/fake/concept/lcsh/feminismandhighereducationunitedstates>,
+        <http://marc2rda.edu/fake/concept/lcsh/hispanicamericanwomencollegestudentsunitedstatessocialconditions>,
+        <http://marc2rda.edu/fake/concept/lcsh/hispanicamericanwomeneducationhigherunitedstates>,
+        <http://marc2rda.edu/fake/concept/lcsh/immigrantstudentsunitedstatessocialconditions>,
+        <http://marc2rda.edu/fake/concept/lcsh/racisminhighereducationunitedstates>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexisminhighereducationunitedstates>,
+        <http://marc2rda.edu/fake/concept/lcsh/studyandteachingcontinuingeducationspanishspeakers>,
+        <http://marc2rda.edu/fake/concept/lcsh/unitedstates>,
+        <http://marc2rda.edu/fake/concept/lcsh/unitedstatessocialconditions>,
+        <http://marc2rda.edu/fake/concept/lcsh/womenimmigrantseducationhigherunitedstates> .
+
+ex:915120389exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "915120389exp" ;
+    rdaeo:workExpressed.en ex:915120389wor .
+
+ex:915120389wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F245 10 $a Undoing monogamy : $b the politics of science and the possibilities of biology / $c Angela Willey.",
+        "F650 #0 $a Monogamous relationships.",
+        "F650 #0 $a Non-monogamous relationships.",
+        "F650 #0 $a Sexual ethics.",
+        "F650 #0 $a Sexual minorities $x Sexual behavior.",
+        "F650 #6 $a Minorités sexuelles $0 (CaQQLa)201-0427879 $x Sexualité. $0 (CaQQLa)201-0379013",
+        "F650 #6 $a Monogamie. $0 (CaQQLa)201-0460566",
+        "F650 #6 $a Morale sexuelle. $0 (CaQQLa)201-0002493",
+        "F650 #6 $a Non-monogamie. $0 (CaQQLa)201-0347162",
+        "F650 #7 $a Generatives Verhalten $2 gnd $0 (DE-588)4020118-1",
+        "F650 #7 $a Monogamie $2 gnd $0 (DE-588)4170463-0",
+        "F650 #7 $a Monogamous relationships $2 fast $0 (OCoLC)fst01737818",
+        "F650 #7 $a Monogamy. $2 homoit $0 https://homosaurus.org/v3/homoit0001019",
+        "F650 #7 $a Non-monogamous relationships $2 fast $0 (OCoLC)fst01038560",
+        "F650 #7 $a Non-monogamy. $2 homoit $0 https://homosaurus.org/v3/homoit0001659",
+        "F650 #7 $a Partner preference. $2 homoit $0 https://homosaurus.org/v3/homoit0001081",
+        "F650 #7 $a Polyamory. $2 homoit $0 https://homosaurus.org/v3/homoit0001123",
+        "F650 #7 $a Relationship orientation. $2 homoit $0 https://homosaurus.org/v3/homoit0001636",
+        "F650 #7 $a Sexual ethics $2 fast $0 (OCoLC)fst01114835",
+        "F650 #7 $a Sexual minorities. $2 homoit $0 https://homosaurus.org/v3/homoit0001297",
+        "F650 #7 $a Sexual practices. $2 homoit $0 https://homosaurus.org/v3/homoit0001299",
+        "F650 #7 $a Sexual relationships. $2 homoit $0 https://homosaurus.org/v3/homoit0001302",
+        "F650 #7 $a Sexuelle Sozialisation $2 gnd $0 (DE-588)4181119-7",
+        "F650 #7 $a Sozialwissenschaften $2 gnd $0 (DE-588)4055916-6" ;
+    rdawd:identifierForWork.en "915120389wor" ;
+    rdawd:titleOfWork.en "Undoing monogamy" ;
+    rdawo:authorPerson.en <http://www.wikidata.org/entity/Q57179709> ;
+    rdaw:subject.en <http://marc2rda.edu/fake/concept/gnd/generativesverhalten>,
+        <http://marc2rda.edu/fake/concept/gnd/monogamie>,
+        <http://marc2rda.edu/fake/concept/gnd/sexuellesozialisation>,
+        <http://marc2rda.edu/fake/concept/gnd/sozialwissenschaften>,
+        <http://marc2rda.edu/fake/concept/lcsh/monogamousrelationships>,
+        <http://marc2rda.edu/fake/concept/lcsh/nonmonogamousrelationships>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualbehavior>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualethics>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualminoritiessexualbehavior>,
+        <http://marc2rda.edu/fake/concept/rvm/minorite%CC%81ssexuellessexualite%CC%81>,
+        <http://marc2rda.edu/fake/concept/rvm/monogamie>,
+        <http://marc2rda.edu/fake/concept/rvm/moralesexuelle>,
+        <http://marc2rda.edu/fake/concept/rvm/nonmonogamie>,
+        <http://marc2rda.edu/fake/concept/rvm/sexualite%CC%81>,
+        <https://homosaurus.org/v3/homoit0001019>,
+        <https://homosaurus.org/v3/homoit0001081>,
+        <https://homosaurus.org/v3/homoit0001123>,
+        <https://homosaurus.org/v3/homoit0001297>,
+        <https://homosaurus.org/v3/homoit0001299>,
+        <https://homosaurus.org/v3/homoit0001302>,
+        <https://homosaurus.org/v3/homoit0001636>,
+        <https://homosaurus.org/v3/homoit0001659>,
+        <https://id.worldcat.org/fast/01038560>,
+        <https://id.worldcat.org/fast/01114835>,
+        <https://id.worldcat.org/fast/01737818> .
+
+ex:945006014exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "945006014exp" ;
+    rdaeo:workExpressed.en ex:945006014wor .
+
+ex:945006014wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F245 10 $a Undoing monogamy : $b the politics of science and the possibilities of biology / $c Angela Willey.",
+        "F650 #0 $a Monogamous relationships.",
+        "F650 #0 $a Non-monogamous relationships.",
+        "F650 #0 $a Sexual ethics.",
+        "F650 #0 $a Sexual minorities $x Sexual behavior.",
+        "F650 #6 $a Minorités sexuelles $0 (CaQQLa)201-0427879 $x Sexualité. $0 (CaQQLa)201-0379013",
+        "F650 #6 $a Monogamie. $0 (CaQQLa)201-0460566",
+        "F650 #6 $a Morale sexuelle. $0 (CaQQLa)201-0002493",
+        "F650 #6 $a Non-monogamie. $0 (CaQQLa)201-0347162",
+        "F650 #7 $a Generatives Verhalten $2 gnd $0 (DE-588)4020118-1",
+        "F650 #7 $a Monogamie $2 gnd $0 (DE-588)4170463-0",
+        "F650 #7 $a Monogamous relationships $2 fast $0 (OCoLC)fst01737818",
+        "F650 #7 $a Monogamy. $2 homoit $0 https://homosaurus.org/v3/homoit0001019",
+        "F650 #7 $a Non-monogamous relationships $2 fast $0 (OCoLC)fst01038560",
+        "F650 #7 $a Non-monogamy. $2 homoit $0 https://homosaurus.org/v3/homoit0001659",
+        "F650 #7 $a POLITICAL SCIENCE $x Public Policy $x Cultural Policy. $2 bisacsh",
+        "F650 #7 $a Partner preference. $2 homoit $0 https://homosaurus.org/v3/homoit0001081",
+        "F650 #7 $a Polyamory. $2 homoit $0 https://homosaurus.org/v3/homoit0001123",
+        "F650 #7 $a Relationship orientation. $2 homoit $0 https://homosaurus.org/v3/homoit0001636",
+        "F650 #7 $a SOCIAL SCIENCE $x Anthropology $x Cultural. $2 bisacsh",
+        "F650 #7 $a SOCIAL SCIENCE $x Popular Culture. $2 bisacsh",
+        "F650 #7 $a SOCIAL SCIENCE $x Sociology $x Marriage & Family. $2 bisacsh",
+        "F650 #7 $a Sexual ethics $2 fast $0 (OCoLC)fst01114835",
+        "F650 #7 $a Sexual minorities. $2 homoit $1 https://homosaurus.org/v3/homoit0001297",
+        "F650 #7 $a Sexual practices. $2 homoit $0 https://homosaurus.org/v3/homoit0001299",
+        "F650 #7 $a Sexual relationships. $2 homoit $0 https://homosaurus.org/v3/homoit0001302",
+        "F650 #7 $a Sexuelle Sozialisation $2 gnd $0 (DE-588)4181119-7",
+        "F650 #7 $a Sozialwissenschaften $2 gnd $0 (DE-588)4055916-6" ;
+    rdawd:identifierForWork.en "945006014wor" ;
+    rdawd:titleOfWork.en "Undoing monogamy" ;
+    rdawo:authorPerson.en <https://id.oclc.org/worldcat/entity/E39PBJfh8qkpKYQ6cBkFFQdRKd> ;
+    rdaw:subject.en <http://marc2rda.edu/fake/concept/bisacsh/anthropologycultural>,
+        <http://marc2rda.edu/fake/concept/bisacsh/politicalsciencepublicpolicyculturalpolicy>,
+        <http://marc2rda.edu/fake/concept/bisacsh/popularculture>,
+        <http://marc2rda.edu/fake/concept/bisacsh/publicpolicyculturalpolicy>,
+        <http://marc2rda.edu/fake/concept/bisacsh/socialscienceanthropologycultural>,
+        <http://marc2rda.edu/fake/concept/bisacsh/socialsciencepopularculture>,
+        <http://marc2rda.edu/fake/concept/bisacsh/socialsciencesociologymarriagefamily>,
+        <http://marc2rda.edu/fake/concept/bisacsh/sociologymarriagefamily>,
+        <http://marc2rda.edu/fake/concept/gnd/generativesverhalten>,
+        <http://marc2rda.edu/fake/concept/gnd/monogamie>,
+        <http://marc2rda.edu/fake/concept/gnd/sexuellesozialisation>,
+        <http://marc2rda.edu/fake/concept/gnd/sozialwissenschaften>,
+        <http://marc2rda.edu/fake/concept/lcsh/monogamousrelationships>,
+        <http://marc2rda.edu/fake/concept/lcsh/nonmonogamousrelationships>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualbehavior>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualethics>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualminoritiessexualbehavior>,
+        <http://marc2rda.edu/fake/concept/rvm/minorite%CC%81ssexuellessexualite%CC%81>,
+        <http://marc2rda.edu/fake/concept/rvm/monogamie>,
+        <http://marc2rda.edu/fake/concept/rvm/moralesexuelle>,
+        <http://marc2rda.edu/fake/concept/rvm/nonmonogamie>,
+        <http://marc2rda.edu/fake/concept/rvm/sexualite%CC%81>,
+        <https://homosaurus.org/v3/homoit0001019>,
+        <https://homosaurus.org/v3/homoit0001081>,
+        <https://homosaurus.org/v3/homoit0001123>,
+        <https://homosaurus.org/v3/homoit0001297>,
+        <https://homosaurus.org/v3/homoit0001299>,
+        <https://homosaurus.org/v3/homoit0001302>,
+        <https://homosaurus.org/v3/homoit0001636>,
+        <https://homosaurus.org/v3/homoit0001659>,
+        <https://id.worldcat.org/fast/01038560>,
+        <https://id.worldcat.org/fast/01114835>,
+        <https://id.worldcat.org/fast/01737818> .
+
+ex:989789649exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "989789649exp" ;
+    rdaeo:workExpressed.en ex:989789649wor .
+
+ex:989789649wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F043 ## $a n-cn---",
+        "F245 10 $a Am I safe here? : $b LGBTQ teens and bullying in schools / $c Donn Short.",
+        "F650 #0 $a Bisexual students $z Canada.",
+        "F650 #0 $a Bullying in schools $z Canada.",
+        "F650 #0 $a Gay students $z Canada.",
+        "F650 #0 $a Lesbian students $z Canada.",
+        "F650 #0 $a Sexual minorities $z Canada.",
+        "F650 #0 $a Teenagers $z Canada.",
+        "F650 #0 $a Transgender youth $z Canada.",
+        "F650 #6 $a Adolescents $z Canada. $0 (CaQQLa)201-0196401",
+        "F650 #6 $a Élèves homosexuels $0 (CaQQLa)201-0273907 $z Canada. $0 (CaQQLa)201-0407174",
+        "F650 #6 $a Élèves lesbiennes $0 (CaQQLa)201-0337623 $z Canada. $0 (CaQQLa)201-0407174",
+        "F650 #6 $a Intimidation dans les écoles $0 (CaQQLa)201-0369221 $z Canada. $0 (CaQQLa)201-0407174",
+        "F650 #6 $a Jeunes transgenres $0 (CaQQLa)000265325 $z Canada. $0 (CaQQLa)201-0407174",
+        "F650 #6 $a Minorités sexuelles $0 (CaQQLa)201-0427879 $z Canada. $0 (CaQQLa)201-0407174",
+        "F650 #7 $a Bisexual students $2 fast $0 (OCoLC)fst00833337",
+        "F650 #7 $a Bullying in schools $2 fast $0 (OCoLC)fst00841563",
+        "F650 #7 $a Bullying. $2 homoit $0 https://homosaurus.org/v3/homoit0000228",
+        "F650 #7 $a Gay students $2 fast $0 (OCoLC)fst00939226",
+        "F650 #7 $a Heteronormativity. $2 homoit $0 https://homosaurus.org/v3/homoit0000620",
+        "F650 #7 $a Heterosexism. $2 homoit $0 https://homosaurus.org/v3/homoit0000619",
+        "F650 #7 $a Homophobia. $2 homoit $0 https://homosaurus.org/v3/homoit0000646",
+        "F650 #7 $a LGBTQ+ victims of bullying. $2 homoit $0 https://homosaurus.org/v3/homoit0001989",
+        "F650 #7 $a LGBTQ+ youth. $2 homoit $0 https://homosaurus.org/v3/homoit0001521",
+        "F650 #7 $a Lesbian students $2 fast $0 (OCoLC)fst00996503",
+        "F650 #7 $a Queer youth. $2 homoit $0 https://homosaurus.org/v3/homoit0001215",
+        "F650 #7 $a Sexual minorities $2 fast $0 (OCoLC)fst01202158",
+        "F650 #7 $a Teenagers $2 fast $0 (OCoLC)fst01145551",
+        "F650 #7 $a Transgender youth $2 fast $0 (OCoLC)fst01743062",
+        "F651 #7 $a Canada $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJkMHVW4rfVXPrhVP4VwG3 $0 (OCoLC)fst01204310" ;
+    rdawd:identifierForWork.en "989789649wor" ;
+    rdawd:subjectPlace.en "n-cn"^^<http://id.loc.gov/vocabulary/geographicAreas> ;
+    rdawd:titleOfWork.en "Am I safe here?" ;
+    rdawo:authorPerson.en <https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3> ;
+    rdawo:subjectPlace.en <http://marc2rda.edu/fake/place/lcsh/canada>,
+        <http://marc2rda.edu/fake/place/rvm/canada>,
+        <https://id.oclc.org/worldcat/entity/E39PBJkMHVW4rfVXPrhVP4VwG3> ;
+    rdaw:subject.en <http://marc2rda.edu/fake/concept/lcsh/bisexualstudentscanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/bullyinginschoolscanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/canada>,
+        <http://marc2rda.edu/fake/concept/lcsh/gaystudentscanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/lesbianstudentscanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualminoritiescanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/teenagerscanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/transgenderyouthcanada>,
+        <http://marc2rda.edu/fake/concept/rvm/adolescentscanada>,
+        <http://marc2rda.edu/fake/concept/rvm/canada>,
+        <http://marc2rda.edu/fake/concept/rvm/e%CC%81le%CC%80veshomosexuelscanada>,
+        <http://marc2rda.edu/fake/concept/rvm/e%CC%81le%CC%80veslesbiennescanada>,
+        <http://marc2rda.edu/fake/concept/rvm/intimidationdanslese%CC%81colescanada>,
+        <http://marc2rda.edu/fake/concept/rvm/jeunestransgenrescanada>,
+        <http://marc2rda.edu/fake/concept/rvm/minorite%CC%81ssexuellescanada>,
+        <https://homosaurus.org/v3/homoit0000228>,
+        <https://homosaurus.org/v3/homoit0000619>,
+        <https://homosaurus.org/v3/homoit0000620>,
+        <https://homosaurus.org/v3/homoit0000646>,
+        <https://homosaurus.org/v3/homoit0001215>,
+        <https://homosaurus.org/v3/homoit0001521>,
+        <https://homosaurus.org/v3/homoit0001989>,
+        <https://id.worldcat.org/fast/00833337>,
+        <https://id.worldcat.org/fast/00841563>,
+        <https://id.worldcat.org/fast/00939226>,
+        <https://id.worldcat.org/fast/00996503>,
+        <https://id.worldcat.org/fast/01145551>,
+        <https://id.worldcat.org/fast/01202158>,
+        <https://id.worldcat.org/fast/01743062> .
+
+ex:989789790exp a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:identifierForExpression.en "989789790exp" ;
+    rdaeo:workExpressed.en ex:989789790wor .
+
+ex:989789790ited19e2243 a <http://rdaregistry.info/Elements/c/Item.en> ;
+    rdaid:identifierForItem.en "ited19e2243" ;
+    rdaid:noteOnItem.en "Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.; http://purl.oclc.org/DLF/benchrepro0212" ;
+    rdaio:holdingOf.en <http://marc2rda.edu/fake/colMan/miaahdl> .
+
+ex:989789790ited19e2245 a <http://rdaregistry.info/Elements/c/Item.en> ;
+    fake:marcfield "F583 1# $a digitized $c 2024. $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL" ;
+    rdaid:identifierForItem.en "ited19e2245" ;
+    rdaid:noteOnItem.en "Action: digitized; Time/date of action: 2024.; Jurisdiction: HathiTrust Digital Library; Status: committed to preserve; Source of term: pda" ;
+    rdaio:holdingOf.en <http://marc2rda.edu/fake/colMan/miaahdl> .
+
+ex:989789790wor a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F043 ## $a n-cn---",
+        "F245 10 $a Am I safe here? : $b LGBTQ teens and bullying in schools / $c Donn Short.",
+        "F650 #0 $a Bisexual students $z Canada.",
+        "F650 #0 $a Bullying in schools $z Canada.",
+        "F650 #0 $a Gay students $z Canada.",
+        "F650 #0 $a Lesbian students $z Canada.",
+        "F650 #0 $a Sexual minorities $z Canada.",
+        "F650 #0 $a Teenagers $z Canada.",
+        "F650 #0 $a Transgender youth $z Canada.",
+        "F650 #6 $a Adolescents $z Canada. $0 (CaQQLa)201-0196401",
+        "F650 #6 $a Intimidation dans les écoles $0 (CaQQLa)201-0369221 $z Canada. $0 (CaQQLa)201-0407174",
+        "F650 #6 $a Jeunes transgenres $0 (CaQQLa)000265325 $z Canada. $0 (CaQQLa)201-0407174",
+        "F650 #6 $a Minorités sexuelles $0 (CaQQLa)201-0427879 $z Canada. $0 (CaQQLa)201-0407174",
+        "F650 #7 $a Bisexual students $2 fast $0 (OCoLC)fst00833337",
+        "F650 #7 $a Bullying in schools $2 fast $0 (OCoLC)fst00841563",
+        "F650 #7 $a Bullying. $2 homoit $0 https://homosaurus.org/v3/homoit0000228",
+        "F650 #7 $a EDUCATION $x Administration $x General. $2 bisacsh",
+        "F650 #7 $a EDUCATION $x Organizations & Institutions. $2 bisacsh",
+        "F650 #7 $a Gay students $2 fast $0 (OCoLC)fst00939226",
+        "F650 #7 $a Heteronormativity. $2 homoit $0 https://homosaurus.org/v3/homoit0000620",
+        "F650 #7 $a Heterosexism. $2 homoit $0 https://homosaurus.org/v3/homoit0000619",
+        "F650 #7 $a Homophobia. $2 homoit $0 https://homosaurus.org/v3/homoit0000646",
+        "F650 #7 $a LGBTQ+ victims of bullying. $2 homoit $0 https://homosaurus.org/v3/homoit0001989",
+        "F650 #7 $a LGBTQ+ youth. $2 homoit $0 https://homosaurus.org/v3/homoit0001521",
+        "F650 #7 $a Lesbian students $2 fast $0 (OCoLC)fst00996503",
+        "F650 #7 $a Queer youth. $2 homoit $0 https://homosaurus.org/v3/homoit0001215",
+        "F650 #7 $a Sexual minorities $2 fast $0 (OCoLC)fst01202158",
+        "F650 #7 $a Teenagers $2 fast $0 (OCoLC)fst01145551",
+        "F650 #7 $a Transgender youth $2 fast $0 (OCoLC)fst01743062",
+        "F651 #7 $a Canada $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJkMHVW4rfVXPrhVP4VwG3 $0 (OCoLC)fst01204310" ;
+    rdawd:identifierForWork.en "989789790wor" ;
+    rdawd:subjectPlace.en "n-cn"^^<http://id.loc.gov/vocabulary/geographicAreas> ;
+    rdawd:titleOfWork.en "Am I safe here?" ;
+    rdawo:authorPerson.en <https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3> ;
+    rdawo:subjectPlace.en <http://marc2rda.edu/fake/place/lcsh/canada>,
+        <http://marc2rda.edu/fake/place/rvm/canada>,
+        <https://id.oclc.org/worldcat/entity/E39PBJkMHVW4rfVXPrhVP4VwG3> ;
+    rdaw:subject.en <http://marc2rda.edu/fake/concept/bisacsh/administrationgeneral>,
+        <http://marc2rda.edu/fake/concept/bisacsh/educationadministrationgeneral>,
+        <http://marc2rda.edu/fake/concept/bisacsh/educationorganizationsinstitutions>,
+        <http://marc2rda.edu/fake/concept/bisacsh/organizationsinstitutions>,
+        <http://marc2rda.edu/fake/concept/lcsh/bisexualstudentscanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/bullyinginschoolscanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/canada>,
+        <http://marc2rda.edu/fake/concept/lcsh/gaystudentscanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/lesbianstudentscanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexualminoritiescanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/teenagerscanada>,
+        <http://marc2rda.edu/fake/concept/lcsh/transgenderyouthcanada>,
+        <http://marc2rda.edu/fake/concept/rvm/adolescentscanada>,
+        <http://marc2rda.edu/fake/concept/rvm/canada>,
+        <http://marc2rda.edu/fake/concept/rvm/intimidationdanslese%CC%81colescanada>,
+        <http://marc2rda.edu/fake/concept/rvm/jeunestransgenrescanada>,
+        <http://marc2rda.edu/fake/concept/rvm/minorite%CC%81ssexuellescanada>,
+        <https://homosaurus.org/v3/homoit0000228>,
+        <https://homosaurus.org/v3/homoit0000619>,
+        <https://homosaurus.org/v3/homoit0000620>,
+        <https://homosaurus.org/v3/homoit0000646>,
+        <https://homosaurus.org/v3/homoit0001215>,
+        <https://homosaurus.org/v3/homoit0001521>,
+        <https://homosaurus.org/v3/homoit0001989>,
+        <https://id.worldcat.org/fast/00833337>,
+        <https://id.worldcat.org/fast/00841563>,
+        <https://id.worldcat.org/fast/00939226>,
+        <https://id.worldcat.org/fast/00996503>,
+        <https://id.worldcat.org/fast/01145551>,
+        <https://id.worldcat.org/fast/01202158>,
+        <https://id.worldcat.org/fast/01743062> .
+
+<http://marc2rda.edu/fake/age/d19e1482> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    fake:marcfield "F100 1# $a Barnes, Elly, $d 1971- $e author." ;
+    rdaad:accessPointForPerson.en "Barnes, Elly, 1971-" .
+
+<http://marc2rda.edu/fake/age/d19e1660> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    fake:marcfield "F700 1# $a Stowell, Louie, $e author." ;
+    rdaad:accessPointForPerson.en "Stowell, Louie" .
+
+<http://marc2rda.edu/fake/age/d19e1665> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    fake:marcfield "F700 1# $a Phelps, Amy, $e illustrator." ;
+    rdaad:accessPointForPerson.en "Phelps, Amy" .
+
+<http://marc2rda.edu/fake/age/d19e1931> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
+    fake:marcfield "F710 1# $a United States. $b Substance Abuse and Mental Health Services Administration, $e issuing body." ;
+    rdaad:accessPointForCorporateBody.en "United States. Substance Abuse and Mental Health Services Administration" .
+
+<http://marc2rda.edu/fake/age/nom/lcsh/unitedstates> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "United States." ;
+    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+
+<http://marc2rda.edu/fake/concept/aat/alphabetbooks> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/aat> ;
+    skos:prefLabel "alphabet books." .
+
+<http://marc2rda.edu/fake/concept/aat/dissertations> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/aat> ;
+    skos:prefLabel "dissertations." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/administrationgeneral> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "Administration -- General." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/anthropologycultural> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "Anthropology -- Cultural." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/educationadministrationgeneral> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "EDUCATION -- Administration -- General." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/educationorganizationsinstitutions> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "EDUCATION -- Organizations & Institutions." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/juvenilefictionconceptsalphabet> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "JUVENILE FICTION / Concepts / Alphabet." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/juvenilefictionlgbt> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "JUVENILE FICTION / LGBT." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/organizationsinstitutions> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "Organizations & Institutions." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/politicalsciencepublicpolicyculturalpolicy> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "POLITICAL SCIENCE -- Public Policy -- Cultural Policy." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/popularculture> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "Popular Culture." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/publicpolicyculturalpolicy> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "Public Policy -- Cultural Policy." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/socialscienceanthropologycultural> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "SOCIAL SCIENCE -- Anthropology -- Cultural." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/socialsciencepopularculture> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "SOCIAL SCIENCE -- Popular Culture." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/socialsciencesociologymarriagefamily> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "SOCIAL SCIENCE -- Sociology -- Marriage & Family." .
+
+<http://marc2rda.edu/fake/concept/bisacsh/sociologymarriagefamily> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
+    skos:prefLabel "Sociology -- Marriage & Family." .
+
+<http://marc2rda.edu/fake/concept/cyac/alphabet> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/cyac> ;
+    skos:prefLabel "Alphabet." .
+
+<http://marc2rda.edu/fake/concept/cyac/gaypridecelebrations> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/cyac> ;
+    skos:prefLabel "Gay pride celebrations." .
+
+<http://marc2rda.edu/fake/concept/cyac/lgbtq%2Bpeople> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/cyac> ;
+    skos:prefLabel "LGBTQ+ people." .
+
+<http://marc2rda.edu/fake/concept/lcgft/academictheses> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    skos:prefLabel "Academic theses." .
+
+<http://marc2rda.edu/fake/concept/lcgft/alphabetbooks> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    skos:prefLabel "Alphabet books." .
+
+<http://marc2rda.edu/fake/concept/lcgft/picturebooks> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    skos:prefLabel "Picture books." .
+
+<http://marc2rda.edu/fake/concept/lcsh/alphabetbooksjuvenileliterature> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Alphabet books -- Juvenile literature." .
+
+<http://marc2rda.edu/fake/concept/lcsh/criticalracetheory> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Critical race theory." .
+
+<http://marc2rda.edu/fake/concept/lcsh/educationhigherunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Education (Higher) -- United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/englishlanguagestudyandteachingcontinuingeducationspanishspeakers> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "English language -- Study and teaching (Continuing education) -- Spanish speakers." .
+
+<http://marc2rda.edu/fake/concept/lcsh/feminismandhighereducationunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Feminism and higher education -- United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/gaypridecelebrationsjuvenileliterature> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Gay pride celebrations -- Juvenile literature." .
+
+<http://marc2rda.edu/fake/concept/lcsh/healthinsurancelawandlegislationunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Health insurance -- Law and legislation -- United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/hispanicamericanwomencollegestudentsunitedstatessocialconditions> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Hispanic American women college students -- United States -- Social conditions." .
+
+<http://marc2rda.edu/fake/concept/lcsh/hispanicamericanwomeneducationhigherunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Hispanic American women -- Education (Higher) -- United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/immigrantstudentsunitedstatessocialconditions> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Immigrant students -- United States -- Social conditions." .
+
+<http://marc2rda.edu/fake/concept/lcsh/juvenileliterature> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Juvenile literature." .
+
+<http://marc2rda.edu/fake/concept/lcsh/lawandlegislationunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Law and legislation -- United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/mentalhealthservicesunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Mental health services -- United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/picturebooksforchildren> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Picture books for children." .
+
+<http://marc2rda.edu/fake/concept/lcsh/racisminhighereducationunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Racism in higher education -- United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/sexisminhighereducationunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Sexism in higher education -- United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/sexualminoritiesjuvenileliterature> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Sexual minorities -- Juvenile literature." .
+
+<http://marc2rda.edu/fake/concept/lcsh/sexualminoritiesmentalhealthservicesunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Sexual minorities -- Mental health services -- United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/sexualminoritycommunityjuvenileliterature> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Sexual minority community -- Juvenile literature." .
+
+<http://marc2rda.edu/fake/concept/lcsh/studyandteachingcontinuingeducationspanishspeakers> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Study and teaching (Continuing education) -- Spanish speakers." .
+
+<http://marc2rda.edu/fake/concept/lcsh/unitedstatessocialconditions> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "United States -- Social conditions." .
+
+<http://marc2rda.edu/fake/concept/lcsh/womenimmigrantseducationhigherunitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Women immigrants -- Education (Higher) -- United States." .
+
+<http://marc2rda.edu/fake/concept/rvm/abe%CC%81ce%CC%81daires> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Abécédaires." .
+
+<http://marc2rda.edu/fake/concept/rvm/ce%CC%81le%CC%81brationsdelafierte%CC%81gaieouvragespourlajeunesse> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Célébrations de la fierté gaie -- Ouvrages pour la jeunesse." .
+
+<http://marc2rda.edu/fake/concept/rvm/communaute%CC%81sdeminorite%CC%81ssexuellesouvragespourlajeunesse> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Communautés de minorités sexuelles -- Ouvrages pour la jeunesse." .
+
+<http://marc2rda.edu/fake/concept/rvm/e%CC%81le%CC%80veshomosexuelscanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Élèves homosexuels -- Canada." .
+
+<http://marc2rda.edu/fake/concept/rvm/e%CC%81le%CC%80veslesbiennescanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Élèves lesbiennes -- Canada." .
+
+<http://marc2rda.edu/fake/concept/rvm/e%CC%81tatsunis> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "États-Unis." .
+
+<http://marc2rda.edu/fake/concept/rvm/minorite%CC%81ssexuellese%CC%81tatsunis> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Minorités sexuelles -- États-Unis." .
+
+<http://marc2rda.edu/fake/concept/rvm/ouvragespourlajeunesse> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Ouvrages pour la jeunesse." .
+
+<http://marc2rda.edu/fake/concept/rvmgf/abe%CC%81ce%CC%81daires> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ;
+    skos:prefLabel "Abécédaires." .
+
+<http://marc2rda.edu/fake/concept/rvmgf/the%CC%80sesete%CC%81critsacade%CC%81miques> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ;
+    skos:prefLabel "Thèses et écrits académiques." .
+
+<http://marc2rda.edu/fake/concept/star/restrictionsunspecified> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/accessrestrictionterm/star> ;
+    skos:prefLabel "Restrictions unspecified" .
+
+<http://marc2rda.edu/fake/nom/d19e1020> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780822361404" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e1025> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "082236140X" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e1030> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780822361596" ;
+    rdand:noteOnNomen.en "paperback" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e1036> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0822361590" ;
+    rdand:noteOnNomen.en "paperback" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e1041> rdand:nomenString.en "9780822374213" ;
+    rdand:noteOnNomen.en "e-book" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e1046> rdand:nomenString.en "0822374218" ;
+    rdand:noteOnNomen.en "e-book" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e1051> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "10.1515/9780822374213" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/doi> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e1443> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780744063172" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e1448> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0744063175" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e1454> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780241572542" ;
+    rdand:noteOnNomen.en "hardback" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e1459> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0241572541" ;
+    rdand:noteOnNomen.en "hardback" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e1464> rdand:nomenString.en "9780241596975(ebook)" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e1740> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:categoryOfNomen.en "GPO item number" ;
+    rdand:nomenString.en "0497-D-01 (online)" .
+
+<http://marc2rda.edu/fake/nom/d19e2050> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780774890229" ;
+    rdand:noteOnNomen.en "PDF" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e2056> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780774890236" ;
+    rdand:noteOnNomen.en "EPUB" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e2061> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780774890243" ;
+    rdand:noteOnNomen.en "Kindle" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e2066> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0774890223" ;
+    rdand:noteOnNomen.en "electronic bk." ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e2071> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0774890231" ;
+    rdand:noteOnNomen.en "electronic bk." ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e2076> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "077489024X" ;
+    rdand:noteOnNomen.en "electronic bk." ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e2081> rdand:nomenString.en "9780774890205" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e2086> rdand:nomenString.en "0774890207" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e2091> rdand:nomenString.en "9780774890212" ;
+    rdand:noteOnNomen.en "softcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e2096> rdand:nomenString.en "0774890215" ;
+    rdand:noteOnNomen.en "softcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e2676> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780774890205" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e2682> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0774890207" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e2687> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780774890212" ;
+    rdand:noteOnNomen.en "softcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e2692> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0774890215" ;
+    rdand:noteOnNomen.en "softcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e2697> rdand:nomenString.en "9780774890229" ;
+    rdand:noteOnNomen.en "PDF" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e2702> rdand:nomenString.en "9780774890236" ;
+    rdand:noteOnNomen.en "EPUB" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e2707> rdand:nomenString.en "9780774890243" ;
+    rdand:noteOnNomen.en "Kindle" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e38> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "1773/49194" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/hdl> .
+
+<http://marc2rda.edu/fake/nom/d19e408> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "9780822374213" ;
+    rdand:noteOnNomen.en "electronic book" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e413> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "0822374218" ;
+    rdand:noteOnNomen.en "electronic book" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<http://marc2rda.edu/fake/nom/d19e418> rdand:nomenString.en "9780822361404" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e424> rdand:nomenString.en "082236140X" ;
+    rdand:noteOnNomen.en "hardcover" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e429> rdand:nomenString.en "9780822361596" ;
+    rdand:noteOnNomen.en "paperback" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e434> rdand:nomenString.en "0822361590" ;
+    rdand:noteOnNomen.en "paperback" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/isbn> ;
+    rdan:statusOfIdentification.en <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+
+<http://marc2rda.edu/fake/nom/d19e439> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "10.1515/9780822374213" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/doi> .
+
+<http://marc2rda.edu/fake/pla/nom/fast/canada> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Canada" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://marc2rda.edu/fake/pla/nom/fast/unitedstates> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "United States" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://marc2rda.edu/fake/pla/nom/lcsh/canada> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Canada." ;
+    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+
+<http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "United States",
+        "United States." ;
+    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+
+<http://marc2rda.edu/fake/pla/nom/rvm/canada> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Canada." ;
+    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
+
+<http://marc2rda.edu/fake/pla/nom/rvm/e%CC%81tatsunis> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "États-Unis." ;
+    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
+
+<http://marc2rda.edu/fake/place/rvm/e%CC%81tatsunis> a <http://rdaregistry.info/Elements/c/Place.en> ;
+    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/rvm/e%CC%81tatsunis> .
+
+<http://marc2rda.edu/fake/wor/fast/patientprotectionandaffordablecareactunitedstates> a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F630 07 $a Patient Protection and Affordable Care Act (United States) $2 fast $0 (OCoLC)fst01916081" ;
+    rdawo:authorizedAccessPointForWork.en <http://marc2rda.edu/fake/wor/nom/fast/patientprotectionandaffordablecareactunitedstates> .
+
+<http://marc2rda.edu/fake/wor/lcsh/unitedstatespatientprotectionandaffordablecareact> a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F610 10 $a United States. $t Patient Protection and Affordable Care Act." ;
+    rdawo:authorizedAccessPointForWork.en <http://marc2rda.edu/fake/wor/nom/lcsh/unitedstatespatientprotectionandaffordablecareact> ;
+    rdawo:relatedCorporateBodyOfWork.en <http://marc2rda.edu/fake/age/lcsh/unitedstates> .
+
+<http://marc2rda.edu/fake/wor/nom/fast/patientprotectionandaffordablecareactunitedstates> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Patient Protection and Affordable Care Act (United States)" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+
+<http://marc2rda.edu/fake/wor/nom/lcsh/unitedstatespatientprotectionandaffordablecareact> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "United States. Patient Protection and Affordable Care Act." ;
+    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+
+<http://www.wikidata.org/entity/Q107956183> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    fake:marcfield "F700 1# $a Ginorio, Angela B., $e degree supervisor. $1 http://www.wikidata.org/entity/Q107956183 $1 http://viaf.org/viaf/70643896" ;
+    rdaad:accessPointForPerson.en "Ginorio, Angela B." .
+
+<http://www.wikidata.org/entity/Q57179709> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    fake:marcfield "F100 1# $a Willey, Angela, $d 1978- $e author. $1 http://www.wikidata.org/entity/Q57179709" ;
+    rdaad:accessPointForPerson.en "Willey, Angela, 1978-" .
+
+<https://id.oclc.org/worldcat/entity/E39PBJfh8qkpKYQ6cBkFFQdRKd> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    fake:marcfield "F100 1# $a Willey, Angela, $d 1978- $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJfh8qkpKYQ6cBkFFQdRKd" ;
+    rdaad:accessPointForPerson.en "Willey, Angela, 1978-" .
+
+<https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a <http://rdaregistry.info/Elements/c/Place.en> ;
+    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/fast/unitedstates> .
+
+<https://orcid.org/0009-0002-6426-7532> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    fake:marcfield "F100 1# $a Ramirez Arreola, Maria Elizabeth, $e author. $1 https://orcid.org/0009-0002-6426-7532 $1 http://www.wikidata.org/entity/Q127550946" ;
+    rdaad:accessPointForPerson.en "Ramirez Arreola, Maria Elizabeth" .
+
+<http://marc2rda.edu/fake/age/lcsh/unitedstates> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
+    fake:marcfield "F610 10 $a United States. $t Patient Protection and Affordable Care Act." ;
+    rdaao:authorizedAccessPointForCorporateBody.en <http://marc2rda.edu/fake/age/nom/lcsh/unitedstates> .
+
+<http://marc2rda.edu/fake/concept/gnd/generativesverhalten> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/gnd> ;
+    skos:prefLabel "Generatives Verhalten" .
+
+<http://marc2rda.edu/fake/concept/gnd/monogamie> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/gnd> ;
+    skos:prefLabel "Monogamie" .
+
+<http://marc2rda.edu/fake/concept/gnd/sexuellesozialisation> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/gnd> ;
+    skos:prefLabel "Sexuelle Sozialisation" .
+
+<http://marc2rda.edu/fake/concept/gnd/sozialwissenschaften> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/gnd> ;
+    skos:prefLabel "Sozialwissenschaften" .
+
+<http://marc2rda.edu/fake/concept/lcsh/bisexualstudentscanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Bisexual students -- Canada." .
+
+<http://marc2rda.edu/fake/concept/lcsh/bullyinginschoolscanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Bullying in schools -- Canada." .
+
+<http://marc2rda.edu/fake/concept/lcsh/canada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Canada." .
+
+<http://marc2rda.edu/fake/concept/lcsh/gaystudentscanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Gay students -- Canada." .
+
+<http://marc2rda.edu/fake/concept/lcsh/lesbianstudentscanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Lesbian students -- Canada." .
+
+<http://marc2rda.edu/fake/concept/lcsh/monogamousrelationships> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Monogamous relationships." .
+
+<http://marc2rda.edu/fake/concept/lcsh/nonmonogamousrelationships> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Non-monogamous relationships." .
+
+<http://marc2rda.edu/fake/concept/lcsh/sexualbehavior> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Sexual behavior." .
+
+<http://marc2rda.edu/fake/concept/lcsh/sexualethics> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Sexual ethics." .
+
+<http://marc2rda.edu/fake/concept/lcsh/sexualminoritiescanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Sexual minorities -- Canada." .
+
+<http://marc2rda.edu/fake/concept/lcsh/sexualminoritiessexualbehavior> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Sexual minorities -- Sexual behavior." .
+
+<http://marc2rda.edu/fake/concept/lcsh/teenagerscanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Teenagers -- Canada." .
+
+<http://marc2rda.edu/fake/concept/lcsh/transgenderyouthcanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Transgender youth -- Canada." .
+
+<http://marc2rda.edu/fake/concept/lcsh/unitedstates> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "United States." .
+
+<http://marc2rda.edu/fake/concept/rvm/adolescentscanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Adolescents -- Canada." .
+
+<http://marc2rda.edu/fake/concept/rvm/canada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Canada." .
+
+<http://marc2rda.edu/fake/concept/rvm/intimidationdanslese%CC%81colescanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Intimidation dans les écoles -- Canada." .
+
+<http://marc2rda.edu/fake/concept/rvm/jeunestransgenrescanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Jeunes transgenres -- Canada." .
+
+<http://marc2rda.edu/fake/concept/rvm/minorite%CC%81ssexuellescanada> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Minorités sexuelles -- Canada." .
+
+<http://marc2rda.edu/fake/concept/rvm/minorite%CC%81ssexuellessexualite%CC%81> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Minorités sexuelles -- Sexualité." .
+
+<http://marc2rda.edu/fake/concept/rvm/monogamie> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Monogamie." .
+
+<http://marc2rda.edu/fake/concept/rvm/moralesexuelle> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Morale sexuelle." .
+
+<http://marc2rda.edu/fake/concept/rvm/nonmonogamie> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Non-monogamie." .
+
+<http://marc2rda.edu/fake/concept/rvm/sexualite%CC%81> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
+    skos:prefLabel "Sexualité." .
+
+<http://marc2rda.edu/fake/place/lcsh/canada> a <http://rdaregistry.info/Elements/c/Place.en> ;
+    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/canada> .
+
+<http://marc2rda.edu/fake/place/lcsh/unitedstates> a <http://rdaregistry.info/Elements/c/Place.en> ;
+    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates> .
+
+<http://marc2rda.edu/fake/place/rvm/canada> a <http://rdaregistry.info/Elements/c/Place.en> ;
+    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/rvm/canada> .
+
+<https://id.oclc.org/worldcat/entity/E39PBJkMHVW4rfVXPrhVP4VwG3> a <http://rdaregistry.info/Elements/c/Place.en> ;
+    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/fast/canada> .
+
+<https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    fake:marcfield "F100 1# $a Short, Donn, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3" ;
+    rdaad:accessPointForPerson.en "Short, Donn" .
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">507-test</marc:controlfield>
+        <marc:datafield tag="507" ind1=" " ind2=" ">
+            <marc:subfield code="a">Scale 1:10 of the original.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">507-test2</marc:controlfield>
+        <marc:datafield tag="507" ind1=" " ind2=" ">
+            <marc:subfield code="a">Scale 1/16 in. to 1 ft.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">507-test3</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Australian National University :</marc:subfield>
+            <marc:subfield code="b">University House site levels.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="507" ind1=" " ind2=" ">
+            <marc:subfield code="a">Scale 40 feet to 1 inch.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">507-test4</marc:controlfield>
+        <marc:datafield tag="507" ind1=" " ind2=" ">
+            <marc:subfield code="a">Scale 1:500,000;</marc:subfield>
+            <marc:subfield code="b">1 in. equals 8 miles.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">507-test5</marc:controlfield>
+        <marc:datafield tag="507" ind1=" " ind2=" ">
+            <marc:subfield code="b">Perspective map not drawn to scale.</marc:subfield>
+        </marc:datafield>
+        
+    </marc:record>
+</marc:collection>

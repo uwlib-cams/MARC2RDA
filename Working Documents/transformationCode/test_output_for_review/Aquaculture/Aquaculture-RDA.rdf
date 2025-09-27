@@ -1,0 +1,1815 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc3292686">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>3292686</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc3292686</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc3292686"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#gludejohnbnoaaaquacultureplan"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn77602748noaaaquacultureplan1977unitedstatesgovernmentprintingofficevolume"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#noaaaquacultureplangludejohnbunitedstatesnationalmarinefisheriesservicetextaggregating"/><!--rdawo:P10621 = is metadata description of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc3292686">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc3292686</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 02733cam a2200505 i 4500
+F001 3292686
+F005 20240813164934.7
+F008 770908s1977    dcu      b   f000 0 eng  
+F010 ## $a    77602748 
+F040 ## $a DLC $b eng $e rda $c DLC $d CLU $d GPO $d CUY $d OCLCO $d OCLCF $d OCLCQ $d OCLCO $d OLA $d COF $d OCLCQ $d OCLCA $d OCLCQ $d OCLCO $d FUG $d OCLCQ $d AGL $d OCLCO $d GPO $d OCLCL $d ERE $d OCLCO $d OCLCQ
+F019 ## $a 3193721 $a 3231305 $a 854370998 $a 1225799533
+F037 ## $a 003-020-00136-0 $b GPO
+F043 ## $a n-us---
+F050 04 $a SH34 $b .U54 1977
+F070 ## $a SH34.U54
+F074 ## $a 0609-C-01
+F082 0# $a 338.3/71/0973
+F086 0# $a C 55.302:AQ 3
+F049 ## $a WAUW
+F100 1# $a Glude, John B., $e editor.
+F245 10 $a NOAA aquaculture plan / $c prepared by John B. Glude, editor.
+F264 #1 $a Washington, DC : $b United States Government Printing Office, $c 1977.
+F300 ## $a vi, 41 pages : $b graphs ; $c 27 cm
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+F500 ## $a "May 1977."
+F504 ## $a Includes bibliographical references.
+F520 ## $a Prepared by National Oceanic and Atmospheric Administration, National Marine Fisheries Service and Office of Sea Grant. John B. Glude, editor, Aquaculture Program Coordinator.
+F530 ## $a Also available online in PDF.
+F500 ## $a Includes partial listing of NOAA's authority for Aquaculture programs.
+F650 #0 $a Aquaculture $z United States.
+F650 #0 $a Fishery policy $z United States.
+F650 #6 $a Aquaculture $0 (CaQQLa)201-0001992 $z États-Unis. $0 (CaQQLa)201-0407727
+F650 #6 $a Pêches $0 (CaQQLa)201-0054825 $x Politique gouvernementale $0 (CaQQLa)201-0054825 $z États-Unis. $0 (CaQQLa)201-0407727
+F610 17 $a United States. $b National Oceanic and Atmospheric Administration $2 fast $0 (OCoLC)fst00529308
+F650 #7 $a Aquaculture $2 fast $0 (OCoLC)fst00811864
+F650 #7 $a Fishery policy $2 fast $0 (OCoLC)fst00926264
+F651 #7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq $0 (OCoLC)fst01204155
+F710 1# $a United States. $b National Marine Fisheries Service, $e co-author, $e issuing body.
+F710 1# $a United States. $b National Oceanic and Atmospheric Administration. $b Office of Sea Grant, $e co-author.
+F776 08 $i Online version: $a United States. National Marine Fisheries Service. $t NOAA aquaculture plan. $d [Seattle] : The Service ; [Washington : for sale by the Supt. of Docs., U.S. Govt. Print. Off.], 1977 $w (OCoLC)624588805
+F856 11 $u https://library.oarcloud.noaa.gov/noaa_documents.lib/NOS/CZIC/5140.pdf $z Online version in PDF via the NOAA Central Library (3.4 MB)
+F856 4# $u http://www.gpo.gov/fdsys/pkg/CZIC-sh34-u54-1977/pdf/CZIC-sh34-u54-1977.pdf
+F029 1# $a AU@ $b 000001021296
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#noaaaquacultureplangludejohnbunitedstatesnationalmarinefisheriesservicetextaggregating">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn77602748noaaaquacultureplan1977unitedstatesgovernmentprintingofficevolume"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawd:P10328>NOAA aquaculture plan Glude, John B. United States. National Marine Fisheries Service  text (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#sh34"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#sh34u54"/><!--rdawo:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#gludejohnb-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#gludejohnb"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>NOAA aquaculture plan</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquacultureunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fisherypolicyunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#aquaculturee%CC%81tats-unis"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#pe%CC%82chespolitiquegouvernementalee%CC%81tats-unis"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10263 rdf:resource="https://id.worldcat.org/fast/00529308"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811864"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00926264"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdawo:P10349 = has content type of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdawo:P10349 = has content type of representative expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#gludejohnbnoaaaquacultureplan">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Glude, John B., NOAA aquaculture plan</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#gludejohnb-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#gludejohnb"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>NOAA aquaculture plan</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn77602748noaaaquacultureplan1977unitedstatesgovernmentprintingofficevolume"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#gludejohnbnoaaaquacultureplan"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Glude, John B.. NOAA aquaculture plan  text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>NOAA aquaculture plan</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaed:P20069>Prepared by National Oceanic and Atmospheric Administration, National Marine Fisheries Service and Office of Sea Grant. John B. Glude, editor, Aquaculture Program Coordinator.</rdaed:P20069><!--rdaed:P20069 = has summarization of content-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn77602748noaaaquacultureplan1977unitedstatesgovernmentprintingofficevolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#noaaaquacultureplangludejohnbunitedstatesnationalmarinefisheriesservicetextaggregating"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30276>NOAA aquaculture plan 1977. United States Government Printing Office,volume</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1977</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e239"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e323"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e329"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#gludejohnb-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#gludejohnb"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#gludejohnb-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#gludejohnb"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#gludejohnb-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#gludejohnb"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <rdamd:P30156>NOAA aquaculture plan</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>prepared by John B. Glude, editor</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Washington, DC : United States Government Printing Office, 1977.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Washington, DC</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>United States Government Printing Office</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1977</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>vi, 41 pages : graphs ; 27 cm</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>"May 1977."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30455>Includes bibliographical references.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <rdam:P30026>Additional physical form available note: Also available online in PDF.</rdam:P30026><!--rdam:P30026 = is also issued as-->
+      <rdamd:P30137>Includes partial listing of NOAA's authority for Aquaculture programs.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#unitedstatesnationalmarinefisheriesservice-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#unitedstatesnationalmarinefisheriesservice"/><!--rdamo:P30394 = has contributor corporate body to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#unitedstatesnationalmarinefisheriesservice-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#unitedstatesnationalmarinefisheriesservice"/><!--rdamo:P30394 = has contributor corporate body to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#unitedstatesnationaloceanicandatmosphericadministrationofficeofseagrant-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#unitedstatesnationaloceanicandatmosphericadministrationofficeofseagrant"/><!--rdamo:P30394 = has contributor corporate body to aggregate-->
+      <rdam:P30137>Has equivalent: Online version: United States. National Marine Fisheries Service. NOAA aquaculture plan. [Seattle] : The Service ; [Washington : for sale by the Supt. of Docs., U.S. Govt. Print. Off.], 1977 (OCoLC)624588805</rdam:P30137><!--rdam:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e239">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   77602748 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:   77602748 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e323">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0609-C-01</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80078>GPO item number</rdand:P80078><!--rdand:P80078 = has category of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e329">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>C 55.302:AQ 3</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/><!--rdand:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/ageNom#unitedstatesnationaloceanicandatmosphericadministration">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States. National Oceanic and Atmospheric Administration</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-07-25t1138162388563-0400d25e451">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#gludejohnb">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Glude, John B.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Glude, John B.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.worldcat.org/fast/00529308">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/fast/ageNom#unitedstatesnationaloceanicandatmosphericadministration"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaad:P50006>(OCoLC)fst00529308</rdaad:P50006><!--rdaad:P50006 = has identifier for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#unitedstatesnationalmarinefisheriesservice">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United States. National Marine Fisheries Service</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>United States. National Marine Fisheries Service</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#unitedstatesnationaloceanicandatmosphericadministrationofficeofseagrant">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United States. National Oceanic and Atmospheric Administration. Office of Sea Grant</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>United States. National Oceanic and Atmospheric Administration. Office of Sea Grant</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#sh34">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">SH34</skos:notation>
+      <skos:altLabel>SH34</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#sh34u54">
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">SH34.U54</skos:notation>
+      <skos:altLabel>SH34.U54</skos:altLabel>
+      <skos:note>National Agricultural Library Call Number</skos:note>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquacultureunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fisherypolicyunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fishery policy--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#aquaculturee%CC%81tats-unis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture--États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#pe%CC%82chespolitiquegouvernementalee%CC%81tats-unis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Pêches--Politique gouvernementale--États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-07-25t1138162388563-0400d25e451"/><!--rdapo:P70018 = has access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc6101111">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>6101111</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc6101111</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc6101111"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculture"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculturetext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#theroleoftheusdepartmentofagricultureinaquaculture1979nationalacademyofsciencesvolume"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#theroleoftheusdepartmentofagricultureinaquaculturenationalresearchcounciluspanelonaquaculturenationalresearchcouncilusboardonagricultureandrenewableresourcestextaggregating"/><!--rdawo:P10621 = is metadata description of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc6101111">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc6101111</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 02327cam a2200505 i 4500
+F001 6101111
+F005 20241212023333.7
+F008 800318s1979    dcud     b    000 0 eng  
+F040 ## $a AGL $b eng $c AGL $d CLS $d OCLCQ $d CUY $d OCLCO $d OCLCQ $d WAU $d OCLCF $d COF $d OCLCA $d OCLCQ $d OCLCO $d OCL $d IPL $d OCLCQ $d OCLCO $d OCLCL $d OCLCO
+F019 ## $a 8835119
+F043 ## $a n-us---
+F050 #4 $a SH34 $b .N37 1979
+F070 ## $a SH34.N373
+F072 #0 $a D100
+F072 #0 $a M001
+F082 14 $a 639.3 $b N2135r
+F086 0# $a NA 1.2:AQ 3
+F049 ## $a WAUW
+F110 2# $a National Research Council (U.S.). $b Panel on Aquaculture.
+F245 14 $a The role of the U.S. Department of Agriculture in aquaculture : $b a report / $c prepared by the Panel on Aquaculture, Board on Agriculture and Renewable Resources, National Research Council.
+F260 ## $a Washington, D. C. : $b National Academy of Sciences, $c 1979.
+F300 ## $a xvi, 49 pages : $b chart ; $c 28 cm
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+F500 ## $a Based on a workshop held at College Station, Tex., Feb. 6-8, 1979.
+F500 ## $a "This study was supported by the Science and Education Administration of the U.S. Department of Agriculture."
+F504 ## $a Includes bibliographical references.
+F610 10 $a United States. $b Department of Agriculture.
+F650 #0 $a Aquaculture $z United States.
+F650 #0 $a Aquaculture.
+F650 #0 $a Aquatic ecology.
+F650 #0 $a Aquacultural engineering.
+F610 13 $a United States. $b Department of Agriculture.
+F650 #3 $a Aquaculture $z United States.
+F650 #6 $a Aquaculture $0 (CaQQLa)201-0001992 $z États-Unis. $0 (CaQQLa)201-0407727
+F650 #6 $a Aquaculture. $0 (CaQQLa)201-0001992
+F610 17 $a United States. $b Department of Agriculture $2 fast $0 (OCoLC)fst01852329
+F650 #7 $a Aquacultural engineering $2 fast $0 (OCoLC)fst00811863
+F650 #7 $a Aquaculture $2 fast $0 (OCoLC)fst00811864
+F650 #7 $a Aquatic ecology $2 fast $0 (OCoLC)fst00811988
+F651 #7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq $0 (OCoLC)fst01204155
+F710 2# $a National Research Council (U.S.). $b Board on Agriculture and Renewable Resources. $1 https://id.oclc.org/worldcat/entity/E39QQPVp7XGhhtFY7ygMRgtTTR
+F029 1# $a AU@ $b 000023057159
+F029 1# $a AU@ $b 000044147613
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#theroleoftheusdepartmentofagricultureinaquaculturenationalresearchcounciluspanelonaquaculturenationalresearchcouncilusboardonagricultureandrenewableresourcestextaggregating">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#theroleoftheusdepartmentofagricultureinaquaculture1979nationalacademyofsciencesvolume"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawd:P10328>The role of the U.S. Department of Agriculture in aquaculture National Research Council (U.S.). Panel on Aquaculture National Research Council (U.S.). Board on Agriculture and Renewable Resources  text (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#sh34"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#sh34n373"/><!--rdawo:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>The role of the U.S. Department of Agriculture in aquaculture</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/age#unitedstatesdepartmentofagriculture"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquacultureunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquaculture"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquaticecology"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquaculturalengineering"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/nal/age#unitedstatesdepartmentofagriculture"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/nal/con#aquacultureunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#aquaculturee%CC%81tats-unis"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#aquaculture"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10263 rdf:resource="https://id.worldcat.org/fast/01852329"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811863"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811864"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811988"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdawo:P10349 = has content type of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdawo:P10349 = has content type of representative expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculturetext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>National Research Council (U.S.). Panel on Aquaculture. The role of the U.S. Department of Agriculture in aquaculture</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>The role of the U.S. Department of Agriculture in aquaculture</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculturetext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#theroleoftheusdepartmentofagricultureinaquaculture1979nationalacademyofsciencesvolume"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculture"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>National Research Council (U.S.). Panel on Aquaculture. The role of the U.S. Department of Agriculture in aquaculture  text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>The role of the U.S. Department of Agriculture in aquaculture</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#theroleoftheusdepartmentofagricultureinaquaculture1979nationalacademyofsciencesvolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculturetext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#theroleoftheusdepartmentofagricultureinaquaculturenationalresearchcounciluspanelonaquaculturenationalresearchcouncilusboardonagricultureandrenewableresourcestextaggregating"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30276>The role of the U.S. Department of Agriculture in aquaculture 1979. National Academy of Sciences,volume</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1979</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="https://doi.org/10.6069/uwlswd.gq3z-mv97#d"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e579"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture"/><!--rdamo:P30394 = has contributor corporate body to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture"/><!--rdamo:P30394 = has contributor corporate body to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture"/><!--rdamo:P30394 = has contributor corporate body to aggregate-->
+      <rdamd:P30156>The role of the U.S. Department of Agriculture in aquaculture</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>a report</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>prepared by the Panel on Aquaculture, Board on Agriculture and Renewable Resources, National Research Council</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Washington, D. C. : National Academy of Sciences, 1979.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Washington, D. C.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>National Academy of Sciences</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1979</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>xvi, 49 pages : chart ; 28 cm</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>Based on a workshop held at College Station, Tex., Feb. 6-8, 1979.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>"This study was supported by the Science and Education Administration of the U.S. Department of Agriculture."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30455>Includes bibliographical references.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <!--Default relationship property used for https://id.oclc.org/worldcat/entity/E39QQPVp7XGhhtFY7ygMRgtTTR-->
+      <rdamo:P30394 rdf:resource="https://id.oclc.org/worldcat/entity/E39QQPVp7XGhhtFY7ygMRgtTTR"/><!--rdamo:P30394 = has contributor corporate body to aggregate-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e579">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>NA 1.2:AQ 3</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/><!--rdand:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-07-25t1138162388563-0400d25e660">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States. Department of Agriculture</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/nal"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/ageNom#unitedstatesdepartmentofagriculture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States. Department of Agriculture</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-07-25t1138162388563-0400d25e715">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>National Research Council (U.S.). Panel on Aquaculture</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>National Research Council (U.S.). Panel on Aquaculture</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#unitedstatesdepartmentofagriculture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United States. Department of Agriculture</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>United States. Department of Agriculture</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nal/age#unitedstatesdepartmentofagriculture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-07-25t1138162388563-0400d25e660"/><!--rdaao:P50375 = has access point for corporate body-->
+      <rdaad:P50032>United States. Department of Agriculture</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.worldcat.org/fast/01852329">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/fast/ageNom#unitedstatesdepartmentofagriculture"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaad:P50006>(OCoLC)fst01852329</rdaad:P50006><!--rdaad:P50006 = has identifier for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39QQPVp7XGhhtFY7ygMRgtTTR">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>National Research Council (U.S.). Board on Agriculture and Renewable Resources</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#sh34">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">SH34</skos:notation>
+      <skos:altLabel>SH34</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#sh34n373">
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">SH34.N373</skos:notation>
+      <skos:altLabel>SH34.N373</skos:altLabel>
+      <skos:note>National Agricultural Library Call Number</skos:note>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquacultureunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquaculture">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquaticecology">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquatic ecology</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquaculturalengineering">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquacultural engineering</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nal/con#aquacultureunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/nal"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#aquaculturee%CC%81tats-unis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture--États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#aquaculture">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-07-25t1138162388563-0400d25e715"/><!--rdapo:P70018 = has access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc35298727">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>35298727</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc35298727</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc35298727"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#leejaspersaquaculture"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#leejaspersaquaculturetext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn96075864aquaculture%C2%A91997interstatepublishersvolume"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#aquacultureleejaspersnewmanmichaeletextaggregating"/><!--rdawo:P10621 = is metadata description of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc35298727">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc35298727"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc35298727</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01704cam a2200421 a 4500
+F001 35298727
+F005 20240127100239.6
+F008 960802s1997    ilua     b    001 0 eng  
+F010 ## $a    96075864 
+F040 ## $a DLC $b eng $c DLC $d IHI $d BTCTA $d YDXCP $d OCLCO $d OCLCF $d OCLCQ $d FQR $d OCLCO $d OCL $d OCLCO $d OCLCL
+F019 ## $a 35091105
+F020 ## $a 0813430844
+F020 ## $a 9780813430843
+F050 04 $a SH135 $b .L44 1997
+F082 00 $a 639/.8 $2 20
+F049 ## $a WAUW
+F100 1# $a Lee, Jasper S.
+F245 10 $a Aquaculture : $b an introduction / $c Jasper S. Lee, Michael E. Newman.
+F250 ## $a 2nd ed.
+F260 ## $a Danville, Ill. : $b Interstate Publishers, $c ©1997.
+F300 ## $a viii, 518 pages : $b illustrations (some color) ; $c 27 cm
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+F490 1# $a AgriScience and technology series
+F504 ## $a Includes bibliographical references (pages 509-512) and index.
+F505 0# $a Aquaculture today -- Aquaculture science -- Aquaculture business -- Aquaculture production -- Aquaculture and people.
+F650 #0 $a Aquaculture.
+F650 #0 $a Aquacultural engineering.
+F650 #6 $a Aquaculture. $0 (CaQQLa)201-0001992
+F650 #7 $a Aquacultural engineering $2 fast $0 (OCoLC)fst00811863
+F650 #7 $a Aquaculture $2 fast $0 (OCoLC)fst00811864
+F700 1# $a Newman, Michael E.
+F758 ## $i has work: $a Aquaculture (Text) $1 https://id.oclc.org/worldcat/entity/E39PCXqWyDBpfpgcxMYfd4DpKb $4 https://id.oclc.org/worldcat/ontology/hasWork
+F830 #0 $a AgriScience and technology series.
+F938 ## $a Baker and Taylor $b BTCP $n 96075864 //r98
+F938 ## $a YBP Library Services $b YANK $n 1341012
+F029 1# $a AU@ $b 000012701783
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#aquacultureleejaspersnewmanmichaeletextaggregating">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc35298727"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn96075864aquaculture%C2%A91997interstatepublishersvolume"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawd:P10328>Aquaculture Lee, Jasper S. Newman, Michael E.  text (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#sh135"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#leejaspers-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#leejaspers"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Aquaculture</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquaculture"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquaculturalengineering"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#aquaculture"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811863"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811864"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#agriscienceandtechnologyseries"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdawo:P10349 = has content type of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdawo:P10349 = has content type of representative expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#leejaspersaquaculture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc35298727"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#leejaspersaquaculturetext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Lee, Jasper S. Aquaculture</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#leejaspers-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#leejaspers"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Aquaculture</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#leejaspersaquaculturetext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc35298727"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn96075864aquaculture%C2%A91997interstatepublishersvolume"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#leejaspersaquaculture"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Lee, Jasper S.. Aquaculture  text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>Aquaculture</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn96075864aquaculture%C2%A91997interstatepublishersvolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc35298727"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#leejaspersaquaculturetext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#aquacultureleejaspersnewmanmichaeletextaggregating"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30276>Aquaculture ©1997. Interstate Publishers,volume</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1997</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/ilu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e2177"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#0813430844"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9780813430843"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#leejaspers-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#leejaspers"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#leejaspers-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#leejaspers"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#leejaspers-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#leejaspers"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <rdamd:P30156>Aquaculture</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>an introduction</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>Jasper S. Lee, Michael E. Newman</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30107>2nd ed.</rdamd:P30107><!--rdamd:P30107 = has edition statement-->
+      <rdamd:P30133>2nd ed.</rdamd:P30133><!--rdamd:P30133 = has designation of edition-->
+      <rdamd:P30111>Danville, Ill. : Interstate Publishers, ©1997.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Danville, Ill.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Interstate Publishers</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30280>©1997</rdamd:P30280><!--rdamd:P30280 = has manifestation copyright statement-->
+      <rdamd:P30182>viii, 518 pages : illustrations (some color) ; 27 cm</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30106>AgriScience and technology series</rdamd:P30106><!--rdamd:P30106 = has series statement-->
+      <rdamd:P30455>Includes bibliographical references (pages 509-512) and index.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <rdamd:P30137>Contents: Aquaculture today -- Aquaculture science -- Aquaculture business -- Aquaculture production -- Aquaculture and people.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#newmanmichaele-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#newmanmichaele"/><!--rdamo:P30336 = has contributor person to aggregate-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e2177">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   96075864 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:   96075864 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#0813430844">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0813430844</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9780813430843">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780813430843</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#leejaspers">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Lee, Jasper S.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Lee, Jasper S.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#newmanmichaele">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Newman, Michael E.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Newman, Michael E.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#agriscienceandtechnologyseries">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>AgriScience and technology series</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>AgriScience and technology series</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#sh135">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">SH135</skos:notation>
+      <skos:altLabel>SH135</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquaculture">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquaculturalengineering">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquacultural engineering</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#aquaculture">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc71802830">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>71802830</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc71802830</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc71802830"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#borgattirachelopenoceanaquaculture"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#borgattirachelopenoceanaquaculturetext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#openoceanaquaculture2004congressionalinformationservicelibraryofcongressmicrofilmreel"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/origMan#openoceanaquaculture2004congressionalinformationservicelibraryofcongressmicrofilmreel"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#openoceanaquacultureborgattirachelbuckeugenehtextaggregating"/><!--rdawo:P10621 = is metadata description of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc71802830">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc71802830"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc71802830</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 02161cam a2200445 a 4500
+F001 71802830
+F005 20241211231932.2
+F008 060929s2004    dcu     ab   f000 0 eng d
+F007 hd afa014baca
+F040 ## $a UP3 $b eng $c UP3 $d OCLCF $d OCLCO $d OCLCQ $d OCLCO $d OCLCQ $d OCLCL $d OCLCO
+F043 ## $a n-us---
+F050 #4 $a JK1108 $b .M35 Suppl. 2005 reel 7
+F049 ## $a WAUW
+F100 1# $a Borgatti, Rachel.
+F245 10 $a Open ocean aquaculture / $c Rachel Borgatti, Eugene H. Buck.
+F246 1# $i At head of title: $a CRS report for Congress
+F260 ## $a [Washington, D.C.] : $b Congressional Information Service, Library of Congress, $c [2004]
+F300 ## $a 17 pages ; $c 28 cm
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a microform $b h $2 rdamedia
+F338 ## $a microfilm reel $b hd $2 rdacarrier
+F500 ## $a Cover title.
+F500 ## $a "December 13, 2004."
+F504 ## $a Includes bibliographical references.
+F500 ## $a "05-RL-32694."
+F533 ## $a Microfilm. $b Bethesda, Md. : $c University Publications of America, $d 2006. $e on 1 microfilm reel with other items ; 35 mm. $f (Major studies and issue briefs of the Congressional Research Service. 2005 supplement ; reel 7, fr. 0648).
+F539 ## $a s $b 2006 $d mdu $e n $g a
+F650 #0 $a Mariculture.
+F650 #0 $a Sustainable fisheries.
+F650 #0 $a Aquaculture industry.
+F650 #6 $a Mariculture. $0 (CaQQLa)201-0014614
+F650 #6 $a Pêches durables. $0 (CaQQLa)201-0267431
+F650 #6 $a Aquaculture $x Industrie. $0 (CaQQLa)201-0115912
+F650 #7 $a Aquaculture industry $2 fast $0 (OCoLC)fst00811902
+F650 #7 $a Mariculture $2 fast $0 (OCoLC)fst01009241
+F650 #7 $a Sustainable fisheries $2 fast $0 (OCoLC)fst01139766
+F700 1# $a Buck, Eugene H. $1 https://id.oclc.org/worldcat/entity/E39PCjygQJmKjCFVHWxvwQBYxC
+F710 2# $a Library of Congress. $b Congressional Research Service. $1 https://id.oclc.org/worldcat/entity/E39QQPVp83d6wxXtXtkr43HfFg
+F758 ## $i has work: $a Open ocean aquaculture (Text) $1 https://id.oclc.org/worldcat/entity/E39PCGrYywbvHbhVJJd6HBcC6X $4 https://id.oclc.org/worldcat/ontology/hasWork
+F830 #0 $a Major studies and issue briefs of the Congressional Research Service. $p Supplement ; $v 2005, reel 7, fr. 0648.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#openoceanaquacultureborgattirachelbuckeugenehtextaggregating">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc71802830"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#openoceanaquaculture2004congressionalinformationservicelibraryofcongressmicrofilmreel"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/origMan#openoceanaquaculture2004congressionalinformationservicelibraryofcongressmicrofilmreel"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawd:P10328>Open ocean aquaculture Borgatti, Rachel Buck, Eugene H.  text (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#jk1108"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#borgattirachel-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#borgattirachel"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Open ocean aquaculture</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#mariculture"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#sustainablefisheries"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquacultureindustry"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#mariculture"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#pe%CC%82chesdurables"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#aquacultureindustrie"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811902"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01009241"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01139766"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#majorstudiesandissuebriefsofthecongressionalresearchservicesupplement"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdawo:P10349 = has content type of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdawo:P10349 = has content type of representative expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#borgattirachelopenoceanaquaculture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc71802830"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#borgattirachelopenoceanaquaculturetext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Borgatti, Rachel. Open ocean aquaculture</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#borgattirachel-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#borgattirachel"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Open ocean aquaculture</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#borgattirachelopenoceanaquaculturetext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc71802830"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#openoceanaquaculture2004congressionalinformationservicelibraryofcongressmicrofilmreel"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/origMan#openoceanaquaculture2004congressionalinformationservicelibraryofcongressmicrofilmreel"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#borgattirachelopenoceanaquaculture"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Borgatti, Rachel. Open ocean aquaculture  text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>Open ocean aquaculture</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#openoceanaquaculture2004congressionalinformationservicelibraryofcongressmicrofilmreel">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc71802830"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#borgattirachelopenoceanaquaculturetext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#openoceanaquacultureborgattirachelbuckeugenehtextaggregating"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30276>Open ocean aquaculture [2004] Congressional Information Service, Library of Congress,microfilm reel</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamo:P30043 rdf:resource="http://marc2rda.edu/fake/transform/origMan#openoceanaquaculture2004congressionalinformationservicelibraryofcongressmicrofilmreel"/><!--rdamo:P30043 = is reproduction of manifestation of-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.dh5m-5y16#a"/><!--rdam:P30001 = has carrier type-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#borgattirachel-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#borgattirachel"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#borgattirachel-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#borgattirachel"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#borgattirachel-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#borgattirachel"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <rdamd:P30156>Open ocean aquaculture</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Rachel Borgatti, Eugene H. Buck</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30137>Note on variant title: At head of title:CRS report for Congress</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30111>[Washington, D.C.] : Congressional Information Service, Library of Congress, [2004]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Washington, D.C.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Congressional Information Service, Library of Congress</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2004</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1002"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1002"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1026"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1026"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>Cover title.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>"December 13, 2004."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30455>Includes bibliographical references.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <rdamd:P30137>"05-RL-32694."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30335>Microfilm</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30279>Bethesda, Md.</rdamd:P30279><!--rdamd:P30279 = has place of manifestation-->
+      <rdamd:P30297>University Publications of America</rdamd:P30297><!--rdamd:P30297 = has name of agent of manifestation-->
+      <rdamd:P30278>2006</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <rdamd:P30137>on 1 microfilm reel with other items ; 35 mm.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30106>Major studies and issue briefs of the Congressional Research Service. 2005 supplement ; reel 7, fr. 0648.</rdamd:P30106><!--rdamd:P30106 = has series statement-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#buckeugeneh-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#buckeugeneh"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for https://id.oclc.org/worldcat/entity/E39QQPVp83d6wxXtXtkr43HfFg-->
+      <rdamo:P30394 rdf:resource="https://id.oclc.org/worldcat/entity/E39QQPVp83d6wxXtXtkr43HfFg"/><!--rdamo:P30394 = has contributor corporate body to aggregate-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/origMan#openoceanaquaculture2004congressionalinformationservicelibraryofcongressmicrofilmreel">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc71802830"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#borgattirachelopenoceanaquaculturetext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#openoceanaquacultureborgattirachelbuckeugenehtextaggregating"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30276>Open ocean aquaculture [2004] Congressional Information Service, Library of Congress,microfilm reel</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2004</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamd:P30156>Open ocean aquaculture</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Rachel Borgatti, Eugene H. Buck</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30182>17 pages ; 28 cm</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#borgattirachel">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Borgatti, Rachel</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Borgatti, Rachel</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#buckeugeneh">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Buck, Eugene H.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Buck, Eugene H.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjygQJmKjCFVHWxvwQBYxC</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39QQPVp83d6wxXtXtkr43HfFg">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Library of Congress. Congressional Research Service</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#majorstudiesandissuebriefsofthecongressionalresearchservicesupplement">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Major studies and issue briefs of the Congressional Research Service. Supplement</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Major studies and issue briefs of the Congressional Research Service. Supplement</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#jk1108">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">JK1108</skos:notation>
+      <skos:altLabel>JK1108</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#mariculture">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mariculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#sustainablefisheries">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Sustainable fisheries</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquacultureindustry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture industry</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#mariculture">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mariculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#pe%CC%82chesdurables">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Pêches durables</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#aquacultureindustrie">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture--Industrie</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc1334720167">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>1334720167</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc1334720167</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc1334720167"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#outlookofclimatechangeandfishnutrition"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#uk020759515outlookofclimatechangeandfishnutrition2022springerverlagsingaporvolume"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc1334720167">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc1334720167</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01284cam a2200349   4500
+F001 1334720167
+F005 20250701014111.8
+F008 220709s2022    xx            0∎∎ 0 eng d
+F040 ## $a YDX $b eng $c YDX $d UKMGB $d OCLCF $d OCLCO $d OCLCQ $d OCLCL
+F015 ## $a GBC2H2857 $2 bnb
+F016 7# $a 020759515 $2 Uk
+F020 ## $a 9811954992
+F020 ## $a 9789811954993
+F082 04 $a 639.3 $2 23 $1 https://id.oclc.org/worldcat/ddc/E4bFb8RGwQC8Q7jtKJygMFFW6P
+F049 ## $a WAUW
+F245 00 $a OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION.
+F260 ## $a [S.l.] : $b SPRINGER VERLAG, SINGAPOR, $c 2022.
+F300 ## $a 1 volume : $b illustrations (black and white, and colour) ; $c 24 cm
+F336 ## $a text $2 rdacontent
+F336 ## $a still image $2 rdacontent
+F337 ## $a unmediated $2 rdamedia
+F338 ## $a volume $2 rdacarrier
+F650 #0 $a Fishes $x Nutrition.
+F650 #0 $a Fisheries $x Climatic factors.
+F650 #0 $a Aquaculture $x Climatic factors.
+F650 #6 $a Pêches $x Facteurs climatiques. $0 (CaQQLa)201-0153937
+F650 #7 $a Aquaculture $x Climatic factors $2 fast $0 (OCoLC)fst01750411
+F650 #7 $a Fisheries $x Climatic factors $2 fast $0 (OCoLC)fst00926061
+F650 #7 $a Fishes $x Nutrition $2 fast $0 (OCoLC)fst00926560
+F938 ## $a YBP Library Services $b YANK $n 18036086
+F936 ## $a BATCHLOAD
+F029 1# $a UKMGB $b 020759515
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#outlookofclimatechangeandfishnutrition">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdawd:P10088>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fishesnutrition"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fisheriesclimaticfactors"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquacultureclimaticfactors"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#pe%CC%82chesfacteursclimatiques"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01750411"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00926061"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00926560"/><!--rdaw:P10256 = has subject-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#uk020759515outlookofclimatechangeandfishnutrition2022springerverlagsingaporvolume"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#outlookofclimatechangeandfishnutrition"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION  still image text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#uk020759515outlookofclimatechangeandfishnutrition2022springerverlagsingaporvolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION. 2022. SPRINGER VERLAG, SINGAPOR,volume</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2022</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xx"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/bnb/nom#gbc2h2857"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e2583"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9811954992"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9789811954993"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30111>$a [S.l.] :$b SPRINGER VERLAG, SINGAPOR,$c 2022.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>S.l.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>SPRINGER VERLAG, SINGAPOR</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2022</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>1 volume : illustrations (black and white, and colour) ; 24 cm</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/bnb/nom#gbc2h2857">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>GBC2H2857</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdan:P80069>"British national bibliography"</rdan:P80069><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e2583">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>020759515</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80071>Identifier derived from a National Bibliographic agency control number for a description of this manifestation</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+      <rdano:P80075>Uk</rdano:P80075><!--rdano:P80075 = is assigned by corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9811954992">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9811954992</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9789811954993">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9789811954993</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fishesnutrition">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fishes--Nutrition</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fisheriesclimaticfactors">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fisheries--Climatic factors</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquacultureclimaticfactors">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture--Climatic factors</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#pe%CC%82chesfacteursclimatiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Pêches--Facteurs climatiques</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc1130125167">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>1130125167</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc1130125167</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc1130125167"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#borgesbrunoaugustoamatoruralaquaculture"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#borgesbrunoaugustoamatoruralaquaculturetext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ruralaquaculture2020delvepublishingonlineresource"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#ruralaquacultureborgesbrunoaugustoamatotextaggregating"/><!--rdawo:P10621 = is metadata description of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc1130125167">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1130125167"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc1130125167</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01901cam a2200433 i 4500
+F001 1130125167
+F005 20240202180208.2
+F008 191212s2020    onc     ob    001 0 eng d
+F006 m     o  d        
+F007 cr ||||||||||
+F040 ## $a YDX $b eng $e pn $c YDX $d N$T $d SNM $d OCLCF $d OCLCQ $d WAU $d K6U $d OCLCO $d OCLCQ $d OCLCO $d OCLCL
+F020 ## $a 1774074753 $q (electronic bk.)
+F020 ## $a 9781774074756 $q (electronic bk.)
+F050 #4 $a SH136.S88 $b B67 2020
+F082 04 $a 338.3/718 $2 23
+F049 ## $a WAUW
+F100 1# $a Borges, Bruno Augusto Amato.
+F245 10 $a RURAL AQUACULTURE / $c Bruno Augusto Amato Borges.
+F260 ## $a Oakville, ON : $b DELVE Publishing, $c 2020.
+F300 ## $a 1 online resource (xvi, 184 pages) : $b illustrations
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a computer $b c $2 rdamedia
+F338 ## $a online resource $b cr $2 rdacarrier
+F504 ## $a Includes bibliographical references and index.
+F588 0# $a Online resource; title from PDF file page (EBSCO, viewed February 4, 2020).
+F650 #0 $a Sustainable aquaculture.
+F650 #0 $a Aquaculture industry.
+F650 #0 $a Rural development.
+F650 #6 $a Aquaculture durable. $0 (CaQQLa)201-0424259
+F650 #6 $a Aquaculture $x Industrie. $0 (CaQQLa)201-0115912
+F650 #6 $a Développement rural. $0 (CaQQLa)201-0006283
+F650 #7 $a rural development. $2 aat $0 (CStmoGRI)aat300055435
+F650 #7 $a Aquaculture industry $2 fast $0 (OCoLC)fst00811902
+F650 #7 $a Rural development $2 fast $0 (OCoLC)fst01101498
+F650 #7 $a Sustainable aquaculture $2 fast $0 (OCoLC)fst01736619
+F758 ## $i has work: $a Rural Aquaculture (Work) $1 https://id.oclc.org/worldcat/entity/E39PCYRPtDJKTGmdq3VtDxW6jC $4 https://id.oclc.org/worldcat/ontology/hasWork
+F856 40 $3 EBSCOhost $u https://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=2324402
+F938 ## $a EBSCOhost $b EBSC $n 2324402
+F938 ## $a YBP Library Services $b YANK $n 300992767
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#ruralaquacultureborgesbrunoaugustoamatotextaggregating">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1130125167"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#ruralaquaculture2020delvepublishingonlineresource"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawd:P10328>RURAL AQUACULTURE Borges, Bruno Augusto Amato   text (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#sh136s88"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#borgesbrunoaugustoamato-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#borgesbrunoaugustoamato"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>RURAL AQUACULTURE</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#sustainableaquaculture"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquacultureindustry"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#ruraldevelopment"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#aquaculturedurable"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#aquacultureindustrie"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#de%CC%81veloppementrural"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/aat/con#ruraldevelopment"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811902"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01101498"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01736619"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdawo:P10349 = has content type of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdawo:P10349 = has content type of representative expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#borgesbrunoaugustoamatoruralaquaculture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1130125167"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#borgesbrunoaugustoamatoruralaquaculturetext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Borges, Bruno Augusto Amato. RURAL AQUACULTURE</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#borgesbrunoaugustoamato-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#borgesbrunoaugustoamato"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>RURAL AQUACULTURE</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#borgesbrunoaugustoamatoruralaquaculturetext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1130125167"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ruralaquaculture2020delvepublishingonlineresource"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#borgesbrunoaugustoamatoruralaquaculture"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Borges, Bruno Augusto Amato. RURAL AQUACULTURE  text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>RURAL AQUACULTURE</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ruralaquaculture2020delvepublishingonlineresource">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1130125167"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#borgesbrunoaugustoamatoruralaquaculturetext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#ruralaquacultureborgesbrunoaugustoamatotextaggregating"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30276>RURAL AQUACULTURE 2020. DELVE Publishing,online resource</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2020</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/onc"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#m"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#o"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#d"/><!--rdam:P30018 = has file type-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#1774074753"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9781774074756"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#borgesbrunoaugustoamato-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#borgesbrunoaugustoamato"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#borgesbrunoaugustoamato-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#borgesbrunoaugustoamato"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#borgesbrunoaugustoamato-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#borgesbrunoaugustoamato"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <rdamd:P30156>RURAL AQUACULTURE</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Bruno Augusto Amato Borges</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Oakville, ON : DELVE Publishing, 2020.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Oakville, ON</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>DELVE Publishing</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2020</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>1 online resource (xvi, 184 pages) : illustrations</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30455>Includes bibliographical references and index.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <rdamd:P30137>Source of description: Online resource; title from PDF file page (EBSCO, viewed February 4, 2020).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#1774074753">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1774074753</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80071>electronic bk.</rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9781774074756">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9781774074756</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80071>electronic bk.</rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#borgesbrunoaugustoamato">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Borges, Bruno Augusto Amato</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Borges, Bruno Augusto Amato</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#sh136s88">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">SH136.S88</skos:notation>
+      <skos:altLabel>SH136.S88</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#sustainableaquaculture">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Sustainable aquaculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquacultureindustry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture industry</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#ruraldevelopment">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Rural development</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#aquaculturedurable">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture durable</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#aquacultureindustrie">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture--Industrie</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#de%CC%81veloppementrural">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Développement rural</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#ruraldevelopment">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>rural development</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc41988527">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>41988527</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc41988527</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc41988527"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#fishingintheseaofgreedpatwardhananandfirstrunicarusfilms"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#fishingintheseaofgreedpatwardhananandtwo-dimensionalmovingimage"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#fishingintheseaofgreed1998firstrunicarusfilmsvideocassette"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc41988527">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc41988527"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc41988527</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03089cgm a2200637 a 4500
+F001 41988527
+F005 20250207042611.4
+F008 981106s1998    nyu045            vleng d
+F007 vf cbahou
+F040 ## $a COO $b eng $c COO $d IAL $d OCLCQ $d WAU $d OCLCF $d NEO $d OCLCQ $d OCLCO $d NJR $d OCLCO $d OCLCL $d OCLCQ
+F041 0# $a eng $a und $j eng
+F043 ## $a az-----
+F050 #4 $a SH335.6 $b .F57 1998
+F082 04 $a 338.3727 $b F539pa
+F049 ## $a WAUW
+F245 00 $a Fishing in the sea of greed / $c direction, Anand Patwardhan.
+F260 ## $a New York, N.Y. : $b First Run/Icarus Films, $c 1998.
+F300 ## $a 1 videocassette (45 min.) : $b sound, color ; $c 1/2 in.
+F336 ## $a two-dimensional moving image $b tdi $2 rdacontent
+F337 ## $a video $b v $2 rdamedia
+F338 ## $a videocassette $b vf $2 rdacarrier
+F538 ## $a VHS.
+F546 ## $a In Hindi with English subtitles, and in English.
+F508 ## $a Camera, Anand Patwardhan ; editing, Anand Patwardhan.
+F520 ## $a Documents the response of traditional fishing communities and rice farmers to the threat of displacement by overfishing and pollution resulting from industrial fishing practices such as use of gigantic factory ships.
+F650 #0 $a Fishery processing ships.
+F650 #0 $a Fisheries $x Environmental aspects.
+F650 #0 $a Aquaculture $x Environmental aspects.
+F650 #0 $a Fishers $z South Asia.
+F650 #0 $a Fishers $x Labor unions $z South Asia.
+F650 #0 $a Economic development $x Social aspects $z South Asia.
+F650 #0 $a Documentary films.
+F650 #6 $a Navires-usines. $0 (CaQQLa)201-0092657
+F650 #6 $a Pêches $x Aspect de l'environnement. $0 (CaQQLa)201-0361565
+F650 #6 $a Aquaculture $0 (CaQQLa)201-0001992 $x Aspect de l'environnement. $0 (CaQQLa)201-0374355
+F650 #6 $a Pêcheurs $0 (CaQQLa)201-0039378 $z Asie méridionale. $0 (CaQQLa)201-0420805
+F650 #6 $a Pêcheurs $0 (CaQQLa)201-0053825 $x Syndicats $0 (CaQQLa)201-0053825 $z Asie méridionale. $0 (CaQQLa)201-0420805
+F650 #7 $a factory ships. $2 aat $0 (CStmoGRI)aat300232759
+F650 #7 $a Aquaculture $x Environmental aspects. $2 fast $0 (OCoLC)fst00811871
+F650 #7 $a Documentary films. $2 fast $0 (OCoLC)fst00896079
+F650 #7 $a Economic development $x Social aspects. $2 fast $0 (OCoLC)fst00901865
+F650 #7 $a Fisheries $x Environmental aspects. $2 fast $0 (OCoLC)fst00926083
+F650 #7 $a Fishers. $2 fast $0 (OCoLC)fst00926174
+F650 #7 $a Fishers $x Labor unions. $2 fast $0 (OCoLC)fst00926185
+F650 #7 $a Fishery processing ships. $2 fast $0 (OCoLC)fst00926300
+F651 #7 $a South Asia. $2 fast $0 (OCoLC)fst01244520
+F655 #2 $a Documentaries and Factual Films $0 (DNLM)D019499
+F655 #4 $a Foreign language films $x Hindi.
+F655 #7 $a Documentary films. $2 fast $0 (OCoLC)fst01710390
+F655 #7 $a Documentary films. $2 lcgft
+F655 #7 $a Documentaires. $2 rvmgf $0 (CaQQLa)RVMGF-000000017
+F700 1# $a Patwardhan, Anand.
+F710 2# $a First Run/Icarus Films.
+F758 ## $i has work: $a Fishing in the sea of greed (MovingImage) $1 https://id.oclc.org/worldcat/entity/E39PCFRTgcXYBvjBPTckGFcxCP $4 https://id.oclc.org/worldcat/ontology/hasWork
+F936 ## $a BATCHLOAD
+F029 1# $a AU@ $b 000022852798
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#fishingintheseaofgreedpatwardhananandfirstrunicarusfilms">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc41988527"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#fishingintheseaofgreedpatwardhananandtwo-dimensionalmovingimage"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Fishing in the sea of greedPatwardhan, Anand. First Run/Icarus Films</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/><!--rdaw:P10222 = has nature of content-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/az"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#sh3356"/><!--rdaw:P10256 = has subject-->
+      <rdawd:P10088>Fishing in the sea of greed</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fisheryprocessingships"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fisheriesenvironmentalaspects"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquacultureenvironmentalaspects"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fisherssouthasia"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fisherslaborunionssouthasia"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#economicdevelopmentsocialaspectssouthasia"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#documentaryfilms"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#navires-usines"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#pe%CC%82chesaspectdel%27environnement"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#aquacultureaspectdel%27environnement"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#pe%CC%82cheursasieme%CC%81ridionale"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#pe%CC%82cheurssyndicatsasieme%CC%81ridionale"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/aat/con#factoryships"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811871"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00896079"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00901865"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00926083"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00926174"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00926185"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00926300"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/fast/pla#southasia"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/mesh/con#documentariesandfactualfilms"/><!--rdaw:P10004 = has category of work-->
+      <rdawd:P10004>Foreign language films--Hindi</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710390"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#documentaryfilms"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#documentaires"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#fishingintheseaofgreedpatwardhananandtwo-dimensionalmovingimage">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc41988527"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#fishingintheseaofgreed1998firstrunicarusfilmsvideocassette"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#fishingintheseaofgreedpatwardhananandfirstrunicarusfilms"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Fishing in the sea of greed Patwardhan, Anand  two-dimensional moving image</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20219>Duration: 045 minutes.</rdaed:P20219><!--rdaed:P20219 = has duration-->
+      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
+      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/und"/><!--rdaeo:P20006 = has language of expression-->
+      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/und</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20312>Fishing in the sea of greed</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/><!--rdaeo:P20001 = has content type-->
+      <rdaed:P20069>Documents the response of traditional fishing communities and rice farmers to the threat of displacement by overfishing and pollution resulting from industrial fishing practices such as use of gigantic factory ships.</rdaed:P20069><!--rdaed:P20069 = has summarization of content-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#fishingintheseaofgreed1998firstrunicarusfilmsvideocassette">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc41988527"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#fishingintheseaofgreedpatwardhananandtwo-dimensionalmovingimage"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Fishing in the sea of greed 1998. First Run/Icarus Films,videocassette</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1998</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30335 = has category of manifestation-->
+      <rdamd:P30156>Fishing in the sea of greed</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>direction, Anand Patwardhan</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>New York, N.Y. : First Run/Icarus Films, 1998.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>New York, N.Y.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>First Run/Icarus Films</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1998</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>1 videocassette (45 min.) : sound, color ; 1/2 in.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1008"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1008"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1052"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1052"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30162>VHS.</rdamd:P30162><!--rdamd:P30162 = has equipment or system requirement-->
+      <rdamd:P30137>In Hindi with English subtitles, and in English.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Credits: Camera, Anand Patwardhan ; editing, Anand Patwardhan.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#patwardhananand-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#patwardhananand"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#firstrunicarusfilms-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#firstrunicarusfilms"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-07-25t1138162388563-0400d25e3620">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>South Asia</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#patwardhananand">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Patwardhan, Anand</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Patwardhan, Anand</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#firstrunicarusfilms">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>First Run/Icarus Films</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>First Run/Icarus Films</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#sh3356">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">SH335.6</skos:notation>
+      <skos:altLabel>SH335.6</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fisheryprocessingships">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fishery processing ships</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fisheriesenvironmentalaspects">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fisheries--Environmental aspects</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquacultureenvironmentalaspects">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture--Environmental aspects</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fisherssouthasia">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fishers--South Asia</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fisherslaborunionssouthasia">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fishers--Labor unions--South Asia</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#economicdevelopmentsocialaspectssouthasia">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Economic development--Social aspects--South Asia</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#documentaryfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Documentary films</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#navires-usines">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Navires-usines</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#pe%CC%82chesaspectdel%27environnement">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Pêches--Aspect de l'environnement</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#aquacultureaspectdel%27environnement">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture--Aspect de l'environnement</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#pe%CC%82cheursasieme%CC%81ridionale">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Pêcheurs--Asie méridionale</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#pe%CC%82cheurssyndicatsasieme%CC%81ridionale">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Pêcheurs--Syndicats--Asie méridionale</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#factoryships">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>factory ships</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/mesh/con#documentariesandfactualfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Documentaries and Factual Films</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/mesh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#documentaryfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Documentary films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#documentaires">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Documentaires</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/pla#southasia">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-07-25t1138162388563-0400d25e3620"/><!--rdapo:P70018 = has access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc900545301">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>900545301</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc900545301</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc900545301"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#raisingshrimpcunninghamjoesoundengineercaplowtheodore1969-currysarahdanylchukandyschlairdoronmayoljavierfishnavyfilmsfirmnewyorksoundfirm"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#raisingshrimpcunninghamjoesoundengineertwo-dimensionalmovingimage"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#raisingshrimp2014fishnavyfilmsvideodisc"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#raisingshrimpcunninghamjoesoundengineertwo-dimensionalmovingimageaggregating"/><!--rdawo:P10621 = is metadata description of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc900545301">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc900545301"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc900545301</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 04177cgm a2200829 i 4500
+F001 900545301
+F005 20240313065546.0
+F008 150121p20142013flu049 g          vleng d
+F007 vd cvaizs
+F040 ## $a WIS $b eng $e rda $c WIS $d AUM $d COO $d OCLCO $d OCLCF $d WAU $d EMU $d OCL $d ORU $d OCLCQ $d OCLCO $d TEF $d OCLCO $d OCL $d OCLCO $d OCLCL $d OCLCQ
+F024 1# $a 707541822893
+F041 0# $a eng $j eng $h eng
+F046 ## $a s $k 2013
+F050 #4 $a SH380.6 $b .R35 2014
+F050 #4 $a TX387 $b .R28 2014
+F082 04 $a 639/.68 $2 23
+F049 ## $a WAUW
+F245 00 $a Raising shrimp / $c Fish Navy Films presents with New York Sound a Ted Caplow film ; producer, Ted Caplow ; director, Joe Cunningham ; written by Ted Caplow with Sarah Curry.
+F257 ## $a United States $2 naf
+F264 #1 $a [Coconut Grove, Florida] : $b Fish Navy Films, $c [2014]
+F300 ## $a 1 videodisc (49 min.) : $b sound, color ; $c 4 3/4 in.
+F336 ## $a two-dimensional moving image $b tdi $2 rdacontent
+F337 ## $a video $b v $2 rdamedia
+F338 ## $a videodisc $b vd $2 rdacarrier
+F344 ## $a digital $2 rdatr
+F344 ## $b optical $2 rdarm
+F344 ## $g stereo $2 rdacpc
+F344 ## $h 2.0 Dolby digital
+F346 ## $b NTSC $2 rdabs
+F347 ## $a video file $2 rdaft
+F347 ## $b DVD video
+F347 ## $e all regions $2 rdare
+F380 ## $a Documentary films $2 lcgft
+F538 ## $a DVD ; all regions, NTSC ; widescreen, 16:9; Dolby digital 2.0.
+F546 ## $a Closed-captioned in English.
+F511 0# $a With Andy Danylchuk (fish ecologist), Ted Caplow (ecological engineer), Tim Smith, Doug Ernst (aquaculture engineer), Craig Wallis, Mitch Jones (Food and Water Watch), Scott Zimmerman (food inspector).
+F508 ## $a Cinematography, Doron Schlair ; supervising editor, Javier Mayol ; music, Moby, Selec Astronomy, Man Plus Building, Bob Bradley.
+F500 ## $a Originally produced as a motion picture in 2013.
+F520 ## $a Discusses the economic and medical perils of shrimp as an outsourced food supply and interviews fishermen in Texas, shrimp farmers in Belize, and pioneering farmers back in the US in search of a better shrimp.
+F500 ## $a Includes trailer.
+F650 #0 $a Shrimp culture.
+F650 #0 $a Aquaculture.
+F650 #0 $a Aquacultural engineering.
+F650 #6 $a Crevettes $x Élevage. $0 (CaQQLa)201-0107000
+F650 #6 $a Aquaculture. $0 (CaQQLa)201-0001992
+F650 #7 $a Aquacultural engineering $2 fast $0 (OCoLC)fst00811863
+F650 #7 $a Aquaculture $2 fast $0 (OCoLC)fst00811864
+F650 #7 $a Shrimp culture $2 fast $0 (OCoLC)fst01117783
+F655 #4 $a Feature films $z United States.
+F655 #4 $a Feature films $z Belize.
+F655 #7 $a documentary film. $2 aat $0 (CStmoGRI)aatgf300375156
+F655 #7 $a Environmental films $2 fast $0 (OCoLC)fst01710300
+F655 #7 $a Documentary films $2 fast $0 (OCoLC)fst01710390
+F655 #7 $a Nonfiction films $2 fast $0 (OCoLC)fst01710269
+F655 #7 $a Video recordings for the hearing impaired $2 fast $0 (OCoLC)fst01710450
+F655 #7 $a Documentary films. $2 lcgft
+F655 #7 $a Environmental films. $2 lcgft
+F655 #7 $a Nonfiction films. $2 lcgft
+F655 #7 $a Video recordings for the hearing impaired. $2 lcgft
+F655 #7 $a Documentaires. $2 rvmgf $0 (CaQQLa)RVMGF-000000017
+F655 #7 $a Films environnementaux. $2 rvmgf $0 (CaQQLa)RVMGF-000001735
+F655 #7 $a Films autres que de fiction. $2 rvmgf $0 (CaQQLa)RVMGF-000000105
+F655 #7 $a Vidéos pour personnes handicapées auditives. $2 rvmgf $0 (CaQQLa)RVMGF-000000009
+F700 1# $a Cunningham, Joe $c (Sound engineer), $e film director. $1 https://id.oclc.org/worldcat/entity/E39PCjFWVgP8yP6dYTWHbDhrbd
+F700 1# $a Caplow, Theodore, $d 1969- $e film producer, $e screenwriter, $e narrator, $e interviewer. $1 https://id.oclc.org/worldcat/entity/E39PBJhRJX48fVR3YfBJ8KDrMP
+F700 1# $a Curry, Sarah, $e screenwriter.
+F700 1# $a Danylchuk, Andy, $e interviewee (expression)
+F700 1# $a Schlair, Doron, $e director of photography.
+F700 1# $a Mayol, Javier, $e editor of moving image work.
+F710 2# $a Fish Navy Films (Firm), $e presenter.
+F710 2# $a New York Sound (Firm), $e presenter.
+F758 ## $i has work: $a Raising shrimp (MovingImage) $1 https://id.oclc.org/worldcat/entity/E39PCFx7FXVdFyYjVBkvjvVYMX $4 https://id.oclc.org/worldcat/ontology/hasWork
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#raisingshrimpcunninghamjoesoundengineertwo-dimensionalmovingimageaggregating">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc900545301"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#raisingshrimp2014fishnavyfilmsvideodisc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawd:P10328>Raising shrimp  Cunningham, Joe (Sound engineer)  two-dimensional moving image (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/><!--rdaw:P10222 = has nature of content-->
+      <rdawd:P10219>Beginning or single date created: 2013</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#sh3806"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#tx387"/><!--rdaw:P10256 = has subject-->
+      <rdawd:P10088>Raising shrimp</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#unitedstates"/><!--rdawo:P10316 = has related place of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#documentaryfilms"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#shrimpculture"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquaculture"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#aquaculturalengineering"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#crevettese%CC%81levage"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#aquaculture"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811863"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00811864"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01117783"/><!--rdaw:P10256 = has subject-->
+      <rdawd:P10004>Feature films--United States</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10004>Feature films--Belize</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/aat/con#documentaryfilm"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710300"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710390"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710269"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710450"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#documentaryfilms"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#environmentalfilms"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#nonfictionfilms"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#videorecordingsforthehearingimpaired"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#documentaires"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#filmsenvironnementaux"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#filmsautresquedefiction"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#vide%CC%81ospourpersonneshandicape%CC%81esauditives"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
+      <rdawd:P10351>Duration: 049 minutes.</rdawd:P10351><!--rdawd:P10351 = has duration of representative expression-->
+      <rdawo:P10217 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#g"/><!--rdawo:P10217 = has intended audience of representative expression-->
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
+      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdawd:P10330>Language of subtitles: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/><!--rdawo:P10349 = has content type of representative expression-->
+      <rdawo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/><!--rdawo:P10349 = has content type of representative expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#raisingshrimpcunninghamjoesoundengineercaplowtheodore1969-currysarahdanylchukandyschlairdoronmayoljavierfishnavyfilmsfirmnewyorksoundfirm">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc900545301"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#raisingshrimpcunninghamjoesoundengineertwo-dimensionalmovingimage"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Raising shrimpCunningham, Joe (Sound engineer), Caplow, Theodore, 1969- Curry, Sarah, Danylchuk, Andy, Schlair, Doron, Mayol, Javier, Fish Navy Films (Firm), New York Sound (Firm)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Raising shrimp</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#raisingshrimpcunninghamjoesoundengineertwo-dimensionalmovingimage">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc900545301"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#raisingshrimp2014fishnavyfilmsvideodisc"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#raisingshrimpcunninghamjoesoundengineercaplowtheodore1969-currysarahdanylchukandyschlairdoronmayoljavierfishnavyfilmsfirmnewyorksoundfirm"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Raising shrimp Cunningham, Joe (Sound engineer)  two-dimensional moving image</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20219>Duration: 049 minutes.</rdaed:P20219><!--rdaed:P20219 = has duration-->
+      <rdae:P20322 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#g"/><!--rdae:P20322 = has intended audience of expression-->
+      <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
+      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
+      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20312>Raising shrimp</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/><!--rdaeo:P20001 = has content type-->
+      <rdaed:P20069>Discusses the economic and medical perils of shrimp as an outsourced food supply and interviews fishermen in Texas, shrimp farmers in Belize, and pioneering farmers back in the US in search of a better shrimp.</rdaed:P20069><!--rdaed:P20069 = has summarization of content-->
+      <rdaeo:P20378 rdf:resource="http://marc2rda.edu/fake/age#caplowtheodore1969-"/><!--rdaeo:P20378 = has narrator person-->
+      <rdaeo:P20390 rdf:resource="http://marc2rda.edu/fake/age#mayoljavier"/><!--rdaeo:P20390 = has editor person of moving image work-->
+      <rdaeo:P20506 rdf:resource="http://marc2rda.edu/fake/age#fishnavyfilmsfirm"/><!--rdaeo:P20506 = has presenter corporate body-->
+      <rdaeo:P20506 rdf:resource="http://marc2rda.edu/fake/age#newyorksoundfirm"/><!--rdaeo:P20506 = has presenter corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#raisingshrimp2014fishnavyfilmsvideodisc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc900545301"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#raisingshrimpcunninghamjoesoundengineertwo-dimensionalmovingimage"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#raisingshrimpcunninghamjoesoundengineertwo-dimensionalmovingimageaggregating"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30276>Raising shrimp [2014] Fish Navy Films,videodisc</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30278>2014/..</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/flu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30335 = has category of manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e3733"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30137>Type of date code: s</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30156>Raising shrimp</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Fish Navy Films presents with New York Sound a Ted Caplow film</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>producer, Ted Caplow</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>director, Joe Cunningham</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>written by Ted Caplow with Sarah Curry</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>[Coconut Grove, Florida] : Fish Navy Films, [2014]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Coconut Grove, Florida</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Fish Navy Films</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2014</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>1 videodisc (49 min.) : sound, color ; 4 3/4 in.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1008"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1008"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1060"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1060"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30172 rdf:resource="http://rdaregistry.info/termList/typeRec/1002"/><!--rdamo:P30172 = has type of recording-->
+      <rdamo:P30206 rdf:resource="http://rdaregistry.info/termList/recMedium/1003"/><!--rdamo:P30206 = has recording medium-->
+      <rdamo:P30184 rdf:resource="http://rdaregistry.info/termList/configPlayback/1002"/><!--rdamo:P30184 = has configuration of playback channels-->
+      <rdamd:P30138>2.0 Dolby digital</rdamd:P30138><!--rdamd:P30138 = has special playback characteristic-->
+      <rdam:P30123 rdf:resource="http://rdaregistry.info/termList/broadcastStand/1002"/><!--rdam:P30123 = has broadcast standard-->
+      <rdam:P30018 rdf:resource="http://rdaregistry.info/termList/fileType/1006"/><!--rdam:P30018 = has file type-->
+      <rdam:P30096 rdf:resource="http://id.loc.gov/vocabulary/mencformat/dvdv"/><!--rdam:P30096 = has encoding format-->
+      <rdam:P30006 rdf:resource="http://rdaregistry.info/termList/RDARegionalEncoding/1001"/><!--rdam:P30006 = has regional encoding-->
+      <rdamd:P30162>DVD ; all regions, NTSC ; widescreen, 16:9; Dolby digital 2.0.</rdamd:P30162><!--rdamd:P30162 = has equipment or system requirement-->
+      <rdamd:P30137>Closed-captioned in English.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>With Andy Danylchuk (fish ecologist), Ted Caplow (ecological engineer), Tim Smith, Doug Ernst (aquaculture engineer), Craig Wallis, Mitch Jones (Food and Water Watch), Scott Zimmerman (food inspector).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Credits: Cinematography, Doron Schlair ; supervising editor, Javier Mayol ; music, Moby, Selec Astronomy, Man Plus Building, Bob Bradley.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Originally produced as a motion picture in 2013.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Includes trailer.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#cunninghamjoesoundengineer-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#cunninghamjoesoundengineer"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#cunninghamjoesoundengineer-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#cunninghamjoesoundengineer"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#caplowtheodore1969- -->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#caplowtheodore1969-"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#caplowtheodore1969- -->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#caplowtheodore1969-"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#caplowtheodore1969- -->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#caplowtheodore1969-"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#currysarah-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#currysarah"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#currysarah-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#currysarah"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#danylchukandy-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#danylchukandy"/><!--rdamo:P30336 = has contributor person to aggregate-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#schlairdoron-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#schlairdoron"/><!--rdamo:P30336 = has contributor person to aggregate-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-25t1138162388563-0400d25e3733">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>707541822893</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/upc"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#cunninghamjoesoundengineer">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Cunningham, Joe (Sound engineer)</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Cunningham, Joe</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjFWVgP8yP6dYTWHbDhrbd</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#caplowtheodore1969-">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Caplow, Theodore, 1969-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Caplow, Theodore</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1969</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJhRJX48fVR3YfBJ8KDrMP</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#currysarah">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Curry, Sarah</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Curry, Sarah</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#danylchukandy">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Danylchuk, Andy</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Danylchuk, Andy</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#schlairdoron">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Schlair, Doron</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Schlair, Doron</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#mayoljavier">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Mayol, Javier</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Mayol, Javier</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#fishnavyfilmsfirm">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Fish Navy Films (Firm)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>Fish Navy Films (Firm)</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#newyorksoundfirm">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>New York Sound (Firm)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>New York Sound (Firm)</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#sh3806">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">SH380.6</skos:notation>
+      <skos:altLabel>SH380.6</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#tx387">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">TX387</skos:notation>
+      <skos:altLabel>TX387</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#documentaryfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Documentary films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#shrimpculture">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Shrimp culture</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquaculture">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#aquaculturalengineering">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquacultural engineering</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#crevettese%CC%81levage">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Crevettes--Élevage</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#aquaculture">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Aquaculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#documentaryfilm">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>documentary film</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#documentaryfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Documentary films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#environmentalfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Environmental films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#nonfictionfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Nonfiction films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#videorecordingsforthehearingimpaired">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Video recordings for the hearing impaired</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#documentaires">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Documentaires</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#filmsenvironnementaux">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Films environnementaux</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#filmsautresquedefiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Films autres que de fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#vide%CC%81ospourpersonneshandicape%CC%81esauditives">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Vidéos pour personnes handicapées auditives</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#unitedstates"/><!--rdapo:P70019 = has appellation of place-->
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/052-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/052-test1exp"/>
+      <rdawd:P10002>052-test1wor</rdawd:P10002>
+      <fake:marcfield>F052 ## $a 3810</fake:marcfield>
+      <rdaw:P10321 rdf:resource="http://marc2rda.edu/fake/lcc/pla#3810"/>
+      <fake:marcfield>F052 ## $a 4034 $b R4 $b R8</fake:marcfield>
+      <rdaw:P10321 rdf:resource="http://marc2rda.edu/fake/lcc/pla#4034r4"/>
+      <rdaw:P10321 rdf:resource="http://marc2rda.edu/fake/lcc/pla#4034r8"/>
+      <fake:marcfield>F052 1# $a BK $d Mostar</fake:marcfield>
+      <rdaw:P10321 rdf:resource="http://marc2rda.edu/fake/sudocs/pla#bk"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/052-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/052-test1man"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/052-test1wor"/>
+      <rdaed:P20002>052-test1exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/052-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/052-test1exp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/052-test1plaNom#d22e6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>3810</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/052-test1plaNom#d22e12">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>4034R4</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/052-test1plaNom#d22e14">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>4034R8</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/052-test1plaNom#d22e16">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>BK</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/052-test1plaNom#d22e19">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Mostar</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/pla#3810">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/052-test1plaNom#d22e6"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/pla#4034r4">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/052-test1plaNom#d22e12"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/pla#4034r8">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/052-test1plaNom#d22e14"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sudocs/pla#bk">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/052-test1plaNom#d22e16"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/052-test1plaNom#d22e19"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    
+    <!-- Testing row 12, 44, 46 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-12a</marc:controlfield>
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="a">q</marc:subfield>
+			<marc:subfield code="b">250</marc:subfield>
+            <marc:subfield code="e">100</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 12 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-12b-44</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">q</marc:subfield>
+			<marc:subfield code="b">250</marc:subfield>
+            <marc:subfield code="d">100</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 12 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-12c-41</marc:controlfield>
+        <marc:datafield tag="046" ind1="2" ind2=" ">
+            <marc:subfield code="a">q</marc:subfield>
+			<marc:subfield code="c">250</marc:subfield>
+            <marc:subfield code="e">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 12 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-12d-42</marc:controlfield>
+        <marc:datafield tag="046" ind1="3" ind2=" ">
+            <marc:subfield code="a">q</marc:subfield>
+			<marc:subfield code="c">250</marc:subfield>
+            <marc:subfield code="e">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 14-->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-14a</marc:controlfield>
+        <!-- $e -->
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="a">i</marc:subfield>
+			<marc:subfield code="b">100</marc:subfield>
+            <marc:subfield code="e">250</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 14-->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-14b-44</marc:controlfield>
+        <!-- $e -->
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">i</marc:subfield>
+			<marc:subfield code="b">100</marc:subfield>
+            <marc:subfield code="e">250</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 14-->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-14c-41</marc:controlfield>
+        <!-- $e -->
+        <marc:datafield tag="046" ind1="2" ind2=" ">
+            <marc:subfield code="a">i</marc:subfield>
+			<marc:subfield code="b">100</marc:subfield>
+            <marc:subfield code="e">250</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 14-->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-14d-42</marc:controlfield>
+        <!-- $e -->
+        <marc:datafield tag="046" ind1="3" ind2=" ">
+            <marc:subfield code="a">i</marc:subfield>
+			<marc:subfield code="b">100</marc:subfield>
+            <marc:subfield code="e">250</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 29 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-29a</marc:controlfield>
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="a">k</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 29 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-29b-44</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">k</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 29 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-29c-41</marc:controlfield>
+        <marc:datafield tag="046" ind1="2" ind2=" ">
+            <marc:subfield code="a">k</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 29 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-29d-42</marc:controlfield>
+        <marc:datafield tag="046" ind1="3" ind2=" ">
+            <marc:subfield code="a">k</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 30 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-30a</marc:controlfield>
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="a">m</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 30 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-30b-44</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">m</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 30 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-30c-41</marc:controlfield>
+        <marc:datafield tag="046" ind1="2" ind2=" ">
+            <marc:subfield code="a">m</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 30 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-30d-42-45-68-72</marc:controlfield>
+        <marc:datafield tag="046" ind1="3" ind2=" ">
+            <marc:subfield code="a">m</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+            <marc:subfield code="x">57</marc:subfield>
+            <marc:subfield code="z">3</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 31 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-31a</marc:controlfield>
+        <!-- $2 -->
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="j">2001-07-12</marc:subfield>
+            <marc:subfield code="2">W3CDTF</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 31 no $2 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-31b</marc:controlfield>
+        <!-- $2 -->
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="j">2001-07-12</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 32 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-32</marc:controlfield>
+        <!-- $2 -->
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="j">2001-07-12</marc:subfield>
+            <marc:subfield code="2">W3CDTF</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 33 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-33</marc:controlfield>
+        <!-- $2 -->
+        <marc:datafield tag="046" ind1="2" ind2=" ">
+            <marc:subfield code="j">2001-07-12</marc:subfield>
+            <marc:subfield code="2">W3CDTF</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 34 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-34</marc:controlfield>
+        <!-- $2 -->
+        <marc:datafield tag="046" ind1="3" ind2=" ">
+            <marc:subfield code="j">2001-07-12</marc:subfield>
+            <marc:subfield code="2">W3CDTF</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 35, 56, 57 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-35-56-57</marc:controlfield>
+        <!-- Testing the indicators -->
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="k">1874</marc:subfield>
+            <marc:subfield code="l">1890</marc:subfield>
+			<marc:subfield code="2">edtf</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 36, 58, 62, 77 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-36-58-62-77</marc:controlfield>
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="m">20011008</marc:subfield>
+            <marc:subfield code="n">20011027</marc:subfield>
+            <marc:subfield code="3">Fear in the night</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 37, 59, 63, 78 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-37-59-63-78</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="m">20011008</marc:subfield>
+            <marc:subfield code="n">20011027</marc:subfield>
+            <marc:subfield code="3">Fear in the night</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 38, 60, 64, 79 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-38-60-64-79</marc:controlfield>
+        <marc:datafield tag="046" ind1="2" ind2=" ">
+            <marc:subfield code="m">20011008</marc:subfield>
+            <marc:subfield code="n">20011027</marc:subfield>
+            <marc:subfield code="3">Fear in the night</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 39, 61, 65, 80 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-39-61-65-80</marc:controlfield>
+        <marc:datafield tag="046" ind1="3" ind2=" ">
+            <marc:subfield code="m">20011008</marc:subfield>
+            <marc:subfield code="n">20011027</marc:subfield>
+            <marc:subfield code="3">Fear in the night</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 40, 66, 67 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-40-66-67</marc:controlfield>
+        <marc:datafield tag="046" ind1="2" ind2=" ">
+            <marc:subfield code="o">1995</marc:subfield>
+			<marc:subfield code="p">2006</marc:subfield>
+            <marc:subfield code="2">edtf</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 43 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-43</marc:controlfield>
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="a">t</marc:subfield>
+            <marc:subfield code="d">2015</marc:subfield>
+            <marc:subfield code="e">2018</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 45, 68, 72 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-45-68-72</marc:controlfield>
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="x">57</marc:subfield>
+            <marc:subfield code="z">3</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 45, 69, 73 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-45-69-73</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="x">57</marc:subfield>
+            <marc:subfield code="z">3</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 45, 70, 74 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-45-70-74</marc:controlfield>
+        <marc:datafield tag="046" ind1="2" ind2=" ">
+            <marc:subfield code="x">57</marc:subfield>
+            <marc:subfield code="z">3</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 45, 71, 75 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-45-71-75</marc:controlfield>
+        <marc:datafield tag="046" ind1="3" ind2=" ">
+            <marc:subfield code="x">57</marc:subfield>
+            <marc:subfield code="z">3</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 47, 48 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-47-48a</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">r</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 47, 48 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-47-48b</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">r</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="e">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+
+    <!-- Testing row 49 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-49</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">s</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 50, 51 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-50-51</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">p</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 52 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-52</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">t</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 53, 54 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-53-54</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">x</marc:subfield>
+			<marc:subfield code="c">1000</marc:subfield>
+            <marc:subfield code="e">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <!-- Testing row 55 -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">046-test-55</marc:controlfield>
+        <marc:datafield tag="046" ind1="1" ind2=" ">
+            <marc:subfield code="a">n</marc:subfield>
+			<marc:subfield code="b">1000</marc:subfield>
+            <marc:subfield code="d">500</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">547-test</marc:controlfield>
+        
+        <marc:datafield tag="546" ind1=" " ind2=" ">
+            <marc:subfield code="3">Marriage certificate</marc:subfield>
+            <marc:subfield code="a">German;</marc:subfield>
+            <marc:subfield code="b">Fraktur.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">546</marc:subfield>
+            <marc:subfield code="3">John P. Harrington field notebooks</marc:subfield>
+            <marc:subfield code="a">Zuni;</marc:subfield>
+            <marc:subfield code="b">Pictograms;</marc:subfield>
+            <marc:subfield code="b">Phonetic alphabet.</marc:subfield>
+        </marc:datafield>
+        
+    </marc:record>
+</marc:collection>

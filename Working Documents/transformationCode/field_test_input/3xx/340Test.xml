@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">340-test1</marc:controlfield>
+        
+        <!-- multiple subfields -->
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">vinyl</marc:subfield>
+            <marc:subfield code="b">12 in.</marc:subfield>
+            <marc:subfield code="2">rda</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">plastic</marc:subfield>
+            <marc:subfield code="a">metal</marc:subfield>
+            <marc:subfield code="b">4 3/4 in.</marc:subfield>
+            <marc:subfield code="f">1.4 m/s</marc:subfield>
+            <marc:subfield code="j">mass-produced</marc:subfield>
+        </marc:datafield>
+                <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="b">20 cm. folded to 10 x 12 cm.</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
+        </marc:datafield>
+        
+        <!-- literal subfields -->
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="f">24:1</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="h">center panel.</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="i">bord Model 74 tape reader.</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+        </marc:datafield>
+        
+        <!-- testing $0, $1, and $2 with a -->
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="2">rdamat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAMaterial/1005</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="0">non uri zero</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="1">http://rdaregistry.info/termList/RDAMaterial/1005</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="2">othersource</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 3 -->
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="3">self-portrait</marc:subfield>
+            <marc:subfield code="c">colored inks</marc:subfield>
+        </marc:datafield>
+        
+        <!-- each subfield -->
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="d">stamping</marc:subfield>
+            <marc:subfield code="2">rdapm</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="e">wood</marc:subfield>
+            <marc:subfield code="2">rdamat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">monochrome</marc:subfield>
+            <marc:subfield code="2">rdacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="j">printing master</marc:subfield>
+            <marc:subfield code="2">rdagen</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="k">double sided</marc:subfield>
+            <marc:subfield code="2">rdalay</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="3">workbook</marc:subfield>
+            <marc:subfield code="l">spiral binding</marc:subfield>
+            <marc:subfield code="2">rdatb</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
+            <marc:subfield code="l">Coptic bindings</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="m">folio</marc:subfield>
+            <marc:subfield code="2">rdabf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="n">36 point</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="o">positive</marc:subfield>
+            <marc:subfield code="2">rdapo</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="p">illustration</marc:subfield>
+            <marc:subfield code="2">rdaill</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="q">high reduction</marc:subfield>
+            <marc:subfield code="2">rdarr</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">340</marc:subfield>
+            <marc:subfield code="a">醋酸纤维素</marc:subfield>
+            <marc:subfield code="2">rdamat</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">340-01</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
+            <marc:subfield code="l">linked 880</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+        </marc:datafield>
+        
+        <!-- test 0s and 1s when property cannot be determined -->
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">wove paper</marc:subfield>
+            <marc:subfield code="c">ink</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAMaterial/1017</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">vinyl</marc:subfield>
+            <marc:subfield code="b">12 in.</marc:subfield>
+            <marc:subfield code="2">rda</marc:subfield>
+            <marc:subfield code="1">http://rdaregistry.info/termList/RDAMaterial/1045</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="9">PHYSICAL MEDIUM (R) </marc:subfield>
+            <marc:subfield code="a">Material base and configuration (R) </marc:subfield>
+            <marc:subfield code="a">Material base and configuration (R) </marc:subfield>
+            <marc:subfield code="b">Dimensions (R) </marc:subfield>
+            <marc:subfield code="b">Dimensions (R) </marc:subfield>
+            <marc:subfield code="c">Materials applied to surface (R) </marc:subfield>
+            <marc:subfield code="c">Materials applied to surface (R) </marc:subfield>
+            <marc:subfield code="d">Information recording technique (R) </marc:subfield>
+            <marc:subfield code="d">Information recording technique (R) </marc:subfield>
+            <marc:subfield code="e">Support (R) </marc:subfield>
+            <marc:subfield code="e">Support (R) </marc:subfield>
+            <marc:subfield code="f">Reduction ratio value (R) </marc:subfield>
+            <marc:subfield code="f">Reduction ratio value (R) </marc:subfield>
+            <marc:subfield code="g">Color content (R) </marc:subfield>
+            <marc:subfield code="g">Color content (R) </marc:subfield>
+            <marc:subfield code="h">Location within medium (R) </marc:subfield>
+            <marc:subfield code="h">Location within medium (R) </marc:subfield>
+            <marc:subfield code="i">Technical specifications of medium (R) </marc:subfield>
+            <marc:subfield code="i">Technical specifications of medium (R) </marc:subfield>
+            <marc:subfield code="j">Generation (R) </marc:subfield>
+            <marc:subfield code="j">Generation (R) </marc:subfield>
+            <marc:subfield code="k">Layout (R) </marc:subfield>
+            <marc:subfield code="k">Layout (R) </marc:subfield>
+            <marc:subfield code="l">Binding (R) </marc:subfield>
+            <marc:subfield code="l">Binding (R) </marc:subfield>
+            <marc:subfield code="m">Book format (R) </marc:subfield>
+            <marc:subfield code="m">Book format (R) </marc:subfield>
+            <marc:subfield code="n">Font size (R) </marc:subfield>
+            <marc:subfield code="n">Font size (R) </marc:subfield>
+            <marc:subfield code="o">Polarity (R) </marc:subfield>
+            <marc:subfield code="o">Polarity (R) </marc:subfield>
+            <marc:subfield code="p">Illustrative content (R) </marc:subfield>
+            <marc:subfield code="p">Illustrative content (R) </marc:subfield>
+            <marc:subfield code="q">Reduction ratio designator (R) </marc:subfield>
+            <marc:subfield code="q">Reduction ratio designator (R) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="1">Real World Object URI </marc:subfield>
+            <marc:subfield code="1">Real World Object URI </marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

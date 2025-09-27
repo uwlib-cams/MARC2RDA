@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc545-agent">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>545-agent</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc545-agent</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc545-agent"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc545-agent">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-agent"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc545-agent</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F001 545-agent
+F100 1# $a Hill, Jane
+F545 ## $a Jane Hill was a pioneering linguist. $u http://example.org/hill
+F880 ## $6 545-00 $a ジェーン・ヒルは先駆的な言語学者でした。
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-agent"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#hilljane-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#hilljane"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-agent"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-agent"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276/>
+      <rdamd:P30137>
+         <rdamd:P30002>Biographical or historical note: Jane Hill was a pioneering linguist.</rdamd:P30002>
+         <rdamo:P30154 rdf:resource="http://example.org/hill"/>
+      </rdamd:P30137>
+      <rdamd:P30137>
+         <rdamd:P30002>Biographical or historical note: ジェーン・ヒルは先駆的な言語学者でした。</rdamd:P30002>
+      </rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#hilljane">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Hill, Jane</rdaad:P50377>
+      <rdaad:P50111>Hill, Jane</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc545-collective">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>545-collective</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc545-collective</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc545-collective"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc545-collective">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-collective"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc545-collective</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F001 545-collective
+F110 2# $a Historical Society of South Milford
+F545 0# $a Founded in 1890 to preserve the town's heritage.
+F880 ## $6 545-00 $a 1890年に設立され、町の遺産を保存しています。
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-collective"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#historicalsocietyofsouthmilford-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#historicalsocietyofsouthmilford"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-collective"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-collective"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276/>
+      <rdamd:P30137>
+         <rdamd:P30002>Biographical sketch: Founded in 1890 to preserve the town's heritage.</rdamd:P30002>
+      </rdamd:P30137>
+      <rdamd:P30137>
+         <rdamd:P30002>Biographical or historical note: 1890年に設立され、町の遺産を保存しています。</rdamd:P30002>
+      </rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#historicalsocietyofsouthmilford">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Historical Society of South Milford</rdaad:P50375>
+      <rdaad:P50032>Historical Society of South Milford</rdaad:P50032>
+      <rdaad:P50032>Historical Society of South Milford</rdaad:P50032>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc545-expression">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>545-expression</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc545-expression</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc545-expression"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#collectedlettersofjanehill"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#collectedlettersofjanehill"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc545-expression">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-expression"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc545-expression</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F001 545-expression
+F130 0# $a Collected letters of Jane Hill
+F545 1# $a Compiled from personal correspondence spanning 1940–1980.
+F880 ## $6 545-00 $a 1940年から1980年にかけての個人的な書簡から編纂されました。
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#collectedlettersofjanehill">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-expression"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#collectedlettersofjanehill"/>
+      <rdawd:P10328>Collected letters of Jane Hill</rdawd:P10328>
+      <rdawd:P10088>Collected letters of Jane Hill</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#collectedlettersofjanehill">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-expression"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#collectedlettersofjanehill"/>
+      <rdaed:P20310>Collected letters of Jane Hill </rdaed:P20310>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-expression"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#collectedlettersofjanehill"/>
+      <rdamd:P30276/>
+      <rdamd:P30137>
+         <rdamd:P30002>Administrative history: Compiled from personal correspondence spanning 1940–1980.</rdamd:P30002>
+      </rdamd:P30137>
+      <rdamd:P30137>
+         <rdamd:P30002>Biographical or historical note: 1940年から1980年にかけての個人的な書簡から編纂されました。</rdamd:P30002>
+      </rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc545-manifestation">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>545-manifestation</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc545-manifestation</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc545-manifestation"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#janehillarchive"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#janehillarchive"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#janehillarchive"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc545-manifestation">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-manifestation"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc545-manifestation</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F001 545-manifestation
+F245 10 $a Jane Hill Archive
+F545 ## $a Archived materials received in 1999.
+F880 ## $6 545-00 $a 1999年に受領されたアーカイブ資料。
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#janehillarchive">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-manifestation"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#janehillarchive"/>
+      <rdawd:P10328>Jane Hill Archive</rdawd:P10328>
+      <rdawd:P10088>Jane Hill Archive</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#janehillarchive">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-manifestation"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#janehillarchive"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#janehillarchive"/>
+      <rdaed:P20310>Jane Hill Archive </rdaed:P20310>
+      <rdaed:P20312>Jane Hill Archive</rdaed:P20312>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#janehillarchive">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-manifestation"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#janehillarchive"/>
+      <rdamd:P30276>Jane Hill Archive</rdamd:P30276>
+      <rdamd:P30156>Jane Hill Archive</rdamd:P30156>
+      <rdamd:P30137>
+         <rdamd:P30002>Biographical or historical note: Archived materials received in 1999.</rdamd:P30002>
+      </rdamd:P30137>
+      <rdamd:P30137>
+         <rdamd:P30002>Biographical or historical note: 1999年に受領されたアーカイブ資料。</rdamd:P30002>
+      </rdamd:P30137>
+   </rdf:Description>
+</rdf:RDF>

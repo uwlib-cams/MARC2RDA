@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">565-test</marc:controlfield>
+        
+        <marc:datafield tag="565" ind1="0" ind2=" ">
+            <marc:subfield code="3">Automobile consumer survey files</marc:subfield>
+            <marc:subfield code="a">8;</marc:subfield>
+            <marc:subfield code="b">address;</marc:subfield>
+            <marc:subfield code="b">manufacturer of vehicle;</marc:subfield>
+            <marc:subfield code="b">model of vehicle;</marc:subfield>
+            <marc:subfield code="b">date of purchase;</marc:subfield>
+            <marc:subfield code="b">date of 1st major repairs;</marc:subfield>
+            <marc:subfield code="b">current mileage;</marc:subfield>
+            <marc:subfield code="b">date of latest repair;</marc:subfield>
+            <marc:subfield code="d">complaint filers 1981 January 1 through 1983 December 31;</marc:subfield>
+            <marc:subfield code="c">new vehicle registrants </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="565" ind1="8" ind2=" ">
+            <marc:subfield code="3">Vandalism report files</marc:subfield>
+            <marc:subfield code="a">14; </marc:subfield>
+            <marc:subfield code="b">name; </marc:subfield>
+            <marc:subfield code="b">address; </marc:subfield>
+            <marc:subfield code="b">occupation; </marc:subfield>
+            <marc:subfield code="c">local jurisdiction; </marc:subfield>
+            <marc:subfield code="d">registered voters; </marc:subfield>
+            <marc:subfield code="e">alphabetical by jurisdiction</marc:subfield>
+        </marc:datafield>
+        
+    </marc:record>
+</marc:collection>

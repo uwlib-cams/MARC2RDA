@@ -1,0 +1,1806 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00002974_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00002974 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00002974_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00002974_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#fabriniplacidothelifeofstmarymagdalende-pazzi"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#fabriniplacidothelifeofstmarymagdalende-pazzienglish"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc8706090thelifeofstmarymagdalende-pazzi1900"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00002974_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00002974_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00002974_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01101cam  22002411a 4500
+F001    00002974 
+F003 DLC
+F005 20171212155158.0
+F008 820820s1900    pauacf        000 0 eng  
+F010 ## $a    00002974 
+F035 ## $a (OCoLC)8706090
+F040 ## $a DLC $c PPStCh $d DLC
+F041 1# $a eng $h ita
+F050 00 $a BX4700.M37 $b F3
+F100 1# $a Fabrini, Placido.
+F245 14 $a The life of St. Mary Magdalen De-Pazzi, $b Florentine noble, sacred Carmelite virgin, $c comp. by the Rev. Placido Fabrini. To which are added her works, a narration of the miracles wrought through her intercession down to our days, and prayers for the novena in her honor; tr. from the Florentine edition of 1852 and pub. by the Rev. Antonio Isoleri.
+F260 ## $a Philadelphia, $c 1900.
+F300 ## $a 469 p. : $b front., plates, dacsim. ; $c 24 cm.
+F500 ## $a In 2 parts, pt. II with special t.-p.: The works of St. Mary Magdalen De-Pazzi.
+F530 ## $a Also available in digital form.
+F600 00 $a Maria Maddalina de'Pazzi, $c Saint, $d 1566-1607.
+F700 1# $a Isoleri, Antonio, $e tr.
+F856 41 $u http://hdl.loc.gov/loc.gdc/scd0001.00135550802
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#fabriniplacidothelifeofstmarymagdalende-pazzi">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00002974_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#fabriniplacidothelifeofstmarymagdalende-pazzienglish"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Fabrini, Placido. The life of St. Mary Magdalen De-Pazzi</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#bx4700m37"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e35-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e35"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>The life of St. Mary Magdalen De-Pazzi,</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e64"/><!--rdawo:P10261 = has subject person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#fabriniplacidothelifeofstmarymagdalende-pazzienglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00002974_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc8706090thelifeofstmarymagdalende-pazzi1900"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#fabriniplacidothelifeofstmarymagdalende-pazzi"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Fabrini, Placido. The life of St. Mary Magdalen De-Pazzi, English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>The life of St. Mary Magdalen De-Pazzi,</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolc8706090thelifeofstmarymagdalende-pazzi1900">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00002974_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#fabriniplacidothelifeofstmarymagdalende-pazzienglish"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>The life of St. Mary Magdalen De-Pazzi, 1900.</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1900</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/pau"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1012"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="https://doi.org/10.6069/uwlswd.gq3z-mv97#f"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e13"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>The life of St. Mary Magdalen De-Pazzi,</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>Florentine noble, sacred Carmelite virgin,</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>comp. by the Rev. Placido Fabrini. To which are added her works, a narration of the miracles wrought through her intercession down to our days, and prayers for the novena in her honor; tr. from the Florentine edition of 1852 and pub. by the Rev. Antonio Isoleri</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Philadelphia, 1900.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Philadelphia</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30011>1900</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>469 p. : front., plates, dacsim. ; 24 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamd:P30137>In 2 parts, pt. II with special t.-p.: The works of St. Mary Magdalen De-Pazzi.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e71-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e71"/><!--rdamo:P30268 = has related person of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e13">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00002974 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00002974 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e64">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Maria Maddalina de'Pazzi, Saint, 1566-1607</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e35">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Fabrini, Placido</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Fabrini, Placido</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e64">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e64"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Maria Maddalina de'Pazzi</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1566</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1607</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e71">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Isoleri, Antonio</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Isoleri, Antonio</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#bx4700m37">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">BX4700.M37</skos:notation>
+      <skos:altLabel>BX4700.M37</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00006375_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00006375 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00006375_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00006375_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#crawfordfmarionfrancismarion1854-1909inthepalaceoftheking"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#crawfordfmarionfrancismarion1854-1909inthepalaceofthekingenglish"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00006375inthepalaceoftheking1900themacmillancompany"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00006375_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00006375_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00006375_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 00637cam  22001811  4500
+F001    00006375 
+F003 DLC
+F005 20050204180229.0
+F008 011002s1900    nyuf          000 0 eng  
+F010 ## $a    00006375 
+F040 ## $a DLC $c DLC $d DLC
+F050 00 $a PZ3.C857 $b I2 $a PS1455
+F100 1# $a Crawford, F. Marion $q (Francis Marion), $d 1854-1909.
+F245 10 $a In the palace of the king; $b a love story of old Madrid, $c by F. Marion Crawford ...
+F260 ## $a New York, $a London, $b The Macmillan company, $c 1900.
+F300 ## $a viii p., 1 l., 367 p. $b front., plates. $c 20 cm.
+F600 00 $a John, $c of Austria, $d 1547-1578 $x Fiction.
+F651 #0 $a Madrid (Spain) $v Fiction.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#crawfordfmarionfrancismarion1854-1909inthepalaceoftheking">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00006375_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#crawfordfmarionfrancismarion1854-1909inthepalaceofthekingenglish"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Crawford, F. Marion (Francis Marion), 1854-1909. In the palace of the king;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#pz3c857"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#ps1455"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e106-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e106"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>In the palace of the king;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#johnofaustria1547-1578fiction"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e137"/><!--rdawo:P10261 = has subject person-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/pla#madridspain"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#madridspainfiction"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fiction"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#crawfordfmarionfrancismarion1854-1909inthepalaceofthekingenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00006375_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00006375inthepalaceoftheking1900themacmillancompany"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#crawfordfmarionfrancismarion1854-1909inthepalaceoftheking"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Crawford, F. Marion (Francis Marion), 1854-1909. In the palace of the king; English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>In the palace of the king;</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn00006375inthepalaceoftheking1900themacmillancompany">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00006375_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#crawfordfmarionfrancismarion1854-1909inthepalaceofthekingenglish"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>In the palace of the king; 1900. The Macmillan company</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1900</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="https://doi.org/10.6069/uwlswd.gq3z-mv97#f"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e90"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>In the palace of the king;</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>a love story of old Madrid,</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>by F. Marion Crawford ..</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>$a New York,$a London,$b The Macmillan company,$c 1900.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>New York</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30088>London</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>The Macmillan company</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1900</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>viii p., 1 l., 367 p. front., plates. 20 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e90">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00006375 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00006375 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e137">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>John, of Austria, 1547-1578</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#madridspain">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Madrid (Spain)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e106">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Crawford, F. Marion (Francis Marion), 1854-1909</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Crawford, F. Marion</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1854</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1909</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+      <rdaad:P50115>Francis Marion</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e137">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e137"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>John</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1547</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1578</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#pz3c857">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PZ3.C857</skos:notation>
+      <skos:altLabel>PZ3.C857</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#ps1455">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PS1455</skos:notation>
+      <skos:altLabel>PS1455</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#johnofaustria1547-1578fiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>John, of Austria, 1547-1578--Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#madridspainfiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Madrid (Spain)--Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/pla#madridspain">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#madridspain"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00008072_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00008072 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00008072_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00008072_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#sprouleannathomasaedison"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#sprouleannathomasaedisonenglish"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00008072thomasaedisonc2000blackbirchpress"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00008072_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00008072_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00008072_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01144pam  22003014a 4500
+F001    00008072 
+F003 DLC
+F005 20010925114602.0
+F008 000112s2000    ctua   c b    001 0beng  
+F010 ## $a    00008072 
+F020 ## $a 1567113311 (hardcover : alk. paper)
+F040 ## $a DLC $c DLC $d DLC
+F042 ## $a pcc $a lcac
+F043 ## $a n-us---
+F050 00 $a TK140.E3 $b S67 2000
+F082 00 $a 621.3/092 $a B $2 21
+F100 1# $a Sproule, Anna.
+F245 10 $a Thomas A. Edison : $b the world's greatest inventor / $c Anna Sproule.
+F250 ## $a 1st U.S. ed.
+F260 ## $a Woodbridge, Conn. : $b Blackbirch Press, $c c2000.
+F300 ## $a 64 p. : $b ill. (some col.) ; $c 25 cm.
+F440 #0 $a Giants of science
+F504 ## $a Includes bibliographical references (p. 62) and index.
+F520 ## $a Details the life and work of Thomas Edison, who developed the electric light bulb and patents for numerous other inventions and innovations.
+F600 10 $a Edison, Thomas A. $q (Thomas Alva), $d 1847-1931 $v Juvenile literature.
+F600 11 $a Edison, Thomas A. $q (Thomas Alva), $d 1847-1931.
+F650 #0 $a Inventors $z United States $x Biography $v Juvenile literature.
+F650 #1 $a Inventors.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#sprouleannathomasaedison">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00008072_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#sprouleannathomasaedisonenglish"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Sproule, Anna. Thomas A. Edison</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.x4ce-sd21#b"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#tk140e3"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e195-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e195"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Thomas A. Edison</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#http://marc2rda.edu/fake/d25e222"/><!--rdawo:P10102 = is issue of-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#edisonthomasathomasalva1847-1931juvenileliterature"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juvenileliterature"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e231"/><!--rdawo:P10261 = has subject person-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e240"/><!--rdawo:P10261 = has subject person-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#inventorsunitedstatesbiographyjuvenileliterature"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juvenileliterature"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/cyac/con#inventors"/><!--rdaw:P10256 = has subject-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#sprouleannathomasaedisonenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00008072_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00008072thomasaedisonc2000blackbirchpress"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#sprouleannathomasaedison"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Sproule, Anna. Thomas A. Edison English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdae:P20322 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#c"/><!--rdae:P20322 = has intended audience of expression-->
+      <rdaed:P20312>Thomas A. Edison</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaed:P20069>Details the life and work of Thomas Edison, who developed the electric light bulb and patents for numerous other inventions and innovations.</rdaed:P20069><!--rdaed:P20069 = has summarization of content-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn00008072thomasaedisonc2000blackbirchpress">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00008072_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#sprouleannathomasaedisonenglish"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Thomas A. Edison c2000. Blackbirch Press</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2000</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/ctu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e162"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#1567113311hardcoveralkpaper"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>Thomas A. Edison</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>the world's greatest inventor</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>Anna Sproule</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30107>1st U.S. ed.</rdamd:P30107><!--rdamd:P30107 = has edition statement-->
+      <rdamd:P30133>1st U.S. ed.</rdamd:P30133><!--rdamd:P30133 = has designation of edition-->
+      <rdamd:P30111>Woodbridge, Conn. : Blackbirch Press, c2000.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Woodbridge, Conn.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Blackbirch Press</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30280>c2000</rdamd:P30280><!--rdamd:P30280 = has manifestation copyright statement-->
+      <rdamd:P30182>64 p. : ill. (some col.) ; 25 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamd:P30106>Giants of science</rdamd:P30106><!--rdamd:P30106 = has series statement-->
+      <rdamd:P30455>Includes bibliographical references (p. 62) and index.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e162">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00008072 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00008072 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#1567113311hardcoveralkpaper">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1567113311(hardcoveralk.paper)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e231">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Edison, Thomas A. (Thomas Alva), 1847-1931</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e240">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Edison, Thomas A. (Thomas Alva), 1847-1931</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e195">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Sproule, Anna</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Sproule, Anna</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e231">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e231"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Edison, Thomas A.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1847</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1931</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+      <rdaad:P50115>Thomas Alva</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e240">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e240"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Edison, Thomas A.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1847</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1931</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+      <rdaad:P50115>Thomas Alva</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#http://marc2rda.edu/fake/d25e222">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Giants of science</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#tk140e3">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">TK140.E3</skos:notation>
+      <skos:altLabel>TK140.E3</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#edisonthomasathomasalva1847-1931juvenileliterature">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Edison, Thomas A. (Thomas Alva), 1847-1931--Juvenile literature</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juvenileliterature">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile literature</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#inventorsunitedstatesbiographyjuvenileliterature">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Inventors--United States--Biography--Juvenile literature</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juvenileliterature">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile literature</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/cyac/con#inventors">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Inventors</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00009812_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00009812 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00009812_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00009812_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#fosterharrylharrylatourette1894-1932theadventuresofatropicaltramp"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#fosterharrylharrylatourette1894-1932theadventuresofatropicaltrampenglish"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00009812theadventuresofatropicaltrampc2000dixon-pricepub"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00009812_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00009812_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00009812_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01027cam  22002654a 4500
+F001    00009812 
+F003 DLC
+F005 20030829142920.0
+F008 000602r20001922utu           000 0aeng  
+F010 ## $a    00009812 
+F020 ## $a 1929516169
+F040 ## $a DLC $c DLC $d DLC
+F042 ## $a pcc
+F043 ## $a s-pe--- $a sa----- $a s------
+F050 00 $a F3423 $b .F75 2000
+F082 00 $a 985.06/31/092 $2 21
+F100 1# $a Foster, Harry L. $q (Harry La Tourette), $d 1894-1932.
+F245 14 $a The adventures of a tropical tramp / $c by Harry L. Foster.
+F260 ## $a Murray, Utah : $b Dixon-Price Pub., $c c2000.
+F300 ## $a 219 p. ; $c 23 cm.
+F500 ## $a "This reprint edition is based upon the 1922 edition by Dodd, Mead and Company. Spelling and punctuation have been edited to reflect modern usage"--T.p. verso.
+F600 10 $a Foster, Harry L. $q (Harry La Tourette), $d 1894-1932 $x Travel $z Peru.
+F650 #0 $a Americans $z South America $x Social life and customs.
+F651 #0 $a Amazon River Region $x Description and travel.
+F651 #0 $a Peru $x Description and travel.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#fosterharrylharrylatourette1894-1932theadventuresofatropicaltramp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00009812_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#fosterharrylharrylatourette1894-1932theadventuresofatropicaltrampenglish"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Foster, Harry L. (Harry La Tourette), 1894-1932. The adventures of a tropical tramp</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.x4ce-sd21#a"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/s-pe"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/sa"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/s"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#f3423"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e304-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e304"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>The adventures of a tropical tramp</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fosterharrylharrylatourette1894-1932travelperu"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e331"/><!--rdawo:P10261 = has subject person-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#americanssouthamericasociallifeandcustoms"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/pla#amazonriverregion"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#amazonriverregiondescriptionandtravel"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/pla#peru"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#perudescriptionandtravel"/><!--rdaw:P10256 = has subject-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#fosterharrylharrylatourette1894-1932theadventuresofatropicaltrampenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00009812_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00009812theadventuresofatropicaltrampc2000dixon-pricepub"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#fosterharrylharrylatourette1894-1932theadventuresofatropicaltramp"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Foster, Harry L. (Harry La Tourette), 1894-1932. The adventures of a tropical tramp English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>The adventures of a tropical tramp</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn00009812theadventuresofatropicaltrampc2000dixon-pricepub">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00009812_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#fosterharrylharrylatourette1894-1932theadventuresofatropicaltrampenglish"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>The adventures of a tropical tramp c2000. Dixon-Price Pub.</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2000</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/utu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e271"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#1929516169"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>The adventures of a tropical tramp</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>by Harry L. Foster</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Murray, Utah : Dixon-Price Pub., c2000.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Murray, Utah</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Dixon-Price Pub.</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30280>c2000</rdamd:P30280><!--rdamd:P30280 = has manifestation copyright statement-->
+      <rdamd:P30182>219 p. ; 23 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamd:P30137>"This reprint edition is based upon the 1922 edition by Dodd, Mead and Company. Spelling and punctuation have been edited to reflect modern usage"--T.p. verso.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e271">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00009812 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00009812 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#1929516169">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1929516169</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e331">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Foster, Harry L. (Harry La Tourette), 1894-1932</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#amazonriverregion">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Amazon River Region</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#peru">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Peru</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e304">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Foster, Harry L. (Harry La Tourette), 1894-1932</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Foster, Harry L.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1894</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1932</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+      <rdaad:P50115>Harry La Tourette</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e331">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e331"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Foster, Harry L.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1894</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1932</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+      <rdaad:P50115>Harry La Tourette</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#f3423">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">F3423</skos:notation>
+      <skos:altLabel>F3423</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fosterharrylharrylatourette1894-1932travelperu">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Foster, Harry L. (Harry La Tourette), 1894-1932--Travel--Peru</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#americanssouthamericasociallifeandcustoms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Americans--South America--Social life and customs</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#amazonriverregiondescriptionandtravel">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Amazon River Region--Description and travel</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#perudescriptionandtravel">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Peru--Description and travel</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/pla#amazonriverregion">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#amazonriverregion"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/pla#peru">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#peru"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00010239_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00010239 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00010239_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00010239_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#fullermargaret1810-1850myheartisalargekingdom"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#fullermargaret1810-1850myheartisalargekingdomenglish"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00010239myheartisalargekingdom2001cornelluniversitypress"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00010239_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00010239_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00010239_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 00889cam  2200253 a 4500
+F001    00010239 
+F003 DLC
+F005 20140922141244.0
+F008 000629s2001    nyua     b    001 0aeng  
+F010 ## $a    00010239 
+F020 ## $a 0801437474 (cloth)
+F040 ## $a DLC $c DLC $d DLC
+F043 ## $a n-us---
+F050 00 $a PS2506 $b .A4 2001
+F082 00 $a 818/.309 $a B $2 21
+F100 1# $a Fuller, Margaret, $d 1810-1850.
+F245 10 $a My heart is a large kingdom : $b selected letters of Margaret Fuller / $c edited by Robert N. Hudspeth.
+F260 ## $a Ithaca, N.Y. : $b Cornell University Press, $c 2001.
+F300 ## $a xix, 336 p. : $b ill. ; $c 24 cm.
+F504 ## $a Includes bibliographical references and index.
+F600 10 $a Fuller, Margaret, $d 1810-1850 $v Correspondence.
+F650 #0 $a Authors, American $y 19th century $v Correspondence.
+F650 #0 $a Feminists $z United States $v Correspondence.
+F700 1# $a Hudspeth, Robert N.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#fullermargaret1810-1850myheartisalargekingdom">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00010239_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#fullermargaret1810-1850myheartisalargekingdomenglish"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Fuller, Margaret, 1810-1850. My heart is a large kingdom</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.x4ce-sd21#a"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#ps2506"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e398-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e398"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>My heart is a large kingdom</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fullermargaret1810-1850correspondence"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#correspondence"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e427"/><!--rdawo:P10261 = has subject person-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#authorsamerican19thcenturycorrespondence"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#correspondence"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#feministsunitedstatescorrespondence"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#correspondence"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#fullermargaret1810-1850myheartisalargekingdomenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00010239_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00010239myheartisalargekingdom2001cornelluniversitypress"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#fullermargaret1810-1850myheartisalargekingdom"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Fuller, Margaret, 1810-1850. My heart is a large kingdom English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>My heart is a large kingdom</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn00010239myheartisalargekingdom2001cornelluniversitypress">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00010239_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#fullermargaret1810-1850myheartisalargekingdomenglish"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>My heart is a large kingdom 2001. Cornell University Press</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2001</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e370"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#0801437474cloth"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>My heart is a large kingdom</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>selected letters of Margaret Fuller</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>edited by Robert N. Hudspeth</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Ithaca, N.Y. : Cornell University Press, 2001.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Ithaca, N.Y.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Cornell University Press</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2001</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>xix, 336 p. : ill. ; 24 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamd:P30455>Includes bibliographical references and index.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e448-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e448"/><!--rdamo:P30268 = has related person of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e370">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00010239 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00010239 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#0801437474cloth">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0801437474(cloth)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e427">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Fuller, Margaret, 1810-1850</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e398">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Fuller, Margaret, 1810-1850</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Fuller, Margaret</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1810</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1850</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e427">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e427"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Fuller, Margaret</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1810</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1850</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e448">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Hudspeth, Robert N.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Hudspeth, Robert N.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#ps2506">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PS2506</skos:notation>
+      <skos:altLabel>PS2506</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fullermargaret1810-1850correspondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fuller, Margaret, 1810-1850--Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#correspondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#authorsamerican19thcenturycorrespondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Authors, American--19th century--Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#correspondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#feministsunitedstatescorrespondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Feminists--United States--Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#correspondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00027936_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00027936 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00027936_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00027936_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#greenbergclement1909-1994theharoldletters1928-1943"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#greenbergclement1909-1994theharoldletters1928-1943english"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00027936theharoldletters1928-1943c2000counterpoint"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00027936_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00027936_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00027936_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01317cam  22003134a 4500
+F001    00027936 
+F003 DLC
+F005 20060712135153.0
+F008 000228s2000    dcuaf         000 0beng  
+F010 ## $a    00027936 
+F020 ## $a 1582430683 (alk. paper)
+F040 ## $a DLC $c DLC $d DLC
+F042 ## $a pcc
+F043 ## $a n-us---
+F050 00 $a N7483.G73 $b A3 2000
+F082 00 $a 709/.2 $a B $2 21
+F100 1# $a Greenberg, Clement, $d 1909-1994.
+F245 14 $a The Harold letters, 1928-1943 : $b the making of an American intellectual / $c by Clement Greenberg ; edited by Janice Van Horne.
+F246 3# $a Harold letters, nineteen hundred twenty eight to nineteen hundred forty three
+F246 3# $a Harold letters, nineteen hundred and twenty eight to nineteen hundred and forty three
+F260 ## $a Washington, D.C. : $b Counterpoint, $c c2000.
+F300 ## $a ix, 310 p., [16] p. of plates : $b ill. ; $c 25 cm.
+F600 10 $a Greenberg, Clement, $d 1909-1994 $v Correspondence.
+F600 10 $a Greenberg, Clement, $d 1909-1994 $x Knowledge and learning.
+F600 10 $a Lazarus, Harold, $d 1909-1983 $v Correspondence.
+F650 #0 $a Intellectuals $z United States $v Correspondence.
+F651 #0 $a United States $x Intellectual life $y 20th century $v Sources.
+F700 1# $a Van Horne, Janice.
+F856 41 $3 Table of contents $u http://www.loc.gov/catdir/toc/fy042/00027936.html
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#greenbergclement1909-1994theharoldletters1928-1943">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00027936_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#greenbergclement1909-1994theharoldletters1928-1943english"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Greenberg, Clement, 1909-1994. The Harold letters, 1928-1943</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.x4ce-sd21#b"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#n7483g73"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e493-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e493"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>The Harold letters, 1928-1943</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#greenbergclement1909-1994correspondence"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#correspondence"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e525"/><!--rdawo:P10261 = has subject person-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#greenbergclement1909-1994knowledgeandlearning"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e532"/><!--rdawo:P10261 = has subject person-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#lazarusharold1909-1983correspondence"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#correspondence"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e539"/><!--rdawo:P10261 = has subject person-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#intellectualsunitedstatescorrespondence"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#correspondence"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/pla#unitedstates"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#unitedstatesintellectuallife20thcenturysources"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#sources"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#greenbergclement1909-1994theharoldletters1928-1943english">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00027936_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00027936theharoldletters1928-1943c2000counterpoint"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#greenbergclement1909-1994theharoldletters1928-1943"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Greenberg, Clement, 1909-1994. The Harold letters, 1928-1943 English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>The Harold letters, 1928-1943</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn00027936theharoldletters1928-1943c2000counterpoint">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00027936_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#greenbergclement1909-1994theharoldletters1928-1943english"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>The Harold letters, 1928-1943 c2000. Counterpoint</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2000</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="https://doi.org/10.6069/uwlswd.gq3z-mv97#f"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e462"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#1582430683alkpaper"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>The Harold letters, 1928-1943</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>the making of an American intellectual</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>by Clement Greenberg</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>edited by Janice Van Horne</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Washington, D.C. : Counterpoint, c2000.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Washington, D.C.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Counterpoint</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30280>c2000</rdamd:P30280><!--rdamd:P30280 = has manifestation copyright statement-->
+      <rdamd:P30182>ix, 310 p., [16] p. of plates : ill. ; 25 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e563-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e563"/><!--rdamo:P30268 = has related person of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e462">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00027936 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00027936 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#1582430683alkpaper">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1582430683(alk.paper)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e525">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Greenberg, Clement, 1909-1994</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e532">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Greenberg, Clement, 1909-1994</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e539">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Lazarus, Harold, 1909-1983</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e493">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Greenberg, Clement, 1909-1994</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Greenberg, Clement</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1909</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1994</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e525">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e525"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Greenberg, Clement</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1909</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1994</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e532">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e532"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Greenberg, Clement</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1909</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1994</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e539">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e539"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Lazarus, Harold</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1909</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1983</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e563">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Van Horne, Janice</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Van Horne, Janice</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#n7483g73">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">N7483.G73</skos:notation>
+      <skos:altLabel>N7483.G73</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#greenbergclement1909-1994correspondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Greenberg, Clement, 1909-1994--Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#correspondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#greenbergclement1909-1994knowledgeandlearning">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Greenberg, Clement, 1909-1994--Knowledge and learning</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#lazarusharold1909-1983correspondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Lazarus, Harold, 1909-1983--Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#correspondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#intellectualsunitedstatescorrespondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Intellectuals--United States--Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#correspondence">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Correspondence</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#unitedstatesintellectuallife20thcenturysources">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>United States--Intellectual life--20th century--Sources</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#sources">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Sources</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/pla#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00036348_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00036348 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00036348_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00036348_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#strangepowerlawtonthomasc"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#strangepowerlawtonthomascenglish"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00036348strangepowerc2000ashgate"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00036348_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00036348_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00036348_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01214cam  22003134a 4500
+F001    00036348 
+F003 DLC
+F005 20190808100451.0
+F008 000329s2000    enk      b    001 0 eng  
+F010 ## $a    00036348 
+F020 ## $a 0754613240 (HB)
+F040 ## $a DLC $c DLC $d DLC
+F042 ## $a pcc
+F050 00 $a HF1359 $b .S767 2000
+F082 00 $a 337 $2 21
+F245 00 $a Strange power : $b shaping the parameters of international relations and international political economy / $c edited by Thomas C. Lawton, James N. Rosenau, Amy C. Verdun.
+F260 ## $a Aldershot ; $a Burlington, Vt. : $b Ashgate, $c c2000.
+F300 ## $a xxii, 453 p. ; $c 24 cm.
+F504 ## $a Includes bibliographical references (p. 421-443) and index.
+F600 10 $a Strange, Susan, $d 1923- $t Retreat of the state.
+F650 #0 $a International economic relations $x Political aspects.
+F650 #0 $a International relations.
+F650 #0 $a Globalization.
+F650 #0 $a World politics $y 1989-
+F650 #0 $a Power (Social sciences)
+F700 1# $a Lawton, Thomas C.
+F700 1# $a Rosenau, James N.
+F700 1# $a Verdun, Amy, $d 1968-
+F776 08 $i Electronic version: $a Strange power. $d London ; New York : Routledge, Taylor &amp; Francis Group, 2018. $z 9781315187556 $w (DLC) 2019300748
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#strangepowerlawtonthomasc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00036348_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#strangepowerlawtonthomascenglish"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Strange powerLawton, Thomas C.</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#hf1359"/><!--rdaw:P10256 = has subject-->
+      <rdawd:P10088>Strange power</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e632"/><!--rdawo:P10261 = has subject person-->
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor#2025-04-22-0700d25e632"/><!--rdawo:P10257 = has subject work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#internationaleconomicrelationspoliticalaspects"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#internationalrelations"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#globalization"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#worldpolitics1989-"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#powersocialsciences"/><!--rdaw:P10256 = has subject-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#strangepowerlawtonthomascenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00036348_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00036348strangepowerc2000ashgate"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#strangepowerlawtonthomasc"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Strange powerLawton, Thomas C. English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>Strange power</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn00036348strangepowerc2000ashgate">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00036348_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#strangepowerlawtonthomascenglish"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Strange power c2000. Ashgate</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2000</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e582"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#0754613240hb"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>Strange power</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>shaping the parameters of international relations and international political economy</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>edited by Thomas C. Lawton, James N. Rosenau, Amy C. Verdun</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Aldershot ; Burlington, Vt. : Ashgate, c2000.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Aldershot</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30088>Burlington, Vt.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Ashgate</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30280>c2000</rdamd:P30280><!--rdamd:P30280 = has manifestation copyright statement-->
+      <rdamd:P30182>xxii, 453 p. ; 24 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamd:P30455>Includes bibliographical references (p. 421-443) and index.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e658-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e658"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e662-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e662"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e665-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e665"/><!--rdamo:P30268 = has related person of manifestation-->
+      <rdam:P30137>[Has equivalent]: Electronic version:; Strange power.; London ; New York : Routledge, Taylor &amp; Francis Group, 2018.; 9781315187556; (DLC) 2019300748: </rdam:P30137><!--rdam:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e582">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00036348 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00036348 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#0754613240hb">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0754613240(HB)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e632">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Strange, Susan, 1923-</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/worNom#2025-04-22-0700d25e632">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Strange, Susan, 1923- Retreat of the state</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e632">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e632"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Strange, Susan</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1923</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e658">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Lawton, Thomas C.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Lawton, Thomas C.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e662">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Rosenau, James N.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Rosenau, James N.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e665">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Verdun, Amy, 1968-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Verdun, Amy</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1968</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-04-22-0700d25e632">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/worNom#2025-04-22-0700d25e632"/><!--rdawo:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e632"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Retreat of the state</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#hf1359">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">HF1359</skos:notation>
+      <skos:altLabel>HF1359</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#internationaleconomicrelationspoliticalaspects">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>International economic relations--Political aspects</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#internationalrelations">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>International relations</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#globalization">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Globalization</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#worldpolitics1989-">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>World politics--1989-</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#powersocialsciences">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Power (Social sciences)</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00190779_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00190779 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00190779_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00190779_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#weberjeromef1929-schubert%27sgreatcmajorsymphonyd944"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#weberjeromef1929-schubert%27sgreatcmajorsymphonyd944english"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolcocm44387448schubert%27sgreatcmajorsymphonyd9442000jfweber"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00190779_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00190779_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00190779_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 00830cam  2200253 a 4500
+F001    00190779 
+F003 DLC
+F005 20051118092420.0
+F008 001103s2000    nyua     k    001 0 eng d
+F010 ## $a    00190779 
+F020 ## $a 0962414816
+F035 ## $a (OCoLC)ocm44387448
+F040 ## $a BUF $c BUF $d NYP $d DLC
+F042 ## $a lccopycat
+F050 00 $a ML156.5.S33 $b W43 2000
+F082 00 $a 784.2/184 $2 21
+F100 1# $a Weber, Jerome F., $d 1929-
+F245 10 $a Schubert's Great C major symphony, D. 944 : $b a discography / $c compiled by Jerome F. Weber.
+F260 ## $a Utica, N.Y. : $b J.F. Weber, $c 2000.
+F300 ## $a 218 p. : $b ill. ; $c 23 cm.
+F440 #0 $a Discography series, $x 0095-8115 ; $v 21
+F500 ## $a Includes indexes.
+F600 10 $a Schubert, Franz, $d 1797-1828 $v Discography.
+F600 10 $a Schubert, Franz, $d 1797-1828. $t Symphonies, $n D. 944, $r C major.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#weberjeromef1929-schubert%27sgreatcmajorsymphonyd944">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00190779_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#weberjeromef1929-schubert%27sgreatcmajorsymphonyd944english"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Weber, Jerome F., 1929- Schubert's Great C major symphony, D. 944</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#ml1565s33"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e723-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e723"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Schubert's Great C major symphony, D. 944</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#http://marc2rda.edu/fake/d25e749"/><!--rdawo:P10102 = is issue of-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#schubertfranz1797-1828discography"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#discography"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e759"/><!--rdawo:P10261 = has subject person-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e766"/><!--rdawo:P10261 = has subject person-->
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor#2025-04-22-0700d25e766"/><!--rdawo:P10257 = has subject work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#weberjeromef1929-schubert%27sgreatcmajorsymphonyd944english">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00190779_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolcocm44387448schubert%27sgreatcmajorsymphonyd9442000jfweber"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#weberjeromef1929-schubert%27sgreatcmajorsymphonyd944"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Weber, Jerome F., 1929- Schubert's Great C major symphony, D. 944 English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>Schubert's Great C major symphony, D. 944</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolcocm44387448schubert%27sgreatcmajorsymphonyd9442000jfweber">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00190779_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#weberjeromef1929-schubert%27sgreatcmajorsymphonyd944english"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Schubert's Great C major symphony, D. 944 2000. J.F. Weber</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2000</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes discographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e692"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#0962414816"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>Schubert's Great C major symphony, D. 944</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>a discography</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>compiled by Jerome F. Weber</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Utica, N.Y. : J.F. Weber, 2000.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Utica, N.Y.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>J.F. Weber</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2000</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>218 p. : ill. ; 23 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamd:P30106>Discography series, 0095-8115 ; 21</rdamd:P30106><!--rdamd:P30106 = has series statement-->
+      <rdamd:P30137>Includes indexes.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e692">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00190779 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00190779 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#0962414816">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0962414816</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e759">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Schubert, Franz, 1797-1828</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e766">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Schubert, Franz, 1797-1828</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/worNom#2025-04-22-0700d25e766">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Schubert, Franz, 1797-1828. Symphonies, D. 944, C major</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e723">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Weber, Jerome F., 1929-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Weber, Jerome F.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1929</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e759">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e759"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Schubert, Franz</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1797</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1828</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e766">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e766"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Schubert, Franz</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1797</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1828</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#http://marc2rda.edu/fake/d25e749">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Discography series</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-04-22-0700d25e766">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/worNom#2025-04-22-0700d25e766"/><!--rdawo:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e766"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Symphonies, D. 944</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#ml1565s33">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">ML156.5.S33</skos:notation>
+      <skos:altLabel>ML156.5.S33</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#schubertfranz1797-1828discography">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Schubert, Franz, 1797-1828--Discography</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#discography">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Discography</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00703007_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00703007 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00703007_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00703007_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#giannottijanetacompaniontextforlikewaterforchocolate"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#giannottijanetacompaniontextforlikewaterforchocolateenglish"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolcocm43973059acompaniontextforlikewaterforchocolatec1999universityofmichiganpress"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00703007_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00703007_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00703007_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01254cam  2200325 a 4500
+F001    00703007 
+F003 DLC
+F005 20041223095539.0
+F008 000913s1999    miuab        s000 0 eng d
+F010 ## $a    00703007 
+F020 ## $a 0472085964
+F035 ## $a (OCoLC)ocm43973059
+F035 ## $a .b2704452x
+F040 ## $a CUI $c CUI $d DLC
+F042 ## $a lccopycat
+F043 ## $a n-mx--- $a n-ust--
+F050 00 $a PQ7298.15.S638 $b C6634 1999
+F082 00 $a 468.2/421 $2 22
+F100 1# $a Giannotti, Janet.
+F245 12 $a A companion text for Like water for chocolate / $c Janet Giannotti.
+F260 ## $a Ann Arbor : $b University of Michigan Press, $c c1999.
+F300 ## $a xiii, 133 p. : $b ill., maps, ; $c 26 cm.
+F440 #0 $a Bookmarks
+F600 10 $a Esquivel, Laura, $d 1950- $t Como agua para chocolate. $l English $v Problems, exercises, etc.
+F650 #0 $a Mexicans in literature $v Problems, exercises, etc.
+F650 #0 $a English language $v Textbooks for foreign speakers.
+F650 #0 $a English language $v Composition and exercises.
+F651 #0 $a Mexican-American Border Region $x In literature $v Problems, exercises, etc.
+F700 1# $a Esquivel, Laura, $d 1950- $t Como agua para chocolate. $l English.
+F856 42 $3 Publisher description $u http://www.loc.gov/catdir/description/umich051/00703007.html
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#giannottijanetacompaniontextforlikewaterforchocolate">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00703007_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#giannottijanetacompaniontextforlikewaterforchocolateenglish"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Giannotti, Janet. A companion text for Like water for chocolate</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-mx"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-ust"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#pq729815s638"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e825-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e825"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>A companion text for Like water for chocolate</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#http://marc2rda.edu/fake/d25e847"/><!--rdawo:P10102 = is issue of-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#esquivellaura1950-comoaguaparachocolateenglishproblemsexercisesetc"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#problemsexercisesetc"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e850"/><!--rdawo:P10261 = has subject person-->
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor#2025-04-22-0700d25e850"/><!--rdawo:P10257 = has subject work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#mexicansinliteratureproblemsexercisesetc"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#problemsexercisesetc"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#englishlanguagetextbooksforforeignspeakers"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#textbooksforforeignspeakers"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#englishlanguagecompositionandexercises"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#compositionandexercises"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/pla#mexican-americanborderregion"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#mexican-americanborderregioninliteratureproblemsexercisesetc"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#problemsexercisesetc"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#giannottijanetacompaniontextforlikewaterforchocolateenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00703007_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolcocm43973059acompaniontextforlikewaterforchocolatec1999universityofmichiganpress"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#giannottijanetacompaniontextforlikewaterforchocolate"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Giannotti, Janet. A companion text for Like water for chocolate English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>A companion text for Like water for chocolate</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolcocm43973059acompaniontextforlikewaterforchocolatec1999universityofmichiganpress">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00703007_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#giannottijanetacompaniontextforlikewaterforchocolateenglish"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>A companion text for Like water for chocolate c1999. University of Michigan Press</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1999</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/miu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1008"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#s"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e788"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#0472085964"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>A companion text for Like water for chocolate</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Janet Giannotti</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Ann Arbor : University of Michigan Press, c1999.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Ann Arbor</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>University of Michigan Press</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30280>c1999</rdamd:P30280><!--rdamd:P30280 = has manifestation copyright statement-->
+      <rdamd:P30182>xiii, 133 p. : ill., maps, ; 26 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamd:P30106>Bookmarks</rdamd:P30106><!--rdamd:P30106 = has series statement-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#2025-04-22-0700d25e884"/><!--rdamo:P30265 = has related work of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e788">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00703007 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00703007 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#0472085964">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0472085964</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e850">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Esquivel, Laura, 1950-</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/worNom#2025-04-22-0700d25e850">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Esquivel, Laura, 1950- Como agua para chocolate. English</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#mexican-americanborderregion">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Mexican-American Border Region</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e825">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Giannotti, Janet</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Giannotti, Janet</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e850">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e850"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Esquivel, Laura</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1950</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e884">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Esquivel, Laura, 1950-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Esquivel, Laura</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1950</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#http://marc2rda.edu/fake/d25e847">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Bookmarks</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-04-22-0700d25e850">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/worNom#2025-04-22-0700d25e850"/><!--rdawo:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e850"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Como agua para chocolate</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-04-22-0700d25e884">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d25e884wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Esquivel, Laura, 1950- Como agua para chocolate. English</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e884"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Como agua para chocolate</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#pq729815s638">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PQ7298.15.S638</skos:notation>
+      <skos:altLabel>PQ7298.15.S638</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#esquivellaura1950-comoaguaparachocolateenglishproblemsexercisesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Esquivel, Laura, 1950- Como agua para chocolate. English--Problems, exercises, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#problemsexercisesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Problems, exercises, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#mexicansinliteratureproblemsexercisesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mexicans in literature--Problems, exercises, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#problemsexercisesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Problems, exercises, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#englishlanguagetextbooksforforeignspeakers">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>English language--Textbooks for foreign speakers</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#textbooksforforeignspeakers">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Textbooks for foreign speakers</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#englishlanguagecompositionandexercises">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>English language--Composition and exercises</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#compositionandexercises">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Composition and exercises</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#mexican-americanborderregioninliteratureproblemsexercisesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mexican-American Border Region--In literature--Problems, exercises, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#problemsexercisesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Problems, exercises, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/pla#mexican-americanborderregion">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#mexican-americanborderregion"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00043897_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00043897 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00043897_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00043897_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#verme%CC%80sge%CC%81za1924-2013thechangingfacesofjesus"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#verme%CC%80sge%CC%81za1924-2013thechangingfacesofjesusenglish"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00043897thechangingfacesofjesus2001vikingcompass"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00043897_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00043897_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00043897_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 00683cam  22002294a 4500
+F001    00043897 
+F003 DLC
+F005 20130514113118.0
+F008 000821r20012000nyub     b    001 0 eng  
+F010 ## $a    00043897 
+F020 ## $a 0670894516 (alk. paper)
+F040 ## $a DLC $c DLC $d DLC
+F042 ## $a pcc
+F050 00 $a BT202 $b .V44 2001
+F082 00 $a 232 $2 21
+F100 1# $a Vermès, Géza, $d 1924-2013.
+F245 14 $a The changing faces of Jesus / $c Géza Vermès.
+F250 ## $a 1st American ed.
+F260 ## $a New York : $b Viking Compass, $c 2001.
+F300 ## $a 324 p. : $b map ; $c 24 cm.
+F504 ## $a Includes bibliographical references (p. 301-[302]) and index.
+F600 04 $a Jesus Christ $x Person and offices.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#verme%CC%80sge%CC%81za1924-2013thechangingfacesofjesus">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00043897_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#verme%CC%80sge%CC%81za1924-2013thechangingfacesofjesusenglish"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Vermès, Géza, 1924-2013. The changing faces of Jesus</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#bt202"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e935-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e935"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>The changing faces of Jesus</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10256>Jesus Christ--Person and offices</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e965"/><!--rdawo:P10261 = has subject person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#verme%CC%80sge%CC%81za1924-2013thechangingfacesofjesusenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00043897_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn00043897thechangingfacesofjesus2001vikingcompass"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#verme%CC%80sge%CC%81za1924-2013thechangingfacesofjesus"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Vermès, Géza, 1924-2013. The changing faces of Jesus English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>The changing faces of Jesus</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn00043897thechangingfacesofjesus2001vikingcompass">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00043897_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#verme%CC%80sge%CC%81za1924-2013thechangingfacesofjesusenglish"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>The changing faces of Jesus 2001. Viking Compass</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2001</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1008"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e909"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#0670894516alkpaper"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>The changing faces of Jesus</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Géza Vermès</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30107>1st American ed.</rdamd:P30107><!--rdamd:P30107 = has edition statement-->
+      <rdamd:P30133>1st American ed.</rdamd:P30133><!--rdamd:P30133 = has designation of edition-->
+      <rdamd:P30111>New York : Viking Compass, 2001.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>New York</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Viking Compass</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2001</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>324 p. : map ; 24 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamd:P30455>Includes bibliographical references (p. 301-[302]) and index.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e909">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00043897 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00043897 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#0670894516alkpaper">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0670894516(alk.paper)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e935">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Vermès, Géza, 1924-2013</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Vermès, Géza</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1924</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>2013</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e965">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Jesus Christ</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Jesus Christ</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#bt202">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">BT202</skos:notation>
+      <skos:altLabel>BT202</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___00238405_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>DLC   00238405 </rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcdlc___00238405_</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___00238405_"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#annualolumidememoriallecturesnigerianinstitutionofsurveyors"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#annualolumidememoriallecturesnigerianinstitutionofsurveyorsenglish"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc44023579annualolumidememoriallectures1988-theinstitution"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___00238405_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00238405_"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcdlc___00238405_</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01321cas  2200349 a 4500
+F001    00238405 
+F003 DLC
+F005 20180719033302.6
+F008 000510c19879999nr ax         0    0eng c
+F010 ## $a    00238405 
+F035 ## $a (OCoLC)44023579
+F040 ## $a IUL $b eng $c IUL $d OCLCG $d OCLCQ $d OCLCA $d OCLCF $d OCLCO $d OCLCA
+F042 ## $a pcc
+F043 ## $a f-nr---
+F050 14 $a H62.A1 $b A5
+F245 00 $a Annual Olumide memorial lectures / $c the Nigerian Institution of Surveyors.
+F246 30 $a Olumide memorial lectrues
+F260 ## $a Lagos, Nigeria : $b The Institution, $c 1988-
+F300 ## $a v. ; $c 21 cm.
+F310 ## $a Annual (irregular)
+F362 0# $a 1982-1987-
+F588 ## $a Latest issue consulted: 1988-1997.
+F600 10 $a Olumide, Cyprian Theodosius, $d -1970.
+F600 17 $a Olumide, Cyprian Theodosius, $d -1970. $2 fast $0 (OCoLC)fst01839295
+F610 20 $a Nigerian Institution of Surveyors.
+F610 27 $a Nigerian Institution of Surveyors. $2 fast $0 (OCoLC)fst00693330
+F650 #0 $a Social sciences $x Research $z Nigeria $v Periodicals.
+F650 #7 $a Social sciences $x Research. $2 fast $0 (OCoLC)fst01122944
+F651 #7 $a Nigeria. $2 fast $0 (OCoLC)fst01205229
+F655 #7 $a Periodicals. $2 fast $0 (OCoLC)fst01411641
+F710 2# $a Nigerian Institution of Surveyors.
+F776 08 $i Online version: $t Annual Olumide memorial lectures $w (OCoLC)609791060
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#annualolumidememoriallecturesnigerianinstitutionofsurveyors">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00238405_"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#annualolumidememoriallecturesnigerianinstitutionofsurveyorsenglish"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Annual Olumide memorial lecturesNigerian Institution of Surveyors</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10368 rdf:resource="http://rdaregistry.info/termList/frequency/1013"/><!--rdaw:P10368 = has frequency-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/f-nr"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#h62a1"/><!--rdaw:P10256 = has subject-->
+      <rdawd:P10088>Annual Olumide memorial lectures</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e1046"/><!--rdawo:P10261 = has subject person-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e1051"/><!--rdawo:P10261 = has subject person-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e1060"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdawo:P10263 rdf:resource="https://id.worldcat.org/fast/00693330"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#socialsciencesresearchnigeriaperiodicals"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#periodicals"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01122944"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/fast/pla#nigeria"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01411641"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#annualolumidememoriallecturesnigerianinstitutionofsurveyorsenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00238405_"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc44023579annualolumidememoriallectures1988-theinstitution"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#annualolumidememoriallecturesnigerianinstitutionofsurveyors"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Annual Olumide memorial lecturesNigerian Institution of Surveyors. English</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>Annual Olumide memorial lectures</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolc44023579annualolumidememoriallectures1988-theinstitution">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___00238405_"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#annualolumidememoriallecturesnigerianinstitutionofsurveyorsenglish"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Annual Olumide memorial lectures 1988- The Institution</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30137>Continuing resource currently published.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nr"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamd:P30137>Regularity: Completely irregular.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e981"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>Annual Olumide memorial lectures</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>the Nigerian Institution of Surveyors</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Lagos, Nigeria : The Institution, 1988-</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Lagos, Nigeria</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>The Institution</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1988</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30182>v. ; 21 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <rdamd:P30137>Latest issue consulted: 1988-1997.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-04-22-0700d25e1103-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#2025-04-22-0700d25e1103"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+      <rdam:P30137>[Has equivalent]: Online version:; Annual Olumide memorial lectures; (OCoLC)609791060: </rdam:P30137><!--rdam:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-22-0700d25e981">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   00238405 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:    00238405 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e1046">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Olumide, Cyprian Theodosius, -1970</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e1051">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Olumide, Cyprian Theodosius, -1970</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e1060">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Nigerian Institution of Surveyors</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/ageNom#nigerianinstitutionofsurveyors">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Nigerian Institution of Surveyors</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-04-22-0700d25e1089">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Nigeria</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e1046">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e1046"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Olumide, Cyprian Theodosius</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50120>1970</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e1051">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e1051"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Olumide, Cyprian Theodosius</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50120>1970</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+      <rdaad:P50094>(OCoLC)fst01839295</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e1060">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-04-22-0700d25e1060"/><!--rdaao:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.worldcat.org/fast/00693330">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/fast/ageNom#nigerianinstitutionofsurveyors"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaad:P50006>(OCoLC)fst00693330</rdaad:P50006><!--rdaad:P50006 = has identifier for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-04-22-0700d25e1103">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Nigerian Institution of Surveyors</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#h62a1">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">H62.A1</skos:notation>
+      <skos:altLabel>H62.A1</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#socialsciencesresearchnigeriaperiodicals">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Social sciences--Research--Nigeria--Periodicals</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#periodicals">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Periodicals</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/pla#nigeria">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-04-22-0700d25e1089"/><!--rdapo:P70018 = has access point for place-->
+   </rdf:Description>
+</rdf:RDF>

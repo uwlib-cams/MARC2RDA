@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    
+    <!-- should output nothing -->
+    
+    <!-- BK -->
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:controlfield tag="008">191205t20192017xxkab|| fb||| 001 0deng|d</marc:controlfield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:controlfield tag="006">aab|| fb    001 0d</marc:controlfield>
+    </marc:record>
+    
+    <!-- CR -->
+    <marc:record>
+        <marc:leader>03847cas a2200745 i 4500</marc:leader>
+        <marc:controlfield tag="008">100812c20199999kn fr p f     0   k0kor c</marc:controlfield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03882cgi a2200841 a 4500</marc:leader>
+        <marc:controlfield tag="006">m     o  m        </marc:controlfield>
+        <marc:controlfield tag="006">suu dsf     0    2</marc:controlfield>
+    </marc:record>
+    
+    <!-- MP -->
+    <marc:record>
+        <marc:leader>01702cem a2200421 a 4500</marc:leader>
+        <marc:controlfield tag="008">890504s1925    dcudgj cp a  ff 0   eng d</marc:controlfield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>17280cam a2201225 i 4500</marc:leader>
+        <marc:controlfield tag="006">ea      a  ff 0   </marc:controlfield>
+    </marc:record>
+    
+    <!-- MU -->
+    <marc:record>
+        <marc:leader>04439cjm a2200949 a 4500</marc:leader>
+        <marc:controlfield tag="008">060526s2006    enkppnn ffik      a und d</marc:controlfield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>13065cam a2200853 a 4500</marc:leader>
+        <marc:controlfield tag="006">jmunn f         n </marc:controlfield>
+        <marc:controlfield tag="006">innnn        z  n </marc:controlfield>
+    </marc:record>
+    
+    <!-- MX -->
+    <marc:record>
+        <marc:leader>02782cpc a2200697 i 4500</marc:leader>
+        <marc:controlfield tag="008">040428s2004    enk     f           eng  </marc:controlfield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>04194cam a22006134a 4500</marc:leader>
+        <marc:controlfield tag="006">m        m        </marc:controlfield>
+        <marc:controlfield tag="006">p     s           </marc:controlfield>
+    </marc:record>
+    
+    <!-- VM -->
+    <marc:record>
+        <marc:leader>04977cgm a2200937 i 4500</marc:leader>
+        <marc:controlfield tag="008">170327t20152014cau083        f   vleng d</marc:controlfield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>13618cam a2200841 a 4500</marc:leader>
+        <marc:controlfield tag="006">g141        f   vl</marc:controlfield>
+        <marc:controlfield tag="006">innnn        z| | </marc:controlfield>
+    </marc:record>
+    
+    <!-- 007/00 = f -->
+    <marc:record>
+        <marc:leader>01702cem a2200421 a 4500</marc:leader>
+        <marc:controlfield tag="007">fj canzn</marc:controlfield>
+    </marc:record>
+    
+    <!-- 245 $h -->
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="h">[tactile]</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 300 $a -->
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">braille</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 300 $e -->
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="e">tactile</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 546 $b -->
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:datafield tag="546" ind1=" " ind2=" ">
+            <marc:subfield code="b">braille</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 655 $a -->
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:datafield tag="655" ind1=" " ind2=" ">
+            <marc:subfield code="a">Braille</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 65X $v -->
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="v">Maps for the blind</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 775 $i -->
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:datafield tag="775" ind1=" " ind2=" ">
+            <marc:subfield code="i">Braille edition of blank</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+</marc:collection>

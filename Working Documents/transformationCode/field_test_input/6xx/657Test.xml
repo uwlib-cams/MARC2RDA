@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">6xx-test1</marc:controlfield> 
+        <marc:datafield tag="657" ind1=" " ind2="7">
+            <marc:subfield code="a">Personnel benefits management</marc:subfield>
+            <marc:subfield code="x">Industrial accidents</marc:subfield>
+            <marc:subfield code="x">Morbidity</marc:subfield>
+            <marc:subfield code="x">Vital statistics</marc:subfield>
+            <marc:subfield code="z">Love Canal, New York.</marc:subfield>
+            <marc:subfield code="2">New York State Management Functions Index</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="657" ind1=" " ind2="7">
+            <marc:subfield code="a">Hymn tunes.</marc:subfield>
+            <marc:subfield code="0">test 0</marc:subfield>
+            <marc:subfield code="1">test 1</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2="7">
+            <marc:subfield code="6">657-00</marc:subfield>
+            <marc:subfield code="a">test 880</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <!-- incorrect usage -->
+        <marc:datafield tag="657" ind1=" " ind2="7">
+            <marc:subfield code="a">Nutrition.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

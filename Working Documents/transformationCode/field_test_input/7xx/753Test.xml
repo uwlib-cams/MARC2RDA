@@ -1,0 +1,26 @@
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  
+  <marc:record>
+    <marc:leader>11111nam a2200000 a 4500</marc:leader>
+    <marc:controlfield tag="001">753-test</marc:controlfield>
+    
+    <!-- 753 Field -->
+    <marc:datafield tag="753" ind1=" " ind2=" ">
+      <marc:subfield code="a">IBM PC</marc:subfield>
+      <marc:subfield code="b">Pascal</marc:subfield>
+      <marc:subfield code="c">DOS 1.1</marc:subfield>
+      <marc:subfield code="6">880-01</marc:subfield>
+    </marc:datafield>
+    
+    <!-- Matching 880 field in Japanese -->
+    <marc:datafield tag="880" ind1=" " ind2=" ">
+      <marc:subfield code="6">753-00</marc:subfield>
+      <marc:subfield code="a">IBMパソコン</marc:subfield>
+      <marc:subfield code="b">パスカル</marc:subfield>
+      <marc:subfield code="c">DOS 1.1</marc:subfield>
+    </marc:datafield>
+    
+  </marc:record>
+</marc:collection>

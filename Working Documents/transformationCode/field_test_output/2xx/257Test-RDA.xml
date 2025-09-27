@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc257-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>257-test1</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc257-test1</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc257-test1"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc257-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc257-test1"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc257-test1</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 257-test1
+F257 ## $a Germany $0 http://id.loc.gov/authorities/names/n80125931 $1 http://id.loc.gov/rwo/agents/n80125931 $2 naf
+F257 ## $a Italy ; France.
+F257 ## $a France; Lebanon $2 naf
+F257 ## $a Great Britain $a Japan $a United States $2 naf
+F257 ## $a England ; $a India $2 naf
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc257-test1"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#germany"/>
+      <rdawo:P10316 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-gx"/>
+      <rdawo:P10316 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-ge"/>
+      <rdawo:P10316 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-gw"/>
+      <rdawo:P10316 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-gx"/>
+      <rdawo:P10316 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-ge"/>
+      <rdawo:P10316 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-gw"/>
+      <rdawd:P10316>Italy</rdawd:P10316>
+      <rdawd:P10316>France</rdawd:P10316>
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#france"/>
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#lebanon"/>
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#greatbritain"/>
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#japan"/>
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#unitedstates"/>
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#england"/>
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#india"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc257-test1"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc257-test1"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#germany">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Germany</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#france">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>France</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#lebanon">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Lebanon</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#greatbritain">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Great Britain</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#japan">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Japan</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#england">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>England</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#india">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>India</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#germany">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#germany"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#france">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#france"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#lebanon">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#lebanon"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#greatbritain">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#greatbritain"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#japan">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#japan"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#unitedstates"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#england">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#england"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#india">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#india"/>
+   </rdf:Description>
+</rdf:RDF>

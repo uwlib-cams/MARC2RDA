@@ -1,0 +1,352 @@
+@prefix fake: <http://fakePropertiesForDemo> .
+@prefix rdaed: <http://rdaregistry.info/Elements/e/datatype/> .
+@prefix rdaeo: <http://rdaregistry.info/Elements/e/object/> .
+@prefix rdamd: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdamo: <http://rdaregistry.info/Elements/m/object/> .
+@prefix rdawd: <http://rdaregistry.info/Elements/w/datatype/> .
+
+<http://marc2rda.edu/fake/245-test001man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a [James Anderson [junior] correspondence]." ;
+    rdamd:P30137 "Title proper \"James Anderson [junior] correspondence\" is assigned by the cataloguing agency." ;
+    rdamd:P30156 "James Anderson [junior] correspondence" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test001exp> .
+
+<http://marc2rda.edu/fake/245-test002man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo]." ;
+    rdamd:P30137 "Letter.",
+        "Title proper is assigned by the cataloguing agency." ;
+    rdamd:P30156 "Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]" ;
+    rdamd:P30278 "1901 March 6" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test002exp> .
+
+<http://marc2rda.edu/fake/245-test003man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 14 $a The Shakespeare enigma : $b [unravelling the story of the two poets] / $c Peter Dawkins ; [foreword by Mark Rylance]." ;
+    rdamd:P30105 "Peter Dawkins",
+        "foreword by Mark Rylance" ;
+    rdamd:P30137 "Other title information \"unravelling the story of the two poets\" is assigned by the cataloguing agency.",
+        "Statement of responsibility \"foreword by Mark Rylance\" is assigned by the cataloguing agency." ;
+    rdamd:P30142 "unravelling the story of the two poets" ;
+    rdamd:P30156 "The Shakespeare enigma" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test003exp> .
+
+<http://marc2rda.edu/fake/245-test004man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 00 $a Cavendish and Shakespeare : $b interconnections / $c edited by Katherine Romack [and] James Fitzmaurice." ;
+    rdamd:P30105 "edited by Katherine Romack [and] James Fitzmaurice" ;
+    rdamd:P30142 "interconnections" ;
+    rdamd:P30156 "Cavendish and Shakespeare" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test004exp> .
+
+<http://marc2rda.edu/fake/245-test005man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 14 $a Der Dey von Elba in Paris : $b Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres : Faksmilie [that is Faksimile] des Erstdrucks / $c herausgegeben und kommentiert von Wulf Segebrecht." ;
+    rdamd:P30105 "herausgegeben und kommentiert von Wulf Segebrecht" ;
+    rdamd:P30142 "Faksmilie [that is Faksimile] des Erstdrucks",
+        "Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres" ;
+    rdamd:P30156 "Der Dey von Elba in Paris" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test005exp> .
+
+<http://marc2rda.edu/fake/245-test006man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a Sonnett für Wien : $b [songs of Erich Korngold]." ;
+    rdamd:P30137 "Other title information \"songs of Erich Korngold\" is assigned by the cataloguing agency." ;
+    rdamd:P30142 "songs of Erich Korngold" ;
+    rdamd:P30156 "Sonnett für Wien" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test006exp> .
+
+<http://marc2rda.edu/fake/245-test007man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 00 $a Hamlet [2009] / $c the Royal Shakespeare Company ; producers, John Wyver, Sebastian Grant ; director, Gregory Doran ; Illuminations, RSC for BBC." ;
+    rdamd:P30105 "Illuminations, RSC for BBC",
+        "director, Gregory Doran",
+        "producers, John Wyver, Sebastian Grant",
+        "the Royal Shakespeare Company" ;
+    rdamd:P30156 "Hamlet [2009]" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test007exp> .
+
+<http://marc2rda.edu/fake/245-test008man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 14 $a The others raisd [sic] in me : $b 150 readings of Sonnet 150 : a plunderverse project / $c by Gregory Betts." ;
+    rdamd:P30105 "by Gregory Betts" ;
+    rdamd:P30142 "150 readings of Sonnet 150",
+        "a plunderverse project" ;
+    rdamd:P30156 "The others raisd in me" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test008exp> .
+
+<http://marc2rda.edu/fake/245-test009man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a Ferdinand's Comfort : $b for soprano, baritone and five instruments : [set of parts] / $c [music by] Kaijia Saariaho ; [lyrics from The Tempest by William Shakespeare]." ;
+    rdamd:P30105 "[music by] Kaijia Saariaho",
+        "lyrics from The Tempest by William Shakespeare" ;
+    rdamd:P30137 "Other title information \"set of parts\" is assigned by the cataloguing agency.",
+        "Statement of responsibility \"lyrics from The Tempest by William Shakespeare\" is assigned by the cataloguing agency." ;
+    rdamd:P30142 "for soprano, baritone and five instruments",
+        "set of parts" ;
+    rdamd:P30156 "Ferdinand's Comfort" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test009exp> .
+
+<http://marc2rda.edu/fake/245-test010man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a 'Message in a mobile' $h [electronic resource] = $b [Risālah fī jawāl] = Risaala fi jawaal : mixed-messages, tales of missing and mobile communities at the University of Khatroum / $c Siri Lamoureaux." ;
+    rdamd:P30105 "Siri Lamoureaux" ;
+    rdamd:P30137 "Title proper \"Risālah fī jawāl\" is assigned by the cataloguing agency." ;
+    rdamd:P30142 "mixed-messages, tales of missing and mobile communities at the University of Khatroum" ;
+    rdamd:P30156 "'Message in a mobile'",
+        "Risaala fi jawaal",
+        "Risālah fī jawāl" ;
+    rdamd:P30335 "electronic resource" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test010exp> .
+
+<http://marc2rda.edu/fake/245-test011man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a Lambe Latin : $b tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice / [by Angela Lorenz]." ;
+    rdamd:P30105 "by Angela Lorenz" ;
+    rdamd:P30137 "Statement of responsibility \"by Angela Lorenz\" is assigned by the cataloguing agency." ;
+    rdamd:P30142 "tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice" ;
+    rdamd:P30156 "Lambe Latin" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test011exp> .
+
+<http://marc2rda.edu/fake/245-test012man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 00 $a Shinkansen[star]rs Metal Macbeth / $c the original by William Shakespeare ; arrangement by Kankuro Kudo ; directed by Hidenori Inoue." ;
+    rdamd:P30105 "arrangement by Kankuro Kudo",
+        "directed by Hidenori Inoue",
+        "the original by William Shakespeare" ;
+    rdamd:P30156 "Shinkansen[star]rs Metal Macbeth" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test012exp> .
+
+<http://marc2rda.edu/fake/245-test013man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a Kill Shakespeare. $n [Volume 1], $p A sea of troubles / $c created and written by Conor McCreery and Anthony Del Col ; art by Andy Belanger ; colors by Ian Herring ; lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake." ;
+    rdamd:P30105 "art by Andy Belanger",
+        "colors by Ian Herring",
+        "created and written by Conor McCreery and Anthony Del Col",
+        "lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake" ;
+    rdamd:P30137 "Title proper \"Volume 1\" is assigned by the cataloguing agency." ;
+    rdamd:P30156 "Kill Shakespeare. Volume 1, A sea of troubles" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test013exp> .
+
+<http://marc2rda.edu/fake/245-test014man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a Narrenlieder : $b nach Shakespeare \"Was ihr wollt\" : für Violincello [sic] solo, [1996/1997] / $c Tilo Medek." ;
+    rdamd:P30105 "Tilo Medek" ;
+    rdamd:P30142 "für Violincello solo, [1996/1997]",
+        "nach Shakespeare \"Was ihr wollt\"" ;
+    rdamd:P30156 "Narrenlieder" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test014exp> .
+
+<http://marc2rda.edu/fake/245-test015man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a Stony brook sounding[s]. $n Vol. 1." ;
+    rdamd:P30156 "Stony brook sounding[s]. Vol. 1." ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test015exp> .
+
+<http://marc2rda.edu/fake/245-test016man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a [Rhan o waith Mr. Rees Prichard ... $h [electronic resource] $b Some part of the works of Mr. Rees Prichard.]" ;
+    rdamd:P30137 "Other title information \"Some part of the works of Mr. Rees Prichard.\" is assigned by the cataloguing agency.",
+        "Title proper [Rhan o waith Mr. Rees Prichard ...\" is assigned by the cataloguing agency." ;
+    rdamd:P30142 "Some part of the works of Mr. Rees Prichard." ;
+    rdamd:P30156 "Rhan o waith Mr. Rees Prichard ..." ;
+    rdamd:P30335 "electronic resource" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test016exp> .
+
+<http://marc2rda.edu/fake/245-test017man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a [Rhan o waith Mr. Rees Prichard ...] =  $b [Some part of the works of Mr. Rees Prichard.]" ;
+    rdamd:P30137 "Other title information \"Some part of the works of Mr. Rees Prichard.\" is assigned by the cataloguing agency.",
+        "Title proper \"Rhan o waith Mr. Rees Prichard ...\" is assigned by the cataloguing agency." ;
+    rdamd:P30142 "Some part of the works of Mr. Rees Prichard." ;
+    rdamd:P30156 "Rhan o waith Mr. Rees Prichard ..." ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test017exp> .
+
+<http://marc2rda.edu/fake/245-test018man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a [New paintings by Franz Kline :  $b opening ... December 4 to December 30, 1961 : at Sidney Janis 15 East 57 N Y]." ;
+    rdamd:P30137 "Other title information \"at Sidney Janis 15 East 57 N Y\" is assigned by the cataloguing agency.",
+        "Title proper [New paintings by Franz Kline\" is assigned by the cataloguing agency." ;
+    rdamd:P30142 "at Sidney Janis 15 East 57 N Y",
+        "opening ... December 4 to December 30, 1961" ;
+    rdamd:P30156 "New paintings by Franz Kline" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test018exp> .
+
+<http://marc2rda.edu/fake/245-test019man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 00 $a Shakespeare lecture series. $p Hamlet : $b structure, speeches, and staging : [acts III-IV] / $c produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree." ;
+    rdamd:P30105 "directed by Bill Wisneski and Chia Longtree",
+        "produced by Bill Wisneski" ;
+    rdamd:P30137 "Other title information \"acts III-IV\" is assigned by the cataloguing agency." ;
+    rdamd:P30142 "acts III-IV",
+        "structure, speeches, and staging" ;
+    rdamd:P30156 "Shakespeare lecture series. Hamlet" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test019exp> .
+
+<http://marc2rda.edu/fake/245-test020man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]" ;
+    rdamd:P30156 "Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test020exp> .
+
+<http://marc2rda.edu/fake/245-test001exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test001exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test001wor> .
+
+<http://marc2rda.edu/fake/245-test001wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a [James Anderson [junior] correspondence]." ;
+    rdawd:P10002 "245-test001wor" ;
+    rdawd:P10088 "James Anderson [junior] correspondence" .
+
+<http://marc2rda.edu/fake/245-test002exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test002exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test002wor> .
+
+<http://marc2rda.edu/fake/245-test002wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo]." ;
+    rdawd:P10002 "245-test002wor" ;
+    rdawd:P10088 "Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]" .
+
+<http://marc2rda.edu/fake/245-test003exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test003exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test003wor> .
+
+<http://marc2rda.edu/fake/245-test003wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 14 $a The Shakespeare enigma : $b [unravelling the story of the two poets] / $c Peter Dawkins ; [foreword by Mark Rylance]." ;
+    rdawd:P10002 "245-test003wor" ;
+    rdawd:P10088 "The Shakespeare enigma" .
+
+<http://marc2rda.edu/fake/245-test004exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test004exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test004wor> .
+
+<http://marc2rda.edu/fake/245-test004wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 00 $a Cavendish and Shakespeare : $b interconnections / $c edited by Katherine Romack [and] James Fitzmaurice." ;
+    rdawd:P10002 "245-test004wor" ;
+    rdawd:P10088 "Cavendish and Shakespeare" .
+
+<http://marc2rda.edu/fake/245-test005exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test005exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test005wor> .
+
+<http://marc2rda.edu/fake/245-test005wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 14 $a Der Dey von Elba in Paris : $b Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres : Faksmilie [that is Faksimile] des Erstdrucks / $c herausgegeben und kommentiert von Wulf Segebrecht." ;
+    rdawd:P10002 "245-test005wor" ;
+    rdawd:P10088 "Der Dey von Elba in Paris" .
+
+<http://marc2rda.edu/fake/245-test006exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test006exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test006wor> .
+
+<http://marc2rda.edu/fake/245-test006wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a Sonnett für Wien : $b [songs of Erich Korngold]." ;
+    rdawd:P10002 "245-test006wor" ;
+    rdawd:P10088 "Sonnett für Wien" .
+
+<http://marc2rda.edu/fake/245-test007exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test007exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test007wor> .
+
+<http://marc2rda.edu/fake/245-test007wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 00 $a Hamlet [2009] / $c the Royal Shakespeare Company ; producers, John Wyver, Sebastian Grant ; director, Gregory Doran ; Illuminations, RSC for BBC." ;
+    rdawd:P10002 "245-test007wor" ;
+    rdawd:P10088 "Hamlet [2009]" .
+
+<http://marc2rda.edu/fake/245-test008exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test008exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test008wor> .
+
+<http://marc2rda.edu/fake/245-test008wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 14 $a The others raisd [sic] in me : $b 150 readings of Sonnet 150 : a plunderverse project / $c by Gregory Betts." ;
+    rdawd:P10002 "245-test008wor" ;
+    rdawd:P10088 "The others raisd [sic] in me" .
+
+<http://marc2rda.edu/fake/245-test009exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test009exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test009wor> .
+
+<http://marc2rda.edu/fake/245-test009wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a Ferdinand's Comfort : $b for soprano, baritone and five instruments : [set of parts] / $c [music by] Kaijia Saariaho ; [lyrics from The Tempest by William Shakespeare]." ;
+    rdawd:P10002 "245-test009wor" ;
+    rdawd:P10088 "Ferdinand's Comfort" .
+
+<http://marc2rda.edu/fake/245-test010exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test010exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test010wor> .
+
+<http://marc2rda.edu/fake/245-test010wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a 'Message in a mobile' $h [electronic resource] = $b [Risālah fī jawāl] = Risaala fi jawaal : mixed-messages, tales of missing and mobile communities at the University of Khatroum / $c Siri Lamoureaux." ;
+    rdawd:P10002 "245-test010wor" ;
+    rdawd:P10088 "'Message in a mobile'" .
+
+<http://marc2rda.edu/fake/245-test011exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test011exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test011wor> .
+
+<http://marc2rda.edu/fake/245-test011wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a Lambe Latin : $b tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice / [by Angela Lorenz]." ;
+    rdawd:P10002 "245-test011wor" ;
+    rdawd:P10088 "Lambe Latin" .
+
+<http://marc2rda.edu/fake/245-test012exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test012exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test012wor> .
+
+<http://marc2rda.edu/fake/245-test012wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 00 $a Shinkansen[star]rs Metal Macbeth / $c the original by William Shakespeare ; arrangement by Kankuro Kudo ; directed by Hidenori Inoue." ;
+    rdawd:P10002 "245-test012wor" ;
+    rdawd:P10088 "Shinkansen[star]rs Metal Macbeth" .
+
+<http://marc2rda.edu/fake/245-test013exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test013exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test013wor> .
+
+<http://marc2rda.edu/fake/245-test013wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a Kill Shakespeare. $n [Volume 1], $p A sea of troubles / $c created and written by Conor McCreery and Anthony Del Col ; art by Andy Belanger ; colors by Ian Herring ; lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake." ;
+    rdawd:P10002 "245-test013wor" ;
+    rdawd:P10088 "Kill Shakespeare. Volume 1, A sea of troubles" .
+
+<http://marc2rda.edu/fake/245-test014exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test014exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test014wor> .
+
+<http://marc2rda.edu/fake/245-test014wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a Narrenlieder : $b nach Shakespeare \"Was ihr wollt\" : für Violincello [sic] solo, [1996/1997] / $c Tilo Medek." ;
+    rdawd:P10002 "245-test014wor" ;
+    rdawd:P10088 "Narrenlieder" .
+
+<http://marc2rda.edu/fake/245-test015exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test015exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test015wor> .
+
+<http://marc2rda.edu/fake/245-test015wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a Stony brook sounding[s]. $n Vol. 1." ;
+    rdawd:P10002 "245-test015wor" ;
+    rdawd:P10088 "Stony brook sounding[s]. Vol. 1." .
+
+<http://marc2rda.edu/fake/245-test016exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test016exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test016wor> .
+
+<http://marc2rda.edu/fake/245-test016wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a [Rhan o waith Mr. Rees Prichard ... $h [electronic resource] $b Some part of the works of Mr. Rees Prichard.]" ;
+    rdawd:P10002 "245-test016wor" ;
+    rdawd:P10088 "Rhan o waith Mr. Rees Prichard ..." .
+
+<http://marc2rda.edu/fake/245-test017exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test017exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test017wor> .
+
+<http://marc2rda.edu/fake/245-test017wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a [Rhan o waith Mr. Rees Prichard ...] =  $b [Some part of the works of Mr. Rees Prichard.]" ;
+    rdawd:P10002 "245-test017wor" ;
+    rdawd:P10088 "Rhan o waith Mr. Rees Prichard ..." .
+
+<http://marc2rda.edu/fake/245-test018exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test018exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test018wor> .
+
+<http://marc2rda.edu/fake/245-test018wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a [New paintings by Franz Kline :  $b opening ... December 4 to December 30, 1961 : at Sidney Janis 15 East 57 N Y]." ;
+    rdawd:P10002 "245-test018wor" ;
+    rdawd:P10088 "New paintings by Franz Kline" .
+
+<http://marc2rda.edu/fake/245-test019exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test019exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test019wor> .
+
+<http://marc2rda.edu/fake/245-test019wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 00 $a Shakespeare lecture series. $p Hamlet : $b structure, speeches, and staging : [acts III-IV] / $c produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree." ;
+    rdawd:P10002 "245-test019wor" ;
+    rdawd:P10088 "Shakespeare lecture series. Hamlet" .
+
+<http://marc2rda.edu/fake/245-test020exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test020exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test020wor> .
+
+<http://marc2rda.edu/fake/245-test020wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]" ;
+    rdawd:P10002 "245-test020wor" ;
+    rdawd:P10088 "Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]" .
+

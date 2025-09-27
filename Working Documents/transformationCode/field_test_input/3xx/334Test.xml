@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">334-test1</marc:controlfield>
+        
+        <marc:datafield tag="334" ind1= " " ind2=" ">
+            <marc:subfield code="a">single unit</marc:subfield>
+            <marc:subfield code="2">rdami</marc:subfield>
+        </marc:datafield>
+        
+        <!-- rdami term and code (will output duplicate) -->
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="a">multiple unit</marc:subfield>
+            <marc:subfield code="b">1005</marc:subfield>
+            <marc:subfield code="2">rdami</marc:subfield>
+        </marc:datafield>
+
+        <!-- rdam:P30003 with value $1 -->
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="1">http://www.rdaregistry.info/termList/ModeIssue/#1001</marc:subfield>
+        </marc:datafield>
+        
+        <!-- handle $0 with others -->
+       <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="a">single unit</marc:subfield>
+            <marc:subfield code="2">rdami</marc:subfield>
+            <marc:subfield code="0">http://www.rdaregistry.info/termList/ModeIssue/#1001</marc:subfield>
+        </marc:datafield>
+
+        <!-- do not map a $0 that does not begin with "http" -->
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="a">single unit</marc:subfield>
+            <marc:subfield code="2">rdami</marc:subfield>
+            <marc:subfield code="0">test</marc:subfield>
+        </marc:datafield>
+
+        <!-- no $2, with $a only -->
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="a">single unit</marc:subfield>
+        </marc:datafield>
+
+        <!-- no $2, with $b only -->
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="b">1001</marc:subfield>
+        </marc:datafield>
+        
+        <!-- linked 880 -->
+       <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">single unit</marc:subfield>
+            <marc:subfield code="2">rdami</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">334-01</marc:subfield>
+            <marc:subfield code="a">single unit</marc:subfield>
+            <marc:subfield code="2">rdami</marc:subfield>
+        </marc:datafield>
+        
+        <!-- unlinked 880 -->
+       <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">334-00</marc:subfield>
+            <marc:subfield code="a">single unit</marc:subfield>
+            <marc:subfield code="2">rdami</marc:subfield>
+        </marc:datafield>
+
+        <!-- skos:Concept with $b -->
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio</marc:subfield>
+            <marc:subfield code="b">a</marc:subfield>
+            <marc:subfield code="2">isbdmedia</marc:subfield>
+        </marc:datafield>
+
+        <!-- skos:Concept without $b -->
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio</marc:subfield>
+            <marc:subfield code="2">isbdmedia</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="9">MODE OF ISSUANCE (R) </marc:subfield>
+            <marc:subfield code="a">Mode of issuance term (NR) </marc:subfield>
+            <marc:subfield code="a">Mode of issuance term (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="9">MODE OF ISSUANCE (R) </marc:subfield>
+            <marc:subfield code="b">Mode of issuance code (NR) </marc:subfield>
+            <marc:subfield code="b">Mode of issuance code (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="0">http://Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">http://Authority record control number or standard number (R) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+        </marc:datafield>
+        
+    </marc:record>
+</marc:collection>

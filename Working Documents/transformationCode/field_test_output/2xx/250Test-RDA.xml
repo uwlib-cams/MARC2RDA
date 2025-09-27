@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc250-test00">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>250-test00</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc250-test00</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc250-test00"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#1stharperperennialednewedpartitura%3Dbo%CC%8Bvi%CC%81tette%CC%81sa%CC%81tdolgozottkiada%CC%81s%3Dnewed"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc250-test00">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc250-test00"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc250-test00</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 250-test00
+F250 ## $a 1st Harper Perennial ed.
+F250 ## $a New ed. / $b with a new foreword by Stephen Greenblatt.
+F250 ## $6 880-02 $a Partitura = $b Score.
+F880 ## $6 250-02/(N $a Партитура = $b Score.
+F250 ## $a Bővített és átdolgozott kiadás = $b Extended and revised edition = Erweiterte und revidierte Ausgabe.
+F250 ## $3 Main content $a New ed. / $b edited by John Jowett.
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc250-test00"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc250-test00"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#1stharperperennialednewedpartitura%3Dbo%CC%8Bvi%CC%81tette%CC%81sa%CC%81tdolgozottkiada%CC%81s%3Dnewed"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#1stharperperennialednewedpartitura%3Dbo%CC%8Bvi%CC%81tette%CC%81sa%CC%81tdolgozottkiada%CC%81s%3Dnewed">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc250-test00"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276> (1st Harper Perennial ed. : New ed. / : Partitura = : Bővített és átdolgozott kiadás = : New ed. /)</rdamd:P30276>
+      <rdamd:P30107>1st Harper Perennial ed.</rdamd:P30107>
+      <rdamd:P30133>1st Harper Perennial ed.</rdamd:P30133>
+      <rdamd:P30107>New ed. / with a new foreword by Stephen Greenblatt.</rdamd:P30107>
+      <rdamd:P30133>New ed.</rdamd:P30133>
+      <rdamd:P30121>with a new foreword by Stephen Greenblatt.</rdamd:P30121>
+      <rdamd:P30107>Partitura = Score.</rdamd:P30107>
+      <rdamd:P30133>Partitura</rdamd:P30133>
+      <rdamd:P30133>Score.</rdamd:P30133>
+      <rdamd:P30107>Партитура = Score.</rdamd:P30107>
+      <rdamd:P30133>Партитура</rdamd:P30133>
+      <rdamd:P30133>Score.</rdamd:P30133>
+      <rdamd:P30107>Bővített és átdolgozott kiadás = Extended and revised edition = Erweiterte und revidierte Ausgabe.</rdamd:P30107>
+      <rdamd:P30133>Bővített és átdolgozott kiadás</rdamd:P30133>
+      <rdamd:P30133>Extended and revised edition</rdamd:P30133>
+      <rdamd:P30133>Erweiterte und revidierte Ausgabe.</rdamd:P30133>
+      <rdamd:P30107>New ed. / edited by John Jowett.</rdamd:P30107>
+      <rdamd:P30137>Has edition statement New ed. / edited by John Jowett. applies to: Main content</rdamd:P30137>
+      <rdamd:P30133>New ed.</rdamd:P30133>
+      <rdamd:P30121>edited by John Jowett.</rdamd:P30121>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99126473510001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/99126473510001452exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>99126473510001452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F008 890504s1925    dcudgj cp a  f  0   eng d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.vw5v-gh79#a"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F034 1# $a a $b 250000 $d W1213700 $e W1200800 $f N0481300 $g N0470500</fake:marcfield>
+      <rdaw:P10301>W1213700--W1200800</rdaw:P10301><!--rdaw:P10301 = has longitude-->
+      <rdaw:P10300>N0481300--N0470500</rdaw:P10300><!--rdaw:P10300 = has latitude-->
+      <fake:marcfield>F043 ## $a n-us-wa</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-wa"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F050 #4 $a G4282.W4 1925 $b .U5</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#g4282w41925"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F052 ## $a 4282</fake:marcfield>
+      <rdaw:P10321 rdf:resource="http://marc2rda.edu/fake/lcc/place#4282"/><!--rdaw:P10321 = has subject place-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/99126473510001452age#d22e81-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/99126473510001452age#d22e81"/><!--rdawo:P10314 = has related corporate body of work-->
+      <fake:marcfield>F245 10 $a Wenatchee National Forest, Washington / $c compiled at Washington Office, April, 1922 ... by H.S. Meekham ; traced by E.L. Mehurin.</fake:marcfield>
+      <rdawd:P10088>Wenatchee National Forest, Washington</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <fake:marcfield>F255 ## $a Scale [ca. 1:250,000] ; $b polyconic projection $c (W 121°37ʹ--W 120°08ʹ/N 48°13ʹ--N 47°05ʹ).</fake:marcfield>
+      <rdawd:P10081>W 121°37ʹ--W 120°08ʹ/N 48°13ʹ--N 47°05ʹ</rdawd:P10081><!--rdawd:P10081 = has longitude and latitude-->
+      <fake:marcfield>F651 #0 $a Wenatchee National Forest (Wash.) $v Maps.</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/place#wenatcheenationalforestwash"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#wenatcheenationalforestwashmaps"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#maps"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F651 #7 $a Washington (State) $z Wenatchee National Forest $2 fast</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/fast/place#washingtonstate"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#washingtonstatewenatcheenationalforest"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F655 #7 $a Maps $2 fast</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#maps"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99126473510001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/99126473510001452man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99126473510001452wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>99126473510001452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <fake:marcfield>F008 890504s1925    dcudgj cp a  f  0   eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdae:P20318 rdf:resource="https://doi.org/10.6069/uwlswd.1c2x-cj09#d"/><!--rdae:P20318 = has relief representation-->
+      <rdae:P20318 rdf:resource="https://doi.org/10.6069/uwlswd.1c2x-cj09#g"/><!--rdae:P20318 = has relief representation-->
+      <rdae:P20318 rdf:resource="https://doi.org/10.6069/uwlswd.1c2x-cj09#j"/><!--rdae:P20318 = has relief representation-->
+      <rdae:P20216 rdf:resource="https://doi.org/10.6069/uwlswd.4jrs-m847#cp"/><!--rdae:P20216 = has projection of cartographic content-->
+      <fake:marcfield>F034 1# $a a $b 250000 $d W1213700 $e W1200800 $f N0481300 $g N0470500</fake:marcfield>
+      <rdae:P20213>Category of scale: Linear scale</rdae:P20213><!--rdae:P20213 = has additional scale information-->
+      <rdae:P20226>250000</rdae:P20226><!--rdae:P20226 = has horizontal scale of cartographic content-->
+      <fake:marcfield>F255 ## $a Scale [ca. 1:250,000] ; $b polyconic projection $c (W 121°37ʹ--W 120°08ʹ/N 48°13ʹ--N 47°05ʹ).</fake:marcfield>
+      <rdaed:P20291>Scale [ca. 1:250,000] ;</rdaed:P20291><!--rdaed:P20291 = has scale designation-->
+      <rdaed:P20216>polyconic projection</rdaed:P20216><!--rdaed:P20216 = has projection of cartographic content-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99126473510001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99126473510001452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F008 890504s1925    dcudgj cp a  f  0   eng d</fake:marcfield>
+      <rdamd:P30011>1925</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/><!--rdam:P30003 = has mode of issuance-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
+      <fake:marcfield>F245 10 $a Wenatchee National Forest, Washington / $c compiled at Washington Office, April, 1922 ... by H.S. Meekham ; traced by E.L. Mehurin.</fake:marcfield>
+      <rdamd:P30156>Wenatchee National Forest, Washington</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>compiled at Washington Office, April, 1922 ... by H.S. Meekham</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>traced by E.L. Mehurin</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <fake:marcfield>F337 ## $a unmediated $b n $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/><!--rdam:P30002 = has media type-->
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/><!--rdam:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a sheet $b nb $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F500 ## $a Relief shown by hachures, spot heights and landforms.</fake:marcfield>
+      <rdamd:P30137>Relief shown by hachures, spot heights and landforms.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F500 ## $a "Diagram forming part of proclamation dated May 11, 1925."</fake:marcfield>
+      <rdamd:P30137>"Diagram forming part of proclamation dated May 11, 1925."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F500 ## $a "Willamette meridian."</fake:marcfield>
+      <rdamd:P30137>"Willamette meridian."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F500 ## $a 5 enlargements inset.</fake:marcfield>
+      <rdamd:P30137>5 enlargements inset.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F500 ## $a Accompanied by text of proclamation of land transfer.</fake:marcfield>
+      <rdamd:P30137>Accompanied by text of proclamation of land transfer.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/99126473510001452wor#d22e174"/><!--rdamo:P30265 = has related work of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/99126473510001452age#d22e183-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/99126473510001452age#d22e183"/><!--rdamo:P30268 = has related person of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/pla/nom#4282">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>4282</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#wenatcheenationalforestwash">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Wenatchee National Forest (Wash.)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/plaNom#washingtonstate">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Washington (State)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99126473510001452age#d22e81">
+      <fake:marcfield>F110 1# $a United States. $b Forest Service.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United States. Forest Service</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99126473510001452age#d22e174">
+      <fake:marcfield>F710 1# $a United States. $b President. $t Proclamation $n (No. 1740th)</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United States. President</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99126473510001452age#d22e183">
+      <fake:marcfield>F700 1# $a Meekham, H. S.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Meekham, H. S.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99126473510001452wor#d22e174">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e174wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>United States. President. Proclamation (No. 1740th)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/99126473510001452age#d22e174"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#g4282w41925">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">G4282.W4 1925</skos:notation>
+      <skos:altLabel>G4282.W4 1925</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#wenatcheenationalforestwashmaps">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Wenatchee National Forest (Wash.)--Maps</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#maps">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Maps</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#washingtonstatewenatcheenationalforest">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Washington (State)--Wenatchee National Forest</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#maps">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Maps</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/place#4282">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/lcc/pla/nom#4282"/><!--rdapo:P70020 = has identifier for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/place#wenatcheenationalforestwash">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#wenatcheenationalforestwash"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/place#washingtonstate">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/fast/plaNom#washingtonstate"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+</rdf:RDF>

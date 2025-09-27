@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">541-test</marc:controlfield>
+        
+        <marc:datafield tag="541" ind1=" " ind2=" ">
+            <marc:subfield code="c">Purchase;</marc:subfield>
+            <marc:subfield code="a">Richard Sasaki;</marc:subfield>
+            <marc:subfield code="d">2011;</marc:subfield>
+            <marc:subfield code="e">MS 2011-22.</marc:subfield>
+        </marc:datafield>
+
+        <marc:datafield tag="541" ind1=" " ind2=" ">
+            <marc:subfield code="c">Gift of </marc:subfield>
+            <marc:subfield code="a">Charles E. Rosenberg</marc:subfield>
+            <marc:subfield code="d">August 2017</marc:subfield>
+            <marc:subfield code="5">PPAmP</marc:subfield>
+        </marc:datafield>
+        
+        <!-- private 541 -->
+        <marc:datafield tag="541" ind1="0" ind2=" ">
+            <marc:subfield code="3">Diary</marc:subfield>
+            <marc:subfield code="a">Buckingham Books</marc:subfield>
+            <marc:subfield code="b">8058 Stone Bridge Road, Greencastle, PA, 17225;</marc:subfield>
+            <marc:subfield code="c">Purchase;</marc:subfield>
+            <marc:subfield code="d">20181220;</marc:subfield>
+            <marc:subfield code="h">$1,875.</marc:subfield>
+        </marc:datafield>
+        
+        <!-- test 880s with private fields -->
+        <marc:datafield tag="541" ind1="0" ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">541-Some Latin script.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1="0" ind2=" ">
+            <marc:subfield code="6">541-01</marc:subfield>
+            <marc:subfield code="a">880-Some non-Latin script.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1="0" ind2=" ">
+            <marc:subfield code="6">541-00</marc:subfield>
+            <marc:subfield code="a">Unlinked 880 for 541</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

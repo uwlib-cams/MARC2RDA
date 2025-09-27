@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/565-testwor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/565-testexp"/>
+      <rdawd:P10002>565-testwor</rdawd:P10002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/565-testexp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/565-testman"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/565-testwor"/>
+      <rdaed:P20002>565-testexp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/565-testman">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/565-testexp"/>
+      <fake:marcfield>F565 0# $3 Automobile consumer survey files $a 8; $b address; $b manufacturer of vehicle; $b model of vehicle; $b date of purchase; $b date of 1st major repairs; $b current mileage; $b date of latest repair; $d complaint filers 1981 January 1 through 1983 December 31; $c new vehicle registrants </fake:marcfield>
+      <rdamd:P30137>Automobile consumer survey files: Case file characteristics: Number of cases/variables: 8; Name of variable: address; Name of variable: manufacturer of vehicle; Name of variable: model of vehicle; Name of variable: date of purchase; Name of variable: date of 1st major repairs; Name of variable: current mileage; Name of variable: date of latest repair; Universe of data: complaint filers 1981 January 1 through 1983 December 31; Unit of analysis: new vehicle registrants </rdamd:P30137>
+      <fake:marcfield>F565 8# $3 Vandalism report files $a 14;  $b name;  $b address;  $b occupation;  $c local jurisdiction;  $d registered voters;  $e alphabetical by jurisdiction</fake:marcfield>
+      <rdamd:P30137>Vandalism report files: Number of cases/variables: 14; Name of variable: name; Name of variable: address; Name of variable: occupation; Unit of analysis: local jurisdiction; Universe of data: registered voters; Filing scheme or code: alphabetical by jurisdiction</rdamd:P30137>
+   </rdf:Description>
+</rdf:RDF>

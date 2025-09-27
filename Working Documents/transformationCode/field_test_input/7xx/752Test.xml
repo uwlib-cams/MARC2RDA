@@ -1,0 +1,80 @@
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  
+  <marc:record>
+    <marc:leader>11111nam a2200000 a 4500</marc:leader>
+    <marc:controlfield tag="001">752-test</marc:controlfield>
+    
+    <!-- approved 1 -->
+    <marc:datafield tag="752" ind1=" " ind2=" ">
+      <marc:subfield code="1">https://sws.geonames.org/6252001/</marc:subfield>
+      <marc:subfield code="a">United States</marc:subfield>
+    </marc:datafield>
+    
+    <!-- WITH $4 -->
+    <marc:datafield tag="752" ind1=" " ind2=" ">
+      <marc:subfield code="a">United Kingdom</marc:subfield>
+      <marc:subfield code="b">England</marc:subfield>
+      <marc:subfield code="c">North Yorkshire</marc:subfield>
+      <marc:subfield code="d">South Milford</marc:subfield>
+      <marc:subfield code="e">publication place</marc:subfield>
+      <marc:subfield code="4">pup</marc:subfield> <!-- relator code -->
+      <marc:subfield code="6">880-01</marc:subfield>
+    </marc:datafield>
+    
+    <!-- linked 880 -->
+    <marc:datafield tag="880" ind1=" " ind2=" ">
+      <marc:subfield code="6">752-01</marc:subfield>
+      <marc:subfield code="a">英国</marc:subfield>
+      <marc:subfield code="b">英格兰</marc:subfield>
+      <marc:subfield code="c">北约克郡</marc:subfield>
+      <marc:subfield code="d">南米尔福德</marc:subfield>
+    </marc:datafield>
+    
+    <!-- e WITHOUT $4 -->
+    <marc:datafield tag="752" ind1=" " ind2=" ">
+      <marc:subfield code="a">Germany</marc:subfield>
+      <marc:subfield code="b">Bavaria</marc:subfield>
+      <marc:subfield code="c">Upper Bavaria</marc:subfield>
+      <marc:subfield code="d">Munich</marc:subfield>
+      <marc:subfield code="e">distribution place</marc:subfield>
+    </marc:datafield>
+    
+    <!-- no $e or $4 -->
+    <marc:datafield tag="752" ind1=" " ind2=" ">
+      <marc:subfield code="a">England</marc:subfield>
+      <marc:subfield code="d">London.</marc:subfield>
+    </marc:datafield>
+    
+    <!-- $4 for manifestation and item -->
+    <marc:datafield tag="752" ind1=" " ind2=" ">
+      <marc:subfield code="a">England</marc:subfield>
+      <marc:subfield code="d">London.</marc:subfield>
+      <marc:subfield code="4">http://rdaregistry.info/Elements/m/P30086</marc:subfield>
+      <marc:subfield code="4">http://rdaregistry.info/Elements/i/P40162</marc:subfield>
+    </marc:datafield>
+    
+    <!-- $4 for work and expression, $2, $6 -->
+    <marc:datafield tag="752" ind1=" " ind2=" ">
+      <marc:subfield code="6">880-02</marc:subfield>
+      <marc:subfield code="a">Canada</marc:subfield>
+      <marc:subfield code="b">Ontario (Province)</marc:subfield>
+      <marc:subfield code="g">Niagara Falls.</marc:subfield>
+      <marc:subfield code="2">naf</marc:subfield>
+      <marc:subfield code="4">http://rdaregistry.info/Elements/w/P10316</marc:subfield>
+      <marc:subfield code="4">http://rdaregistry.info/Elements/e/P20218</marc:subfield>
+    </marc:datafield>
+    
+    <marc:datafield tag="880" ind1=" " ind2=" ">
+      <marc:subfield code="6">752-02</marc:subfield>
+      <marc:subfield code="a">880 Canada</marc:subfield>
+      <marc:subfield code="b">880 Ontario (Province)</marc:subfield>
+      <marc:subfield code="g">880 Niagara Falls.</marc:subfield>
+      <marc:subfield code="2">naf</marc:subfield>
+      <marc:subfield code="4">http://rdaregistry.info/Elements/w/P10316</marc:subfield>
+      <marc:subfield code="4">http://rdaregistry.info/Elements/e/P20218</marc:subfield>
+    </marc:datafield>
+    
+  </marc:record>
+</marc:collection>

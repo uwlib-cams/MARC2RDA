@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">6xx-test1</marc:controlfield> 
+        
+        <!-- 600 with x, z, v -->
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Pushkin, Aleksandr Sergeevich,</marc:subfield>
+            <marc:subfield code="d">1799-1837</marc:subfield>
+            <marc:subfield code="x">Museums</marc:subfield>
+            <marc:subfield code="z">Russia (Federation)</marc:subfield>
+            <marc:subfield code="z">Moscow</marc:subfield>
+            <marc:subfield code="v">Maps.</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 600 with $0 IRI for person, unapproved -->
+        <marc:datafield tag="600" ind1="1" ind2="7">
+            <marc:subfield code="a">Harnoncourt, Nikolaus.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">https://id.worldcat.org/fast/00076606</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 600 with $t person and work -->
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Haydn, Joseph,</marc:subfield>
+            <marc:subfield code="d">1732-1809.</marc:subfield>
+            <marc:subfield code="t">Symphonies.</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 600 with $t person and work, additional subfields -->
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Arne, Thomas Augustine,</marc:subfield>
+            <marc:subfield code="d">1710-1778.</marc:subfield>
+            <marc:subfield code="t">Concertos,</marc:subfield>
+            <marc:subfield code="m">keyboard instrument, orchestra.</marc:subfield>
+            <marc:subfield code="n">No. 3.</marc:subfield>
+            <marc:subfield code="p">Con Spirito,</marc:subfield>
+            <marc:subfield code="m">keyboard instrument.</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 600 ind3 family with $v -->
+        <marc:datafield tag="600" ind1="3" ind2="0">
+            <marc:subfield code="a">Clark family</marc:subfield>
+            <marc:subfield code="v">Fiction</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 600 person with $x -->
+        <marc:datafield tag="600" ind1="0" ind2="0">
+            <marc:subfield code="a">Dante Alighieri,</marc:subfield>
+            <marc:subfield code="d">1265-1321</marc:subfield>
+            <marc:subfield code="x">Criticism and interpretation.</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 600 with source $2 FAST -->
+        <marc:datafield tag="600" ind1="0" ind2="7">
+            <marc:subfield code="a">Dante Alighieri,</marc:subfield>
+            <marc:subfield code="d">1265-1321</marc:subfield>
+           <marc:subfield code="2">fast</marc:subfield>        
+        </marc:datafield>
+        
+        <!-- 600 with source $2 GND -->
+        <marc:datafield tag="600" ind1="0" ind2="7">
+            <marc:subfield code="a">Dante Alighieri,</marc:subfield>
+            <marc:subfield code="d">1265-1321</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>        
+        </marc:datafield>
+ 
+        <!-- 600 with $0 FAST id for person -->
+        <marc:datafield tag="600" ind1="1" ind2="7">
+            <marc:subfield code="a">Bickford, Sarah Gammon,</marc:subfield>
+            <marc:subfield code="d">1855-1931</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01583751</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 600 wih $0 IRI for subject as a whole  -->
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">O'Neill, Eugene,</marc:subfield>
+            <marc:subfield code="d">1888-1953</marc:subfield>
+            <marc:subfield code="x">Homes and haunts</marc:subfield>
+            <marc:subfield code="z">California.</marc:subfield>
+            <marc:subfield code="0">https://id.loc.gov/authorities/subjects/sh85094784</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 600 with $1 for person, unapproved -->
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Romero, George A.</marc:subfield>
+            <marc:subfield code="1">https://isni.org/isni/0000000121363861</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 600 with $1 for work -->
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Romero, George A.</marc:subfield>
+            <marc:subfield code="t">Made up work</marc:subfield>
+            <marc:subfield code="1">https://iriforthiswork.com/12345</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 880s -->
+        <marc:datafield tag="880" ind1="1" ind2="4">
+            <marc:subfield code="6">600-00</marc:subfield>
+            <marc:subfield code="a">Test unlinked 880 person</marc:subfield>
+            <marc:subfield code="t">Test unlinked 880 work</marc:subfield>
+            <marc:subfield code="1">https://iriforthiswork.com/6789</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">Test linked 880 person 1</marc:subfield>
+            <marc:subfield code="d">test d with 880 1</marc:subfield>
+            <marc:subfield code="t">Test linked 880 work 1</marc:subfield>
+            <marc:subfield code="x">test x</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1="1" ind2="0">
+            <marc:subfield code="6">600-01</marc:subfield>
+            <marc:subfield code="a">Test linked 880 person 2</marc:subfield>
+            <marc:subfield code="d">test d with 880 2</marc:subfield>
+            <marc:subfield code="t">Test linked 880 work 2</marc:subfield>
+            <marc:subfield code="x">test x</marc:subfield>
+        </marc:datafield>
+        
+    </marc:record>
+</marc:collection>

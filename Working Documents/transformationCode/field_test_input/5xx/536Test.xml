@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111aam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">536-test</marc:controlfield>
+        <marc:datafield tag="022" ind1=" " ind2=" ">
+            <marc:subfield code="a">0376-4583</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="536" ind1=" " ind2=" ">
+            <marc:subfield code="a">Sponsored by the U.S. Air Force</marc:subfield>
+            <marc:subfield code="e">601101F</marc:subfield>
+            <marc:subfield code="f">1LIR</marc:subfield>
+            <marc:subfield code="g">5H</marc:subfield>
+            <marc:subfield code="h">WUAFGLILIR5H01</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">536-01</marc:subfield>
+            <marc:subfield code="a">non-roman a</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="536" ind1=" " ind2=" ">
+            <marc:subfield code="a">Sponsored by the Advanced Research Projects Agency through the Office of Naval Research</marc:subfield>
+            <marc:subfield code="b">N00014-68-A-0245-0007</marc:subfield>
+            <marc:subfield code="c">ARPA Order No. 2616</marc:subfield>
+            <marc:subfield code="d">subfield d</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>6xx-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F654 ## $a MUSIC / Genres &amp; Styles / Jazz.</fake:marcfield>
+      <rdawd:P10256>MUSIC / Genres &amp; Styles / Jazz.--</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <fake:marcfield>F654 ## $a SOCIAL SCIENCE / General. $2 bisacsh</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/bisacsh/con#socialsciencegeneral"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F654 2# $c k $a Urban planning $c z $b United States $c y $b 1800-1940. $2 aat</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/aat/con#urbanplanningunitedstates1800-1940"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F654 0# $c r $a landscape $y 18th century $z England. $v test v $2 aat</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/aat/con#landscape18thcenturyenglandtestv"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/aat/con#testv"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F654 0# $6 880-01 $a landscape $y 18th century $z England.</fake:marcfield>
+      <rdawd:P10256>landscape--18th century--England</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <rdawd:P10256>landscape--18th century--England</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <fake:marcfield>F880 0# $6 654-00 $a test 880 $2 source</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/source/con#test880"/><!--rdaw:P10256 = has subject-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/6xx-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>6xx-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/bisacsh/con#socialsciencegeneral">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>SOCIAL SCIENCE / General.--</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/bisacsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#urbanplanningunitedstates1800-1940">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Urban planning United States 1800-1940.--</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#landscape18thcenturyenglandtestv">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>landscape--18th century--England.--test v</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#testv">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test v</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/source/con#test880">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test 880--</skos:prefLabel>
+      <!--IRI could not be found for source-->
+      <skos:inScheme>source</skos:inScheme>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc4529595">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>4529595</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc4529595</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc4529595"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#bride%26prejudicemotionpicture130%24doptestn"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicture130%24doptestn2015english130test%24mtest%24o130test%24r130test%24s"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc4529595">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc4529595"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc4529595</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 00748cam a2200205 a 4500
+F001 4529595
+F100 1# $a Austen, Jane, $d 1775-1817.
+F130 0# $a Bride &amp; prejudice (Motion picture) $d 130 $d $f (2015) $l English $m 130 test $m $n op. test n $o test $o $r 130 test $r $s 130 test $s
+F240 10 $a Correspondence. $k Selections. $f 1955 $d 240 $d $l English $m 240 test $m $n opp. test n $o arranged $r 240 test $r $s 240 test $s
+F440 #0 $a Jane Austen mystery ; $d 440 $d $n op. test n $v 6th
+F600 10 $a Haydn, Joseph, $d 1732-1809. $t Symphonies. $d d after t
+F700 1# $a Shostakovich, Dmitriĭ Dmitrievich, $d 700 $d before $t $t Korolʹ Lir (Motion picture music) $d 700 $d after $t
+F710 2# $i Container of (work) $a Belarus Free Theatre (Theater group). $d 710 $d before $t $n 710 $n before $t $t Minsk, 2011. $d 710 $d after $t $n 710 $n after $t
+F711 2# $a Conference Name $d 711 $d before $t $t Conference proceedings $d 711 $d after $t
+F730 3# $a Work Title $d 730 $d $t Film adaptation
+F800 1# $a Mansfield, Katherine, $d 800 $d before $t $t Works. $d 800 $d after $t $v v. 3.
+F810 1# $a United States. $b Army Map Service. $d 810 $d before $t $t A.M.S., $d 810 $d after $t
+F811 2# $a Comparative Drama Conference. $d 811 $d before $t $t Comparative Drama Conference series $d 811 $d after $t $v 5.
+F830 0# $a Europäische Hochschulschriften. $d 830 $d $n Reihe XIV, $p Angelsächsische Sprache und Literatur ; $v Bd. 397.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#bride%26prejudicemotionpicture130%24doptestn">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc4529595"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicture130%24doptestn2015english130test%24mtest%24o130test%24r130test%24s"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Bride &amp; prejudice (Motion picture) 130 $d op. test n</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#austenjane1775-1817-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#austenjane1775-1817"/><!--rdawo:P10312 = has related person of work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#janeaustenmysteryoptestn"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor#haydnjoseph1732-1809symphoniesdaftert"/><!--rdawo:P10257 = has subject work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#mansfieldkatherine800%24dbefore%24tworks800%24dafter%24t"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#unitedstatesarmymapservice810%24dbefore%24tams810%24dafter%24t"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#comparativedramaconference811%24dbefore%24tcomparativedramaconferenceseries811%24dafter%24t"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#europa%CC%88ischehochschulschriften830%24dreihexivangelsa%CC%88chsischespracheundliteratur"/><!--rdawo:P10102 = is issue of-->
+      <rdawd:P10088>Bride &amp; prejudice (Motion picture) op. test n</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10219>130 $d</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10333>op. test n</rdawd:P10333><!--rdawd:P10333 = has opus number-->
+      <rdawd:P10221>130 test $r</rdawd:P10221><!--rdawd:P10221 = has key of representative expression-->
+      <rdawd:P10088>Correspondence. opp. test n</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10219>240 $d</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10333>opp. test n</rdawd:P10333><!--rdawd:P10333 = has opus number-->
+      <rdawd:P10221>240 test $r</rdawd:P10221><!--rdawd:P10221 = has key of representative expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicture130%24doptestn2015english130test%24mtest%24o130test%24r130test%24s">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc4529595"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#bride%26prejudicemotionpicture130%24doptestn"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Bride &amp; prejudice (Motion picture) 130 $d op. test n(2015) English 130 test $m test $o 130 test $r 130 test $s</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaed:P20006>English</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
+      <rdaed:P20215>130 test $m</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
+      <rdaed:P20326>130 test $r</rdaed:P20326><!--rdaed:P20326 = has key of expression-->
+      <rdaed:P20572>130 test $s</rdaed:P20572><!--rdaed:P20572 = has designation of version-->
+      <rdaed:P20214>1955</rdaed:P20214><!--rdaed:P20214 = has date of expression-->
+      <rdaed:P20006>English</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
+      <rdaed:P20215>240 test $m</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
+      <rdaed:P20331>Arrangement</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
+      <rdaed:P20326>240 test $r</rdaed:P20326><!--rdaed:P20326 = has key of expression-->
+      <rdaed:P20572>240 test $s</rdaed:P20572><!--rdaed:P20572 = has designation of version-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc4529595"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicture130%24doptestn2015english130test%24mtest%24o130test%24r130test%24s"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30106>Jane Austen mystery ; op. test n 6th</rdamd:P30106><!--rdamd:P30106 = has series statement-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#shostakovichdmitrii%CC%86dmitrievich700%24dbefore%24tkorol%CA%B9lirmotionpicturemusic700%24dafter%24t"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#belarusfreetheatretheatergroup710%24dbefore%24t710%24nbefore%24tminsk2011710%24dafter%24t710%24nafter%24t"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#conferencename711%24dbefore%24tconferenceproceedings711%24dafter%24t"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#worktitle730%24dfilmadaptation"/><!--rdamo:P30265 = has related work of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#austenjane1775-1817">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Austen, Jane, 1775-1817</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Austen, Jane</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1775</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1817</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#haydnjoseph1732-1809">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Haydn, Joseph, 1732-1809</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Haydn, Joseph</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1732</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1809</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#shostakovichdmitrii%CC%86dmitrievich700%24dbefore%24t">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Shostakovich, Dmitriĭ Dmitrievich, 700 $d before $t</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Shostakovich, Dmitriĭ Dmitrievich</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50347>700 $d before $t</rdaad:P50347><!--rdaad:P50347 = has related timespan of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#belarusfreetheatretheatergroup710%24dbefore%24t710%24nbefore%24t">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Belarus Free Theatre (Theater group). 710 $d before $t 710 $n before $t</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50019>710 $n before $t</rdaad:P50019><!--rdaad:P50019 = has number of conference-->
+      <rdaad:P50039>710 $d before $t</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>Belarus Free Theatre (Theater group)</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#conferencename711%24dbefore%24t">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Conference Name 711 $d before $t</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50039>711 $d before $t</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>Conference Name</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#mansfieldkatherine800%24dbefore%24t">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Mansfield, Katherine, 800 $d before $t</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Mansfield, Katherine</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50347>800 $d before $t</rdaad:P50347><!--rdaad:P50347 = has related timespan of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#unitedstatesarmymapservice810%24dbefore%24t">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United States. Army Map Service. 810 $d before $t</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50039>810 $d before $t</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>United States. Army Map Service</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#comparativedramaconference811%24dbefore%24t">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Comparative Drama Conference. 811 $d before $t</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50039>811 $d before $t</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>Comparative Drama Conference</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#janeaustenmysteryoptestn">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Jane Austen mystery ; op. test n</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Jane Austen mystery ; op. test n</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10219>440 $d</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#haydnjoseph1732-1809symphoniesdaftert">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Haydn, Joseph, 1732-1809. Symphonies. d after t</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#haydnjoseph1732-1809"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Symphonies</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10219>d after t</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#shostakovichdmitrii%CC%86dmitrievich700%24dbefore%24tkorol%CA%B9lirmotionpicturemusic700%24dafter%24t">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d25e69wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Shostakovich, Dmitriĭ Dmitrievich, 700 $d before $t Korolʹ Lir (Motion picture music) 700 $d after $t</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#shostakovichdmitrii%CC%86dmitrievich700%24dbefore%24t"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10219>700 $d after $t</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10088>Korolʹ Lir (Motion picture music)</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#belarusfreetheatretheatergroup710%24dbefore%24t710%24nbefore%24tminsk2011710%24dafter%24t710%24nafter%24t">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d25e78wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Belarus Free Theatre (Theater group). 710 $d before $t 710 $n before $t Minsk, 2011. 710 $d after $t 710 $n after $t</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#belarusfreetheatretheatergroup710%24dbefore%24t710%24nbefore%24t"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10219>710 $d after $t</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10088>710 $n before $t Minsk, 2011. 710 $n after $t</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#conferencename711%24dbefore%24tconferenceproceedings711%24dafter%24t">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d25e93wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Conference Name 711 $d before $t Conference proceedings 711 $d after $t</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#conferencename711%24dbefore%24t"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10219>711 $d after $t</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10088>Conference proceedings</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#worktitle730%24dfilmadaptation">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d25e102wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Work Title 730 $d Film adaptation</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Work Title</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10219>730 $d</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#mansfieldkatherine800%24dbefore%24tworks800%24dafter%24t">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Mansfield, Katherine, 800 $d before $t Works. 800 $d after $t</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#mansfieldkatherine800%24dbefore%24t"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10219>800 $d after $t</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10088>Works</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#unitedstatesarmymapservice810%24dbefore%24tams810%24dafter%24t">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>United States. Army Map Service. 810 $d before $t A.M.S., 810 $d after $t</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#unitedstatesarmymapservice810%24dbefore%24t"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10219>810 $d after $t</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10088>A.M.S.</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#comparativedramaconference811%24dbefore%24tcomparativedramaconferenceseries811%24dafter%24t">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Comparative Drama Conference. 811 $d before $t Comparative Drama Conference series 811 $d after $t</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#comparativedramaconference811%24dbefore%24t"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10219>811 $d after $t</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10088>Comparative Drama Conference series</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#europa%CC%88ischehochschulschriften830%24dreihexivangelsa%CC%88chsischespracheundliteratur">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Europäische Hochschulschriften. 830 $d Reihe XIV, Angelsächsische Sprache und Literatur ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Europäische Hochschulschriften. Reihe XIV, Angelsächsische Sprache und Literatur ;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10219>830 $d</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+   </rdf:Description>
+</rdf:RDF>

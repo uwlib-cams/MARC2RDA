@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+    http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>02782cpc a2200697 i 4500</marc:leader>
+        <marc:controlfield tag="001">99121217610001452</marc:controlfield>
+        <marc:controlfield tag="005">20240728213016.0</marc:controlfield>
+        <marc:controlfield tag="008">040428s2004    enk     c           eng  </marc:controlfield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0582829992</marc:subfield>
+            <marc:subfield code="q">(paperback)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780582829992</marc:subfield>
+            <marc:subfield code="q">(paperback)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)55039631</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocm55039631 </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)9994817540001451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99121217610001452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">EIK</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="c">EIK</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCG</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">e-uk-st</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">MAIN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">PR2823 .A2</marc:subfield>
+            <marc:subfield code="b">C6 2004</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">428.64</marc:subfield>
+            <marc:subfield code="q">OCoLC</marc:subfield>
+            <marc:subfield code="2">23/eng/20230216</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Collins, Anne,</marc:subfield>
+            <marc:subfield code="e">author</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Macbeth /</marc:subfield>
+            <marc:subfield code="c">by William Shakespeare, retold by Anne Collins.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Essex :</marc:subfield>
+            <marc:subfield code="b">Pearson Education Ltd.,</marc:subfield>
+            <marc:subfield code="c">[2004]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2004</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">viii, 54 pages :</marc:subfield>
+            <marc:subfield code="b">illustrations ;</marc:subfield>
+            <marc:subfield code="c">20 cm +</marc:subfield>
+            <marc:subfield code="e">1 audiocassette</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="385" ind1=" " ind2=" ">
+            <marc:subfield code="a">English language learners</marc:subfield>
+            <marc:subfield code="2">lcdgt</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="385" ind1=" " ind2=" ">
+            <marc:subfield code="a">New literates</marc:subfield>
+            <marc:subfield code="2">lcdgt</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="490" ind1="1" ind2=" ">
+            <marc:subfield code="a">Penguin readers audio pack. Level 4</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a"
+                >"The text is read with a British English accent"--Container</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Readers.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Historical drama.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Regicides</marc:subfield>
+            <marc:subfield code="z">Scotland</marc:subfield>
+            <marc:subfield code="v">Drama.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">English language</marc:subfield>
+            <marc:subfield code="v">Textbooks for foreign speakers.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Readers for new literates.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Anglais (Langue)</marc:subfield>
+            <marc:subfield code="v">Lectures et morceaux choisis.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Anglais (Langue)</marc:subfield>
+            <marc:subfield code="v">Manuels pour allophones.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Anglais (Langue)</marc:subfield>
+            <marc:subfield code="v">Lectures et morceaux choisis pour nouveaux alphabétisés.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Readers for new literates</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">English language</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Historical drama</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Readers</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Regicides</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="0">
+            <marc:subfield code="a">Scotland</marc:subfield>
+            <marc:subfield code="x">History</marc:subfield>
+            <marc:subfield code="y">To 1057</marc:subfield>
+            <marc:subfield code="v">Drama.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Scotland</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="1"
+                >https://id.oclc.org/worldcat/entity/E39QbtfRx4M4xHbtFTRj7p6BmM</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">readers.</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Textbooks</marc:subfield>
+            <marc:subfield code="v">for foreign speakers</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Readers (Publications)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">High interest-low vocabulary books</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Adaptations</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Drama</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">History</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Readers (Publications)</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">High interest-low vocabulary books.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Adaptations.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Lectures et morceaux choisis.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="0" ind2="0">
+            <marc:subfield code="a">Macbeth,</marc:subfield>
+            <marc:subfield code="c">King of Scotland,</marc:subfield>
+            <marc:subfield code="d">active 11th century</marc:subfield>
+            <marc:subfield code="v">Drama.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="0" ind2="7">
+            <marc:subfield code="a">Macbeth,</marc:subfield>
+            <marc:subfield code="c">King of Scotland,</marc:subfield>
+            <marc:subfield code="d">active 11th century</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="1"
+                >https://id.oclc.org/worldcat/entity/E39PBJjt66thpfCVgVbjFfgqcP</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="648" ind1=" " ind2="7">
+            <marc:subfield code="a">To 1057</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="i">Adaptation of (work):</marc:subfield>
+            <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+            <marc:subfield code="d">1564-1616.</marc:subfield>
+            <marc:subfield code="t">Macbeth.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">Penguin readers audio pack.</marc:subfield>
+            <marc:subfield code="p">Level 4.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="973" ind1=" " ind2=" ">
+            <marc:subfield code="a">microform</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="978" ind1=" " ind2=" ">
+            <marc:subfield code="a">.b56328400</marc:subfield>
+            <marc:subfield code="9">LOCAL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="994" ind1=" " ind2=" ">
+            <marc:subfield code="a">92</marc:subfield>
+            <marc:subfield code="b">OCACL</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

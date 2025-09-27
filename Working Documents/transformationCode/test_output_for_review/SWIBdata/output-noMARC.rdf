@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+   xmlns:fake="http://fakePropertiesForDemo"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+   xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+   xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+   xmlns:rdae="http://rdaregistry.info/Elements/e/"
+   xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+   xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
+   xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+   xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+   xmlns:rdam="http://rdaregistry.info/Elements/m/"
+   xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+   xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+   xmlns:rdan="http://rdaregistry.info/Elements/n/"
+   xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+   xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+   xmlns:rdap="http://rdaregistry.info/Elements/p/"
+   xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+   xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+   xmlns:rdat="http://rdaregistry.info/Elements/t/"
+   xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+   xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+   xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+   xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+   xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:uwf="http://universityOfWashington/functions"
+   xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162251920901452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/99162251920901452exp"/>
+      <rdawd:P10002>99162251920901452wor</rdawd:P10002>
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/>
+      <rdawd:P10088>Healing justice</rdawd:P10088>
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/place#unitedstates"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#criminaljusticeadministrationofunitedstates"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#prisonsandracerelationsunitedstates"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#justicepe%CC%81naleadministratione%CC%81tats-unis"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#prisonsetrelationsracialese%CC%81tats-unis"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#criminaljusticeadministrationof"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#prisonsandracerelations"/>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/aat/con#documentaryfilm"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#documentaryfilms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#featurefilms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#internetvideos"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#nonfictionfilms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#internetvideos"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#documentaryfilms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#nonfictionfilms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#featurefilms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#vide%CC%81ossurinternet"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#documentaires"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#filmsautresquedefiction"/>
+      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/99162251920901452age#d22e262"/>
+      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/99162251920901452age#d22e262"/>
+      <rdawo:P10418 rdf:resource="http://marc2rda.edu/fake/99162251920901452age#d22e280"/>
+      <rdawo:P10422 rdf:resource="http://marc2rda.edu/fake/99162251920901452age#d22e280"/>
+      <rdawo:P10418 rdf:resource="http://marc2rda.edu/fake/99162251920901452age#d22e288"/>
+      <rdawo:P10415 rdf:resource="http://marc2rda.edu/fake/99162251920901452age#d22e288"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162251920901452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/99162251920901452man"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/99162251920901452origMan"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99162251920901452wor"/>
+      <rdaed:P20002>99162251920901452exp</rdaed:P20002>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      <rdaed:P20219>Duration: 067 minutes.</rdaed:P20219>
+      <rdaed:P20069>Designed for dialogue, the film examines the school-to-prison pipeline, the need for comprehensive criminal justice reform, and highlights the importance of implementing restorative healing practices.</rdaed:P20069>
+      <rdaeo:P20506 rdf:resource="http://marc2rda.edu/fake/99162251920901452age#d22e262"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162251920901452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99162251920901452exp"/>
+      <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/99162251920901452origMan"/>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#m"/>
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#o"/>
+      <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#c"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30156>Healing justice</rdamd:P30156>
+      <rdamd:P30105>World Trust presents</rdamd:P30105>
+      <rdamd:P30105>a film by Shakti Butler</rdamd:P30105>
+      <rdamd:P30105>directed by Shakti Butler and Rick Butler</rdamd:P30105>
+      <rdamd:P30105>producer, Shakti Butler</rdamd:P30105>
+      <rdamd:P30105>World Trust Educational Services, Inc</rdamd:P30105>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
+      <rdam:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+      <rdamd:P30456>color</rdamd:P30456>
+      <rdamd:P30137>Dance company, Embodiment Project ; film participants: Suijatha Baliga, James Bell, Denise Breton, Eric Butler, Fania Davis, Joy Degruy, Harley Eagle, George Galvis, Shawn Ginwright, Ericka Huggins, Morris Jenkins, David Kelly, Nicole Lee.</rdamd:P30137>
+      <rdamd:P30335>Electronic reproduction</rdamd:P30335>
+      <rdamd:P30279>New Brunswick, N.J.</rdamd:P30279>
+      <rdamd:P30297>Rutgers University Libraries Media Center</rdamd:P30297>
+      <rdamd:P30278>2018</rdamd:P30278>
+      <rdamd:P30137>Reproduced from 4 3/4 in. videodisc (1092).</rdamd:P30137>
+      <rdamd:P30137>Available via World Wide Web.</rdamd:P30137>
+      <rdamd:P30137>Originally produced as a motion picture in 2017.</rdamd:P30137>
+      <rdamd:P30137>Credits: Editors, Sean Tambour Marshall, Peter Shwartz ; director of photography, Rick Butler ; music, Amikaeyla.</rdamd:P30137>
+      <rdamo:P30420 rdf:resource="http://marc2rda.edu/fake/99162251920901452age#d22e262"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162251920901452origMan">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99162251920901452exp"/>
+      <rdamd:P30278>2017/..</rdamd:P30278>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/cau"/>
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
+      <rdamd:P30156>Healing justice</rdamd:P30156>
+      <rdamd:P30105>World Trust presents</rdamd:P30105>
+      <rdamd:P30105>a film by Shakti Butler</rdamd:P30105>
+      <rdamd:P30105>directed by Shakti Butler and Rick Butler</rdamd:P30105>
+      <rdamd:P30105>producer, Shakti Butler</rdamd:P30105>
+      <rdamd:P30105>World Trust Educational Services, Inc</rdamd:P30105>
+      <rdamd:P30111>[Oakland, Calif.] : World Trust Educational Services, Inc., [2017]</rdamd:P30111>
+      <rdamd:P30088>Oakland, Calif.</rdamd:P30088>
+      <rdamd:P30176>World Trust Educational Services, Inc.</rdamd:P30176>
+      <rdamd:P30011>2017</rdamd:P30011>
+      <rdamd:P30137>Copyright notice date: ©2017.</rdamd:P30137>
+      <rdamd:P30007>2017</rdamd:P30007>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/plaNom#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162251920901452age#d22e262">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>World Trust (Organization)</rdaad:P50375>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162251920901452age#d22e280">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Butler, Shakti</rdaad:P50377>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162251920901452age#d22e288">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Butler, Rick</rdaad:P50377>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#criminaljusticeadministrationofunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Criminal justice, Administration of--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#prisonsandracerelationsunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Prisons and race relations--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#justicepe%CC%81naleadministratione%CC%81tats-unis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Justice pénale--Administration--États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#prisonsetrelationsracialese%CC%81tats-unis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Prisons et relations raciales--États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#criminaljusticeadministrationof">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Criminal justice, Administration of</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#prisonsandracerelations">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Prisons and race relations</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#documentaryfilm">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>documentary film</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#documentaryfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Documentary films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#featurefilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Feature films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#internetvideos">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Internet videos</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#nonfictionfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Nonfiction films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#internetvideos">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Internet videos</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#documentaryfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Documentary films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#nonfictionfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Nonfiction films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#featurefilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Feature films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#vide%CC%81ossurinternet">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Vidéos sur Internet</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#documentaires">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Documentaires</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#filmsautresquedefiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Films autres que de fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/place#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#unitedstates"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/fast/plaNom#unitedstates"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">544-test</marc:controlfield>
+        <marc:datafield tag="544" ind1=" " ind2=" ">
+            <marc:subfield code="d">William Fords Provenance;</marc:subfield>
+            <marc:subfield code="a">Freen College;</marc:subfield>
+            <marc:subfield code="b">727 Prologue Blvd., History City, MA</marc:subfield>
+            <marc:subfield code="c">USA.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="544" ind1="0" ind2=" ">
+            <marc:subfield code="3">Materials specified:</marc:subfield>
+            <marc:subfield code="d">Burt Barnes papers;</marc:subfield>
+            <marc:subfield code="e">Also located at;</marc:subfield>
+            <marc:subfield code="a">Archives of American Art, Smithsonian Institution.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="1" ind2=" ">
+            <marc:subfield code="6">544-00</marc:subfield>
+            <marc:subfield code="n">Other records relating to the delivery of health care services can be found in the Health Care Services Division files of the Dept. of Health fonds.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

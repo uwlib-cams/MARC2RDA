@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">6xx-test1</marc:controlfield> 
+        <marc:datafield tag="658" ind1=" " ind2=" ">
+            <marc:subfield code="a">Math manipulatives</marc:subfield>
+            <marc:subfield code="d">highly correlated</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="658" ind1=" " ind2=" ">
+            <marc:subfield code="a">Reading objective 1 (fictional)</marc:subfield>
+            <marc:subfield code="b">understanding language, elements of plots, themes, motives, characters, setting b responding to the multiple-meaning word</marc:subfield>
+            <marc:subfield code="c">NRPO2-1991</marc:subfield>
+            <marc:subfield code="d">highly correlated.</marc:subfield>
+            <marc:subfield code="2">ohco</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="658" ind1=" " ind2=" ">
+            <marc:subfield code="a">Matematikk 1P-Y BA</marc:subfield>
+            <marc:subfield code="c">MAT1111</marc:subfield>
+            <marc:subfield code="2">udir</marc:subfield>
+            <marc:subfield code="1">http://psi.udir.no/kl06/MAT1111</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">658-00</marc:subfield>
+            <marc:subfield code="a">880 test</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

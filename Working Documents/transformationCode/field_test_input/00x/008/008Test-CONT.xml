@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>03847cas a2200745 i 4500</marc:leader>
+        <marc:controlfield tag="001">99162443444601452</marc:controlfield>
+        <marc:controlfield tag="005">20220331213021.0</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d        </marc:controlfield>
+        <marc:controlfield tag="007">cr un||||a|a||</marc:controlfield>
+        <marc:controlfield tag="008">100812c20199999kn fr p o     0   k0kor c</marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">  2021245499</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">609744690</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)655796907</marc:subfield>
+            <marc:subfield code="z">(OCoLC)609744690</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocn655796907</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99331586418101451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99162443444601452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">OCLCE</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">OCLCE</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">dlr</marc:subfield>
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">a-kn---</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">MAIN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">HB9</marc:subfield>
+            <marc:subfield code="b">.K52</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="066" ind1=" " ind2=" ">
+            <marc:subfield code="c">$1</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">Kim Il-sŏng Chonghap Taehak hakpo.</marc:subfield>
+            <marc:subfield code="p">Kyŏngjehak.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="0" ind2="0">
+            <marc:subfield code="6">245-01/$1</marc:subfield>
+            <marc:subfield code="a">김 일성 종합 대학 학보.</marc:subfield>
+            <marc:subfield code="p">경제학.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="246" ind1="1" ind2=" ">
+            <marc:subfield code="6">880-02</marc:subfield>
+            <marc:subfield code="a">Kyŏngjehak</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="1" ind2=" ">
+            <marc:subfield code="6">246-02/$1</marc:subfield>
+            <marc:subfield code="a">경제학</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="246" ind1="1" ind2="1">
+            <marc:subfield code="a">Journal of Kim Il Sung University.</marc:subfield>
+            <marc:subfield code="p">Economics</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="246" ind1="3" ind2=" ">
+            <marc:subfield code="a">Economics</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="6">880-03</marc:subfield>
+            <marc:subfield code="a">[P'yŏngyang] :</marc:subfield>
+            <marc:subfield code="b">Kim Il-sŏng Chonghap Taehak Ch'ulp'ansa,</marc:subfield>
+            <marc:subfield code="c">2019-</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2="1">
+            <marc:subfield code="6">264-03/$1</marc:subfield>
+            <marc:subfield code="a">[P'yŏngyang] :</marc:subfield>
+            <marc:subfield code="b">김 일성 종합 대학 출판사,</marc:subfield>
+            <marc:subfield code="c">2019-</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="310" ind1=" " ind2=" ">
+            <marc:subfield code="a">Semiannual</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="362" ind1="1" ind2=" ">
+            <marc:subfield code="6">880-04</marc:subfield>
+            <marc:subfield code="a">Began with che 65-kwŏn che 1-ho (2019-yŏn) = Nugye che 545-ho.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="1" ind2=" ">
+            <marc:subfield code="6">362-04/$1</marc:subfield>
+            <marc:subfield code="a">Began with 제 65권 제 1호 (2019년) = 루계 제 545호.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="533" ind1=" " ind2=" ">
+            <marc:subfield code="a">Electronic reproduction.</marc:subfield>
+            <marc:subfield code="b">[Place of publication not identified] :</marc:subfield>
+            <marc:subfield code="c">HathiTrust Digital Library,</marc:subfield>
+            <marc:subfield code="d">2010.</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="538" ind1=" " ind2=" ">
+            <marc:subfield code="a">Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.</marc:subfield>
+            <marc:subfield code="u">http://purl.oclc.org/DLF/benchrepro0212</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="583" ind1="1" ind2=" ">
+            <marc:subfield code="a">digitized</marc:subfield>
+            <marc:subfield code="c">2010</marc:subfield>
+            <marc:subfield code="h">HathiTrust Digital Library</marc:subfield>
+            <marc:subfield code="l">committed to preserve</marc:subfield>
+            <marc:subfield code="2">pda</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="6">880-05</marc:subfield>
+            <marc:subfield code="a">Che 65-kwŏn che 1-ho (2019) = Nugye che 545-ho; title from cover (dprkmedia, viewed February 24, 2022).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="0" ind2=" ">
+            <marc:subfield code="6">588-05/$1</marc:subfield>
+            <marc:subfield code="a">제 65권 제 1호 (2019) = 루계 제 545호; title from cover (dprkmedia, viewed February 24, 2022).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="1" ind2=" ">
+            <marc:subfield code="6">880-06</marc:subfield>
+            <marc:subfield code="a">Che 67-kwŏn che 2-ho (2021) = Nugye che 570-ho (viewed February 24, 2022).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="1" ind2=" ">
+            <marc:subfield code="6">588-06/$1</marc:subfield>
+            <marc:subfield code="a">제 67권 제 2호 (2021) = 루계 제 570호 (viewed February 24, 2022).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="506" ind1=" " ind2=" ">
+            <marc:subfield code="3">Use copy</marc:subfield>
+            <marc:subfield code="f">Restrictions unspecified</marc:subfield>
+            <marc:subfield code="2">star</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Economics</marc:subfield>
+            <marc:subfield code="v">Periodicals.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Économie politique</marc:subfield>
+            <marc:subfield code="v">Périodiques.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Economic history.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00901974</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Economics.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00902116</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="0">
+            <marc:subfield code="a">Korea (North)</marc:subfield>
+            <marc:subfield code="x">Economic conditions</marc:subfield>
+            <marc:subfield code="v">Periodicals.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Korea (North)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01214151</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="2">
+            <marc:subfield code="a">Periodical</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">periodicals.</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Periodicals.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01411641</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Periodicals.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Périodiques.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="6">880-07</marc:subfield>
+            <marc:subfield code="a">Kim Il-sŏng Chonghap Taehak,</marc:subfield>
+            <marc:subfield code="e">issuing body.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="2" ind2=" ">
+            <marc:subfield code="6">710-07/$1</marc:subfield>
+            <marc:subfield code="a">김 일성 종합 대학,</marc:subfield>
+            <marc:subfield code="e">issuing body.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">Print version:</marc:subfield>
+            <marc:subfield code="t">Kim Il-sŏng Chonghap Taehak hakpo. Kyŏngjehak</marc:subfield>
+            <marc:subfield code="w">(DLC)  2020212057</marc:subfield>
+            <marc:subfield code="w">(OCoLC)1137383132</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="780" ind1="0" ind2="1">
+            <marc:subfield code="6">880-08</marc:subfield>
+            <marc:subfield code="t">Kim Il-sŏng Chonghap Taehak hakpo. Ch'ŏrhak kyŏngjehak</marc:subfield>
+            <marc:subfield code="w">(DLC)  2021245596</marc:subfield>
+            <marc:subfield code="w">(OCoLC)742315938</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="0" ind2="1">
+            <marc:subfield code="6">780-08/$1</marc:subfield>
+            <marc:subfield code="t">김 일성 종합 대학 학보. 철학 경제학</marc:subfield>
+            <marc:subfield code="w">(DLC)  2021245596</marc:subfield>
+            <marc:subfield code="w">(OCoLC)742315938</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">Google</marc:subfield>
+            <marc:subfield code="u">http://books.google.com/books?id=EFy4AAAAIAAJ</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">HathiTrust Digital Library Limited view (search only)</marc:subfield>
+            <marc:subfield code="u">http://catalog.hathitrust.org/api/volumes/oclc/227487026.html</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">http://www.dprkmedia.com/listjournal?MediaID=2028</marc:subfield>
+            <marc:subfield code="7">1</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="994" ind1=" " ind2=" ">
+            <marc:subfield code="a">92</marc:subfield>
+            <marc:subfield code="b">OCACL</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

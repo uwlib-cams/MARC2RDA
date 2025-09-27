@@ -1,0 +1,157 @@
+@prefix fake: <http://fakePropertiesForDemo> .
+@prefix rdaad: <http://rdaregistry.info/Elements/a/datatype/> .
+@prefix rdaed: <http://rdaregistry.info/Elements/e/datatype/> .
+@prefix rdaeo: <http://rdaregistry.info/Elements/e/object/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdamd: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdamo: <http://rdaregistry.info/Elements/m/object/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdand: <http://rdaregistry.info/Elements/n/datatype/> .
+@prefix rdapo: <http://rdaregistry.info/Elements/p/object/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdawd: <http://rdaregistry.info/Elements/w/datatype/> .
+@prefix rdawo: <http://rdaregistry.info/Elements/w/object/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://marc2rda.edu/fake/1423078359man> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
+    fake:marcfield "F024 7# $a 1773/49682 $2 hdl",
+        "F245 10 $a Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia / $c Madison Marie Laughlin.",
+        "F264 #1 $a [Seattle] : $b [University of Washington Libraries], $c [2022]",
+        "F264 #4 $c ©2022",
+        "F337 ## $a computer $b c $2 rdamedia",
+        "F338 ## $a online resource $b cr $2 rdacarrier",
+        "F340 ## $g black and white",
+        "F340 ## $g color",
+        "F340 ## $g monochrome $2 rdacc",
+        "F340 ## $g polychrome $2 rdacc",
+        "F340 ## $p illustration $2 rdaill",
+        "F340 ## $p map $2 rdaill",
+        "F347 ## $a text file $2 rdaft",
+        "F347 ## $b PDF",
+        "F504 ## $a Includes bibliographical references (pages 37-43).",
+        "F588 0# $a Online resource; title from PDF title page (ResearchWorks Archive, viewed February 23, 2024)." ;
+    rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr> ;
+    rdam:colourContent.en <http://rdaregistry.info/termList/RDAColourContent/1002>,
+        <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    rdamd:colourContent.en "black and white",
+        "color" ;
+    rdamd:copyrightDate.en "2022" ;
+    rdamd:dateOfPublication.en "2022" ;
+    rdamd:encodingFormat.en "PDF" ;
+    rdamd:nameOfPublisher.en "University of Washington Libraries" ;
+    rdamd:noteOnManifestation.en "Copyright notice date: ©2022.",
+        "Source of description: Online resource; title from PDF title page (ResearchWorks Archive, viewed February 23, 2024)." ;
+    rdamd:placeOfPublication.en "Seattle" ;
+    rdamd:publicationStatement.en "[Seattle] : [University of Washington Libraries], [2022]" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "Madison Marie Laughlin." ;
+    rdamd:supplementaryContent.en "Includes bibliographical references (pages 37-43)." ;
+    rdamd:titleProper.en "Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia" ;
+    rdam:fileType.en <http://rdaregistry.info/termList/fileType/1002> ;
+    rdam:illustrativeContent.en <http://rdaregistry.info/termList/IllusContent/1008>,
+        <http://rdaregistry.info/termList/IllusContent/1014> ;
+    rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdamo:expressionManifested.en <http://marc2rda.edu/fake/1423078359exp> ;
+    rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/nom/d20e30> .
+
+<http://marc2rda.edu/fake/1423078359exp> a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    fake:marcfield "F520 3# $a Tree regeneration is a critical mechanism of forest resilience to stand-replacing wildfire. Post-fire tree regeneration dynamics have been relatively well-studied in historically fire-frequent forests across western North America, though are understudied within forests characterized by infrequent and severe fire regimes like those of the western Cascades in Washington and Oregon, USA (western Cascadia). Recent wildfire activity (2015-2020) in western Cascadia has provided a unique opportunity to address this knowledge gap. Here, we asked: how is post-fire conifer regeneration across western Cascadia affected by pre-fire stand age, burn-patch size, and topo-climatic conditions? We established 39 1-hectare long-term monitoring plots across strata of pre-fire stand age and forest zone in four wildfires in western Cascadia. At each plot, we collected data on post-fire conifer species composition and abundance. We used generalized linear models to test how conifer establishment rates (seedlings ha-1yr-1 above 10 cm) and regeneration rates (seedlings ha-1yr-1 of all heights) responded to pre-fire stand age/seral stage, distance to the nearest live seed source, and post-fire topo-climatic conditions. Conifer regeneration rates and tree species richness increased with pre-fire stand age/seral stage, regeneration rates decreased with greater distances to the nearest live seed source but were present out to 450 m, and establishment rates were greater in areas characterized by cooler and wetter macrosite (e.g. greater post-fire precipitation) and microsite (e.g., greater bryophyte ground cover) conditions. In general, initial seedling densities suggest that post-fire regeneration is abundant following stand-replacing fire in most areas across the region. For example, regeneration and establishment rates were above forest practice minimum density thresholds (i.e., 470 seedlings per ha) in 82.1% and 64.1% of plots, respectively. Our study provides critical insight on the drivers of post-fire tree regeneration following stand-replacing wildfires in western Cascadia, and informs what factors are likely to support greater forest resilience to fire. Our findings can help inform land management strategies for post-fire responses which is of critical importance under the uncertainties of climate change and fire in infrequent, stand-replacing fire regimes." ;
+    rdaed:identifierForExpression.en "1423078359exp" ;
+    rdaed:summarizationOfContent.en "Abstract: Tree regeneration is a critical mechanism of forest resilience to stand-replacing wildfire. Post-fire tree regeneration dynamics have been relatively well-studied in historically fire-frequent forests across western North America, though are understudied within forests characterized by infrequent and severe fire regimes like those of the western Cascades in Washington and Oregon, USA (western Cascadia). Recent wildfire activity (2015-2020) in western Cascadia has provided a unique opportunity to address this knowledge gap. Here, we asked: how is post-fire conifer regeneration across western Cascadia affected by pre-fire stand age, burn-patch size, and topo-climatic conditions? We established 39 1-hectare long-term monitoring plots across strata of pre-fire stand age and forest zone in four wildfires in western Cascadia. At each plot, we collected data on post-fire conifer species composition and abundance. We used generalized linear models to test how conifer establishment rates (seedlings ha-1yr-1 above 10 cm) and regeneration rates (seedlings ha-1yr-1 of all heights) responded to pre-fire stand age/seral stage, distance to the nearest live seed source, and post-fire topo-climatic conditions. Conifer regeneration rates and tree species richness increased with pre-fire stand age/seral stage, regeneration rates decreased with greater distances to the nearest live seed source but were present out to 450 m, and establishment rates were greater in areas characterized by cooler and wetter macrosite (e.g. greater post-fire precipitation) and microsite (e.g., greater bryophyte ground cover) conditions. In general, initial seedling densities suggest that post-fire regeneration is abundant following stand-replacing fire in most areas across the region. For example, regeneration and establishment rates were above forest practice minimum density thresholds (i.e., 470 seedlings per ha) in 82.1% and 64.1% of plots, respectively. Our study provides critical insight on the drivers of post-fire tree regeneration following stand-replacing wildfires in western Cascadia, and informs what factors are likely to support greater forest resilience to fire. Our findings can help inform land management strategies for post-fire responses which is of critical importance under the uncertainties of climate change and fire in infrequent, stand-replacing fire regimes." ;
+    rdaeo:workExpressed.en <http://marc2rda.edu/fake/1423078359wor> .
+
+<http://marc2rda.edu/fake/1423078359wor> a <http://rdaregistry.info/Elements/c/Work.en> ;
+    fake:marcfield "F245 10 $a Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia / $c Madison Marie Laughlin.",
+        "F502 ## $b M.S. $c University of Washington $d 2022",
+        "F650 #0 $a Conifers $x Effect of fires on $z Cascades (Or. and Wash.)",
+        "F650 #0 $a Conifers $x Regeneration $z Cascades (Or. and Wash.)",
+        "F650 #0 $a Forest regeneration $z Cascades (Or. and Wash.)",
+        "F653 0# $a Cascades",
+        "F653 0# $a Conifer",
+        "F653 0# $a Ecology",
+        "F653 0# $a Forestry",
+        "F653 0# $a Recovery",
+        "F653 0# $a Regeneration",
+        "F653 0# $a Resilience",
+        "F653 0# $a Wildfire",
+        "F655 #4 $a Theses $x Forestry.",
+        "F655 #7 $a Academic theses. $2 lcgft",
+        "F655 #7 $a Thèses et écrits académiques. $2 rvmgf $0 (CaQQLa)RVMGF-000001173",
+        "F655 #7 $a dissertations. $2 aat $0 (CStmoGRI)aatgf300028029" ;
+    rdaw:categoryOfWork.en <http://marc2rda.edu/fake/concept/aat/dissertations>,
+        <http://marc2rda.edu/fake/concept/lcgft/academictheses>,
+        <http://marc2rda.edu/fake/concept/rvmgf/thèsesetécritsacadémiques> ;
+    rdawd:academicDegree.en "M.S." ;
+    rdawd:categoryOfWork.en "Theses -- Forestry." ;
+    rdawd:degreeGrantingInstitution.en "University of Washington" ;
+    rdawd:dissertationOrThesisInformation.en "M.S.; University of Washington; 2022" ;
+    rdawd:identifierForWork.en "1423078359wor" ;
+    rdawd:subject.en "Cascades",
+        "Conifer",
+        "Ecology",
+        "Forestry",
+        "Recovery",
+        "Regeneration",
+        "Resilience",
+        "Wildfire" ;
+    rdawd:titleOfWork.en "Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia" ;
+    rdawd:yearDegreeGranted.en "2022" ;
+    rdawo:authorPerson.en <http://www.wikidata.org/entity/Q130014744> ;
+    rdawo:degreeSupervisor.en <http://www.wikidata.org/entity/Q100701057> ;
+    rdawo:subjectPlace.en <http://marc2rda.edu/fake/place/lcsh/cascadesorandwash> ;
+    rdaw:subject.en <http://marc2rda.edu/fake/concept/lcsh/coniferseffectoffiresoncascadesorandwash>,
+        <http://marc2rda.edu/fake/concept/lcsh/conifersregenerationcascadesorandwash>,
+        <http://marc2rda.edu/fake/concept/lcsh/effectoffiresoncascadesorandwash>,
+        <http://marc2rda.edu/fake/concept/lcsh/forestregenerationcascadesorandwash>,
+        <http://marc2rda.edu/fake/concept/lcsh/regenerationcascadesorandwash> .
+
+<http://marc2rda.edu/fake/concept/aat/dissertations> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/aat> ;
+    skos:prefLabel "dissertations." .
+
+<http://marc2rda.edu/fake/concept/lcgft/academictheses> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    skos:prefLabel "Academic theses." .
+
+<http://marc2rda.edu/fake/concept/lcsh/coniferseffectoffiresoncascadesorandwash> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Conifers -- Effect of fires on -- Cascades (Or. and Wash.)" .
+
+<http://marc2rda.edu/fake/concept/lcsh/conifersregenerationcascadesorandwash> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Conifers -- Regeneration -- Cascades (Or. and Wash.)" .
+
+<http://marc2rda.edu/fake/concept/lcsh/effectoffiresoncascadesorandwash> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Effect of fires on -- Cascades (Or. and Wash.)" .
+
+<http://marc2rda.edu/fake/concept/lcsh/forestregenerationcascadesorandwash> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Forest regeneration -- Cascades (Or. and Wash.)" .
+
+<http://marc2rda.edu/fake/concept/lcsh/regenerationcascadesorandwash> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Regeneration -- Cascades (Or. and Wash.)" .
+
+<http://marc2rda.edu/fake/concept/rvmgf/thèsesetécritsacadémiques> a skos:Concept ;
+    skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ;
+    skos:prefLabel "Thèses et écrits académiques." .
+
+<http://marc2rda.edu/fake/nom/d20e30> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "1773/49682" ;
+    rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/hdl> .
+
+<http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "Cascades (Or. and Wash.)" ;
+    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+
+<http://marc2rda.edu/fake/place/lcsh/cascadesorandwash> a <http://rdaregistry.info/Elements/c/Place.en> ;
+    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash> .
+
+<http://www.wikidata.org/entity/Q100701057> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    fake:marcfield "F700 1# $a Harvey, Brian J., $d 1981- $e degree supervisor. $1 http://www.wikidata.org/entity/Q100701057" ;
+    rdaad:accessPointForPerson.en "Harvey, Brian J., 1981-" .
+
+<http://www.wikidata.org/entity/Q130014744> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    fake:marcfield "F100 1# $a Laughlin, Madison Marie, $e author. $1 http://www.wikidata.org/entity/Q130014744" ;
+    rdaad:accessPointForPerson.en "Laughlin, Madison Marie" .
+

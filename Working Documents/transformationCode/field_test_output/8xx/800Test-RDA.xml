@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc8xx-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>8xx-test1</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc8xx-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc8xx-test1"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc8xx-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc8xx-test1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc8xx-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 8xx-test1
+F800 1# $a Frye, Northrop. $t Works. $f 1996 ; $v v. 13.
+F800 0# $a Aaron ben Elijah $d 1328?-1369 $t Keter Torah $0 294849860564 $1 https://w3id.org/haf/work/294849860564
+F800 0# $a :zoviet*france: $t A Duck in a Tree $2 musicb $1 https://musicbrainz.org/series/157d3a1f-a264-45f8-91cf-2c660c995306
+F800 1# $a Bradbrook, M. C. $q (Muriel Clara), $d 1909-1993. $t Collected papers of Muriel Bradbrook ; $v v. 2.
+F800 1# $a Mansfield, Katherine, $d 1888-1923. $t Works. $f 2012 ; $v v. 3.
+F800 1# $6 880-01 $a Haydn, Joseph, $d 1732-1809. $t Symphonies.
+F880 1# $6 800-01 $a Haydn, Joseph 880 $d 1732-1809. $t Symphonies 880.
+F880 1# $6 800-00 $a Arne, Thomas Augustine, $d 1710-1778. $t Concertos, $m keyboard instrument, orchestra. $n No. 3. $p Con Spirito,
+F800 3# $a Clark family $t Clark family made up work $0 faketest123 $1 musicbrainz.org/faketest123
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc8xx-test1"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#fryenorthropworks1996"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="https://w3id.org/haf/work/294849860564"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="https://musicbrainz.org/series/157d3a1f-a264-45f8-91cf-2c660c995306"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#bradbrookmcmurielclara1909-1993collectedpapersofmurielbradbrook"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#mansfieldkatherine1888-1923works2012"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#haydnjoseph1732-1809symphonies"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#arnethomasaugustine1710-1778concertoskeyboardinstrumentorchestrano3conspirito"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="musicbrainz.org/faketest123"/><!--rdawo:P10102 = is issue of-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc8xx-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc8xx-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/musicb/worNom#zoviet%2Afranceaduckinatree">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>:zoviet*france: A Duck in a Tree</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/musicb"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e28">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>:zoviet*france:</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/musicb"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#fryenorthrop">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Frye, Northrop</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Frye, Northrop</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#aaronbenelijah1328%3F-1369">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Aaron ben Elijah 1328?-1369</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Aaron ben Elijah</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1328?</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1369</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/musicb/age#zoviet%2Afrance">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e28"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>:zoviet*france:</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#bradbrookmcmurielclara1909-1993">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Bradbrook, M. C. (Muriel Clara), 1909-1993</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Bradbrook, M. C.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1909</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1993</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+      <rdaad:P50115>Muriel Clara</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#mansfieldkatherine1888-1923">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Mansfield, Katherine, 1888-1923</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Mansfield, Katherine</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1888</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1923</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#haydnjoseph1732-1809">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Haydn, Joseph, 1732-1809</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Haydn, Joseph 880 1732-1809</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Haydn, Joseph 880</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1732</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1809</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+      <rdaad:P50111>Haydn, Joseph</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1732</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1809</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#arnethomasaugustine1710-1778">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Arne, Thomas Augustine, 1710-1778</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Arne, Thomas Augustine</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1710</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1778</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#clarkfamily">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
+      <rdaad:P50376>Clark family</rdaad:P50376><!--rdaad:P50376 = has access point for family-->
+      <rdaad:P50061>Clark family</rdaad:P50061><!--rdaad:P50061 = has name of family-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#fryenorthropworks1996">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Frye, Northrop. Works. 1996 ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#fryenorthrop"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Works</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://w3id.org/haf/work/294849860564">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Aaron ben Elijah 1328?-1369 Keter Torah</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#aaronbenelijah1328%3F-1369"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10002>294849860564</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://musicbrainz.org/series/157d3a1f-a264-45f8-91cf-2c660c995306">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/musicb/worNom#zoviet%2Afranceaduckinatree"/><!--rdawo:P10331 = has authorized access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/musicb/age#zoviet%2Afrance"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#bradbrookmcmurielclara1909-1993collectedpapersofmurielbradbrook">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Bradbrook, M. C. (Muriel Clara), 1909-1993. Collected papers of Muriel Bradbrook ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#bradbrookmcmurielclara1909-1993"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Collected papers of Muriel Bradbrook ;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#mansfieldkatherine1888-1923works2012">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Mansfield, Katherine, 1888-1923. Works. 2012 ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#mansfieldkatherine1888-1923"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Works</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#haydnjoseph1732-1809symphonies">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Haydn, Joseph, 1732-1809. Symphonies</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10328>Haydn, Joseph 880 1732-1809. Symphonies 880</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Symphonies 880</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#haydnjoseph1732-1809"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Symphonies</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#arnethomasaugustine1710-1778concertoskeyboardinstrumentorchestrano3conspirito">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Arne, Thomas Augustine, 1710-1778. Concertos, keyboard instrument, orchestra. No. 3. Con Spirito</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#arnethomasaugustine1710-1778"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Concertos, No. 3. Con Spirito</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="musicbrainz.org/faketest123">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Clark family Clark family made up work</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10262 rdf:resource="http://marc2rda.edu/fake/age#clarkfamily"/><!--rdawo:P10262 = has subject family-->
+      <rdawd:P10002>faketest123</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+</rdf:RDF>

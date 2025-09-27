@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/028-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/028-test1exp"/>
+      <rdawd:P10002>028-test1wor</rdawd:P10002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/028-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/028-test1man"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/028-test1wor"/>
+      <rdaed:P20002>028-test1exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/028-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/028-test1exp"/>
+      <fake:marcfield>F028 00 $a 38876 $b Sony Classical</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/028-test1nom#d22e6"/>
+      <fake:marcfield>F028 00 $a 414 274-2 $b Decca $q (set)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/028-test1nom#d22e11"/>
+      <fake:marcfield>F028 22 $a U. E. 5904 $b Universal Edition</fake:marcfield>
+      <rdamo:P30066 rdf:resource="http://marc2rda.edu/fake/028-test1nom#d22e18"/>
+      <fake:marcfield>F028 32 $a HL48002596 $b H. Leonard</fake:marcfield>
+      <rdamo:P30065 rdf:resource="http://marc2rda.edu/fake/028-test1nom#d22e23"/>
+      <fake:marcfield>F028 22 $6 880-01 $a s 4871 k $b Kompozitor</fake:marcfield>
+      <rdamo:P30066 rdf:resource="http://marc2rda.edu/fake/028-test1nom#d22e28"/>
+      <fake:marcfield>F880 22 $6 028-01/(N $a С 4871 К $b Композитор</fake:marcfield>
+      <rdamo:P30066 rdf:resource="http://marc2rda.edu/fake/028-test1nom#d22e35"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/028-test1nom#d22e6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>38876</rdand:P80068>
+      <rdand:P80073>Sony Classical</rdand:P80073>
+      <rdand:P80078>Issue number</rdand:P80078>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/028-test1nom#d22e11">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>414 274-2</rdand:P80068>
+      <rdand:P80073>Decca</rdand:P80073>
+      <rdand:P80071>set</rdand:P80071>
+      <rdand:P80078>Issue number</rdand:P80078>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/028-test1nom#d22e18">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>U. E. 5904</rdand:P80068>
+      <rdand:P80073>Universal Edition</rdand:P80073>
+      <rdand:P80078>Plate number</rdand:P80078>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/028-test1nom#d22e23">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>HL48002596</rdand:P80068>
+      <rdand:P80073>H. Leonard</rdand:P80073>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/028-test1nom#d22e28">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>s 4871 k</rdand:P80068>
+      <rdand:P80073>Kompozitor</rdand:P80073>
+      <rdand:P80078>Plate number</rdand:P80078>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/028-test1nom#d22e35">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>С 4871 К</rdand:P80068>
+      <rdand:P80073>Композитор</rdand:P80073>
+      <rdand:P80078>Plate number</rdand:P80078>
+   </rdf:Description>
+</rdf:RDF>

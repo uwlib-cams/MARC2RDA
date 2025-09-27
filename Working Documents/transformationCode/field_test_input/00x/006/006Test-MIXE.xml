@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+    http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>04194cam a22006134a 4500</marc:leader>
+        <marc:controlfield tag="001">99108496980001452</marc:controlfield>
+        <marc:controlfield tag="005">20240128213016.0</marc:controlfield>
+        <marc:controlfield tag="006">m        m        </marc:controlfield>
+        <marc:controlfield tag="006">p     s           </marc:controlfield>
+        <marc:controlfield tag="007">ta</marc:controlfield>
+        <marc:controlfield tag="008">050110s2005    njua     b    001 0 eng  </marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">  2005041705</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="015" ind1=" " ind2=" ">
+            <marc:subfield code="a">GBA514343</marc:subfield>
+            <marc:subfield code="2">bnb</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="016" ind1="7" ind2=" ">
+            <marc:subfield code="a">BA76774939</marc:subfield>
+            <marc:subfield code="2">JP-ToKJK</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="016" ind1="7" ind2=" ">
+            <marc:subfield code="a">013113137</marc:subfield>
+            <marc:subfield code="2">Uk</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">60372279</marc:subfield>
+            <marc:subfield code="a">988800413</marc:subfield>
+            <marc:subfield code="a">989435443</marc:subfield>
+            <marc:subfield code="a">991539515</marc:subfield>
+            <marc:subfield code="a">994568620</marc:subfield>
+            <marc:subfield code="a">1004444140</marc:subfield>
+            <marc:subfield code="a">1015446867</marc:subfield>
+            <marc:subfield code="a">1017777775</marc:subfield>
+            <marc:subfield code="a">1023835751</marc:subfield>
+            <marc:subfield code="a">1049122117</marc:subfield>
+            <marc:subfield code="a">1062074668</marc:subfield>
+            <marc:subfield code="a">1086902569</marc:subfield>
+            <marc:subfield code="a">1105375681</marc:subfield>
+            <marc:subfield code="a">1107570388</marc:subfield>
+            <marc:subfield code="a">1109793172</marc:subfield>
+            <marc:subfield code="a">1111395831</marc:subfield>
+            <marc:subfield code="a">1111709409</marc:subfield>
+            <marc:subfield code="a">1111953726</marc:subfield>
+            <marc:subfield code="a">1118295721</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">047126847X</marc:subfield>
+            <marc:subfield code="q">(CLOTH/CD-ROM)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780471268475</marc:subfield>
+            <marc:subfield code="q">(CLOTH/CD-ROM)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="3" ind2=" ">
+            <marc:subfield code="a">9780471268475</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)57434146</marc:subfield>
+            <marc:subfield code="z">(OCoLC)60372279</marc:subfield>
+            <marc:subfield code="z">(OCoLC)988800413</marc:subfield>
+            <marc:subfield code="z">(OCoLC)989435443</marc:subfield>
+            <marc:subfield code="z">(OCoLC)991539515</marc:subfield>
+            <marc:subfield code="z">(OCoLC)994568620</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1004444140</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1015446867</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1017777775</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1023835751</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1049122117</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1062074668</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1086902569</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1105375681</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1107570388</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1109793172</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1111395831</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1111709409</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1111953726</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1118295721</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocm57434146 </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99150027050001451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99108496980001452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">DLC</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="c">DLC</marc:subfield>
+            <marc:subfield code="d">BAKER</marc:subfield>
+            <marc:subfield code="d">BTCTA</marc:subfield>
+            <marc:subfield code="d">PAU</marc:subfield>
+            <marc:subfield code="d">VP@</marc:subfield>
+            <marc:subfield code="d">YDXCP</marc:subfield>
+            <marc:subfield code="d">IG#</marc:subfield>
+            <marc:subfield code="d">TEU</marc:subfield>
+            <marc:subfield code="d">HEBIS</marc:subfield>
+            <marc:subfield code="d">DEBSZ</marc:subfield>
+            <marc:subfield code="d">ILU</marc:subfield>
+            <marc:subfield code="d">BDX</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">FC@</marc:subfield>
+            <marc:subfield code="d">I8M</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">Z5A</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">DHA</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">UKMGB</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">EUM</marc:subfield>
+            <marc:subfield code="d">NLW</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">MAIN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1="0" ind2="0">
+            <marc:subfield code="a">HG6046</marc:subfield>
+            <marc:subfield code="b">.K34 2005</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="0">
+            <marc:subfield code="a">332.64/4</marc:subfield>
+            <marc:subfield code="2">22</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Kaufman, Perry J.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">New trading systems and methods /</marc:subfield>
+            <marc:subfield code="c">Perry J. Kaufman.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">4th ed.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">Hoboken, N.J. :</marc:subfield>
+            <marc:subfield code="b">John Wiley &amp; Sons,</marc:subfield>
+            <marc:subfield code="c">©2005.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">xxi, 1174 pages :</marc:subfield>
+            <marc:subfield code="b">illustrations ;</marc:subfield>
+            <marc:subfield code="c">26 cm +</marc:subfield>
+            <marc:subfield code="e">1 CD-ROM (4 3/4 in.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="490" ind1="1" ind2=" ">
+            <marc:subfield code="a">The Wiley trading series</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a"
+                >Accompanying CD-ROM contains ... "TradeStation code and Excel spreadsheets."--Jacket.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Revised edition of: Trading systems and methods, c1998.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a"
+                >Includes bibliographical references (pages 1137-1152) and index.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2="0">
+            <marc:subfield code="g">Ch. 1.</marc:subfield>
+            <marc:subfield code="t">Introduction --</marc:subfield>
+            <marc:subfield code="g">Ch. 2.</marc:subfield>
+            <marc:subfield code="t">Basic concepts --</marc:subfield>
+            <marc:subfield code="g">Ch. 3.</marc:subfield>
+            <marc:subfield code="t">Charting --</marc:subfield>
+            <marc:subfield code="g">Ch. 4.</marc:subfield>
+            <marc:subfield code="t">Charting systems and techniques --</marc:subfield>
+            <marc:subfield code="g">Ch. 5.</marc:subfield>
+            <marc:subfield code="t">Event-driven trends --</marc:subfield>
+            <marc:subfield code="g">Ch. 6.</marc:subfield>
+            <marc:subfield code="t">Regression analysis --</marc:subfield>
+            <marc:subfield code="g">Ch. 7.</marc:subfield>
+            <marc:subfield code="t">Time-based trend calculations --</marc:subfield>
+            <marc:subfield code="g">Ch. 8.</marc:subfield>
+            <marc:subfield code="t">Time-based trend systems --</marc:subfield>
+            <marc:subfield code="g">Ch. 9.</marc:subfield>
+            <marc:subfield code="t">Momentum and oscillators --</marc:subfield>
+            <marc:subfield code="g">Ch. 10.</marc:subfield>
+            <marc:subfield code="t">Seasonality --</marc:subfield>
+            <marc:subfield code="g">Ch. 11.</marc:subfield>
+            <marc:subfield code="t">Cycle analysis --</marc:subfield>
+            <marc:subfield code="g">Ch. 12.</marc:subfield>
+            <marc:subfield code="t">Volume, open interest, and breadth --</marc:subfield>
+            <marc:subfield code="g">Ch. 13.</marc:subfield>
+            <marc:subfield code="t">Spreads and arbitrage --</marc:subfield>
+            <marc:subfield code="g">Ch. 14.</marc:subfield>
+            <marc:subfield code="t">Behavioral techniques --</marc:subfield>
+            <marc:subfield code="g">Ch. 15.</marc:subfield>
+            <marc:subfield code="t">Pattern recognition --</marc:subfield>
+            <marc:subfield code="g">Ch. 16.</marc:subfield>
+            <marc:subfield code="t">Day trading --</marc:subfield>
+            <marc:subfield code="g">Ch. 17.</marc:subfield>
+            <marc:subfield code="t">Adaptive techniques --</marc:subfield>
+            <marc:subfield code="g">Ch. 18.</marc:subfield>
+            <marc:subfield code="t">Price distribution systems --</marc:subfield>
+            <marc:subfield code="g">Ch. 19.</marc:subfield>
+            <marc:subfield code="t">Multiple time frames --</marc:subfield>
+            <marc:subfield code="g">Ch. 20.</marc:subfield>
+            <marc:subfield code="t">Advanced techniques --</marc:subfield>
+            <marc:subfield code="g">Ch. 21.</marc:subfield>
+            <marc:subfield code="t">System testing --</marc:subfield>
+            <marc:subfield code="g">Ch. 22.</marc:subfield>
+            <marc:subfield code="t">Practical considerations.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="506" ind1=" " ind2=" ">
+            <marc:subfield code="a"
+                >Accompanying disc is available for use on a standalone workstation within the library for single users. Disc will require installation.</marc:subfield>
+            <marc:subfield code="5">StEdNL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Commodity exchanges</marc:subfield>
+            <marc:subfield code="x">Statistical methods.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Bourses de marchandises</marc:subfield>
+            <marc:subfield code="x">Méthodes statistiques.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Commodity exchanges</marc:subfield>
+            <marc:subfield code="x">Statistical methods.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00869736</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Wertpapierhandel</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Börsenhandel</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">New trading systems and methods (Text)</marc:subfield>
+            <marc:subfield code="1"
+                >https://id.oclc.org/worldcat/entity/E39PCGfWXd4KPfJt6hxpJgDmFq</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Kaufman, Perry J.</marc:subfield>
+            <marc:subfield code="t">Trading systems and methods.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">Wiley trading series.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="1">
+            <marc:subfield code="3">Table of contents</marc:subfield>
+            <marc:subfield code="u"
+                >http://catdir.loc.gov/catdir/enhancements/fy0623/2005041705-t.html</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="1">
+            <marc:subfield code="3">Table of contents</marc:subfield>
+            <marc:subfield code="u"
+                >http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?application=DIGITOOL-3&amp;owner=resourcediscovery&amp;custom_att_2=simple_viewer&amp;user=GUEST&amp;pid=1618198</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="2">
+            <marc:subfield code="3">Contributor biographical information</marc:subfield>
+            <marc:subfield code="u"
+                >http://catdir.loc.gov/catdir/enhancements/fy0623/2005041705-b.html</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="2">
+            <marc:subfield code="3">Publisher description</marc:subfield>
+            <marc:subfield code="u"
+                >http://catdir.loc.gov/catdir/enhancements/fy0623/2005041705-d.html</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2=" ">
+            <marc:subfield code="3">Cover</marc:subfield>
+            <marc:subfield code="q">image/jpeg</marc:subfield>
+            <marc:subfield code="u">http://swbplus.bsz-bw.de/bsz117524565cov.htm</marc:subfield>
+            <marc:subfield code="v">20090323062133</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="973" ind1=" " ind2=" ">
+            <marc:subfield code="a">pbooks</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="977" ind1=" " ind2=" ">
+            <marc:subfield code="a">PromptCat</marc:subfield>
+            <marc:subfield code="9">LOCAL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="978" ind1=" " ind2=" ">
+            <marc:subfield code="a">.b53119083</marc:subfield>
+            <marc:subfield code="9">LOCAL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="980" ind1=" " ind2=" ">
+            <marc:subfield code="a">050406</marc:subfield>
+            <marc:subfield code="b">12500</marc:subfield>
+            <marc:subfield code="d">815</marc:subfield>
+            <marc:subfield code="e">11128</marc:subfield>
+            <marc:subfield code="f">574192</marc:subfield>
+            <marc:subfield code="g">1</marc:subfield>
+            <marc:subfield code="9">LOCAL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="994" ind1=" " ind2=" ">
+            <marc:subfield code="a">92</marc:subfield>
+            <marc:subfield code="b">OCACL</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

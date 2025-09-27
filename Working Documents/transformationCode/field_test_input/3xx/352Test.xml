@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">352-test1</marc:controlfield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="a">Vector.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="a">Point :</marc:subfield>
+            <marc:subfield code="b">Entity point.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="a">Vector :</marc:subfield>
+            <marc:subfield code="b">Network chain, non-planar graph.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="a">Raster :</marc:subfield>
+            <marc:subfield code="b">pixel.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="a">Vector :</marc:subfield>
+            <marc:subfield code="b">GT-polygon composed of chains</marc:subfield>
+            <marc:subfield code="c">(70).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="a">Vector :</marc:subfield>
+            <marc:subfield code="i">100 year floodplain boundary, 500 year floodplain boundary.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="a">Vector :</marc:subfield>
+            <marc:subfield code="b">Point</marc:subfield>
+            <marc:subfield code="c">(13671),</marc:subfield>
+            <marc:subfield code="b">string</marc:subfield>
+            <marc:subfield code="c">(20171),</marc:subfield>
+            <marc:subfield code="b">GT-polygon composed of chains</marc:subfield>
+            <marc:subfield code="c">(13672) ;</marc:subfield>
+            <marc:subfield code="q">ARC/INFO export.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="a">Raster :</marc:subfield>
+            <marc:subfield code="b">pixel</marc:subfield>
+            <marc:subfield code="d">(5,000 x</marc:subfield>
+            <marc:subfield code="e">5,000) ;</marc:subfield>
+            <marc:subfield code="q">TIFF.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="a">Vector : </marc:subfield>
+            <marc:subfield code="b">node</marc:subfield>
+            <marc:subfield code="c">(3,252) ;</marc:subfield>
+            <marc:subfield code="g">2.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="9">DIGITAL GRAPHIC REPRESENTATION (R) </marc:subfield>
+            <marc:subfield code="a">Direct reference method (NR) </marc:subfield>
+            <marc:subfield code="a">Direct reference method (NR) </marc:subfield>
+            <marc:subfield code="b">Object type (R) </marc:subfield>
+            <marc:subfield code="b">Object type (R) </marc:subfield>
+            <marc:subfield code="c">Object count (R) </marc:subfield>
+            <marc:subfield code="c">Object count (R) </marc:subfield>
+            <marc:subfield code="d">Row count (NR) </marc:subfield>
+            <marc:subfield code="d">Row count (NR) </marc:subfield>
+            <marc:subfield code="e">Column count (NR) </marc:subfield>
+            <marc:subfield code="e">Column count (NR) </marc:subfield>
+            <marc:subfield code="f">Vertical count (NR) </marc:subfield>
+            <marc:subfield code="f">Vertical count (NR) </marc:subfield>
+            <marc:subfield code="g">VPF topology level (NR) </marc:subfield>
+            <marc:subfield code="g">VPF topology level (NR) </marc:subfield>
+            <marc:subfield code="i">Indirect reference description (NR) </marc:subfield>
+            <marc:subfield code="i">Indirect reference description (NR) </marc:subfield>
+            <marc:subfield code="q">Format of the digital image (R) </marc:subfield>
+            <marc:subfield code="q">Format of the digital image (R) </marc:subfield>   
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <!-- subfield a -->
+        <marc:controlfield tag="001">586-test</marc:controlfield>
+		<marc:datafield tag="586" ind1=" " ind2=" ">
+		    <marc:subfield code="a">Caldecott Medal, 1979</marc:subfield>  
+		</marc:datafield>
+        <!-- subfield a and 3 -->
+        <marc:datafield tag="586" ind1=" " ind2=" "> 
+            <marc:subfield code="3">How I learned to drive:</marc:subfield>
+            <marc:subfield code="a">Pulitzer Prize, 1998, Drama</marc:subfield>
+        </marc:datafield>
+        
+        <!-- linked 880 -->
+        <marc:datafield tag="586" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-07</marc:subfield>
+            <marc:subfield code="a">Rong huo Jin ma jiang zui jia ju qing pian, zui jia nan zhu jiao, zui jia nan pei jiao.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">586-07/$1</marc:subfield>
+            <marc:subfield code="a">榮獲金馬獎最佳劇情片, 最佳男主角, 最佳男配角.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

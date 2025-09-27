@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">380-test1</marc:controlfield>
+        <!-- 380 with http 0 and 1 -->
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Television programs</marc:subfield>
+            <marc:subfield code="0">http://id.loc.gov/authorities/genreForms/gf2011026673</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q15416</marc:subfield>
+        </marc:datafield>
+        <!-- 380 with 2 -->
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">Television programs</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">380-01</marc:subfield>
+            <marc:subfield code="a">Television programs 880</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <!-- 380 with not http 0, 1, and 2 -->
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Television programs</marc:subfield>
+			<marc:subfield code="0">(DLC)gf2011026673</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q15416</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <!-- 380 with 2 -->
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Open educational resources</marc:subfield>
+            <marc:subfield code="2">lcsh</marc:subfield>
+            <marc:subfield code="3">Introduction</marc:subfield>
+        </marc:datafield>
+        <!-- 380 with 2 -->
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Fiction</marc:subfield>
+            <marc:subfield code="2">marcgt</marc:subfield>
+        </marc:datafield>
+        <!-- 380 just a -->
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Fiction</marc:subfield>
+        </marc:datafield>
+        <!-- 380 with 2 no match -->
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Some form of work</marc:subfield>
+            <marc:subfield code="2">abcde</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="9">FORM OF WORK (R) </marc:subfield>
+            <marc:subfield code="a">Form of work (R) </marc:subfield>
+            <marc:subfield code="a">Form of work (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="2">Source of term (NR) </marc:subfield>
+            <marc:subfield code="2">Source of term (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

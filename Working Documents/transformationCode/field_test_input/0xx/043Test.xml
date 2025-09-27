@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">043-test1</marc:controlfield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">n-usm--</marc:subfield>
+			<marc:subfield code="b">s-bl-ba</marc:subfield>
+			<marc:subfield code="2">cagraq</marc:subfield>
+			<marc:subfield code="b">e-fr---</marc:subfield>
+			<marc:subfield code="2">marcgac</marc:subfield>
+			<marc:subfield code="c">us</marc:subfield>
+            <marc:subfield code="0">http://id.loc.gov/vocabulary/geographicAreas/n-usm</marc:subfield>
+            <marc:subfield code="0">https://id.loc.gov/authorities/names/n78095330</marc:subfield>
+            <marc:subfield code="0">test</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/wiki/Q30</marc:subfield>
+            <marc:subfield code="1">http://id.loc.gov/rwo/agents/n80125931</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">e-uk--- ;</marc:subfield>
+            <marc:subfield code="a">u-at---</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

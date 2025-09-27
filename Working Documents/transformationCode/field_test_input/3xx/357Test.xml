@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">357-test1</marc:controlfield>
+        <marc:datafield tag="357" ind1=" " ind2=" ">
+            <marc:subfield code="a">ORCON</marc:subfield>
+            <marc:subfield code="b">CIA</marc:subfield>
+            <marc:subfield code="c">DIA</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">357-test2</marc:controlfield>
+        <marc:datafield tag="357" ind1=" " ind2=" ">
+            <marc:subfield code="a">PROPIN</marc:subfield>
+            <marc:subfield code="b">Lockport Aviation</marc:subfield>
+            <marc:subfield code="c">Northfield Avionics Project 11234</marc:subfield>
+            <marc:subfield code="c">Air Frames Inc., Project 11234 Support Team</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">357-test3</marc:controlfield>
+        <marc:datafield tag="357" ind1=" " ind2=" ">
+            <marc:subfield code="a">ORCON</marc:subfield>
+            <marc:subfield code="b">CIA</marc:subfield>
+            <marc:subfield code="b">ITAC</marc:subfield>
+            <marc:subfield code="c">CIA</marc:subfield>
+            <marc:subfield code="c">DIA</marc:subfield>
+            <marc:subfield code="c">UKIA</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">357-test4</marc:controlfield>
+        <marc:datafield tag="357" ind1=" " ind2=" ">
+            <marc:subfield code="a">ORCON</marc:subfield>
+            <marc:subfield code="b">ITAC</marc:subfield>
+            <marc:subfield code="c">313 th MIB</marc:subfield>
+            <marc:subfield code="c">Distribution List B-32-91</marc:subfield>
+            <marc:subfield code="g">Must be returned to originator after 30 days</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="357" ind1=" " ind2=" ">
+            <marc:subfield code="9">ORIGINATOR DISSEMINATION CONTROL (NR) </marc:subfield>
+            <marc:subfield code="a">Originator control term (NR) </marc:subfield>
+            <marc:subfield code="a">Originator control term (NR) </marc:subfield>
+            <marc:subfield code="b">Originating agency (R) </marc:subfield>
+            <marc:subfield code="b">Originating agency (R) </marc:subfield>
+            <marc:subfield code="c">Authorized recipients of material (R) </marc:subfield>
+            <marc:subfield code="c">Authorized recipients of material (R) </marc:subfield>
+            <marc:subfield code="g">Other restrictions (R) </marc:subfield>
+            <marc:subfield code="g">Other restrictions (R) </marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

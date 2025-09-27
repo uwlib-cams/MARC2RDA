@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">086-test</marc:controlfield>
+                <marc:datafield tag="086" ind1="0" ind2=" ">
+                    <marc:subfield code="a">Y 4.SE 2:EM 3/5</marc:subfield>
+                </marc:datafield>
+        
+                <marc:datafield tag="086" ind1=" " ind2=" ">
+                    <marc:subfield code="a">123-ABC</marc:subfield>
+                    <marc:subfield code="z">test z</marc:subfield>
+                    <marc:subfield code="2">ordocs</marc:subfield>
+                </marc:datafield>
+ 
+                <marc:datafield tag="086" ind1="1" ind2=" ">
+                    <marc:subfield code="a">CA 123.45</marc:subfield>
+                    <marc:subfield code="a">CA 234.56</marc:subfield>
+                    <marc:subfield code="z">CA 543.21</marc:subfield>
+                </marc:datafield>
+        
+                <marc:datafield tag="086" ind1=" " ind2=" ">
+                    <marc:subfield code="a">789-OTHER</marc:subfield>
+                    <marc:subfield code="2">ccpgq</marc:subfield>
+                </marc:datafield>
+    </marc:record>
+        </marc:collection>
+        

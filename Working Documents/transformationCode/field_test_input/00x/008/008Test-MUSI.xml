@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+    http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>04439cjm a2200949 a 4500</marc:leader>
+        <marc:controlfield tag="001">99127343280001452</marc:controlfield>
+        <marc:controlfield tag="005">20240818213015.0</marc:controlfield>
+        <marc:controlfield tag="006">m        d        </marc:controlfield>
+        <marc:controlfield tag="007">sd fsngnnmmned</marc:controlfield>
+        <marc:controlfield tag="008">060526s2006    enkppnn  fik      a und d</marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">  2006579341</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">276638008</marc:subfield>
+            <marc:subfield code="a">1015718650</marc:subfield>
+            <marc:subfield code="a">1051623659</marc:subfield>
+            <marc:subfield code="a">1052693924</marc:subfield>
+            <marc:subfield code="a">1152848152</marc:subfield>
+            <marc:subfield code="a">1229604120</marc:subfield>
+            <marc:subfield code="a">1230273230</marc:subfield>
+            <marc:subfield code="a">1276584422</marc:subfield>
+            <marc:subfield code="a">1276680356</marc:subfield>
+            <marc:subfield code="a">1382846735</marc:subfield>
+            <marc:subfield code="a">1419547055</marc:subfield>
+            <marc:subfield code="a">1427286554</marc:subfield>
+            <marc:subfield code="a">1432931006</marc:subfield>
+            <marc:subfield code="a">1442214533</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">1843537311</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9781843537311</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="1" ind2=" ">
+            <marc:subfield code="a">605633115420</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="3" ind2=" ">
+            <marc:subfield code="a">9781843537311</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="028" ind1="0" ind2="2">
+            <marc:subfield code="a">RGNET1154CD</marc:subfield>
+            <marc:subfield code="b">World Music Network</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)64588945</marc:subfield>
+            <marc:subfield code="z">(OCoLC)276638008</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1015718650</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1051623659</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1052693924</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1152848152</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1229604120</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1230273230</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1276584422</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1276680356</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1382846735</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1419547055</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1427286554</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1432931006</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1442214533</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocm64588945 </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99140765620001451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99127343280001452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">IKG</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="c">DLC</marc:subfield>
+            <marc:subfield code="d">IKG</marc:subfield>
+            <marc:subfield code="d">BTCTA</marc:subfield>
+            <marc:subfield code="d">VP@</marc:subfield>
+            <marc:subfield code="d">TEF</marc:subfield>
+            <marc:subfield code="d">TXA</marc:subfield>
+            <marc:subfield code="d">ZVM</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">TYC</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">WRS</marc:subfield>
+            <marc:subfield code="d">SNN</marc:subfield>
+            <marc:subfield code="d">JDP</marc:subfield>
+            <marc:subfield code="d">NJT</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">AJB</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">BRG</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="041" ind1="0" ind2=" ">
+            <marc:subfield code="g">eng</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">lccopycat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">e-uk---</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">MAIN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1="0" ind2="0">
+            <marc:subfield code="a">SDB 40794</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">781.6291421</marc:subfield>
+            <marc:subfield code="2">22</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="4">
+            <marc:subfield code="a">The Rough guide to Bhangra dance.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="246" ind1="3" ind2="0">
+            <marc:subfield code="a">Bhangra dance</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">London :</marc:subfield>
+            <marc:subfield code="b">World Music Network,</marc:subfield>
+            <marc:subfield code="c">℗2006.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 audio disc :</marc:subfield>
+            <marc:subfield code="b">digital ;</marc:subfield>
+            <marc:subfield code="c">4 3/4 in.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">performed music</marc:subfield>
+            <marc:subfield code="b">prm</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio</marc:subfield>
+            <marc:subfield code="b">s</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio disc</marc:subfield>
+            <marc:subfield code="b">sd</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="490" ind1="1" ind2=" ">
+            <marc:subfield code="a">Rough guides</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="511" ind1="0" ind2=" ">
+            <marc:subfield code="a">Various artists.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a"
+                >"From its humble beginnings as a folk dance in northwest India, the British-Asian phenomenon of bhangra has incorporated Western instruments ... and evolved into the energetic and highly popular club and dance music that it is today."</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Enhanced compact disc.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Notes on the music and performers in booklet.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="546" ind1=" " ind2=" ">
+            <marc:subfield code="a">In Panjabi.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2="0">
+            <marc:subfield code="t">Rail gaddi</marc:subfield>
+            <marc:subfield code="r">(Four of a Kind) --</marc:subfield>
+            <marc:subfield code="t">Dil tera</marc:subfield>
+            <marc:subfield code="r">(Soni Pabla) --</marc:subfield>
+            <marc:subfield code="t">Captain bhangre da</marc:subfield>
+            <marc:subfield code="r">(Daljit Mattu &amp; Ravi Bal) --</marc:subfield>
+            <marc:subfield code="t">Dil nai lagda</marc:subfield>
+            <marc:subfield code="r">(Aman Hayer) --</marc:subfield>
+            <marc:subfield code="t">Gal sun</marc:subfield>
+            <marc:subfield code="r">(Partners in Rhyme) --</marc:subfield>
+            <marc:subfield code="t">Sajna</marc:subfield>
+            <marc:subfield code="r">(Veronica) --</marc:subfield>
+            <marc:subfield code="t">Chal hun (Get up fix)</marc:subfield>
+            <marc:subfield code="r">(Malkit Singh) --</marc:subfield>
+            <marc:subfield code="t">Billo raneeay</marc:subfield>
+            <marc:subfield code="r">(Binder) --</marc:subfield>
+            <marc:subfield code="t">Akheer</marc:subfield>
+            <marc:subfield code="r">(Juggy D) --</marc:subfield>
+            <marc:subfield code="t">Paisa</marc:subfield>
+            <marc:subfield code="r">(Manak-e) --</marc:subfield>
+            <marc:subfield code="t">Mehndi/</marc:subfield>
+            <marc:subfield code="t">Madhorama pencha</marc:subfield>
+            <marc:subfield code="r">(Madan Bata Sindhu) --</marc:subfield>
+            <marc:subfield code="t">Lakh hilda</marc:subfield>
+            <marc:subfield code="r">(Indy Sagu with Manak-e) --</marc:subfield>
+            <marc:subfield code="t">Taweet</marc:subfield>
+            <marc:subfield code="r">(Daljit Mattu) --</marc:subfield>
+            <marc:subfield code="t">Apna sangeet</marc:subfield>
+            <marc:subfield code="r">(Taz) --</marc:subfield>
+            <marc:subfield code="t">Nain preeto de</marc:subfield>
+            <marc:subfield code="r">(Panjabi by Nature).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="508" ind1=" " ind2=" ">
+            <marc:subfield code="a">Compiled by D.J. Ritu.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Bhangra (Music)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">East Indians</marc:subfield>
+            <marc:subfield code="z">Great Britain</marc:subfield>
+            <marc:subfield code="v">Music.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Popular music</marc:subfield>
+            <marc:subfield code="z">Great Britain</marc:subfield>
+            <marc:subfield code="y">2001-2010.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">World music.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Indiens (Habitants de l'Inde)</marc:subfield>
+            <marc:subfield code="z">Grande-Bretagne</marc:subfield>
+            <marc:subfield code="v">Musique.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Musique populaire</marc:subfield>
+            <marc:subfield code="z">Grande-Bretagne</marc:subfield>
+            <marc:subfield code="y">2001-2010.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Musiques du monde.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Bhangra (Music)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00831115</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">East Indians.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00901060</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Popular music.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01071422</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">World music.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01181375</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Great Britain.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01204623</marc:subfield>
+            <marc:subfield code="1"
+                >https://id.oclc.org/worldcat/entity/E39PBJdmp7p3cx8hpmJ8HvmTpP</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Bhangra (Music)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01920025</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Music.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01423855</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Bhangra (Music)</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Bhangra.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="648" ind1=" " ind2="7">
+            <marc:subfield code="a">2001 - 2010</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Binder (Musical group)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Madan Bata Sindhu (Musical group)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2="2">
+            <marc:subfield code="a">Four of a kind (Musical group : Great Britain).</marc:subfield>
+            <marc:subfield code="t">Rail gaddi.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Partners in Rhyme (Musical group).</marc:subfield>
+            <marc:subfield code="t">Gal sun.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Panjabi By Nature (Musical group).</marc:subfield>
+            <marc:subfield code="t">Nain preeto de.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="740" ind1="0" ind2="2">
+            <marc:subfield code="a">Billo raneeay.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="740" ind1="0" ind2="2">
+            <marc:subfield code="a">Paisa.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="740" ind1="0" ind2="2">
+            <marc:subfield code="a">Apna sangeet.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Pabla, Soni.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Mattu, Daljit.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Rich, Rishi.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="0" ind2=" ">
+            <marc:subfield code="a">Manak-e.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Taz.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2="2">
+            <marc:subfield code="a">Shinda, Sukhshinder.</marc:subfield>
+            <marc:subfield code="t">Dil tera.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Bal, Ravi.</marc:subfield>
+            <marc:subfield code="t">Captain bhangre da.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2="2">
+            <marc:subfield code="a">Hayer, Aman.</marc:subfield>
+            <marc:subfield code="t">Dil nai lagda.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="0" ind2="2">
+            <marc:subfield code="a">Veronica</marc:subfield>
+            <marc:subfield code="q">(Veronica Mehta).</marc:subfield>
+            <marc:subfield code="t">Sajna.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Singh, Malkit.</marc:subfield>
+            <marc:subfield code="t">Chal hun.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="0" ind2="2">
+            <marc:subfield code="a">Juggy D.</marc:subfield>
+            <marc:subfield code="t">Akheer.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2="2">
+            <marc:subfield code="a">Danna, Mychael.</marc:subfield>
+            <marc:subfield code="t">Mehndi madhorama pencha.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Sagu, Indy.</marc:subfield>
+            <marc:subfield code="t">Lakh hilda.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">Music rough guide.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="7" ind2=" ">
+            <marc:subfield code="3">View cover art</marc:subfield>
+            <marc:subfield code="u">http://midwesttapes.com/images/movies/ryk115420c.gif</marc:subfield>
+            <marc:subfield code="2">http</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="973" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio_CDs</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="978" ind1=" " ind2=" ">
+            <marc:subfield code="a">.b56871247</marc:subfield>
+            <marc:subfield code="9">LOCAL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="994" ind1=" " ind2=" ">
+            <marc:subfield code="a">92</marc:subfield>
+            <marc:subfield code="b">OCACL</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

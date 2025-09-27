@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+    http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>02350nam a22003851a 4500</marc:leader>
+        <marc:controlfield tag="001">99162163075701452</marc:controlfield>
+        <marc:controlfield tag="005">20220305111018.0</marc:controlfield>
+        <marc:controlfield tag="006">m        d        </marc:controlfield>
+        <marc:controlfield tag="007">cr un ---uuuua</marc:controlfield>
+        <marc:controlfield tag="008">180828s2017    enk     ob    001 0 eng d</marc:controlfield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9781474203937 (online)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780857857408 (paperback)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(UtOrBLW)bpp09262094</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99327240954301451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99162163075701452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">UtOrBLW</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="c">UtOrBLW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">e-uk---</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1="1" ind2="0">
+            <marc:subfield code="a">HN400.C6</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="0">
+            <marc:subfield code="a">307.1/4120941</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Marsden, Terry,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Agri-food and rural development</marc:subfield>
+            <marc:subfield code="h">[electronic resource] :</marc:subfield>
+            <marc:subfield code="b">sustainable place-making /</marc:subfield>
+            <marc:subfield code="c">Terry Marsden.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">London ;</marc:subfield>
+            <marc:subfield code="a">New York, NY :</marc:subfield>
+            <marc:subfield code="b">Bloomsbury Academic,</marc:subfield>
+            <marc:subfield code="c">2017.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="490" ind1="0" ind2=" ">
+            <marc:subfield code="a">Contemporary food studies: economy, culture and politics,</marc:subfield>
+            <marc:subfield code="x">2058-1807</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references and index.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2=" ">
+            <marc:subfield code="a">Governing for agri-food security and rural sustainability: antecedents and transitions -- Contested sustainabilities in agri-food and rural development: exploring sustainable pathways of green growth and the bio-economy in the UK -- Socialising and spatialising the bio-economy: reconstructing natural powers -- An alternative model: exploring the 'new rural paradigm' and the rural eco-economy in Europe -- Evolving webs of agri-food and rural development in the UK: the case of Devon and Shetland -- Towards a sustainability science and place-making for rural and agri-food development.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1=" " ind2=" ">
+            <marc:subfield code="a">Description based on print version record and CIP data provided by publisher; resource not viewed.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="530" ind1=" " ind2=" ">
+            <marc:subfield code="a">Also issued in print.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="533" ind1=" " ind2=" ">
+            <marc:subfield code="a">Electronic reproduction.</marc:subfield>
+            <marc:subfield code="b">London :</marc:subfield>
+            <marc:subfield code="c">Bloomsbury Publishing,</marc:subfield>
+            <marc:subfield code="d">2014.</marc:subfield>
+            <marc:subfield code="n">Available via World Wide Web.</marc:subfield>
+            <marc:subfield code="n">Access limited by licensing agreement.</marc:subfield>
+            <marc:subfield code="7">s2014    dcunns</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Rural development</marc:subfield>
+            <marc:subfield code="z">Great Britain.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sustainable agriculture</marc:subfield>
+            <marc:subfield code="z">Great Britain.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">Print version:</marc:subfield>
+            <marc:subfield code="a">Marsden, Terry, author.</marc:subfield>
+            <marc:subfield code="t">Agri-food and rural development</marc:subfield>
+            <marc:subfield code="d">London ; New York, NY : Bloomsbury Academic, 2017</marc:subfield>
+            <marc:subfield code="z">9780857857408</marc:subfield>
+            <marc:subfield code="w">(DLC)  2016057193</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2=" ">
+            <marc:subfield code="a">Original</marc:subfield>
+            <marc:subfield code="w">(DLC)    2017022313</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">http://dx.doi.org/10.5040/9781474203937?locatt=label:secondary_bloomsburyFoodLibrary</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="975" ind1=" " ind2=" ">
+            <marc:subfield code="a">Bloomsbury Food Library</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>02049cam a2200421 i 4500</marc:leader>
+        <marc:controlfield tag="001">99139526700001452</marc:controlfield>
+        <marc:controlfield tag="005">20240120213021.0</marc:controlfield>
+        <marc:controlfield tag="008">810402nuuuuuuuuir af   rbs  f000 0 perod</marc:controlfield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)07298824</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocm07298824 </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99120402460001451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99139526700001452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">HUL</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">a-ir---</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">MAIN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">HC475</marc:subfield>
+            <marc:subfield code="b">.M35 1976a</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="066" ind1=" " ind2=" ">
+            <marc:subfield code="c">(3</marc:subfield>
+            <marc:subfield code="c">(4</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="110" ind1="2" ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">Markaz-i Āmār-i Īrān.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="2" ind2=" ">
+            <marc:subfield code="6">110-01/(3/r</marc:subfield>
+            <marc:subfield code="a">مرکز آمار ايران.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="6">880-02</marc:subfield>
+            <marc:subfield code="a">Bayān-i āmārī-i taḥavvulāt-i iqtiṣādī va ijtimāʻī-i Īrān dar dawrān-i puriftikhār-i dūdmān-i Pahlavī, 2535 /</marc:subfield>
+            <marc:subfield code="c">Sāzmān-i Barnāmah va Būdjih, Markaz-i Āmār-i Īrān.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="1" ind2="0">
+            <marc:subfield code="6">245-02/(3/r</marc:subfield>
+            <marc:subfield code="a">بىان آمارى تحولات اقتصادى و اجتماعى ايران در دوران پرافتخار دودمان پهلوى، 2535 /</marc:subfield>
+            <marc:subfield code="c">سازمان برنامه و بودجه، مرکز آمار ايران.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-03</marc:subfield>
+            <marc:subfield code="a">[Tehran] :</marc:subfield>
+            <marc:subfield code="b">Markaz-i Āmār-i Īrān,</marc:subfield>
+            <marc:subfield code="c">2535 [1976]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">260-03/(3/r</marc:subfield>
+            <marc:subfield code="a">[تهرن] :</marc:subfield>
+            <marc:subfield code="b">مرکز آمار ايران،</marc:subfield>
+            <marc:subfield code="c">2535 [1976]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">11, 338 pages, 41 unnumbered leaves of plates :</marc:subfield>
+            <marc:subfield code="b">color graphs ;</marc:subfield>
+            <marc:subfield code="c">24 cm</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="533" ind1=" " ind2=" ">
+            <marc:subfield code="a">Print reproduction.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references (pages 333-338).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Economic history.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00901974</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="0">
+            <marc:subfield code="a">Iran</marc:subfield>
+            <marc:subfield code="x">Economic conditions</marc:subfield>
+            <marc:subfield code="y">1945-1979.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="0">
+            <marc:subfield code="a">Iran</marc:subfield>
+            <marc:subfield code="v">Statistics.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="6">
+            <marc:subfield code="a">Iran</marc:subfield>
+            <marc:subfield code="x">Conditions économiques</marc:subfield>
+            <marc:subfield code="y">1945-1979.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Iran.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01204889</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJtrYvcVTwChrDqytBvJXd</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Statistics.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01423727</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="648" ind1=" " ind2="7">
+            <marc:subfield code="a">1945-1979</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="973" ind1=" " ind2=" ">
+            <marc:subfield code="a">pbooks</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="978" ind1=" " ind2=" ">
+            <marc:subfield code="a">.b14011426</marc:subfield>
+            <marc:subfield code="9">LOCAL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="994" ind1=" " ind2=" ">
+            <marc:subfield code="a">92</marc:subfield>
+            <marc:subfield code="b">OCACL</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

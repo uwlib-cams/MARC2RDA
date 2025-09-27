@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99152167410001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>99152167410001452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F006 g141            vl</fake:marcfield>
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/><!--rdaw:P10222 = has nature of content-->
+      <fake:marcfield>F006 innnn        z| | </fake:marcfield>
+      <fake:marcfield>F008 040318s2004    nyu    j b    001 0 eng  </fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F050 00 $a PN6101 $b .I56 2004</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/pn6101"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F245 03 $a An invitation to poetry : $b a new Favorite Poem Project anthology / $c edited by Robert Pinsky and Maggie Dietz with the editorial assistance of Rosemarie Ellis.</fake:marcfield>
+      <rdawd:P10088>An invitation to poetry</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <fake:marcfield>F650 #0 $a Poetry $v Translations into English.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/poetrytranslationsintoenglish"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/translationsintoenglish"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F650 #0 $a American poetry.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/americanpoetry"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #0 $a English poetry.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/englishpoetry"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #1 $a DVDs.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/cyac/dvds"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #6 $a Poésie américaine.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poésieaméricaine"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #6 $a Poésie anglaise.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poésieanglaise"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a American poetry. $2 fast $0 (OCoLC)fst00807348</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00807348"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a English poetry. $2 fast $0 (OCoLC)fst00912278</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00912278"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Poetry. $2 fast $0 (OCoLC)fst01067691</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01067691"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Poetry. $2 sears</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/sears/poetry"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a English poetry. $2 sears</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/sears/englishpoetry"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a American poetry. $2 sears</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/sears/americanpoetry"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F655 #4 $a Translations into English.</fake:marcfield>
+      <rdawd:P10004>Translations into English</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a Translations. $2 fast $0 (OCoLC)fst01423791</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01423791"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a DVD-Video discs. $2 lcgft</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/dvdvideodiscs"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a Videodiscs. $2 lcgft</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/videodiscs"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a DVDs. $2 lcgft</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/dvds"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99152167410001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99152167410001452wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>99152167410001452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <fake:marcfield>F006 g141            vl</fake:marcfield>
+      <rdaed:P20219>Duration: 141 minutes.</rdaed:P20219><!--rdaed:P20219 = has duration-->
+      <fake:marcfield>F006 innnn        z| | </fake:marcfield>
+      <fake:marcfield>F008 040318s2004    nyu    j b    001 0 eng  </fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdae:P20322 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#j"/><!--rdae:P20322 = has intended audience of expression-->
+      <fake:marcfield>F520 ## $a An anthology of classical and contemporary poems are introduced by everyday people from across the United States, including pieces by such masters as Shakespeare, Keats, and Dickinson and featuring an accompanying video introduction by one of the editors.</fake:marcfield>
+      <rdaed:P20069>An anthology of classical and contemporary poems are introduced by everyday people from across the United States, including pieces by such masters as Shakespeare, Keats, and Dickinson and featuring an accompanying video introduction by one of the editors.</rdaed:P20069><!--rdaed:P20069 = has summarization of content-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99152167410001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99152167410001452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F006 g141            vl</fake:marcfield>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#g"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30335 = has category of manifestation-->
+      <fake:marcfield>F006 innnn        z| | </fake:marcfield>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#i"/><!--rdam:P30335 = has category of manifestation-->
+      <fake:marcfield>F008 040318s2004    nyu    j b    001 0 eng  </fake:marcfield>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <fake:marcfield>F020 ## $a 039305876X $q (hardcover)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e338"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F020 ## $a 9780393058765 $q (hardcover)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e343"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F020 ## $a 9780393928396 $q (guide ; $q pbk.)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e349"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F020 ## $a 039392839X $q (guide ; $q pbk.)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e356"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F020 ## $a 0000000000000</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e363"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F020 ## $a 9780000000002</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e366"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F020 ## $a 0000000000</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e369"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F245 03 $a An invitation to poetry : $b a new Favorite Poem Project anthology / $c edited by Robert Pinsky and Maggie Dietz with the editorial assistance of Rosemarie Ellis.</fake:marcfield>
+      <rdamd:P30156>An invitation to poetry</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>a new Favorite Poem Project anthology</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>edited by Robert Pinsky and Maggie Dietz with the editorial assistance of Rosemarie Ellis.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <fake:marcfield>F337 ## $a unmediated $b n $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/><!--rdam:P30002 = has media type-->
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/><!--rdam:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a volume $b nc $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F340 ## $b 25 cm.</fake:marcfield>
+      <rdamd:P30169>25 cm.</rdamd:P30169><!--rdamd:P30169 = has dimensions-->
+      <fake:marcfield>F538 ## $a No information to include.</fake:marcfield>
+      <rdamd:P30162>No information to include.</rdamd:P30162><!--rdamd:P30162 = has equipment or system requirement-->
+      <fake:marcfield>F500 ## $a "Includes a DVD featuring project participants."</fake:marcfield>
+      <rdamd:P30137>"Includes a DVD featuring project participants."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F500 ## $a Accompanied by Classroom guide (xvii, 123 p. ; 24 cm.), c2006.</fake:marcfield>
+      <rdamd:P30137>Accompanied by Classroom guide (xvii, 123 p. ; 24 cm.), c2006.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F504 ## $a Includes bibliographical references (page 283) and index.</fake:marcfield>
+      <rdamd:P30455>Includes bibliographical references (page 283) and index.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <fake:marcfield>F505 0# $a from "Discordants" (1) / Conrad Aiken (1889-1973) -- The sentence / Anna Akhmatov (1899-1966) -- The great Canzon / Dante Alighieri (1265-1321) -- Inside the apple / Yehuda Amichai (1924-2000) -- In memoriam Mae Noblitt / A.R. Ammons (1926-2001) -- A blessing in disguise ; This room / John Ashbery (b. 1927) -- It is dangerous to read newspapers / Margaret Atwood (b. 1939) -- Lullaby ; The more loving one / W.H. Auden (1907-1973) -- L'Invitation au voyage / Charles Baudelaire (1821-1867) -- Enueg 1 ; Enueg 2 / Samuel Becket (1906-1989) -- from "Eleven addresses to Our Lord" / John Berryman (1914-1972) -- At the fishhouses ; A cold spring ; Some dreams they forgot / Elizabeth Bishop (1911-1979) -- The chimney sweeper (from Songs of innocence) ; The garden of love (from Songs of experience) / William Blake (1757-1827) -- The crows ; Dark summer / Louise Bogan (1897-1970) -- The blossom / Eavan Boland (b. 1944) -- We real cool ; When you have forgotten Sunday : the love story / Gwendolyn Brooks (1917-2000) -- Strong men / Sterling A. Brown (1901-1989) -- Two in the Campagna / Robert Browning (1812-1889) -- Ay, ay, ay de la Grifa Negra / Julia de Burgos (1914-1953).</fake:marcfield>
+      <rdamd:P30137>Contents: from "Discordants" (1) / Conrad Aiken (1889-1973) -- The sentence / Anna Akhmatov (1899-1966) -- The great Canzon / Dante Alighieri (1265-1321) -- Inside the apple / Yehuda Amichai (1924-2000) -- In memoriam Mae Noblitt / A.R. Ammons (1926-2001) -- A blessing in disguise ; This room / John Ashbery (b. 1927) -- It is dangerous to read newspapers / Margaret Atwood (b. 1939) -- Lullaby ; The more loving one / W.H. Auden (1907-1973) -- L'Invitation au voyage / Charles Baudelaire (1821-1867) -- Enueg 1 ; Enueg 2 / Samuel Becket (1906-1989) -- from "Eleven addresses to Our Lord" / John Berryman (1914-1972) -- At the fishhouses ; A cold spring ; Some dreams they forgot / Elizabeth Bishop (1911-1979) -- The chimney sweeper (from Songs of innocence) ; The garden of love (from Songs of experience) / William Blake (1757-1827) -- The crows ; Dark summer / Louise Bogan (1897-1970) -- The blossom / Eavan Boland (b. 1944) -- We real cool ; When you have forgotten Sunday : the love story / Gwendolyn Brooks (1917-2000) -- Strong men / Sterling A. Brown (1901-1989) -- Two in the Campagna / Robert Browning (1812-1889) -- Ay, ay, ay de la Grifa Negra / Julia de Burgos (1914-1953).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F505 0# $a Is there for honest poverty ; John Anderson my jo / Robert Burns (1759-1796) -- Deathfugue / Paul Celan (1920-1970) -- The Negro's complaint / William Cowper (1731-1800) -- Sunday morning apples / Hart Crane (1899-1933) -- For a poet ; Song in spite of myself / Countee Cullen (1903-1946) -- I carry your heart with me ... / E.E. Cummings (1894-1962) -- Ample make this bed ; The grass so little has to do ; I'm nobody! Who are you? ; One need not be a chamber, to be haunted ; Surgeons must be very careful ; To fight aloud, is very brave / Emily Dickinson (1830-1886) -- An epithalamion ; The good-morrow / John Donne (1572-1631) -- The elephant / Carlos Drummond de Andrade (1902-1987) -- With no experience in such matters / Stephen Dunn (b. 1939) -- Journey of the Magi / T.S. Eliot (1888-1965) -- Seen through a window / David Ferry (b. 1924) -- After apple-picking ; Directive ; An old man's winter night ; "Out, out" ; The oven bird ; The pasture / Robert Frost (1874-1963) -- Transcription of organ music / Allen Ginsberg (1926-1997) -- The school children / Louise Glück (b. 1943) -- The holy longing / Johann Wolfgang von Goethe (1749-1842) -- Ode on the death of a favorite cat / Thomas Gray (1916-1771) -- The idea of trust / Thom Gunn (b. 1929) -- Woolworth's / Donald Hall (b. 1928) -- Population / Mark Halliday (b. 1949) -- Afterwards ; The man he killed / Thomas Hardy (1840-1928) -- Privilege of being / Robert Hass (b. 1941).</fake:marcfield>
+      <rdamd:P30137>Contents: Is there for honest poverty ; John Anderson my jo / Robert Burns (1759-1796) -- Deathfugue / Paul Celan (1920-1970) -- The Negro's complaint / William Cowper (1731-1800) -- Sunday morning apples / Hart Crane (1899-1933) -- For a poet ; Song in spite of myself / Countee Cullen (1903-1946) -- I carry your heart with me ... / E.E. Cummings (1894-1962) -- Ample make this bed ; The grass so little has to do ; I'm nobody! Who are you? ; One need not be a chamber, to be haunted ; Surgeons must be very careful ; To fight aloud, is very brave / Emily Dickinson (1830-1886) -- An epithalamion ; The good-morrow / John Donne (1572-1631) -- The elephant / Carlos Drummond de Andrade (1902-1987) -- With no experience in such matters / Stephen Dunn (b. 1939) -- Journey of the Magi / T.S. Eliot (1888-1965) -- Seen through a window / David Ferry (b. 1924) -- After apple-picking ; Directive ; An old man's winter night ; "Out, out" ; The oven bird ; The pasture / Robert Frost (1874-1963) -- Transcription of organ music / Allen Ginsberg (1926-1997) -- The school children / Louise Glück (b. 1943) -- The holy longing / Johann Wolfgang von Goethe (1749-1842) -- Ode on the death of a favorite cat / Thomas Gray (1916-1771) -- The idea of trust / Thom Gunn (b. 1929) -- Woolworth's / Donald Hall (b. 1928) -- Population / Mark Halliday (b. 1949) -- Afterwards ; The man he killed / Thomas Hardy (1840-1928) -- Privilege of being / Robert Hass (b. 1941).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F505 0# $a The night-blooming cereus / Robert Hayden (1913-1980) -- from "Clearances" / Seamus Heaney (b. 1939) -- Prospects / Anthony Hecht (b. 1923) -- The collar / George Herbert (1593-1633) -- The envoy of Mr. Cogito / Zbigniew Herbert (1924-1998) -- Upon Julia's clothes / Robert Herrick (1591-1674) -- Carrion comfort ; God's grandeur ; To seem the stranger lies my lot ... / Gerard Manley Hopkins (1844-1889) -- When I was one-and-twenty (A Shropshire lad 13) / A.E. Housman (1859-1936) -- The dream keeper ; Minstrel man ; Motto / Langston Hughes (1902-1967) -- Degrees of gray in Philipsburg / Richard Hugo (1923-1982) -- My real dwelling / Ikkyu (1394-1481) -- The islands ; The woman at the Washington Zoo / Randall Jarrell (1914-1965) -- The eye / Robinson Jeffers (1887-1962) -- The song of the Banana Man / Evan Jones (b. 1927) -- Inviting a friend to supper ; Lovel's song / Ben Jonson (1573-1637) -- Men at forty / Donald Justice (b. 1925) -- from Endymion ; On a Leander which Miss Reynolds, my kind friend, gave me ; To sleep / John Keats (1795-1821) -- Finding a long gray hair / Jane Kenyon (1947-1995) -- The boiling water / Kenneth Koch (1925-2002) -- Facing it / Yusef Komunyakaa (b. 1947) -- Thinking of death and dogfood / Maxine Kumin (b. 1925) -- Hornworm : autumn lamentation ; The layers / Stanley Kunitz (b. 1905) -- An Arundel tomb ; The explosion / Philip Larkin (1922-1985) -- Caedmon / Denise Levertov (1923-1997).</fake:marcfield>
+      <rdamd:P30137>Contents: The night-blooming cereus / Robert Hayden (1913-1980) -- from "Clearances" / Seamus Heaney (b. 1939) -- Prospects / Anthony Hecht (b. 1923) -- The collar / George Herbert (1593-1633) -- The envoy of Mr. Cogito / Zbigniew Herbert (1924-1998) -- Upon Julia's clothes / Robert Herrick (1591-1674) -- Carrion comfort ; God's grandeur ; To seem the stranger lies my lot ... / Gerard Manley Hopkins (1844-1889) -- When I was one-and-twenty (A Shropshire lad 13) / A.E. Housman (1859-1936) -- The dream keeper ; Minstrel man ; Motto / Langston Hughes (1902-1967) -- Degrees of gray in Philipsburg / Richard Hugo (1923-1982) -- My real dwelling / Ikkyu (1394-1481) -- The islands ; The woman at the Washington Zoo / Randall Jarrell (1914-1965) -- The eye / Robinson Jeffers (1887-1962) -- The song of the Banana Man / Evan Jones (b. 1927) -- Inviting a friend to supper ; Lovel's song / Ben Jonson (1573-1637) -- Men at forty / Donald Justice (b. 1925) -- from Endymion ; On a Leander which Miss Reynolds, my kind friend, gave me ; To sleep / John Keats (1795-1821) -- Finding a long gray hair / Jane Kenyon (1947-1995) -- The boiling water / Kenneth Koch (1925-2002) -- Facing it / Yusef Komunyakaa (b. 1947) -- Thinking of death and dogfood / Maxine Kumin (b. 1925) -- Hornworm : autumn lamentation ; The layers / Stanley Kunitz (b. 1905) -- An Arundel tomb ; The explosion / Philip Larkin (1922-1985) -- Caedmon / Denise Levertov (1923-1997).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F505 0# $a They feed they lion ; What work is / Philip Levine (b. 1928) -- The flower-fed buffaloes / Vachel Lindsay (1879-1931) -- Still night thoughts / Li Po (701-762) -- River-snow / Liu Zongyuan (773-819) -- A psalm of life / Henry Wadsworth Longfellow (1807-1882) -- To Althea, from prison / Richard Lovelace (1618-1657) -- Memories of West Street and Lepke ; The old flame / Robert Lowell (1917-1977) -- Portrait / Antonio Machado (1875-1939) -- Ars poetica / Archibald MacLeish (1892-1982) -- Language lesson / Heather McHugh (b. 1948) -- The mad scene / James Merrill (1926-1995) -- The shore / W.S. Merwin (b. 1927) -- On hearing a symphony of Beethoven ; Recuerdo / Edna St. Vincent Millay (1892-1950) -- You who wronged / Czeslaw Milosz (b. 1911) -- When I consider how my light is spent / John Milton (1608-1674) -- Piececitos / Gabriela Mistral (1889-1857) -- A jellyfish ; What are years? / Marianne Moore (1887-1972) -- The meeting of the waters / Thomas Moore (1779-1852) -- The snow globe / Howard Nemerov (1920-1991) -- Absence of Joaquín / Pablo Neruda (1904-1973) -- He lived, childhood summers / Lorine Niedecker (1903-1970) -- The day Lady died ; Poem (Lana Turner has collapsed!) ; Poem (And tomorrow morning at 8 o'clock in Springfield, Massachusetts) / Frank O'Hara (1926-1966) -- The forms of love ; Psalm / George Oppen (1908-1984) -- Dulce et decorum est / Wilfred Owen (1893-1918) -- At the New Year / Kenneth Patchen (1911-1972).</fake:marcfield>
+      <rdamd:P30137>Contents: They feed they lion ; What work is / Philip Levine (b. 1928) -- The flower-fed buffaloes / Vachel Lindsay (1879-1931) -- Still night thoughts / Li Po (701-762) -- River-snow / Liu Zongyuan (773-819) -- A psalm of life / Henry Wadsworth Longfellow (1807-1882) -- To Althea, from prison / Richard Lovelace (1618-1657) -- Memories of West Street and Lepke ; The old flame / Robert Lowell (1917-1977) -- Portrait / Antonio Machado (1875-1939) -- Ars poetica / Archibald MacLeish (1892-1982) -- Language lesson / Heather McHugh (b. 1948) -- The mad scene / James Merrill (1926-1995) -- The shore / W.S. Merwin (b. 1927) -- On hearing a symphony of Beethoven ; Recuerdo / Edna St. Vincent Millay (1892-1950) -- You who wronged / Czeslaw Milosz (b. 1911) -- When I consider how my light is spent / John Milton (1608-1674) -- Piececitos / Gabriela Mistral (1889-1857) -- A jellyfish ; What are years? / Marianne Moore (1887-1972) -- The meeting of the waters / Thomas Moore (1779-1852) -- The snow globe / Howard Nemerov (1920-1991) -- Absence of Joaquín / Pablo Neruda (1904-1973) -- He lived, childhood summers / Lorine Niedecker (1903-1970) -- The day Lady died ; Poem (Lana Turner has collapsed!) ; Poem (And tomorrow morning at 8 o'clock in Springfield, Massachusetts) / Frank O'Hara (1926-1966) -- The forms of love ; Psalm / George Oppen (1908-1984) -- Dulce et decorum est / Wilfred Owen (1893-1918) -- At the New Year / Kenneth Patchen (1911-1972).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e947-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age/d22e947"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e959-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e959"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e962-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e962"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e965-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e965"/><!--rdamo:P30268 = has related person of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e338">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>039305876X</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80071>hardcover</rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e343">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780393058765</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80071>hardcover</rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e349">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780393928396</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80071>guide; pbk.</rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e356">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>039392839X</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80071>guide; pbk.</rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e363">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0000000000000</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e366">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780000000002</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e369">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0000000000</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e947">
+      <fake:marcfield>F710 2# $a Favorite Poem Project (U.S.)</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Favorite Poem Project (U.S.)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e959">
+      <fake:marcfield>F700 1# $a Pinsky, Robert.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Pinsky, Robert</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e962">
+      <fake:marcfield>F700 1# $a Dietz, Maggie.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Dietz, Maggie</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e965">
+      <fake:marcfield>F700 1# $a Ellis, Rosemarie.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Ellis, Rosemarie</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/pn6101">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PN6101</skos:notation>
+      <skos:altLabel>PN6101</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/poetrytranslationsintoenglish">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Poetry -- Translations into English</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/translationsintoenglish">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Translations into English</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/americanpoetry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>American poetry</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/englishpoetry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>English poetry</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/dvds">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>DVDs</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poésieaméricaine">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Poésie américaine</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poésieanglaise">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Poésie anglaise</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/sears/poetry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Poetry</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/sears"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/sears/englishpoetry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>English poetry</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/sears"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/sears/americanpoetry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>American poetry</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/sears"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/dvdvideodiscs">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>DVD-Video discs</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/videodiscs">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Videodiscs</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/dvds">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>DVDs</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+</rdf:RDF>
