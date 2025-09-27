@@ -1166,11 +1166,11 @@
     </xsl:template>
 
     <!--751 Added Entry-Geographic Name-->
-    <xsl:template match="marc:datafield[@tag = '751'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '751']" mode="man" expand-text="yes">
+    <!--<xsl:template match="marc:datafield[@tag = '751'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '751']" mode="man" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
         <xsl:variable name="placeSub" select="marc:subfield[@code='a' or @code = 'g']"/>
-        <xsl:variable name="placeString" select="string-join($placeSub, '--')"/>
+        <xsl:variable name="placeString" select="string-join($placeSub, '-\-')"/>
         <xsl:variable name="placeIRI" select="m2r:placeIRI($baseID, ., $placeString,'')"/>
         <xsl:variable name="sub1">
             <xsl:choose>
@@ -1183,48 +1183,48 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="sub2">
-            <xsl:value-of select="marc:subfield[@code = '2']"/>
+            <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
         </xsl:variable>
-        <xsl:variable name="sub4" select="lower-case(marc:subfield[@code='4'])"/>
-        <xsl:variable name="subE" select="lower-case(marc:subfield[@code='e'])"/>
-        <!--<xsl:call-template name="getmarc"/>-->
-            <xsl:if test="(@ind1 = '1' or @ind1 = '0') and (marc:subfield[@code = ('1', '2', 'g', 'a')])">
-                <xsl:if test="marc:subfield[@code = 'e'] or marc:subfield[@code = '4']">
-                        <xsl:choose>
-                            <xsl:when test="matches($sub4, '^http://rdaregistry.info/Elements/[wemi]/')">
-                                <xsl:element name="{concat('rdamo:P', substring-after($sub4, '/P'))}">
-                                    <xsl:attribute name="rdf:resource">
-                                        <xsl:value-of select="$placeIRI"/>
-                                    </xsl:attribute>
-                                </xsl:element>
-                            </xsl:when>
-                            <xsl:when test="$sub4 = 'dbp' or contains($subE, 'distribution')">
-                                <rdamo:P30085 rdf:resource="{$placeIRI}"/>
-                            </xsl:when>
-                            <xsl:when test="$sub4 = 'mfp' or contains($subE, 'manufacture')">
-                                <rdamo:P30087 rdf:resource="{$placeIRI}"/>
-                            </xsl:when>
-                            <xsl:when test="$sub4 = 'prp' or contains($subE, 'production')">
-                                <rdamo:P30086 rdf:resource="{$placeIRI}"/>
-                            </xsl:when>
-                            <xsl:when test="$sub4 = 'pup' or contains($subE, 'publication')">
-                                <rdamo:P30088 rdf:resource="{$placeIRI}"/>
-                            </xsl:when>
-                    <xsl:otherwise>
-                        <rdamo:P30272 rdf:resource="{$placeIRI}"/>
-                    </xsl:otherwise>
-                        </xsl:choose>
-                </xsl:if>
-        </xsl:if>
-        <xsl:if test="marc:subfield[@code = '0'] and (not(contains($subE, 'work') or contains($subE, 'expression') or contains($subE, 'capture'))) and (m2r:s2EntityTest($sub2, 'place') = 'True' or m2r:IRILookup($sub1, 'place') = 'True')">
+        <!-\-<xsl:call-template name="getmarc"/>-\->
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = 'e'] or marc:subfield[@code = '4']">
+                <xsl:for-each select="marc:subfield[@code='e']|marc:subfield[@code='4']">
+                    <xsl:choose>
+                        <xsl:when test="matches(., '^http://rdaregistry.info/Elements/[wemi]/')">
+                            <xsl:element name="{concat('rdamo:P', substring-after(., '/P'))}">
+                                <xsl:attribute name="rdf:resource">
+                                    <xsl:value-of select="$placeIRI"/>
+                                </xsl:attribute>
+                            </xsl:element>
+                        </xsl:when>
+                        <xsl:when test=". = 'dbp' or contains(., 'distribution')">
+                            <rdamo:P30085 rdf:resource="{$placeIRI}"/>
+                        </xsl:when>
+                        <xsl:when test=". = 'mfp' or contains(., 'manufacture')">
+                            <rdamo:P30087 rdf:resource="{$placeIRI}"/>
+                        </xsl:when>
+                        <xsl:when test=". = 'prp' or contains(., 'production')">
+                            <rdamo:P30086 rdf:resource="{$placeIRI}"/>
+                        </xsl:when>
+                        <xsl:when test=". = 'pup' or contains(., 'publication')">
+                            <rdamo:P30088 rdf:resource="{$placeIRI}"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdamo:P30272 rdf:resource="{$placeIRI}"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
                 <rdamo:P30272 rdf:resource="{$placeIRI}"/>
-            </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
    
-   <xsl:template match="marc:datafield[@tag = '751'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '751']" mode="pla">
+   <xsl:template match="marc:datafield[@tag = '751'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '751']" mode="pla" expand-text="true">
        <xsl:param name="baseID"/>
        <xsl:variable name="placeSub" select="marc:subfield[@code = 'a' or @code = 'g']"/>
-       <xsl:variable name="placeString" select="string-join($placeSub, '--')"/>
+       <xsl:variable name="placeString" select="string-join($placeSub, '-\-')"/>
        <xsl:variable name="placeIRI" select="m2r:placeIRI($baseID, ., $placeString,'')"/>
        <xsl:variable name="ap">
            <xsl:variable name="placename">
@@ -1252,12 +1252,11 @@
        <xsl:variable name="sub2">
            <xsl:value-of select="marc:subfield[@code = '2']"/>
        </xsl:variable>
-       <xsl:variable name="sub4" select="lower-case(marc:subfield[@code='4'])"/>
-       <xsl:variable name="subE" select="lower-case(marc:subfield[@code='e'])"/>
-       <!--<xsl:call-template name="getmarc"/>-->
+       <!-\-<xsl:call-template name="getmarc"/>-\->
        <xsl:if test="@ind1 = '0' or @ind1 = '1'">
            <xsl:if test="marc:subfield[@code = '1'] and (m2r:s2EntityTest($sub2, 'place') = 'True' or m2r:IRILookup($sub1, 'place') = 'True')">
-               <xsl:if test="not($sub4 = 'dbp' or $subE = 'distribution' or $sub4 = 'mfp' or $subE = 'manufacture' or $sub4 = 'prp' or $subE = 'production' or $sub4 = 'pup' or $subE = 'publication')">
+               <xsl:if test="not(exists(marc:subfield[@code='4'][contains(., 'dbp') or contains(., 'mfp') or contains(., 'prp') or contains(., 'pup')]) 
+                   or exists(marc:subfield[@code='e'][contains(., 'distribution') or contains(., 'manufacture') or contains(., 'production') or contains(., 'publication')]))">
                    <rdf:Description rdf:about="{$placeIRI}">
                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
                        <xsl:choose>
@@ -1279,18 +1278,20 @@
                          <xsl:value-of select="."/>
                          </rdapd:P70022>
                     </xsl:for-each>
-               <xsl:if test="not($sub4 = 'dbp' or $subE = 'distribution' or $sub4 = 'mfp' or $subE = 'manufacture' or $sub4 = 'prp' or $subE = 'production' or $sub4 = 'pup' or $subE = 'publication')">
+                   <xsl:if test="not(exists(marc:subfield[@code='4'][contains(., 'dbp') or contains(., 'mfp') or contains(., 'prp') or contains(., 'pup')]) 
+                       or exists(marc:subfield[@code='e'][contains(., 'distribution') or contains(., 'manufacture') or contains(., 'production') or contains(., 'publication')]))">
                    <rdapo:P70018 rdf:resource="{m2r:nomenIRI($baseID, ., $ap, $sub2, 'place')}"/>
                </xsl:if>
                    <xsl:choose>
-                       <xsl:when test="not(starts-with($sub4, 'http://rdaregistry.info/Elements/')) and not($sub4 = 'dbp' or $subE = 'distribution' or $sub4 = 'mfp' or $subE = 'manufacture' or $sub4 = 'prp' or $subE = 'production' or $sub4 = 'pup' or $subE = 'publication')">
+                       <xsl:when test="not(exists(marc:subfield[@code='4'][contains(., 'http://rdaregistry.info/Elements/') or contains(., 'dbp') or contains(., 'mfp') or contains(., 'prp') or contains(., 'pup')]) 
+                           or exists(marc:subfield[@code='e'][contains(., 'distribution') or contains(., 'manufacture') or contains(., 'production') or contains(., 'publication')]))">
                            <rdapo:P70001 rdf:resource="{m2r:nomenIRI($baseID, ., $ap, $sub2, 'place')}"/>
                        </xsl:when>
                        <xsl:otherwise>
                            <rdapo:P70019 rdf:resource="{m2r:nomenIRI($baseID, ., $ap, $sub2, 'place')}"/>
                        </xsl:otherwise>
                    </xsl:choose>
-                   <!--Linked 880-->
+                   <!-\-Linked 880-\->
                    <xsl:if test="marc:subfield[@code = '6']">
                        <xsl:variable name="occNum" select="concat('751-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                        <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
@@ -1298,7 +1299,7 @@
                                <xsl:variable name="placeName880">
                                    <xsl:choose>
                                        <xsl:when test="marc:subfield[@code = 'g']">
-                                           <xsl:text>{marc:subfield[@code = ‘a’]} ({marc:subfield[@code = ‘g’]})</xsl:text>
+                                           <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
                                        </xsl:when>
                                        <xsl:otherwise>
                                            <xsl:value-of select="marc:subfield[@code = 'a']"/>
@@ -1315,7 +1316,8 @@
                </rdf:Description>
            </xsl:if>
        </xsl:if>
-       <xsl:if test="(contains($subE, 'work') or contains($subE, 'expression') or contains($subE, 'capture') or contains($subE, 'manifestation')) and (marc:subfield[@code = '0'] or marc:subfield[@code = '1'])">
+       <xsl:if test="(exists(marc:subfield[@code='e'][contains(., 'work') or contains(., 'expression') or contains(., 'capture') or contains(., 'manifestation')])
+           and (marc:subfield[@code = '0'] or marc:subfield[@code = '1']))">
            <xsl:if test="m2r:s2EntityTest($sub2, 'place') = 'True' or m2r:IRILookup($sub1, 'place') = 'True'">
                <xsl:choose>
                    <xsl:when test="m2r:s2EntityTest($sub2, 'place') = 'True'">
@@ -1329,11 +1331,10 @@
        </xsl:if>
    </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '751'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '751']" mode="nom">
+    <xsl:template match="marc:datafield[@tag = '751'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '751']" 
+        mode="nom" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:variable name="Test1" select="boolean(marc:subfield[@code = '1'][1])"/>
-        <xsl:variable name="subE" select="lower-case(marc:subfield[@code='e'])"/>
-        <xsl:variable name="sub4" select="lower-case(marc:subfield[@code='4'])"/>
         <xsl:variable name="sub1">
             <xsl:choose>
                 <xsl:when test="count(marc:subfield[@code = '1'])">
@@ -1360,11 +1361,12 @@
         <xsl:variable name="sub2">
             <xsl:value-of select="marc:subfield[@code = '2']"/>
         </xsl:variable>
-        <!--<xsl:call-template name="getmarc"/>-->
+        <!-\-<xsl:call-template name="getmarc"/>-\->
         <xsl:choose>
         <xsl:when test="@ind1 = '0' or @ind1 = '1'">
             <xsl:if test="$Test1 and (m2r:s2EntityTest($sub2, 'place') = 'True' or m2r:IRILookup($sub1, 'place') = 'True')">
-                <xsl:if test="not($sub4 = 'dbp' or $subE = 'distribution' or $sub4 = 'mfp' or $subE = 'manufacture' or $sub4 = 'prp' or $subE = 'production' or $sub4 = 'pup' or $subE = 'publication')">
+                <xsl:if test="not(exists(marc:subfield[@code='4'][contains(., 'dbp') or contains(., 'mfp') or contains(., 'prp') or contains(., 'pup')]) 
+                    or exists(marc:subfield[@code='e'][contains(., 'distribution') or contains(., 'manufacture') or contains(., 'production') or contains(., 'publication')]))">
                     <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., $ap, $sub2, 'place')}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -1384,7 +1386,8 @@
                 <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., $ap, $sub2, 'place')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                    <xsl:choose>
-                    <xsl:when test="not($sub4 = 'dbp' or $subE = 'distribution' or $sub4 = 'mfp' or $subE = 'manufacture' or $sub4 = 'prp' or $subE = 'production' or $sub4 = 'pup' or $subE = 'publication')">
+                       <xsl:when test="not(exists(marc:subfield[@code='4'][contains(., 'dbp') or contains(., 'mfp') or contains(., 'prp') or contains(., 'pup')]) 
+                           or exists(marc:subfield[@code='e'][contains(., 'distribution') or contains(., 'manufacture') or contains(., 'production') or contains(., 'publication')]))">
                         <xsl:for-each select="marc:subfield[@code = 'a']">
                             <rdand:P80068>
                                 <xsl:value-of select="m2r:stripEndPunctuation(.)"/>
@@ -1413,7 +1416,7 @@
             </xsl:if>
         </xsl:when>
             <xsl:otherwise>
-                <xsl:if test="marc:subfield[@code = '0'] and not($Test1) and m2r:s2EntityTest($sub2, 'place') = 'True' and (contains($subE, 'work') or contains($subE, 'expression') or contains($subE, 'capture'))">
+                <xsl:if test="marc:subfield[@code = '0'] and not($Test1) and m2r:s2EntityTest($sub2, 'place') = 'True' and exists(marc:subfield[@code='e'][contains(., 'work') or contains(., 'expression') or contains(., 'capture')])">
             <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., $ap, $sub2, 'place')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
             <xsl:for-each select="marc:subfield[@code = '0']">
@@ -1428,7 +1431,7 @@
             </xsl:for-each>
             </rdf:Description>
         </xsl:if>
-        <xsl:if test="$Test1 and (contains($subE, 'work') or contains($subE, 'capture') or contains($subE, 'expression') or contains($subE, 'manifestation')) and (m2r:s2EntityTest($sub2, 'place') = 'True' or m2r:IRILookup($sub1, 'place') = 'True')">
+                <xsl:if test="$Test1 and exists(marc:subfield[@code='e'][contains(., 'work') or contains(., 'expression') or contains(., 'capture') or contains(., 'manifestation')]) and (m2r:s2EntityTest($sub2, 'place') = 'True' or m2r:IRILookup($sub1, 'place') = 'True')">
             <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., $ap, $sub2, 'place')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -1450,7 +1453,7 @@
     <xsl:template match="marc:datafield[@tag = '751'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '751']" mode="wor">
         <xsl:param name="baseID"/>
         <xsl:variable name="placeSub" select="marc:subfield[@code='a' or @code = 'g']"/>
-        <xsl:variable name="placeString" select="string-join($placeSub, '--')"/>
+        <xsl:variable name="placeString" select="string-join($placeSub, '-\-')"/>
         <xsl:variable name="placeIRI" select="m2r:placeIRI($baseID, ., $placeString,'')"/>
         <xsl:variable name="sub2">
             <xsl:value-of select="marc:subfield[@code = '2']"/>
@@ -1466,7 +1469,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <!--<xsl:call-template name="getmarc"/>-->
+        <!-\-<xsl:call-template name="getmarc"/>-\->
            <xsl:if test="marc:subfield[@code = '1'] or marc:subfield[@code = '0']">
                <xsl:if test="contains($subE, 'work') and (m2r:s2EntityTest($sub2, 'place') = 'True' or m2r:IRILookup($sub1, 'place') = 'True')">
                    <rdawo:P10316 rdf:resource="{$placeIRI}"/>
@@ -1477,7 +1480,7 @@
     <xsl:template match="marc:datafield[@tag = '751'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '751']" mode="exp">
         <xsl:param name="baseID"/>
         <xsl:variable name="placeSub" select="marc:subfield[@code='a' or @code = 'g']"/>
-        <xsl:variable name="placeString" select="string-join($placeSub, '--')"/>
+        <xsl:variable name="placeString" select="string-join($placeSub, '-\-')"/>
         <xsl:variable name="placeIRI" select="m2r:placeIRI($baseID, ., $placeString,'')"/>
         <xsl:variable name="sub1">
             <xsl:choose>
@@ -1493,7 +1496,7 @@
             <xsl:value-of select="marc:subfield[@code = '2']"/>
         </xsl:variable>
         <xsl:variable name="subE" select="lower-case(marc:subfield[@code='e'])"/>
-        <!--<xsl:call-template name="getmarc"/>-->
+        <!-\-<xsl:call-template name="getmarc"/>-\->
         <xsl:if test="marc:subfield[@code = '1'] or marc:subfield[@code = '0'] and (m2r:s2EntityTest($sub2, 'place') = 'True' or m2r:IRILookup($sub1, 'place') = 'True')">
             <xsl:if test="contains($subE, 'capture')">
                 <rdaeo:P20218 rdf:resource="{$placeIRI}"/>
@@ -1502,7 +1505,7 @@
                 <rdaeo:P20306 rdf:resource="{$placeIRI}"/>
             </xsl:if>
         </xsl:if>
-    </xsl:template>
+    </xsl:template>-->
     
     <!-- 752  Added Entry-Hierarchical Place Name -->  
     <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" 
