@@ -11,7 +11,7 @@
     <xsl:strip-space elements="*"/>
 
     <!-- This template will append corresponding aggregate manifestations based on a sequential pattern matches -->
-    <xsl:include href="aggregate.xsl"/>
+    <xsl:include href="m2r-aggregates.xsl"/>
     
     <xsl:template match="/">
         <xsl:apply-templates select="marc:collection"/>
