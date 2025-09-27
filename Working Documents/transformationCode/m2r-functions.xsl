@@ -54,11 +54,11 @@
 <!-- $5 FUNCTIONS -->
     
     <!-- collBase is the base URI we use for the minted collection manifestation for an institution -->
-    <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
+    <xsl:variable name="collBase">http://marc2rda.info/transform/colWor#</xsl:variable>
     
     <!-- $5-preprocessedRDA.xml contains minted collection works and collection manifestations for
          organizations with codes in the MARC Organization Codes Database -->
-    <xsl:variable name="lookup5Doc" select="document('lookup/$5-preprocessedRDA.xml')"/>
+    <xsl:variable name="lookup5Doc" select="document('lookup/$5-preprocessedRDA-2025-09-27.xml')"/>
     <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
     
     <!-- returns "is holding of" the minted IRI for the organization's collection if found, otherwise outputs comment -->

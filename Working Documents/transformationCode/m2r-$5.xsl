@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ex="http://fakeIRI.edu/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdac="http://rdaregistry.info/Elements/c/"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
     xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
@@ -17,11 +17,11 @@
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
-    <xsl:variable name="base" select="'http://marc2rda.edu/fake/'"/>
+    <xsl:variable name="base" select="'http://marc2rda.info/transform/'"/>
     <xsl:key name="node" match="rdf:Description" use="@rdf:nodeID"/>
     <xsl:template match="/">
         <rdf:RDF xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ex="http://fakeIRI.edu/"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
             xmlns:rdaw="http://rdaregistry.info/Elements/w/"
             xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
             xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -39,9 +39,9 @@
                 <xsl:variable name="normCode"
                     select="substring-after(../@rdf:about, 'http://id.loc.gov/vocabulary/organizations/')"/>
                 <xsl:variable name="corporateBodyAgentIRI"
-                    select="concat($base, 'corporateBodyAgent/', $normCode)"/>
-                <xsl:variable name="colWorIRI" select="concat($base, 'colWor/', $normCode)"/>
-                <xsl:variable name="colManIRI" select="concat($base, 'colMan/', $normCode)"/>
+                    select="concat($base, 'age#', $normCode)"/>
+                <xsl:variable name="colWorIRI" select="concat($base, 'colWor#', $normCode)"/>
+                <xsl:variable name="colManIRI" select="concat($base, 'colMan#', $normCode)"/>
                 <rdf:Description rdf:about="{$corporateBodyAgentIRI}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                     <rdaad:P50375>
@@ -69,12 +69,12 @@
                     </xsl:for-each>
                     <xsl:for-each select="../madsrdf:hasBroaderAuthority">
                         <rdaao:P50230
-                            rdf:resource="{concat($base, 'corporateBodyAgent/', substring-after(@rdf:resource,'http://id.loc.gov/vocabulary/organizations/'))}"/>
+                            rdf:resource="{concat($base, 'age#', substring-after(@rdf:resource,'http://id.loc.gov/vocabulary/organizations/'))}"/>
                         <!--is corporate body member of corporate body of-->
                     </xsl:for-each>
                     <xsl:for-each select="../madsrdf:hasNarrowerAuthority">
                         <rdaao:P50231
-                            rdf:resource="{concat($base, 'corporateBodyAgent/', substring-after(@rdf:resource,'http://id.loc.gov/vocabulary/organizations/'))}"/>
+                            rdf:resource="{concat($base, 'age#', substring-after(@rdf:resource,'http://id.loc.gov/vocabulary/organizations/'))}"/>
                         <!--has corporate body member of corporate body-->
                     </xsl:for-each>
                     <rdaao:P51115 rdf:resource="{$colWorIRI}"/>

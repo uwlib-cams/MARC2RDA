@@ -1,83 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/526-testwor">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc526-test">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/526-testexp"/>
-      <rdawd:P10002>526-testwor</rdawd:P10002>
+      <rdawd:P10400>526-test</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc526-test</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc526-test"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/526-testexp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/526-testman"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/526-testwor"/>
-      <rdaed:P20002>526-testexp</rdaed:P20002>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/526-testman">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc526-test">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/526-testexp"/>
-      <fake:marcfield>F526 ## $a Accelerated Reader $b Grades 5-8 $c 3.7 $d 6 $x First private note $x Second private note $z Quiz 70876 $z English fiction, vocabulary quiz available. $5 wau</fake:marcfield>
-      <rdamd:P30137>Reading program: Program name: Accelerated Reader; Interest level: Grades 5-8; Reading level: 3.7; Title point value: 6; Public note: Quiz 70876; Public note: English fiction, vocabulary quiz available. (Applies to: University of Washington)</rdamd:P30137>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e15"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e17"/>
-      <fake:marcfield>F880 ## $6 526-00 $a Test 880 $x Test private 880</fake:marcfield>
-      <rdamd:P30137>Reading program: Program name: Test 880</rdamd:P30137>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e30"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc526-test"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc526-test</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 526-test
+F526 ## $a Accelerated Reader $b Grades 5-8 $c 3.7 $d 6 $x First private note $x Second private note $z Quiz 70876 $z English fiction, vocabulary quiz available. $5 wau
+F880 ## $6 526-00 $a Test 880 $x Test private 880
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <fake:marcfield>F526 ## $a Accelerated Reader $b Grades 5-8 $c 3.7 $d 6 $x First private note $x Second private note $z Quiz 70876 $z English fiction, vocabulary quiz available. $5 wau</fake:marcfield>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e15">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d16e15</rdawd:P10002>
-      <rdawo:P10617 rdf:resource="http://fakeIRI2.edu/526-testman"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc526-test"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc526-test"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc526-test"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30137>Reading program: Program name: Accelerated Reader; Interest level: Grades 5-8; Reading level: 3.7; Title point value: 6; Public note: Quiz 70876; Public note: English fiction, vocabulary quiz available. (Applies to: University of Washington)</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/metaWor#2025-09-27t1316284690917-0400d31e14"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/metaWor#2025-09-27t1316284690917-0400d31e16"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamd:P30137>Reading program: Program name: Test 880</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/metaWor#2025-09-27t1316284690917-0400d31e29"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/metaWor#2025-09-27t1316284690917-0400d31e14">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>metaWor#2025-09-27t1316284690917-0400d31e14</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/526-testman"/>
-      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+      <rdf:subject rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/m/datatype/P30137"/>
       <rdf:object>First private note (Applies to: University of Washington)</rdf:object>
-      <rdawd:P10004>Private</rdawd:P10004>
+      <rdawd:P10004>Private</rdawd:P10004><!--rdawd:P10004 = has category of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e17">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/metaWor#2025-09-27t1316284690917-0400d31e16">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d16e17</rdawd:P10002>
-      <rdawo:P10617 rdf:resource="http://fakeIRI2.edu/526-testman"/>
+      <rdawd:P10002>metaWor#2025-09-27t1316284690917-0400d31e16</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/526-testman"/>
-      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+      <rdf:subject rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/m/datatype/P30137"/>
       <rdf:object>Second private note (Applies to: University of Washington)</rdf:object>
-      <rdawd:P10004>Private</rdawd:P10004>
+      <rdawd:P10004>Private</rdawd:P10004><!--rdawd:P10004 = has category of work-->
    </rdf:Description>
-   <fake:marcfield>F880 ## $6 526-00 $a Test 880 $x Test private 880</fake:marcfield>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e30">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/metaWor#2025-09-27t1316284690917-0400d31e29">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d16e30</rdawd:P10002>
-      <rdawo:P10617 rdf:resource="http://fakeIRI2.edu/526-testman"/>
+      <rdawd:P10002>metaWor#2025-09-27t1316284690917-0400d31e29</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/526-testman"/>
-      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+      <rdf:subject rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/m/datatype/P30137"/>
       <rdf:object>Test private 880</rdf:object>
-      <rdawd:P10004>Private</rdawd:P10004>
+      <rdawd:P10004>Private</rdawd:P10004><!--rdawd:P10004 = has category of work-->
    </rdf:Description>
 </rdf:RDF>
